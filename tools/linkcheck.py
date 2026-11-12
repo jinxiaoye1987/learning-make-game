@@ -1,6 +1,6 @@
 import re,os,glob,sys
-# 报告站点里相对链接指向的文件是否存在。公开仓库故意不收录第三方截图时，
-# 图片会显示为 MISSING。这只是报告，不会删除 HTML 中的 img。
+# 报告站点里相对链接指向的文件是否存在。图片缺失也会记为 MISSING，
+# 并且不会为了让结果变绿而删除 HTML 中的 img。
 _HERE=os.path.dirname(os.path.abspath(__file__))
 S=os.environ.get('SITE') or os.path.join(os.path.dirname(_HERE),'site'); bad=0
 for f in glob.glob(S+'/**/*.html',recursive=True):

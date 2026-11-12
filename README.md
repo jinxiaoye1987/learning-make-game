@@ -40,7 +40,7 @@ CONTRIBUTING.md           怎样提交勘误和程序改进
 CODE_OF_CONDUCT.md        行为准则
 SECURITY.md               漏洞报告方式
 docs/DEPLOY-CLOUDFLARE.md 部署说明（本文档不执行部署）
-site/                     可直接预览的静态站点，保留图片引用
+site/                     可直接预览的静态站点，含相对路径图片
 content/                  课时整理稿（正文、元数据、题目）
 specs/                    238 份课次规格；A 类 23 课不在这里
 catalog/survey.json       从现有页面收回的目录元数据
@@ -57,9 +57,7 @@ third_party/mermaid/      Mermaid 11.17.2 与上游许可证
 python3 -m http.server 8765 --directory site
 ```
 
-然后打开 <http://127.0.0.1:8765/> 。首页、知识地图、搜索和随机测验都可以在本地使用。搜索和测验的数据已经放进 `site/data/*.js`，用本地文件打开时也不依赖远程接口。
-
-这份 Git 快照没有收录第三方截图和封面。页面里的 `img` 路径都还在，浏览器会显示缺图。这是仓库未收录这些文件，不是站点应该删图。
+然后打开 <http://127.0.0.1:8765/> 。首页、知识地图、搜索和随机测验都可以在本地使用。搜索和测验的数据已经放进 `site/data/*.js`，用本地文件打开时也不依赖远程接口。封面和截图也在 `site/` 里，用相对路径加载。
 
 ## 构建
 
@@ -70,19 +68,21 @@ python3 tools/extract_catalog.py
 python3 tools/site.py --root .
 ```
 
-`tools/site.py` 默认使用本仓库根目录，读取 `content/` 和 `catalog/survey.json`，并会替换整个 `site/` 目录。Mermaid 从 `third_party/mermaid/mermaid.min.js` 复制到站点。即使封面和截图文件不在磁盘上，生成结果仍会保留原来的 `img` 引用，只会复制实际存在的图片文件。
+`tools/site.py` 默认使用本仓库根目录，读取 `content/` 和 `catalog/survey.json`，并会替换整个输出目录。Mermaid 从 `third_party/mermaid/mermaid.min.js` 复制到站点。图片文件只会从 `content/` 里实际存在的文件复制过去；当前这些截图和封面放在 `site/`，不在 `content/`。因此不要对现有的 `site/` 直接重跑生成，否则图片文件会被清掉，只留下引用。需要试跑时请把 `--site` 指到别的目录。
 
 早先的脚本写着本机绝对路径 `/workspace/yt-lesson`。`site.py` 已改为可用 `--root` 指定目录。`fetch.sh`、`prep.sh`、`mkimg.sh` 等仍指向那棵本机树，它们依赖 `eps/` 里的视频和字幕缓存。
 
 这些下载和预处理脚本是历史维护工具。已知至少有部分 `video.mp4` 和日语自动字幕缺失或为空，YouTube 或 yt-dlp 还可能被限流。它们不能保证把缺失的原始源数据全部重新下载，也不是对公众的一键复原。
 
-重新生成不会改写 `content/` 里的课程正文。没有图片文件时，生成出的站点仍然缺图，不能当作生产发布目录。
+重新生成不会改写 `content/` 里的课程正文。可发布的完整站点就是仓库里的 `site/` 目录，其中已经包含被引用的图片。
 
 ## 图片
 
-公开 Git 仓库可以不收录第三方截图。完整带图站点以另行保管的静态资源为准。只上传本仓库这份无图目录，页面会缺图，这不是正确的生产发布方式。
+截图和封面以相对路径放在 `site/{分类}/img/{视频id}/`，和 HTML、CSS、JS 在同一棵静态目录里。之后用 Cloudflare Pages 发布时，上传这个完整目录即可，图片与页面同一包，不使用 R2、Cloudflare Images 或其他单独的图片服务。
 
-静态检查会统计缺失图片并单独说明，不会因为缺图失败，也不会去改 HTML。详见 `NOTICE`。
+仓库里现有 3262 个图片文件，对应页面中 3538 处带 `src` 的引用（封面在首页、分类页和课时页重复引用）。静态检查要求这些引用都能在仓库里找到文件。缺图会失败，也不要靠删除 `img` 来让检查变绿。
+
+把图片放进本仓库不表示权利人再授权。它们不适用根目录的 MIT 许可证。详见 `NOTICE`。
 
 ## 许可
 

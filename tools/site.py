@@ -67,6 +67,7 @@ def load_eps(L):
     return out
 
 def build():
+    print('注意：将替换输出目录。图片只从 content/ 中实际存在的文件复制；本仓库已发布的截图在 site/，不在 content/。不要把 --site 指到现有 site/，否则图片文件会被清掉。')
     if os.path.exists(S): shutil.rmtree(S)
     os.makedirs(f'{S}/assets/vendor'); os.makedirs(f'{S}/data')
     shutil.copy(f'{T}/site.css',f'{S}/assets/'); shutil.copy(f'{T}/site.js',f'{S}/assets/'); shutil.copy(MERMAID,f'{S}/assets/vendor/mermaid.min.js')
