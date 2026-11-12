@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>D-7 速度的单位 · 樱井政博「Creating Games」中文图文课</title>
+<link rel="stylesheet" href="../assets/site.css">
+<script>(function(){var t=localStorage.getItem('cg-theme');if(t)document.documentElement.dataset.theme=t;})();</script>
+</head><body>
+<div class="topbar"><div class="in"><a class="brand" href="../index.html"><b>樱井政博</b> 做游戏 · 中文图文课</a><nav><a href="../index.html" class="">首页</a><a href="../index.html#cats" class="">全部分类</a><a href="../map.html" class="">知识地图</a><a href="../quiz.html" class="">随机测验</a><a href="../search.html" class="">搜索</a><a href="../about.html" class="">关于</a></nav><span class="sp"></span>
+<form action="../search.html" method="get"><input name="q" placeholder="搜索全部课程…" aria-label="搜索"></form><button id="themeBtn" type="button">☾ 深色</button></div></div>
+<div class="disclaimer">非官方个人学习总结，未经权利人授权或背书，不能替代原视频。截图等第三方素材不因学习而获得使用许可。<a href="../about.html">关于本站</a></div>
+<div class="layout"><nav class="toc"><h2>本集目录</h2><ol><li><a href="#tldr"><span class="num">★</span>速览</a></li><li><a href="#s1"><span class="num">1</span>速度公式</a></li><li><a href="#s2"><span class="num">2</span>点/帧</a></li><li><a href="#s3"><span class="num">3</span>分辨率</a></li><li><a href="#s4"><span class="num">4</span>3D 单位</a></li><li><a href="#s5"><span class="num">5</span>实例</a></li><li><a href="#s6"><span class="num">6</span>统一单位</a></li><li><a href="#quiz"><span class="num">?</span>自测题</a></li></ol>
+<p class="note" style="margin:12px 8px 0"><a href="index.html">← 返回 D 设计细节</a></p></nav>
+<main><p class="crumb"><a href="../index.html">首页</a> / <a href="index.html">D 设计细节</a> / #7</p><header class="hero"><div>
+<h1>D-7 速度的单位</h1><p class="sub">原标题：<i>Units of Speed</i></p>
+<ul class="meta"><li>时长 3:04</li><li>原语言：日语（画面内嵌英文字幕）</li><li>D 设计细节 #7/18</li></ul>
+<p style="margin:14px 0 0">▶ 原视频：<a href="https://youtu.be/_B0cpF8fQ4s" target="_blank" rel="noopener">https://youtu.be/_B0cpF8fQ4s</a></p></div><img src="img/_B0cpF8fQ4s/cover.jpg" alt="视频缩略图"></header><div class="pn"><a href="06-3qEKNxp_-Qs.html"><small>← 上一集 #6</small>对「慢」说不！</a><a class="next" href="08-rcuihq0j7VM.html"><small>下一集 #8 →</small>悬崖边的行为</a></div><section id="tldr" data-toc="速览"><h2>速览</h2><p>速度掌管游戏中许多东西，非常重要。<b>速度 = 距离 ÷ 时间</b>，三者知道两个就能求出第三个。以前给 FC 等基于精灵（sprite）的游戏写规格时，速度用<b>「点/帧」（pixels per frame）</b>表示：一帧前进几个点。樱井估计《Mario Bros.》里马力欧最高速度大约 1 点/帧；FC 画面宽 256 点，跑完一屏约 219 帧。GB、FC、SFC 的分辨率各不相同——「擂台」大小不同，所以设定同样的数值，实际速度感会完全不同。到了 3D 游戏就能用普通速度单位，比如「公里/小时」：只要用真实单位定义角色和场地大小，真实速度单位就能直接用，也直观。但也不是什么都不用想：有的游戏仍会直接写一帧前进多少，如 m/帧、cm/帧。《卡比的空气骑乘》游戏中显示的是 km/h，时速看起来出奇地低，因为前提是卡比只有 20cm 见方——看着慢，其实相当快。《新·光神话 帕尔提娜之镜》地面战中，皮特连普通走路都快得夸张，正常迈腿根本跟不上，所以让他像小跳步一样走，同时允许脚相对地面滑动。不管是规格书还是参数，<b>表达不出速度就什么都做不了</b>，因此先要统一游戏内距离感的单位和时间单位；还要培养游戏中的速度感——把「大概想这么动」的印象换成参数时数值对得上，这很重要。</p></section><section id="s1" data-toc="速度公式"><h2>1. 速度为什么重要 <a class="ts" href="https://youtu.be/_B0cpF8fQ4s?t=4" target="_blank" rel="noopener">0:04</a></h2>
+<div class="row"><div><p>速度掌管游戏中各种各样的东西，所以非常重要。</p><div class="key"><b>速度 = 距离 ÷ 时间</b>。这三个量只要知道其中两个，剩下一个也能求出来。</div></div><figure><img src="img/_B0cpF8fQ4s/f160.webp" alt="" loading="lazy"><figcaption>Speed = Distance ÷ Time（0:16 左右）</figcaption></figure></div>
+</section>
+<section id="s2" data-toc="点/帧"><h2>2. 像素时代：点/帧 <a class="ts" href="https://youtu.be/_B0cpF8fQ4s?t=22" target="_blank" rel="noopener">0:22</a></h2>
+<div class="row"><div><p>以前给 FC 等基于精灵的游戏写规格时，樱井用<b>「点/帧」</b>来表示速度——一帧前进几个点（pixels per frame）。</p></div><figure><img src="img/_B0cpF8fQ4s/f320.webp" alt="" loading="lazy"><figcaption>“Pixels per frame.”（0:32 左右）</figcaption></figure></div>
+<p>他估计《Mario Bros.》里马力欧的最高速度大约是 1 点/帧。FC 画面横宽 256 点，跑完一整屏实测大约 219 帧。</p>
+<div class="row"><figure><img src="img/_B0cpF8fQ4s/f500.webp" alt="" loading="lazy"><figcaption>256 pixels（0:50 左右）</figcaption></figure><figure><img src="img/_B0cpF8fQ4s/f580.webp" alt="" loading="lazy"><figcaption>跑完一屏约 219 帧（0:58 左右）</figcaption></figure></div>
+</section>
+<section id="s3" data-toc="分辨率"><h2>3. 分辨率不同，「擂台」不同 <a class="ts" href="https://youtu.be/_B0cpF8fQ4s?t=60" target="_blank" rel="noopener">1:00</a></h2>
+<div class="row"><div><p>GB、FC、SFC 的点数各不相同（160×144、256×240、256×224~512×478）——等于擂台的大小不一样。</p></div><figure><img src="img/_B0cpF8fQ4s/f640.webp" alt="" loading="lazy"><figcaption>Display Resolutions（1:04 左右）</figcaption></figure></div>
+<div class="key">所以即便设定同样的速度数值，最终呈现的速度也会完全不同。</div>
+</section>
+<section id="s4" data-toc="3D 单位"><h2>4. 3D：真实单位与例外 <a class="ts" href="https://youtu.be/_B0cpF8fQ4s?t=78" target="_blank" rel="noopener">1:18</a></h2>
+<div class="row"><div><p>到了 3D 游戏，就能使用普通的速度单位，比如 km/h。只要用真实单位定义角色和场地大小，真实速度单位就能直接拿来用，当然也更直观。</p></div><figure><img src="img/_B0cpF8fQ4s/f880.webp" alt="" loading="lazy"><figcaption>3D 游戏可直接使用真实速度（Farming Simulator 22）（1:28 左右）</figcaption></figure></div>
+<p>但并不是什么都不用考虑了：视游戏而定，也可能直接写「一帧前进多少」，例如 m/帧、cm/帧。</p>
+</section>
+<section id="s5" data-toc="实例"><h2>5. 卡比与皮特的例子 <a class="ts" href="https://youtu.be/_B0cpF8fQ4s?t=109" target="_blank" rel="noopener">1:49</a></h2>
+<div class="row"><div><p>《卡比的空气骑乘》游戏中显示的单位是 km/h。时速看起来低得出奇，那是因为设定前提是卡比只有 20cm 见方。看着慢，实际上相当快。</p></div><figure><img src="img/_B0cpF8fQ4s/f1220.webp" alt="" loading="lazy"><figcaption>卡比只有 20cm 见方，所以时速数字偏低（2:02 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/_B0cpF8fQ4s/f1370.webp" alt="" loading="lazy"><figcaption>地面战中让皮特跳步般移动、允许滑步（2:17 左右）</figcaption></figure><div><p>《新·光神话 帕尔提娜之镜》的地面战里，其实连普通步行都快得离谱，跑起来更快。按正常方式迈腿根本跟不上，所以让他像踏小步一样走，同时允许脚相对地面打滑。</p></div></div>
+</section>
+<section id="s6" data-toc="统一单位"><h2>6. 先统一单位，再培养速度感 <a class="ts" href="https://youtu.be/_B0cpF8fQ4s?t=144" target="_blank" rel="noopener">2:24</a></h2>
+<div class="row"><div><div class="key">无论规格书还是参数，<b>表达不出速度就什么也做不了</b>。为此首先必须统一游戏内的距离单位和时间单位。</div><p>同时要培养对游戏中速度的感觉：把「大概想让它这样动」的印象换成参数时，数值能对得上，这一点很重要。</p></div><figure><img src="img/_B0cpF8fQ4s/f1660.webp" alt="" loading="lazy"><figcaption>把想要的动作印象换成参数（2:46 左右）</figcaption></figure></div>
+</section>
+
+<section id="quiz" data-toc="自测题"><h2>自测题</h2><details><summary>1. 速度、距离、时间三者是什么关系？</summary><p>速度 = 距离 ÷ 时间，知道其中两个就能求出第三个。 <a class="ts" href="https://youtu.be/_B0cpF8fQ4s?t=4" target="_blank" rel="noopener">0:04</a></p></details><details><summary>2. 为什么在 GB、FC、SFC 上设同样的「点/帧」会得到不同效果？</summary><p>三者分辨率（点数）不同，相当于擂台大小不同，所以同样数值的实际速度感完全不同。 <a class="ts" href="https://youtu.be/_B0cpF8fQ4s?t=60" target="_blank" rel="noopener">1:00</a></p></details><details><summary>3. 《卡比的空气骑乘》里时速数字为什么显得很低？</summary><p>因为设定前提是卡比只有 20cm 见方，看着慢其实很快。 <a class="ts" href="https://youtu.be/_B0cpF8fQ4s?t=109" target="_blank" rel="noopener">1:49</a></p></details></section><div class="pn"><a href="06-3qEKNxp_-Qs.html"><small>← 上一集 #6</small>对「慢」说不！</a><a class="next" href="08-rcuihq0j7VM.html"><small>下一集 #8 →</small>悬崖边的行为</a></div></main></div>
+<footer class="foot"><p>我整理了这个游戏制作学习网站，方便回顾课程要点与自测。本站为非官方的个人学习总结。</p><p>维护者 <a href="https://github.com/jinxiaoye1987">jinxiaoye1987</a>。本站与仓库有 AI 辅助整理与脚手架编写。课程观点来自原视频，由维护者整理，不能替代原视频。</p><p>本站不是樱井政博、任天堂、HAL 研究所、YouTube 频道「<a href="https://www.youtube.com/@sora_sakurai_en" target="_blank" rel="noopener">Masahiro Sakurai on Creating Games</a>」或其相关权利人的官方网站，未经上述权利人授权、审核或背书。</p><p>内容依据公开视频整理，可能有偏差或遗漏。截图、字幕、游戏画面、作品名与角色形象等权利归各自权利人。学习这些笔记并不因此获得素材许可。</p><p><a href="../about.html">关于本站</a></p></footer>
+<div id="lightbox"><img alt=""></div>
+<script src="../assets/site.js"></script>
+</body></html>

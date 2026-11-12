@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>C-7 分解、考察、再构建 · 樱井政博「Creating Games」中文图文课</title>
+<link rel="stylesheet" href="../assets/site.css">
+<script>(function(){var t=localStorage.getItem('cg-theme');if(t)document.documentElement.dataset.theme=t;})();</script>
+</head><body>
+<div class="topbar"><div class="in"><a class="brand" href="../index.html"><b>樱井政博</b> 做游戏 · 中文图文课</a><nav><a href="../index.html" class="">首页</a><a href="../index.html#cats" class="">全部分类</a><a href="../map.html" class="">知识地图</a><a href="../quiz.html" class="">随机测验</a><a href="../search.html" class="">搜索</a><a href="../about.html" class="">关于</a></nav><span class="sp"></span>
+<form action="../search.html" method="get"><input name="q" placeholder="搜索全部课程…" aria-label="搜索"></form><button id="themeBtn" type="button">☾ 深色</button></div></div>
+<div class="disclaimer">非官方个人学习总结，未经权利人授权或背书，不能替代原视频。截图等第三方素材不因学习而获得使用许可。<a href="../about.html">关于本站</a></div>
+<div class="layout"><nav class="toc"><h2>本集目录</h2><ol><li><a href="#tldr"><span class="num">★</span>速览</a></li><li><a href="#s1"><span class="num">1</span>分解再重建</a></li><li><a href="#s2"><span class="num">2</span>分解</a></li><li><a href="#s3"><span class="num">3</span>考察</a></li><li><a href="#s4"><span class="num">4</span>再构建</a></li><li><a href="#quiz"><span class="num">?</span>自测题</a></li></ol>
+<p class="note" style="margin:12px 8px 0"><a href="index.html">← 返回 C 企划与游戏设计</a></p></nav>
+<main><p class="crumb"><a href="../index.html">首页</a> / <a href="index.html">C 企划与游戏设计</a> / #7</p><header class="hero"><div>
+<h1>C-7 分解、考察、再构建</h1><p class="sub">原标题：<i>Deconstruct, Analyze, and Rebuild</i></p>
+<ul class="meta"><li>时长 3:29</li><li>原语言：日语（画面内嵌英文字幕）</li><li>C 企划与游戏设计 #7/30</li></ul>
+<p style="margin:14px 0 0">▶ 原视频：<a href="https://youtu.be/7VD0K1Sr5u0" target="_blank" rel="noopener">https://youtu.be/7VD0K1Sr5u0</a></p></div><img src="img/7VD0K1Sr5u0/cover.jpg" alt="视频缩略图"></header><div class="pn"><a href="06-tafG03n89MY.html"><small>← 上一集 #6</small>一个按钮的可能性</a><a class="next" href="08-IM9P9NIKo10.html"><small>下一集 #8 →</small>好的跑腿与坏的跑腿</a></div><section id="tldr" data-toc="速览"><h2>速览</h2><p>深入理解事物非常重要。想让作品有原创性，单纯模仿有趣的东西是不够的：推荐<b>把乐趣的要素分解，再以独特的构成重建</b>——至少樱井是这样做的。例：做赛车游戏，写实赛车振幅小，所以设想夸张的风格。<b>分解</b>：赛车游戏哪里好玩？这里假设<b>漂移</b>好玩（漂移：转弯时让车轮打滑通过的驾驶法）。真车上抓地跑法明显更快，但作为游戏，让漂移更有趣是有效的。<b>考察</b>：为什么漂移让人觉得爽？因为也有<b>风险与回报</b>：失控、不能撞的墙在眼前展开，很危险；但靠控制顺利通过，就能以有利状态前进。那怎样让漂移在游戏中更好玩？漂移加分没什么好处；永久强化会让高手差距拉得太大；漂移提速倒也可以——至少要获得回报就必须提速；与其整个漂移都加速，不如<b>漂移过弯完成时</b>加速——不是过程中，而是结束时。<b>再构建</b>：把漂移和「蓄力」合为一体如何？刹车时开始蓄力，保持漂移，在弯道结束时一下释放就能加速——没错，这就是构思<b>《卡比的空中滑翔》</b>时的过程。一键就能玩的赛车游戏，并非单纯为了标新立异，而是经过分解、考察、再构建的阶段想出来的。樱井的爱好是开车——不是游戏——但并不是从中得到灵感，而是觉得作为游戏好玩才立项。仔细探寻乐趣之源、组织并消化的点子都是必要的，但一步步组织就能理解：分解、组合，做出原创性。</p></section><section id="s1" data-toc="分解再重建"><h2>1. 别只模仿：分解再重建 <a class="ts" href="https://youtu.be/7VD0K1Sr5u0?t=2" target="_blank" rel="noopener">0:02</a></h2>
+<p>深入理解事物非常重要。想让作品有原创性，单纯模仿有趣的东西是不够的。推荐<b>把乐趣的要素分解，再以独特的构成重建</b>——至少樱井自己是这样做的。</p>
+<div class="mermaid">
+flowchart LR
+  A["分解<br/>哪里好玩？→ 漂移"] --> B["考察<br/>为什么好玩？→ 风险与回报"]
+  B --> C["再构建<br/>刹车蓄力 + 过弯释放加速"]
+  C --> D["《卡比的空中滑翔》"]
+</div>
+</section>
+<section id="s2" data-toc="分解"><h2>2. 分解：赛车游戏哪里好玩？ <a class="ts" href="https://youtu.be/7VD0K1Sr5u0?t=22" target="_blank" rel="noopener">0:22</a></h2>
+<div class="row"><div><p>例如做赛车游戏：写实赛车振幅小，所以设想夸张的风格。先分解：赛车游戏中哪里好玩？这里假设<b>漂移</b>好玩。</p></div><figure><img src="img/7VD0K1Sr5u0/f450.webp" alt="" loading="lazy"><figcaption>漂移：转弯时让车轮打滑通过弯道的驾驶技巧（0:45 左右）</figcaption></figure></div>
+<p>真车上抓地跑法明显比漂移更快；但作为游戏想让它好玩，让漂移更有趣是有效的。</p>
+</section>
+<section id="s3" data-toc="考察"><h2>3. 考察：为什么漂移让人爽？ <a class="ts" href="https://youtu.be/7VD0K1Sr5u0?t=63" target="_blank" rel="noopener">1:03</a></h2>
+<div class="row"><div><p>因为那里也有<b>风险与回报</b>：失控、不能撞的墙就在眼前，很危险；但靠控制顺利通过，就能以有利状态往前。</p></div><figure><img src="img/7VD0K1Sr5u0/f810.webp" alt="" loading="lazy"><figcaption>刹车后过弯，就能以有利姿态出弯（1:21 左右）</figcaption></figure></div>
+<p>那么作为游戏，怎样让漂移更好玩？</p><ul class="points"><li>漂移加分：没什么好处；</li><li>永久性强化：高手与他人差距会拉得太大；</li><li>漂移提速：可以——至少要获得回报就必须提速。与其整个漂移都加速，不如<b>漂移过弯完成时</b>加速：不是过程中，而是结束时。</li></ul>
+<div class="row"><figure><img src="img/7VD0K1Sr5u0/f990.webp" alt="" loading="lazy"><figcaption>永久强化？还是加速？（1:39 左右）</figcaption></figure><figure><img src="img/7VD0K1Sr5u0/f1260.webp" alt="" loading="lazy"><figcaption>不是在漂移中，而是在漂移结束时加速（2:06 左右）</figcaption></figure></div>
+</section>
+<section id="s4" data-toc="再构建"><h2>4. 再构建：刹车蓄力漂移 <a class="ts" href="https://youtu.be/7VD0K1Sr5u0?t=121" target="_blank" rel="noopener">2:01</a></h2>
+<p>把漂移和「蓄力」合为一个动作如何？刹车时开始蓄力，就这样漂移，在弯道结束时一下释放，就能加速。</p><p>没错，这正是构思<b>《卡比的空中滑翔》</b>时的过程。一键就能玩的赛车游戏，并不是单纯为了标新立异，而是经过分解、考察、再构建的阶段想出来的。</p>
+<div class="row"><figure><img src="img/7VD0K1Sr5u0/f1350.webp" alt="" loading="lazy"><figcaption>玩家刹车，开始蓄力（2:15 左右）</figcaption></figure><figure><img src="img/7VD0K1Sr5u0/f1530.webp" alt="" loading="lazy"><figcaption>「然后释放蓄力，向前冲刺」（《卡比的空中滑翔》）（2:33 左右）</figcaption></figure></div>
+<p>樱井的爱好是开车（不是游戏），但他并不是从中得到灵感，而是觉得作为游戏好玩才这样立项。</p><div class="key">仔细探寻乐趣之源，以及组织、消化它的点子都是需要的；但一步步组织起来就能理解——<b>分解、组合，做出原创性</b>。</div>
+</section>
+
+<section id="quiz" data-toc="自测题"><h2>自测题</h2><details><summary>1. 樱井推荐的发想三步骤是什么？</summary><p>分解（乐趣的要素）→ 考察（为什么有趣）→ 再构建（以独特构成重建）。 <a class="ts" href="https://youtu.be/7VD0K1Sr5u0?t=14" target="_blank" rel="noopener">0:14</a></p></details><details><summary>2. 为什么樱井选择在「漂移结束时」加速，而不是给分或永久强化？</summary><p>加分没多大好处；永久强化会拉大高手与他人的差距；整个漂移都加速不如在过弯完成时给回报。 <a class="ts" href="https://youtu.be/7VD0K1Sr5u0?t=93" target="_blank" rel="noopener">1:33</a></p></details><details><summary>3. 《卡比的空中滑翔》的漂移系统是怎样的？</summary><p>刹车时开始蓄力、保持漂移，在弯道结束时释放蓄力加速——一键即可游玩。 <a class="ts" href="https://youtu.be/7VD0K1Sr5u0?t=121" target="_blank" rel="noopener">2:01</a></p></details></section><div class="pn"><a href="06-tafG03n89MY.html"><small>← 上一集 #6</small>一个按钮的可能性</a><a class="next" href="08-IM9P9NIKo10.html"><small>下一集 #8 →</small>好的跑腿与坏的跑腿</a></div></main></div>
+<footer class="foot"><p>我整理了这个游戏制作学习网站，方便回顾课程要点与自测。本站为非官方的个人学习总结。</p><p>维护者 <a href="https://github.com/jinxiaoye1987">jinxiaoye1987</a>。本站与仓库有 AI 辅助整理与脚手架编写。课程观点来自原视频，由维护者整理，不能替代原视频。</p><p>本站不是樱井政博、任天堂、HAL 研究所、YouTube 频道「<a href="https://www.youtube.com/@sora_sakurai_en" target="_blank" rel="noopener">Masahiro Sakurai on Creating Games</a>」或其相关权利人的官方网站，未经上述权利人授权、审核或背书。</p><p>内容依据公开视频整理，可能有偏差或遗漏。截图、字幕、游戏画面、作品名与角色形象等权利归各自权利人。学习这些笔记并不因此获得素材许可。</p><p><a href="../about.html">关于本站</a></p></footer>
+<div id="lightbox"><img alt=""></div>
+<script src="../assets/vendor/mermaid.min.js"></script><script src="../assets/site.js"></script>
+</body></html>

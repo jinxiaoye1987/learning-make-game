@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>D-14 让分系统 · 樱井政博「Creating Games」中文图文课</title>
+<link rel="stylesheet" href="../assets/site.css">
+<script>(function(){var t=localStorage.getItem('cg-theme');if(t)document.documentElement.dataset.theme=t;})();</script>
+</head><body>
+<div class="topbar"><div class="in"><a class="brand" href="../index.html"><b>樱井政博</b> 做游戏 · 中文图文课</a><nav><a href="../index.html" class="">首页</a><a href="../index.html#cats" class="">全部分类</a><a href="../map.html" class="">知识地图</a><a href="../quiz.html" class="">随机测验</a><a href="../search.html" class="">搜索</a><a href="../about.html" class="">关于</a></nav><span class="sp"></span>
+<form action="../search.html" method="get"><input name="q" placeholder="搜索全部课程…" aria-label="搜索"></form><button id="themeBtn" type="button">☾ 深色</button></div></div>
+<div class="disclaimer">非官方个人学习总结，未经权利人授权或背书，不能替代原视频。截图等第三方素材不因学习而获得使用许可。<a href="../about.html">关于本站</a></div>
+<div class="layout"><nav class="toc"><h2>本集目录</h2><ol><li><a href="#tldr"><span class="num">★</span>速览</a></li><li><a href="#s1"><span class="num">1</span>实力差</a></li><li><a href="#s2"><span class="num">2</span>追赶机制</a></li><li><a href="#s3"><span class="num">3</span>大乱斗</a></li><li><a href="#s4"><span class="num">4</span>人力让分</a></li><li><a href="#s5"><span class="num">5</span>自动让分</a></li><li><a href="#quiz"><span class="num">?</span>自测题</a></li></ol>
+<p class="note" style="margin:12px 8px 0"><a href="index.html">← 返回 D 设计细节</a></p></nav>
+<main><p class="crumb"><a href="../index.html">首页</a> / <a href="index.html">D 设计细节</a> / #14</p><header class="hero"><div>
+<h1>D-14 让分系统</h1><p class="sub">原标题：<i>Handicap Systems</i></p>
+<ul class="meta"><li>时长 3:39</li><li>原语言：日语（画面内嵌英文字幕）</li><li>D 设计细节 #14/18</li></ul>
+<p style="margin:14px 0 0">▶ 原视频：<a href="https://youtu.be/-aA_mjpCPMg" target="_blank" rel="noopener">https://youtu.be/-aA_mjpCPMg</a></p></div><img src="img/-aA_mjpCPMg/cover.jpg" alt="视频缩略图"></header><div class="pn"><a href="13-e9v_FwUGOwY.html"><small>← 上一集 #13</small>随机性为游戏添彩</a><a class="next" href="15-KW4x-_Y8BmM.html"><small>下一集 #15 →</small>平均就是平庸</a></div><section id="tldr" data-toc="速览"><h2>速览</h2><p>玩对战游戏时，势均力敌的展开最有趣，不用多说；实力相差太大就不成游戏。但实际上实力差距会残酷地拉开，所以对战游戏有时会加入类似让分的东西。极端的是《马力欧赛车》：普通赛车游戏几乎都有「名次越落后速度越快」的加速（如 F-Zero X），它在道具上也大幅优待落后者，容易出现把第一名拉下来的展开，谈不上公平。有人讨厌这类要素，但<b>休闲游戏就该加</b>：实力第一的人一直拿第一的游戏不好玩。线上大赛也就罢了，普通家庭里有输有赢才对，这也是维持休闲游戏的条件之一。可《大乱斗》基本上不做这种迁就：它虽偏休闲，但樱井想让实力确实反映出来，所以原则上没有「输了攻击力变强、更不容易被打飞」的规格。像萨菲罗斯的单翼那样带让分性质的，是角色的固有特性。共通系统只有一个：<b>领先者较难拿到 Smash 球</b>；终极必杀槽也应该是落后一方更容易积攒。同时地形和道具等也会让胜负结果产生波动——终极必杀、道具、场地、外加终极必杀槽，什么都有的规则更适合派对游戏。樱井主要把《大乱斗》这样的对战游戏定位在<b>各家各户的家庭对战环境</b>，所以与线上有不太合的地方，这一点从《大乱斗X》的企划书就写了：和朋友家人玩时，有点凹凸的地方说一句就能改，比如有「卡死连招」也能说「别耍赖」并禁止，这甚至会成为乐趣和回忆。他和小孩、新手对战时会让对方捡 Smash 球、故意挨打——这种<b>人力进行的才是最有效的让分</b>。最后提醒：《大乱斗》有「自动让分」规格（连胜后初始伤害增加），希望大家试试。</p></section><section id="s1" data-toc="实力差"><h2>1. 实力差是残酷的 <a class="ts" href="https://youtu.be/-aA_mjpCPMg?t=4" target="_blank" rel="noopener">0:04</a></h2>
+<p>玩对战游戏，势均力敌的展开最有趣，这不用多说；实力相差太远就不成游戏了。但实际上，实力差距会残酷地拉开。</p><p>所以对战游戏有时会加入类似让分的东西。</p>
+</section>
+<section id="s2" data-toc="追赶机制"><h2>2. 《马力欧赛车》式的追赶 <a class="ts" href="https://youtu.be/-aA_mjpCPMg?t=23" target="_blank" rel="noopener">0:23</a></h2>
+<p>极端的例子是《马力欧赛车》。普通赛车游戏几乎都有「名次越落后速度越快」的加速，它在道具方面也大幅优待落后者。</p>
+<div class="row"><figure><img src="img/-aA_mjpCPMg/f370.webp" alt="" loading="lazy"><figcaption>落后者会获得加速（F-Zero X）（0:37 左右）</figcaption></figure><figure><img src="img/-aA_mjpCPMg/f460.webp" alt="" loading="lazy"><figcaption>道具优待落后者（Mario Kart 8）（0:46 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/-aA_mjpCPMg/f640.webp" alt="" loading="lazy"><figcaption>家庭里的对战：有输有赢（1:04 左右）</figcaption></figure><div><p>结果往往出现把第一名拉下来的展开，谈不上公平。</p><div class="key">有人讨厌这类要素，但如果是休闲游戏，<b>就应该加入</b>：实力第一的人一直拿第一，这样的游戏实在不好玩。</div><p>线上大赛也就罢了，在普通家庭里有输有赢才对，这也是维持休闲游戏的条件之一。</p></div></div>
+</section>
+<section id="s3" data-toc="大乱斗"><h2>3. 《大乱斗》不做迁就 <a class="ts" href="https://youtu.be/-aA_mjpCPMg?t=73" target="_blank" rel="noopener">1:13</a></h2>
+<div class="row"><div><p>而《大乱斗》基本上不做这种迁就。它虽然偏休闲，但樱井希望实力能确实反映出来，所以原则上没有「输了攻击力变强、更不容易被打飞」之类的规格。</p></div><figure><img src="img/-aA_mjpCPMg/f820.webp" alt="" loading="lazy"><figcaption>偏休闲，但想反映实力（1:22 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/-aA_mjpCPMg/f1000.webp" alt="" loading="lazy"><figcaption>萨菲罗斯的单翼是角色固有特性（1:40 左右）</figcaption></figure><div><p>像萨菲罗斯的「单翼」那样带有让分性质的，属于角色的固有特性。</p></div></div>
+<div class="row"><div><p>共通系统只有一个：<b>领先的人较难拿到 Smash 球</b>。终极必杀槽也应该是落后方更容易积攒。</p></div><figure><img src="img/-aA_mjpCPMg/f1100.webp" alt="" loading="lazy"><figcaption>Trailing / Leading：领先者更难拿 Smash 球（1:50 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/-aA_mjpCPMg/f1180.webp" alt="" loading="lazy"><figcaption>地形与道具会大幅左右胜负（1:58 左右）</figcaption></figure><div><p>同时，地形、道具等也会让胜负产生波动。终极必杀、道具、场地，外加终极必杀槽——什么都有的规则更适合派对游戏。</p></div></div>
+</section>
+<section id="s4" data-toc="人力让分"><h2>4. 家庭对战与人力让分 <a class="ts" href="https://youtu.be/-aA_mjpCPMg?t=129" target="_blank" rel="noopener">2:09</a></h2>
+<div class="row"><div><p>樱井主要把《大乱斗》这类对战游戏定位在<b>各家各户的家庭对战环境</b>，所以和线上有不太契合的地方——这从《大乱斗X》的企划书就写了。</p><p>和朋友、家人一起玩时，有点凹凸的地方说一句就能修正。比如有「卡死连招」，只要说「别耍赖」并禁止就行；而这本身甚至会成为乐趣和回忆。</p></div><figure><img src="img/-aA_mjpCPMg/f1620.webp" alt="" loading="lazy"><figcaption>家里玩时，「卡死连招」说一声就能禁止（2:42 左右）</figcaption></figure></div>
+<div class="key">他和小孩或新手对战时，会让对方捡 Smash 球、故意挨打——这种<b>人力进行的让分才是最有效的</b>。</div>
+</section>
+<section id="s5" data-toc="自动让分"><h2>5. 别忘了「自动让分」 <a class="ts" href="https://youtu.be/-aA_mjpCPMg?t=196" target="_blank" rel="noopener">3:16</a></h2>
+<p>最后他提醒：大家可能忘了，《大乱斗》有「自动让分」规格，希望大家试试。</p>
+<div class="row"><figure><img src="img/-aA_mjpCPMg/f1990.webp" alt="" loading="lazy"><figcaption>规则设置中的伤害让分「自动」（3:19 左右）</figcaption></figure><figure><img src="img/-aA_mjpCPMg/f2080.webp" alt="" loading="lazy"><figcaption>连胜后初始伤害增加（3:28 左右）</figcaption></figure></div>
+</section>
+
+<section id="quiz" data-toc="自测题"><h2>自测题</h2><details><summary>1. 为什么樱井认为休闲游戏应该加入追赶机制？</summary><p>实力第一的人一直第一并不好玩；家庭里有输有赢，是维持休闲游戏的条件之一。 <a class="ts" href="https://youtu.be/-aA_mjpCPMg?t=50" target="_blank" rel="noopener">0:50</a></p></details><details><summary>2. 《大乱斗》的共通系统中唯一的让分要素是什么？</summary><p>领先者更难拿到 Smash 球（终极必杀槽也是落后方更易积攒）。 <a class="ts" href="https://youtu.be/-aA_mjpCPMg?t=104" target="_blank" rel="noopener">1:44</a></p></details><details><summary>3. 樱井认为最有效的让分是什么？</summary><p>人力让分：如和孩子、新手玩时让对方捡 Smash 球、故意挨打。 <a class="ts" href="https://youtu.be/-aA_mjpCPMg?t=182" target="_blank" rel="noopener">3:02</a></p></details></section><div class="pn"><a href="13-e9v_FwUGOwY.html"><small>← 上一集 #13</small>随机性为游戏添彩</a><a class="next" href="15-KW4x-_Y8BmM.html"><small>下一集 #15 →</small>平均就是平庸</a></div></main></div>
+<footer class="foot"><p>我整理了这个游戏制作学习网站，方便回顾课程要点与自测。本站为非官方的个人学习总结。</p><p>维护者 <a href="https://github.com/jinxiaoye1987">jinxiaoye1987</a>。本站与仓库有 AI 辅助整理与脚手架编写。课程观点来自原视频，由维护者整理，不能替代原视频。</p><p>本站不是樱井政博、任天堂、HAL 研究所、YouTube 频道「<a href="https://www.youtube.com/@sora_sakurai_en" target="_blank" rel="noopener">Masahiro Sakurai on Creating Games</a>」或其相关权利人的官方网站，未经上述权利人授权、审核或背书。</p><p>内容依据公开视频整理，可能有偏差或遗漏。截图、字幕、游戏画面、作品名与角色形象等权利归各自权利人。学习这些笔记并不因此获得素材许可。</p><p><a href="../about.html">关于本站</a></p></footer>
+<div id="lightbox"><img alt=""></div>
+<script src="../assets/site.js"></script>
+</body></html>

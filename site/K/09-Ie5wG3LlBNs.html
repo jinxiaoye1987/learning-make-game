@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>K-9 透明化功能 · 樱井政博「Creating Games」中文图文课</title>
+<link rel="stylesheet" href="../assets/site.css">
+<script>(function(){var t=localStorage.getItem('cg-theme');if(t)document.documentElement.dataset.theme=t;})();</script>
+</head><body>
+<div class="topbar"><div class="in"><a class="brand" href="../index.html"><b>樱井政博</b> 做游戏 · 中文图文课</a><nav><a href="../index.html" class="">首页</a><a href="../index.html#cats" class="">全部分类</a><a href="../map.html" class="">知识地图</a><a href="../quiz.html" class="">随机测验</a><a href="../search.html" class="">搜索</a><a href="../about.html" class="">关于</a></nav><span class="sp"></span>
+<form action="../search.html" method="get"><input name="q" placeholder="搜索全部课程…" aria-label="搜索"></form><button id="themeBtn" type="button">☾ 深色</button></div></div>
+<div class="disclaimer">非官方个人学习总结，未经权利人授权或背书，不能替代原视频。截图等第三方素材不因学习而获得使用许可。<a href="../about.html">关于本站</a></div>
+<div class="layout"><nav class="toc"><h2>本集目录</h2><ol><li><a href="#tldr"><span class="num">★</span>速览</a></li><li><a href="#s1"><span class="num">1</span>透明</a></li><li><a href="#s2"><span class="num">2</span>用途</a></li><li><a href="#s3"><span class="num">3</span>今日一张</a></li><li><a href="#s4"><span class="num">4</span>显示开关</a></li><li><a href="#quiz"><span class="num">?</span>自测题</a></li></ol>
+<p class="note" style="margin:12px 8px 0"><a href="index.html">← 返回 K 程序与技术</a></p></nav>
+<main><p class="crumb"><a href="../index.html">首页</a> / <a href="index.html">K 程序与技术</a> / #9</p><header class="hero"><div>
+<h1>K-9 透明化功能</h1><p class="sub">原标题：<i>Transparency Features</i></p>
+<ul class="meta"><li>时长 2:19</li><li>原语言：日语（画面内嵌英文字幕）</li><li>K 程序与技术 #9/9</li></ul>
+<p style="margin:14px 0 0">▶ 原视频：<a href="https://youtu.be/Ie5wG3LlBNs" target="_blank" rel="noopener">https://youtu.be/Ie5wG3LlBNs</a></p></div><img src="img/Ie5wG3LlBNs/cover.jpg" alt="视频缩略图"></header><div class="pn"><a href="08-AdBcCQtuATc.html"><small>← 上一集 #8</small>调试模式</a><span></span></div><section id="tldr" data-toc="速览"><h2>速览</h2><p>介绍一个他觉得放进开发模式很方便的东西。《大乱斗 特别版》可以指定斗士模型的<b>一部分使其透明</b>：指定全身或局部，半透明或消去（例如隐藏林克的剑和盾）。用来干什么？为了<b>好好确认动作</b>。例如披风角色，披风会挡住、看不清姿势；以前也会靠缩放或改模型把披风去掉，但在开发模式里能做到就用起来很方便，在开发组外的确认中也有用。他曾去某 3D 格斗游戏现场，那里也能把衣服和摆动物去掉来呈现——外观先不论，动作看起来确实清楚。这个功能实装后马上拍的就是这张「今日一张」，还能拍各种照片。另外，比起特意让角色部分透明更为一般的，是<b>按元素开关各种显示</b>的功能（UI、2P、特效、阴影、后期效果等），作为功能也不可或缺，经常使用。虽然是开发方才能用的模式，但他相当推荐部分透明功能。</p></section><section id="s1" data-toc="透明"><h2>1. 指定部位透明 <a class="ts" href="https://youtu.be/Ie5wG3LlBNs?t=3" target="_blank" rel="noopener">0:03</a></h2>
+<p>介绍一个他觉得放进开发模式会很方便的功能。《大乱斗 特别版》可以指定斗士模型的一部分使其透明：指定全身或部分，半透明或消去。</p>
+<div class="row"><figure><img src="img/Ie5wG3LlBNs/f120.webp" alt="" loading="lazy"><figcaption>开发模式中的透明化（0:12 左右）</figcaption></figure><figure><img src="img/Ie5wG3LlBNs/f250.webp" alt="" loading="lazy"><figcaption>隐藏剑与盾（0:25 左右）</figcaption></figure></div>
+</section>
+<section id="s2" data-toc="用途"><h2>2. 为了看清动作 <a class="ts" href="https://youtu.be/Ie5wG3LlBNs?t=24" target="_blank" rel="noopener">0:24</a></h2>
+<p>用来做什么？为了仔细确认动作。例如带披风的角色，披风有时会挡住，看不清姿势。</p>
+<div class="row"><figure><img src="img/Ie5wG3LlBNs/f310.webp" alt="" loading="lazy"><figcaption>不透明：披风挡住了姿势（0:31 左右）</figcaption></figure><figure><img src="img/Ie5wG3LlBNs/f440.webp" alt="" loading="lazy"><figcaption>透明披风：姿势一目了然（0:44 左右）</figcaption></figure></div>
+<p>以前也会通过缩放或模型来去掉披风，但能在开发模式中做到，用起来就很方便；在开发组以外的确认中也有帮助。</p><div class="key">他曾拜访某 3D 格斗游戏的开发现场，那里也能把衣服和摇摆物去掉来呈现——外观先不论，动作看起来确实很清楚。</div>
+</section>
+<section id="s3" data-toc="今日一张"><h2>3. 立刻拍了「今日一张」 <a class="ts" href="https://youtu.be/Ie5wG3LlBNs?t=63" target="_blank" rel="noopener">1:03</a></h2>
+<p>这个功能实装后，马上拍的就是这张「今日一张」，之后也能拍出各种照片了。</p>
+<div class="row"><figure><img src="img/Ie5wG3LlBNs/f730.webp" alt="" loading="lazy"><figcaption>透明化功能实装后的第一张（1:13 左右）</figcaption></figure><figure><img src="img/Ie5wG3LlBNs/f850.webp" alt="" loading="lazy"><figcaption>也能拍出这样的照片（1:25 左右）</figcaption></figure></div>
+</section>
+<section id="s4" data-toc="显示开关"><h2>4. 按元素开关显示 <a class="ts" href="https://youtu.be/Ie5wG3LlBNs?t=88" target="_blank" rel="noopener">1:28</a></h2>
+<p>与特意让角色部分透明相比更一般的，是按元素开关各种显示的功能。作为功能不可或缺，他们也经常使用。</p>
+<div class="figs"><figure><img src="img/Ie5wG3LlBNs/f970.webp" alt="" loading="lazy"><figcaption>关闭 UI（1:37 左右）</figcaption></figure><figure><img src="img/Ie5wG3LlBNs/f1160.webp" alt="" loading="lazy"><figcaption>关闭阴影（1:56 左右）</figcaption></figure><figure><img src="img/Ie5wG3LlBNs/f1210.webp" alt="" loading="lazy"><figcaption>关闭后期效果（2:01 左右）</figcaption></figure></div>
+<div class="key">虽然只是开发方才能用的模式，但部分透明功能相当推荐。</div>
+</section>
+
+<section id="quiz" data-toc="自测题"><h2>自测题</h2><details><summary>1. 部分透明功能主要用来做什么？</summary><p>仔细确认动作，例如披风挡住姿势时让披风透明。 <a class="ts" href="https://youtu.be/Ie5wG3LlBNs?t=30" target="_blank" rel="noopener">0:30</a></p></details><details><summary>2. 除了部分透明，还有什么更一般的显示功能？</summary><p>按元素开关显示：UI、2P、特效、阴影、后期效果等。 <a class="ts" href="https://youtu.be/Ie5wG3LlBNs?t=90" target="_blank" rel="noopener">1:30</a></p></details><details><summary>3. 以前没有透明化功能时，怎么去掉挡视线的披风？</summary><p>只能靠把它缩放到很小或修改模型来去掉。 <a class="ts" href="https://youtu.be/Ie5wG3LlBNs?t=40" target="_blank" rel="noopener">0:40</a></p></details></section><div class="pn"><a href="08-AdBcCQtuATc.html"><small>← 上一集 #8</small>调试模式</a><span></span></div></main></div>
+<footer class="foot"><p>我整理了这个游戏制作学习网站，方便回顾课程要点与自测。本站为非官方的个人学习总结。</p><p>维护者 <a href="https://github.com/jinxiaoye1987">jinxiaoye1987</a>。本站与仓库有 AI 辅助整理与脚手架编写。课程观点来自原视频，由维护者整理，不能替代原视频。</p><p>本站不是樱井政博、任天堂、HAL 研究所、YouTube 频道「<a href="https://www.youtube.com/@sora_sakurai_en" target="_blank" rel="noopener">Masahiro Sakurai on Creating Games</a>」或其相关权利人的官方网站，未经上述权利人授权、审核或背书。</p><p>内容依据公开视频整理，可能有偏差或遗漏。截图、字幕、游戏画面、作品名与角色形象等权利归各自权利人。学习这些笔记并不因此获得素材许可。</p><p><a href="../about.html">关于本站</a></p></footer>
+<div id="lightbox"><img alt=""></div>
+<script src="../assets/site.js"></script>
+</body></html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>C-26 电脑控制的玩家（CP） · 樱井政博「Creating Games」中文图文课</title>
+<link rel="stylesheet" href="../assets/site.css">
+<script>(function(){var t=localStorage.getItem('cg-theme');if(t)document.documentElement.dataset.theme=t;})();</script>
+</head><body>
+<div class="topbar"><div class="in"><a class="brand" href="../index.html"><b>樱井政博</b> 做游戏 · 中文图文课</a><nav><a href="../index.html" class="">首页</a><a href="../index.html#cats" class="">全部分类</a><a href="../map.html" class="">知识地图</a><a href="../quiz.html" class="">随机测验</a><a href="../search.html" class="">搜索</a><a href="../about.html" class="">关于</a></nav><span class="sp"></span>
+<form action="../search.html" method="get"><input name="q" placeholder="搜索全部课程…" aria-label="搜索"></form><button id="themeBtn" type="button">☾ 深色</button></div></div>
+<div class="disclaimer">非官方个人学习总结，未经权利人授权或背书，不能替代原视频。截图等第三方素材不因学习而获得使用许可。<a href="../about.html">关于本站</a></div>
+<div class="layout"><nav class="toc"><h2>本集目录</h2><ol><li><a href="#tldr"><span class="num">★</span>速览</a></li><li><a href="#s1"><span class="num">1</span>人机差异</a></li><li><a href="#s2"><span class="num">2</span>难做</a></li><li><a href="#s3"><span class="num">3</span>决策方式</a></li><li><a href="#s4"><span class="num">4</span>特别版 CP</a></li><li><a href="#quiz"><span class="num">?</span>自测题</a></li></ol>
+<p class="note" style="margin:12px 8px 0"><a href="index.html">← 返回 C 企划与游戏设计</a></p></nav>
+<main><p class="crumb"><a href="../index.html">首页</a> / <a href="index.html">C 企划与游戏设计</a> / #26</p><header class="hero"><div>
+<h1>C-26 电脑控制的玩家（CP）</h1><p class="sub">原标题：<i>Computer-Controlled Players</i></p>
+<ul class="meta"><li>时长 5:06</li><li>原语言：日语（画面内嵌英文字幕）</li><li>C 企划与游戏设计 #26/30</li></ul>
+<p style="margin:14px 0 0">▶ 原视频：<a href="https://youtu.be/uleauI0IwZM" target="_blank" rel="noopener">https://youtu.be/uleauI0IwZM</a></p></div><img src="img/uleauI0IwZM/cover.jpg" alt="视频缩略图"></header><div class="pn"><a href="25-obnjR8KJ9nk.html"><small>← 上一集 #25</small>色彩更少的世界</a><a class="next" href="27-VZRh0P40RAM.html"><small>下一集 #27 →</small>游戏内过场动画</a></div><section id="tldr" data-toc="速览"><h2>速览</h2><p>先看几段老游戏的展示模式（attract mode）——电脑大概是比较随便地操作的。由电脑操作的玩家，简称 <b>CP</b>（或 CPU）。人与电脑毕竟不同、差太多：自由度越高的游戏 CP 越难做，但<b>做出人类无法反应的动作，会有强烈的不讲理感</b>（例如《拳皇 '98》开招就防、硬直中反击）。桌游、卡牌掷骰时，也常被认为电脑在出好点——两边都是电脑做的嘛；即使是人能做到的范围，被认为作弊也是 CP 的宿命。差异因游戏内容和类型很大；像《大乱斗》这类 CP 制作非常难，但有对战要素的游戏想一个人玩就必须做，很辛苦——在樱井项目里这是交给别人比例较高的领域（当然会监修）。动作游戏的 CP 怎么做：电脑没有眼睛，从各种数据获得信息——多远的位置、什么状态的对手、做什么；把含必杀技在内的招式攻击范围和移动范围全部数据化（或从原数据提取），以射程和攻击时机储存；也需参照对手角色的攻击数据。用这些数据决定行动，并可依整体流程中途改变逻辑或倾向：体力低就发怒、设定擅长间距、依速度与跳跃高度对应，也许还有赢太多就放水的游戏。因此逻辑矛盾可能让它不动——某判断与另一判断冲突（例如攻击与回避），越复杂、条件越多越容易发生。《大乱斗 特别版》准备了类似<b>反射神经</b>的东西，让它不会瞬间反应；操作左右颠倒时也会稍微混乱——和人一样，几乎不会毫无对应，但也不会一直反着掉下去。特别版的 CP 比以往<b>提高了攻击性</b>，也就是对防御、回避或待机打法较弱：设定强 CP 的人想和强 CP 战斗，这时适度等待或机械般反应缺乏乐趣，所以以攻击为主，让玩家好好应对就能赢。极端地说，让它持续精准完美防御与回避，或许能做出无敌的 CP，但那怎么都不会好玩——<b>别忘了一切目的都是让人开心</b>。</p></section><section id="s1" data-toc="人机差异"><h2>1. CP 与人差太多 <a class="ts" href="https://youtu.be/uleauI0IwZM?t=3" target="_blank" rel="noopener">0:03</a></h2>
+<div class="row"><div><p>先看几段老游戏的展示模式（attract mode）演示——大概是电脑比较随便地在操作吧。由电脑操作的玩家，简称 <b>CP</b>（或 CPU）。</p></div><figure><img src="img/uleauI0IwZM/f280.webp" alt="" loading="lazy"><figcaption>老游戏的展示模式（attract mode）（0:28 左右）</figcaption></figure></div>
+<p>人和电脑毕竟不同，差得太多。自由度越高的游戏，CP 的对应越难；但如果做出<b>人类无法反应的动作</b>，就会有极强的不讲理感。</p>
+<div class="row"><figure><img src="img/uleauI0IwZM/f560.webp" alt="" loading="lazy"><figcaption>开招瞬间就防御（《拳皇 '98》）（0:56 左右）</figcaption></figure><figure><img src="img/uleauI0IwZM/f700.webp" alt="" loading="lazy"><figcaption>在硬直中反击——超出人的反应会很不讲理（1:10 左右）</figcaption></figure></div>
+<div class="row"><div><p>桌游、卡牌游戏掷骰子时，也常被认为电脑在出好点数——毕竟两边都是电脑做的，这也难怪。即使是人能做到的范围，也被觉得狡猾，这是 CP 的宿命。</p></div><figure><img src="img/uleauI0IwZM/f1000.webp" alt="" loading="lazy"><figcaption>掷骰也会被怀疑：CPU 玩家和骰子都由电脑控制（1:40 左右）</figcaption></figure></div>
+</section>
+<section id="s2" data-toc="难做"><h2>2. CP 很难做 <a class="ts" href="https://youtu.be/uleauI0IwZM?t=98" target="_blank" rel="noopener">1:38</a></h2>
+<div class="row"><div><p>因游戏内容、类型差别很大，像《大乱斗》这类 CP 制作非常难。但有对战要素的游戏，想一个人玩就必须做，很辛苦。在樱井的项目里，这是交给他人比例较高的领域（当然他会监修）。</p></div><figure><img src="img/uleauI0IwZM/f1130.webp" alt="" loading="lazy"><figcaption>《大乱斗》这类游戏的 CP 极难做（1:53 左右）</figcaption></figure></div>
+</section>
+<section id="s3" data-toc="决策方式"><h2>3. CP 如何做决定 <a class="ts" href="https://youtu.be/uleauI0IwZM?t=136" target="_blank" rel="noopener">2:16</a></h2>
+<div class="row"><div><p>动作游戏的 CP 怎么做？电脑没有眼睛，所以从各种数据获取信息：多远的位置有什么状态的对手，于是做什么。</p></div><figure><img src="img/uleauI0IwZM/f1470.webp" alt="" loading="lazy"><figcaption>根据与对手的距离和对手状态等信息处理（2:27 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/uleauI0IwZM/f1610.webp" alt="" loading="lazy"><figcaption>攻击/移动范围数据以射程与时机储存（2:41 左右）</figcaption></figure><div><p>把含必杀技在内的招式攻击范围和移动范围全部数据化（或从原始数据提取），以射程、攻击时机的形式储存；同样也需要参照对手角色的攻击数据。</p></div></div>
+<div class="mermaid">
+flowchart LR
+  D["对手距离/状态<br/>招式范围数据<br/>对手攻击数据"] --> L["逻辑与倾向<br/>（可中途切换）"]
+  L --> A["行动：攻击/回避/移动…"]
+  L -. 判断冲突 .-> X["可能卡住不动"]
+</div>
+<div class="row"><div><p>依据这些数据决定行动；也可以根据游戏整体流程中途改变逻辑或倾向：例如体力低了就发怒，设定擅长的间距，按速度与跳跃高度来对应，也许还有赢太多时会放水的游戏。</p><p>因此，各逻辑间若有矛盾，有时会动不了——某判断与另一判断冲突（例如「攻击」与「回避」），越复杂、条件越多越容易出现。</p></div><figure><img src="img/uleauI0IwZM/f2030.webp" alt="" loading="lazy"><figcaption>攻击还是回避？两种判断冲突（3:23 左右）</figcaption></figure></div>
+</section>
+<section id="s4" data-toc="特别版 CP"><h2>4. 《大乱斗 特别版》的 CP <a class="ts" href="https://youtu.be/uleauI0IwZM?t=211" target="_blank" rel="noopener">3:31</a></h2>
+<div class="row"><div><ul class="points"><li>准备了类似<b>反射神经</b>的东西，让它不会瞬间反应；</li><li>受到操作左右颠倒（如蘑菇效果）时，也会稍微混乱——像人一样，几乎不会完全不对应，但也不会一直反着掉下去。</li></ul></div><figure><img src="img/uleauI0IwZM/f2240.webp" alt="" loading="lazy"><figcaption>受左右颠倒影响的 CPU 也会混乱（3:44 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/uleauI0IwZM/f2660.webp" alt="" loading="lazy"><figcaption>攻击型 CPU：会主动进攻也会露出破绽（4:26 左右）</figcaption></figure><div><p>特别版的 CP 比以往<b>提高了攻击性</b>，反过来说对防御、回避或待机型打法较弱。设定强 CP 的人想和强 CP 打；这时若它恰到好处地等待、或做出机械般的反应，就不太有趣，所以改为以攻击为主，让玩家好好应对就能取胜。</p></div></div>
+<div class="key">极端地说，让它一直精准地完美防御和回避，也许能做出无敌的 CP，但那怎么也不会好玩。<b>别忘了：一切的目的都是让人开心</b>。</div>
+</section>
+
+<section id="quiz" data-toc="自测题"><h2>自测题</h2><details><summary>1. 为什么 CP 做出人类无法反应的动作会出问题？</summary><p>会让玩家感到极强的不讲理感（如开招就防、硬直中反击）。 <a class="ts" href="https://youtu.be/uleauI0IwZM?t=39" target="_blank" rel="noopener">0:39</a></p></details><details><summary>2. 动作游戏的 CP 依据什么做决定？</summary><p>与对手的距离和对手状态、数据化的招式攻击/移动范围（射程、时机）、对手的攻击数据等。 <a class="ts" href="https://youtu.be/uleauI0IwZM?t=136" target="_blank" rel="noopener">2:16</a></p></details><details><summary>3. 《大乱斗 特别版》的 CP 做了哪些调整？为什么？</summary><p>加入反射神经避免瞬间反应；提高攻击性、对防守待机较弱——因为想打强 CP 的人要的是有趣的对战，而不是机械反应。 <a class="ts" href="https://youtu.be/uleauI0IwZM?t=211" target="_blank" rel="noopener">3:31</a></p></details></section><div class="pn"><a href="25-obnjR8KJ9nk.html"><small>← 上一集 #25</small>色彩更少的世界</a><a class="next" href="27-VZRh0P40RAM.html"><small>下一集 #27 →</small>游戏内过场动画</a></div></main></div>
+<footer class="foot"><p>我整理了这个游戏制作学习网站，方便回顾课程要点与自测。本站为非官方的个人学习总结。</p><p>维护者 <a href="https://github.com/jinxiaoye1987">jinxiaoye1987</a>。本站与仓库有 AI 辅助整理与脚手架编写。课程观点来自原视频，由维护者整理，不能替代原视频。</p><p>本站不是樱井政博、任天堂、HAL 研究所、YouTube 频道「<a href="https://www.youtube.com/@sora_sakurai_en" target="_blank" rel="noopener">Masahiro Sakurai on Creating Games</a>」或其相关权利人的官方网站，未经上述权利人授权、审核或背书。</p><p>内容依据公开视频整理，可能有偏差或遗漏。截图、字幕、游戏画面、作品名与角色形象等权利归各自权利人。学习这些笔记并不因此获得素材许可。</p><p><a href="../about.html">关于本站</a></p></footer>
+<div id="lightbox"><img alt=""></div>
+<script src="../assets/vendor/mermaid.min.js"></script><script src="../assets/site.js"></script>
+</body></html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>G-9 挤压与缩放 · 樱井政博「Creating Games」中文图文课</title>
+<link rel="stylesheet" href="../assets/site.css">
+<script>(function(){var t=localStorage.getItem('cg-theme');if(t)document.documentElement.dataset.theme=t;})();</script>
+</head><body>
+<div class="topbar"><div class="in"><a class="brand" href="../index.html"><b>樱井政博</b> 做游戏 · 中文图文课</a><nav><a href="../index.html" class="">首页</a><a href="../index.html#cats" class="">全部分类</a><a href="../map.html" class="">知识地图</a><a href="../quiz.html" class="">随机测验</a><a href="../search.html" class="">搜索</a><a href="../about.html" class="">关于</a></nav><span class="sp"></span>
+<form action="../search.html" method="get"><input name="q" placeholder="搜索全部课程…" aria-label="搜索"></form><button id="themeBtn" type="button">☾ 深色</button></div></div>
+<div class="disclaimer">非官方个人学习总结，未经权利人授权或背书，不能替代原视频。截图等第三方素材不因学习而获得使用许可。<a href="../about.html">关于本站</a></div>
+<div class="layout"><nav class="toc"><h2>本集目录</h2><ol><li><a href="#tldr"><span class="num">★</span>速览</a></li><li><a href="#s1"><span class="num">1</span>缩放</a></li><li><a href="#s2"><span class="num">2</span>弹球</a></li><li><a href="#s3"><span class="num">3</span>挤压</a></li><li><a href="#s4"><span class="num">4</span>卡比</a></li><li><a href="#s5"><span class="num">5</span>调味</a></li><li><a href="#quiz"><span class="num">?</span>自测题</a></li></ol>
+<p class="note" style="margin:12px 8px 0"><a href="index.html">← 返回 G 动画</a></p></nav>
+<main><p class="crumb"><a href="../index.html">首页</a> / <a href="index.html">G 动画</a> / #9</p><header class="hero"><div>
+<h1>G-9 挤压与缩放</h1><p class="sub">原标题：<i>Squashing and Scaling</i></p>
+<ul class="meta"><li>时长 2:50</li><li>原语言：日语（画面内嵌英文字幕）</li><li>G 动画 #9/18</li></ul>
+<p style="margin:14px 0 0">▶ 原视频：<a href="https://youtu.be/Sm0LAm4sJKc" target="_blank" rel="noopener">https://youtu.be/Sm0LAm4sJKc</a></p></div><img src="img/Sm0LAm4sJKc/cover.jpg" alt="视频缩略图"></header><div class="pn"><a href="08-LsSF_H-W-w8.html"><small>← 上一集 #8</small>摆姿势的建议</a><a class="next" href="10-0xHE3ypX96U.html"><small>下一集 #10 →</small>受伤动作</a></div><section id="tldr" data-toc="速览"><h2>速览</h2><p>把模型放大缩小叫<b>缩放（Scaling）</b>，在动作中是非常基本的东西。计算机图形中的多边形及其运动，原则上由<b>缩放、旋转、平移</b>三要素构成。移动和旋转天天都在用，缩放却不然——但它不能被轻视，有的东西会因此好很多。比如做一个球弹跳的动作，用 GIF 动画随便做成这样：这也不算不行，但并用缩放就成了这样的表现——<b>质感完全不同</b>，甚至感觉有手感了。这种压扁的缩放叫<b>挤压与拉伸（Squash &amp; Stretch）</b>，能有效增加质感和势头。表现这类运动时，请大致以<b>保持质量</b>为前提：<b>竖着压扁，横向就伸长</b>。卡比的下蹲和着地从 Game Boy 时代就会变形，用模型表现后也是如此；但<b>单纯压扁会缺乏量感</b>，只成了一个椭圆。所以当时的规格中写着：不是单纯缩放，而是要像点阵图那样的、偏椭圆的量感——单纯竖压的话圆形很乏味。也讨论过用<b>混合形状</b>（在两个模型间插值）让边缘带点量感，结果如何不记得了，但至少看起来不只是单纯缩放。相当细节的地方也包含这样的缩放动作。马力欧出拳时拳头变大，更像是夸张表现，和这个稍有不同。动作调味发愁时，试着引入缩放吧。</p></section><section id="s1" data-toc="缩放"><h2>1. 什么是缩放 <a class="ts" href="https://youtu.be/Sm0LAm4sJKc?t=3" target="_blank" rel="noopener">0:03</a></h2>
+<div class="row"><div><p>把模型放大缩小叫缩放，在动作中是非常基本的东西。</p></div><figure><img src="img/Sm0LAm4sJKc/f80.webp" alt="" loading="lazy"><figcaption>缩放：放大或缩小模型（0:08 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/Sm0LAm4sJKc/f280.webp" alt="" loading="lazy"><figcaption>缩放、旋转、平移（0:28 左右）</figcaption></figure><div><p>计算机图形中的多边形及其运动，原则上由缩放、旋转、平移三要素构成。</p></div></div>
+<div class="row"><div><div class="key">移动和旋转天天都在用，缩放却不然。但它不能被轻视——有的东西会因此好很多。</div></div><figure><img src="img/Sm0LAm4sJKc/f420.webp" alt="" loading="lazy"><figcaption>缩放能让东西好很多（0:42 左右）</figcaption></figure></div>
+</section>
+<section id="s2" data-toc="弹球"><h2>2. 弹球示例 <a class="ts" href="https://youtu.be/Sm0LAm4sJKc?t=46" target="_blank" rel="noopener">0:46</a></h2>
+<div class="row"><div><p>做一个球弹跳的动作，用 GIF 动画随便做成这样：这也不算不行。</p></div><figure><img src="img/Sm0LAm4sJKc/f490.webp" alt="" loading="lazy"><figcaption>只有平移的弹球（0:49 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/Sm0LAm4sJKc/f630.webp" alt="" loading="lazy"><figcaption>加入缩放后，球的感觉完全不同（1:03 左右）</figcaption></figure><div><p>但并用缩放，就成了这样的表现。质感完全不同，甚至感觉得到手感。</p></div></div>
+</section>
+<section id="s3" data-toc="挤压"><h2>3. 挤压与拉伸 <a class="ts" href="https://youtu.be/Sm0LAm4sJKc?t=67" target="_blank" rel="noopener">1:07</a></h2>
+<div class="row"><div><p>这种压扁的缩放叫挤压与拉伸，能有效增加质感和势头。</p></div><figure><img src="img/Sm0LAm4sJKc/f770.webp" alt="" loading="lazy"><figcaption>挤压与拉伸（1:17 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/Sm0LAm4sJKc/f840.webp" alt="" loading="lazy"><figcaption>关键：保持物体质量大致不变（1:24 左右）</figcaption></figure><div><div class="key">前提是大致保持质量：竖着压扁，横向就伸长。</div></div></div>
+</section>
+<section id="s4" data-toc="卡比"><h2>4. 卡比的量感 <a class="ts" href="https://youtu.be/Sm0LAm4sJKc?t=90" target="_blank" rel="noopener">1:30</a></h2>
+<div class="row"><div><p>卡比的下蹲和着地从 Game Boy 时代就会变形，用模型表现后也是如此。</p></div><figure><img src="img/Sm0LAm4sJKc/f910.webp" alt="" loading="lazy"><figcaption>GB 时代的卡比（1:31 左右）</figcaption></figure></div>
+<p>但单纯压扁会缺乏量感，只成了一个椭圆。所以当时的规格中写着：不是单纯缩放，而是要像点阵图那样、带量感的形状。</p>
+<div class="row"><figure><img src="img/Sm0LAm4sJKc/f1050.webp" alt="" loading="lazy"><figcaption>只压扁的话……只是个椭圆（1:45 左右）</figcaption></figure><figure><img src="img/Sm0LAm4sJKc/f1120.webp" alt="" loading="lazy"><figcaption>要求按右侧点阵图的量感来做（1:52 左右）</figcaption></figure></div>
+<p>也讨论过用混合形状（在两个顶点数相同的模型间插值）让边缘带点量感，结果如何不记得了；但至少看起来不只是单纯缩放。</p>
+<div class="row"><figure><img src="img/Sm0LAm4sJKc/f1330.webp" alt="" loading="lazy"><figcaption>混合形状（2:13 左右）</figcaption></figure><figure><img src="img/Sm0LAm4sJKc/f1400.webp" alt="" loading="lazy"><figcaption>不只是竖着缩放（2:20 左右）</figcaption></figure></div>
+</section>
+<section id="s5" data-toc="调味"><h2>5. 夸张与调味 <a class="ts" href="https://youtu.be/Sm0LAm4sJKc?t=145" target="_blank" rel="noopener">2:25</a></h2>
+<div class="row"><div><p>相当细节的地方也包含这样的缩放动作。马力欧出拳时拳头变大，更像是夸张表现，和这里说的稍有不同。</p></div><figure><img src="img/Sm0LAm4sJKc/f1470.webp" alt="" loading="lazy"><figcaption>马力欧出拳时拳头变大（2:27 左右）</figcaption></figure></div>
+<div class="key">动作调味发愁时，试着引入缩放吧。</div>
+</section>
+
+<section id="quiz" data-toc="自测题"><h2>自测题</h2><details><summary>1. CG 运动的三要素是什么？</summary><p>缩放、旋转、平移。 <a class="ts" href="https://youtu.be/Sm0LAm4sJKc?t=25" target="_blank" rel="noopener">0:25</a></p></details><details><summary>2. 挤压与拉伸的前提是什么？</summary><p>保持质量：竖压则横伸。 <a class="ts" href="https://youtu.be/Sm0LAm4sJKc?t=82" target="_blank" rel="noopener">1:22</a></p></details><details><summary>3. 为什么卡比不能单纯压扁？</summary><p>会缺乏量感，只是个椭圆；要按点阵图那样的量感来做。 <a class="ts" href="https://youtu.be/Sm0LAm4sJKc?t=105" target="_blank" rel="noopener">1:45</a></p></details></section><div class="pn"><a href="08-LsSF_H-W-w8.html"><small>← 上一集 #8</small>摆姿势的建议</a><a class="next" href="10-0xHE3ypX96U.html"><small>下一集 #10 →</small>受伤动作</a></div></main></div>
+<footer class="foot"><p>我整理了这个游戏制作学习网站，方便回顾课程要点与自测。本站为非官方的个人学习总结。</p><p>维护者 <a href="https://github.com/jinxiaoye1987">jinxiaoye1987</a>。本站与仓库有 AI 辅助整理与脚手架编写。课程观点来自原视频，由维护者整理，不能替代原视频。</p><p>本站不是樱井政博、任天堂、HAL 研究所、YouTube 频道「<a href="https://www.youtube.com/@sora_sakurai_en" target="_blank" rel="noopener">Masahiro Sakurai on Creating Games</a>」或其相关权利人的官方网站，未经上述权利人授权、审核或背书。</p><p>内容依据公开视频整理，可能有偏差或遗漏。截图、字幕、游戏画面、作品名与角色形象等权利归各自权利人。学习这些笔记并不因此获得素材许可。</p><p><a href="../about.html">关于本站</a></p></footer>
+<div id="lightbox"><img alt=""></div>
+<script src="../assets/site.js"></script>
+</body></html>

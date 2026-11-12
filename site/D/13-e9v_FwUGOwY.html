@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>D-13 随机性为游戏添彩 · 樱井政博「Creating Games」中文图文课</title>
+<link rel="stylesheet" href="../assets/site.css">
+<script>(function(){var t=localStorage.getItem('cg-theme');if(t)document.documentElement.dataset.theme=t;})();</script>
+</head><body>
+<div class="topbar"><div class="in"><a class="brand" href="../index.html"><b>樱井政博</b> 做游戏 · 中文图文课</a><nav><a href="../index.html" class="">首页</a><a href="../index.html#cats" class="">全部分类</a><a href="../map.html" class="">知识地图</a><a href="../quiz.html" class="">随机测验</a><a href="../search.html" class="">搜索</a><a href="../about.html" class="">关于</a></nav><span class="sp"></span>
+<form action="../search.html" method="get"><input name="q" placeholder="搜索全部课程…" aria-label="搜索"></form><button id="themeBtn" type="button">☾ 深色</button></div></div>
+<div class="disclaimer">非官方个人学习总结，未经权利人授权或背书，不能替代原视频。截图等第三方素材不因学习而获得使用许可。<a href="../about.html">关于本站</a></div>
+<div class="layout"><nav class="toc"><h2>本集目录</h2><ol><li><a href="#tldr"><span class="num">★</span>速览</a></li><li><a href="#s1"><span class="num">1</span>优点</a></li><li><a href="#s2"><span class="num">2</span>缺点</a></li><li><a href="#s3"><span class="num">3</span>运气参数</a></li><li><a href="#s4"><span class="num">4</span>大乱斗</a></li><li><a href="#s5"><span class="num">5</span>伪随机</a></li><li><a href="#quiz"><span class="num">?</span>自测题</a></li></ol>
+<p class="note" style="margin:12px 8px 0"><a href="index.html">← 返回 D 设计细节</a></p></nav>
+<main><p class="crumb"><a href="../index.html">首页</a> / <a href="index.html">D 设计细节</a> / #13</p><header class="hero"><div>
+<h1>D-13 随机性为游戏添彩</h1><p class="sub">原标题：<i>Randomness Spices Games Up</i></p>
+<ul class="meta"><li>时长 3:54</li><li>原语言：日语（画面内嵌英文字幕）</li><li>D 设计细节 #13/18</li></ul>
+<p style="margin:14px 0 0">▶ 原视频：<a href="https://youtu.be/e9v_FwUGOwY" target="_blank" rel="noopener">https://youtu.be/e9v_FwUGOwY</a></p></div><img src="img/e9v_FwUGOwY/cover.jpg" alt="视频缩略图"></header><div class="pn"><a href="12-Icl-jMlz1iY.html"><small>← 上一集 #12</small>教玩家怎么玩</a><a class="next" href="14--aA_mjpCPMg.html"><small>下一集 #14 →</small>让分系统</a></div><section id="tldr" data-toc="速览"><h2>速览</h2><p>随机——也就是乱数决定要素的机制，用得好能为游戏添彩。<b>优点</b>：游戏是让人重复玩同样内容的机制，随机能让人不易腻；用同样方式做的同一游戏，有时很难演出游玩的振幅，用随机让每次展开不同，就能保持新鲜、提高乐趣；对结果确定的内容改变概率，也能让应对方法更丰富。随机要素乍看会让人觉得失去策略性，但实际往往相反，它给予了「应对各种状况」的策略。当然随机也常让人觉得不讲理。<b>缺点</b>：首先不公平——不是同条件下的较量，结果好坏由运气左右，付出的努力也可能白费；玩家被打败的原因若是运气不好，很难接受，游戏需要一定程度「我是被打败的」的认同感。有的 RPG 把运气作为角色参数，历史相当久，至少 1981 年的《Wizardry》就有；这样稍微好接受，但不是优先参数，常被遗忘，也许大家不想把宝贵资源投在运气这种暧昧东西上。随机也不太适合想认真比拼的竞技——想让胜负只取决于双方实力时，随机要素会被敬而远之。《大乱斗》近年倾向从斗士身上排除随机：以前随机出现的桃花公主 Smash 攻击种类，现在可以用上下来打出区分。但勇者每次出现的指令是随机的，这被认为可以，因为能否用好就是实力。道具则浓厚地保留多样随机，搅乱局面，让各种人都有逆转可能；高手当然更会用道具，但比起纯实力比拼更好——毕竟本就是「哇哈哈」笑完就下一局的游戏。<b>注意</b>：电脑只能做决定好的事，严格来说无法生成随机；在重置后立刻执行等特定操作下可能必然出现特定值。为防止这种问题，生成时最好参考内置时钟等表示不确定值的东西。</p></section><section id="s1" data-toc="优点"><h2>1. 随机的优点 <a class="ts" href="https://youtu.be/e9v_FwUGOwY?t=3" target="_blank" rel="noopener">0:03</a></h2>
+<div class="row"><div><p>随机，也就是用乱数决定要素的机制，用得好能为游戏添彩。</p></div><figure><img src="img/e9v_FwUGOwY/f220.webp" alt="" loading="lazy"><figcaption>Upside to Randomness（0:22 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/e9v_FwUGOwY/f400.webp" alt="" loading="lazy"><figcaption>改变概率能为玩家策略增添变化（Mario Kart）（0:40 左右）</figcaption></figure><div><p>游戏是让人重复玩同样内容的机制，而随机能让人<b>不容易腻</b>。用同样方式做出来的同一款游戏，有时很难演出游玩的振幅；用随机让每次展开都不同，就能保持新鲜感、提升乐趣。</p><p>对结果确定的东西改变概率，也能让应对方法更加丰富。</p></div></div>
+<div class="key">随机要素乍看会让人觉得失去了策略性，但实际上往往相反：它给予了<b>「应对各种状况」的策略</b>。</div>
+</section>
+<section id="s2" data-toc="缺点"><h2>2. 随机的缺点 <a class="ts" href="https://youtu.be/e9v_FwUGOwY?t=60" target="_blank" rel="noopener">1:00</a></h2>
+<div class="row"><div><p>当然，随机也常让人觉得不讲理。首先它<b>不公平</b>：不是同条件下的较量，结果好坏被运气左右，花的工夫也可能白费。</p></div><figure><img src="img/e9v_FwUGOwY/f720.webp" alt="" loading="lazy"><figcaption>并非对等较量，运气决定结果（1:12 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/e9v_FwUGOwY/f820.webp" alt="" loading="lazy"><figcaption>只因运气差而输，玩家难以接受（1:22 左右）</figcaption></figure><div><p>玩家被打败若只是因为运气不好，就很难接受。游戏需要一定程度「是我被打败了」的认同感。</p></div></div>
+</section>
+<section id="s3" data-toc="运气参数"><h2>3. 把运气做成参数 <a class="ts" href="https://youtu.be/e9v_FwUGOwY?t=88" target="_blank" rel="noopener">1:28</a></h2>
+<div class="row"><div><p>有些 RPG 把运气作为角色强度的参数。这历史相当久，至少 1981 年的《Wizardry》就已实装。</p></div><figure><img src="img/e9v_FwUGOwY/f920.webp" alt="" loading="lazy"><figcaption>把「运气」做成可提升的属性（1:32 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/e9v_FwUGOwY/f1120.webp" alt="" loading="lazy"><figcaption>但玩家常常忘了它（1:52 左右）</figcaption></figure><div><p>这样稍微容易接受，但它不是优先的参数，游戏中常被忘掉——也许大家不想把宝贵资源投到运气这种暧昧的东西上。</p></div></div>
+</section>
+<section id="s4" data-toc="大乱斗"><h2>4. 竞技与《大乱斗》 <a class="ts" href="https://youtu.be/e9v_FwUGOwY?t=116" target="_blank" rel="noopener">1:56</a></h2>
+<div class="row"><div><p>随机性也不太适合想要认真比拼的竞技。想让胜负只取决于双方的实力时，随机要素往往会被敬而远之。</p><p>《大乱斗》近年倾向于从斗士身上排除随机要素：以前随机出现的桃花公主 Smash 攻击的种类，现在可以用上下来打出区分。</p></div><figure><img src="img/e9v_FwUGOwY/f1420.webp" alt="" loading="lazy"><figcaption>桃花公主的 Smash 攻击以前是随机的（2:22 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/e9v_FwUGOwY/f1520.webp" alt="" loading="lazy"><figcaption>勇者的指令列表每次随机（2:32 左右）</figcaption></figure><div><p>但勇者每次打开出现的指令是随机的，这被认为可以——出现的项目有随机性，但能否用好它，正是实力。</p></div></div>
+<div class="row"><div><p>道具则浓厚地保留了多样的随机性：搅乱局面，给各种人留下逆转的可能。高手当然会比新手更会用道具，但这仍比只拼实力好——何况它本就是「哇哈哈」一笑然后下一局的游戏。</p></div><figure><img src="img/e9v_FwUGOwY/f1720.webp" alt="" loading="lazy"><figcaption>道具搅乱局面，谁都有逆转机会（2:52 左右）</figcaption></figure></div>
+</section>
+<section id="s5" data-toc="伪随机"><h2>5. 注意：电脑无法真随机 <a class="ts" href="https://youtu.be/e9v_FwUGOwY?t=198" target="_blank" rel="noopener">3:18</a></h2>
+<div class="row"><div><p>电脑只能做决定好的事，所以严格来说<b>无法生成随机</b>。在重置后立刻运行等特定操作下，可能必然出现特定的值。</p></div><figure><img src="img/e9v_FwUGOwY/f2000.webp" alt="" loading="lazy"><figcaption>A Word of Caution（3:20 左右）</figcaption></figure></div>
+<div class="key">为防止这种问题，生成随机数时最好参考内置时钟等表示不确定值的东西。</div>
+</section>
+
+<section id="quiz" data-toc="自测题"><h2>自测题</h2><details><summary>1. 为什么说随机反而能带来策略性？</summary><p>它给玩家「应对各种状况」的策略，而不是一套固定解法。 <a class="ts" href="https://youtu.be/e9v_FwUGOwY?t=44" target="_blank" rel="noopener">0:44</a></p></details><details><summary>2. 随机的主要缺点是什么？</summary><p>不公平：运气左右结果，因运气差而输很难让玩家接受。 <a class="ts" href="https://youtu.be/e9v_FwUGOwY?t=60" target="_blank" rel="noopener">1:00</a></p></details><details><summary>3. 《大乱斗》中勇者的随机指令为何被保留？</summary><p>项目随机出现，但能否用好它就是实力。 <a class="ts" href="https://youtu.be/e9v_FwUGOwY?t=150" target="_blank" rel="noopener">2:30</a></p></details><details><summary>4. 电脑生成随机时要注意什么？</summary><p>严格来说不能真随机，特定操作可能必出特定值；应参考内置时钟等不确定值。 <a class="ts" href="https://youtu.be/e9v_FwUGOwY?t=198" target="_blank" rel="noopener">3:18</a></p></details></section><div class="pn"><a href="12-Icl-jMlz1iY.html"><small>← 上一集 #12</small>教玩家怎么玩</a><a class="next" href="14--aA_mjpCPMg.html"><small>下一集 #14 →</small>让分系统</a></div></main></div>
+<footer class="foot"><p>我整理了这个游戏制作学习网站，方便回顾课程要点与自测。本站为非官方的个人学习总结。</p><p>维护者 <a href="https://github.com/jinxiaoye1987">jinxiaoye1987</a>。本站与仓库有 AI 辅助整理与脚手架编写。课程观点来自原视频，由维护者整理，不能替代原视频。</p><p>本站不是樱井政博、任天堂、HAL 研究所、YouTube 频道「<a href="https://www.youtube.com/@sora_sakurai_en" target="_blank" rel="noopener">Masahiro Sakurai on Creating Games</a>」或其相关权利人的官方网站，未经上述权利人授权、审核或背书。</p><p>内容依据公开视频整理，可能有偏差或遗漏。截图、字幕、游戏画面、作品名与角色形象等权利归各自权利人。学习这些笔记并不因此获得素材许可。</p><p><a href="../about.html">关于本站</a></p></footer>
+<div id="lightbox"><img alt=""></div>
+<script src="../assets/site.js"></script>
+</body></html>

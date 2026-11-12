@@ -1,0 +1,23 @@
+<section id="s1" data-toc="Final Fight"><h2>1. 命中停顿与《Final Fight》 <a class="ts" href="https://youtu.be/tycbMSjDDLg?t=4" target="_blank" rel="noopener">0:04</a></h2>
+<div class="row"><div><p>命中停顿：攻击命中时，自己和对手瞬间停住。它的历史很深，而明确加入、令人印象深刻的，大概要数<b>《Final Fight》</b>——有没有它天差地别。</p></div><figure><img src="img/f140.webp" alt="" loading="lazy"><figcaption>《Final Fight》让命中停顿令人印象深刻（0:14 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/f560.webp" alt="" loading="lazy"><figcaption>不只是停住，还更讲究一些（0:56 左右）</figcaption></figure><div><p>《大乱斗》里命中停顿也很重要，而且织入了好几项其他游戏没有或罕见的特殊规格。这次就讲《大乱斗 特别版》命中停顿里藏的种种特殊规格——「这可是企业机密啊」。</p><div class="key">大前提：大乱斗的命中停顿<b>不只是命中后停住，还会微振动</b>。只停住也能成立，但它做得更讲究。</div></div></div>
+</section>
+<section id="s2" data-toc="①～④"><h2>2. ①～④：怎么抖 <a class="ts" href="https://youtu.be/tycbMSjDDLg?t=58" target="_blank" rel="noopener">0:58</a></h2>
+<div class="row"><div><p><b>① 让受击方抖得更大</b>：命中停顿让两者都停，但受伤一方抖得大、施加伤害一方抖得小。其他游戏常见攻击方不抖，或两方都不抖。</p></div><figure><img src="img/f700.webp" alt="" loading="lazy"><figcaption>攻击方抖得少，受击方抖得多（1:10 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/f980.webp" alt="" loading="lazy"><figcaption>只有角色模型在动，判定框留在原地（1:38 左右）</figcaption></figure><div><p><b>② 受击判定不抖</b>：如果直接让斗士振动，受击判定位置会偏移，本该命中的攻击打不中。大乱斗只让外观偏移，实际位置不变。</p></div></div>
+<div class="row"><div><p><b>③ 地面横向、空中全方向</b>：地面上的斗士命中停顿时只横向抖；空中的斗士也会纵向抖。考虑到双方横向对峙，纵向也抖更好；但在地面纵向抖，脚会陷进地面——这在 2D 游戏里原本不用担心。</p></div><figure><img src="img/f1070.webp" alt="" loading="lazy"><figcaption>地面横抖 vs 空中全向抖（1:47 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/f1400.webp" alt="" loading="lazy"><figcaption>振幅先大后小（2:20 左右）</figcaption></figure><div><p><b>④ 振幅逐渐收敛</b>：不是固定振幅，而是一开始大、最后小。预先算好命中停顿时间，再分割，进行适当的收敛。</p></div></div>
+</section>
+<section id="s3" data-toc="⑤ 停顿量"><h2>3. ⑤ 控制停顿量 <a class="ts" href="https://youtu.be/tycbMSjDDLg?t=147" target="_blank" rel="noopener">2:27</a></h2>
+<div class="row"><div><p><b>⑤ 控制命中停顿的大小</b>：大乱斗攻击力越高命中停顿越大，而且还能乘上系数。</p><p>例如马尔斯的 Smash 攻击：攻击力低的剑根没什么手感；攻击力高的剑尖手感极佳、「咚」地打进心里。这不只是攻击力的差，还乘了系数，让命中手感比攻击力差更强。</p></div><figure><img src="img/f1680.webp" alt="" loading="lazy"><figcaption>马尔斯 Smash：剑根 vs 剑尖（2:48 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/f1820.webp" alt="" loading="lazy"><figcaption>同等威力的招式，也按原作调整停顿量（3:02 左右）</figcaption></figure><div><p>另外，同样的攻击力，隆的命中停顿大、一八的命中停顿小——这是为了贴合原作感而控制的。</p></div></div>
+</section>
+<section id="s4" data-toc="⑥⑦"><h2>4. ⑥⑦ 插值与微动 <a class="ts" href="https://youtu.be/tycbMSjDDLg?t=196" target="_blank" rel="noopener">3:16</a></h2>
+<div class="row"><div><p><b>⑥ 插值到受击姿势</b>：命中停顿中受击方的画面一般不动，「啪」地停住。但大乱斗从受伤瞬间起，花数帧插值到受击姿势：既不一直停着，也不瞬间切换，而是用约 4 帧平滑地做动作混合，兼顾手感与流畅。</p></div><figure><img src="img/f2170.webp" alt="" loading="lazy"><figcaption>用约 4 帧平滑混合到受击姿势（3:37 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/f2450.webp" alt="" loading="lazy"><figcaption>停顿中，攻击方动画以极慢速度继续推进（4:05 左右）</figcaption></figure><div><p><b>⑦ 命中停顿中攻击方极轻微地移动</b>：这是特殊规格中的极致。例如持剑斗士强力砍下时，仔细看命中停顿中的剑尖，会「滋滋滋」地移动。</p></div></div>
+<p>停顿中，以不足 1 帧的微量速度推进攻击方的动作；停顿解除后若无其事地继续。可设开关，并不是所有攻击都有——是为了让剑砍进去的手感更逼真，有时没有反而更合适。</p><p>还有雷击时延长命中停顿、考虑多人战而减少命中停顿等，这里略过。</p>
+</section>
+<section id="s5" data-toc="⑧ 镜头距离"><h2>5. ⑧ 随镜头距离调整振幅 <a class="ts" href="https://youtu.be/tycbMSjDDLg?t=280" target="_blank" rel="noopener">4:40</a></h2>
+<div class="row"><div><p><b>⑧ 振幅随镜头距离变化</b>：镜头拉远时，相对振动会更大。这样无论近看还是远看，都能得到命中感。</p></div><figure><img src="img/f3010.webp" alt="" loading="lazy"><figcaption>远景与近景都能感受到冲击（5:01 左右）</figcaption></figure></div>
+<div class="key">樱井能讲这些，是因为这些规格是他自己想出来的：知道必要性，也知道效果。每一项都快得看不见，但<b>这些积累会让游戏变得更好</b>。</div>
+</section>

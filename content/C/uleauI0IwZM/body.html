@@ -1,0 +1,25 @@
+<section id="s1" data-toc="人机差异"><h2>1. CP 与人差太多 <a class="ts" href="https://youtu.be/uleauI0IwZM?t=3" target="_blank" rel="noopener">0:03</a></h2>
+<div class="row"><div><p>先看几段老游戏的展示模式（attract mode）演示——大概是电脑比较随便地在操作吧。由电脑操作的玩家，简称 <b>CP</b>（或 CPU）。</p></div><figure><img src="img/f280.webp" alt="" loading="lazy"><figcaption>老游戏的展示模式（attract mode）（0:28 左右）</figcaption></figure></div>
+<p>人和电脑毕竟不同，差得太多。自由度越高的游戏，CP 的对应越难；但如果做出<b>人类无法反应的动作</b>，就会有极强的不讲理感。</p>
+<div class="row"><figure><img src="img/f560.webp" alt="" loading="lazy"><figcaption>开招瞬间就防御（《拳皇 '98》）（0:56 左右）</figcaption></figure><figure><img src="img/f700.webp" alt="" loading="lazy"><figcaption>在硬直中反击——超出人的反应会很不讲理（1:10 左右）</figcaption></figure></div>
+<div class="row"><div><p>桌游、卡牌游戏掷骰子时，也常被认为电脑在出好点数——毕竟两边都是电脑做的，这也难怪。即使是人能做到的范围，也被觉得狡猾，这是 CP 的宿命。</p></div><figure><img src="img/f1000.webp" alt="" loading="lazy"><figcaption>掷骰也会被怀疑：CPU 玩家和骰子都由电脑控制（1:40 左右）</figcaption></figure></div>
+</section>
+<section id="s2" data-toc="难做"><h2>2. CP 很难做 <a class="ts" href="https://youtu.be/uleauI0IwZM?t=98" target="_blank" rel="noopener">1:38</a></h2>
+<div class="row"><div><p>因游戏内容、类型差别很大，像《大乱斗》这类 CP 制作非常难。但有对战要素的游戏，想一个人玩就必须做，很辛苦。在樱井的项目里，这是交给他人比例较高的领域（当然他会监修）。</p></div><figure><img src="img/f1130.webp" alt="" loading="lazy"><figcaption>《大乱斗》这类游戏的 CP 极难做（1:53 左右）</figcaption></figure></div>
+</section>
+<section id="s3" data-toc="决策方式"><h2>3. CP 如何做决定 <a class="ts" href="https://youtu.be/uleauI0IwZM?t=136" target="_blank" rel="noopener">2:16</a></h2>
+<div class="row"><div><p>动作游戏的 CP 怎么做？电脑没有眼睛，所以从各种数据获取信息：多远的位置有什么状态的对手，于是做什么。</p></div><figure><img src="img/f1470.webp" alt="" loading="lazy"><figcaption>根据与对手的距离和对手状态等信息处理（2:27 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/f1610.webp" alt="" loading="lazy"><figcaption>攻击/移动范围数据以射程与时机储存（2:41 左右）</figcaption></figure><div><p>把含必杀技在内的招式攻击范围和移动范围全部数据化（或从原始数据提取），以射程、攻击时机的形式储存；同样也需要参照对手角色的攻击数据。</p></div></div>
+<div class="mermaid">
+flowchart LR
+  D["对手距离/状态<br/>招式范围数据<br/>对手攻击数据"] --> L["逻辑与倾向<br/>（可中途切换）"]
+  L --> A["行动：攻击/回避/移动…"]
+  L -. 判断冲突 .-> X["可能卡住不动"]
+</div>
+<div class="row"><div><p>依据这些数据决定行动；也可以根据游戏整体流程中途改变逻辑或倾向：例如体力低了就发怒，设定擅长的间距，按速度与跳跃高度来对应，也许还有赢太多时会放水的游戏。</p><p>因此，各逻辑间若有矛盾，有时会动不了——某判断与另一判断冲突（例如「攻击」与「回避」），越复杂、条件越多越容易出现。</p></div><figure><img src="img/f2030.webp" alt="" loading="lazy"><figcaption>攻击还是回避？两种判断冲突（3:23 左右）</figcaption></figure></div>
+</section>
+<section id="s4" data-toc="特别版 CP"><h2>4. 《大乱斗 特别版》的 CP <a class="ts" href="https://youtu.be/uleauI0IwZM?t=211" target="_blank" rel="noopener">3:31</a></h2>
+<div class="row"><div><ul class="points"><li>准备了类似<b>反射神经</b>的东西，让它不会瞬间反应；</li><li>受到操作左右颠倒（如蘑菇效果）时，也会稍微混乱——像人一样，几乎不会完全不对应，但也不会一直反着掉下去。</li></ul></div><figure><img src="img/f2240.webp" alt="" loading="lazy"><figcaption>受左右颠倒影响的 CPU 也会混乱（3:44 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/f2660.webp" alt="" loading="lazy"><figcaption>攻击型 CPU：会主动进攻也会露出破绽（4:26 左右）</figcaption></figure><div><p>特别版的 CP 比以往<b>提高了攻击性</b>，反过来说对防御、回避或待机型打法较弱。设定强 CP 的人想和强 CP 打；这时若它恰到好处地等待、或做出机械般的反应，就不太有趣，所以改为以攻击为主，让玩家好好应对就能取胜。</p></div></div>
+<div class="key">极端地说，让它一直精准地完美防御和回避，也许能做出无敌的 CP，但那怎么也不会好玩。<b>别忘了：一切的目的都是让人开心</b>。</div>
+</section>

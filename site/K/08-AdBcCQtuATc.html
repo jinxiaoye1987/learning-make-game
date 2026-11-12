@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>K-8 调试模式 · 樱井政博「Creating Games」中文图文课</title>
+<link rel="stylesheet" href="../assets/site.css">
+<script>(function(){var t=localStorage.getItem('cg-theme');if(t)document.documentElement.dataset.theme=t;})();</script>
+</head><body>
+<div class="topbar"><div class="in"><a class="brand" href="../index.html"><b>樱井政博</b> 做游戏 · 中文图文课</a><nav><a href="../index.html" class="">首页</a><a href="../index.html#cats" class="">全部分类</a><a href="../map.html" class="">知识地图</a><a href="../quiz.html" class="">随机测验</a><a href="../search.html" class="">搜索</a><a href="../about.html" class="">关于</a></nav><span class="sp"></span>
+<form action="../search.html" method="get"><input name="q" placeholder="搜索全部课程…" aria-label="搜索"></form><button id="themeBtn" type="button">☾ 深色</button></div></div>
+<div class="disclaimer">非官方个人学习总结，未经权利人授权或背书，不能替代原视频。截图等第三方素材不因学习而获得使用许可。<a href="../about.html">关于本站</a></div>
+<div class="layout"><nav class="toc"><h2>本集目录</h2><ol><li><a href="#tldr"><span class="num">★</span>速览</a></li><li><a href="#s1"><span class="num">1</span>调试模式</a></li><li><a href="#s2"><span class="num">2</span>例子</a></li><li><a href="#s3"><span class="num">3</span>今日一张</a></li><li><a href="#s4"><span class="num">4</span>手柄</a></li><li><a href="#s5"><span class="num">5</span>效率</a></li><li><a href="#quiz"><span class="num">?</span>自测题</a></li></ol>
+<p class="note" style="margin:12px 8px 0"><a href="index.html">← 返回 K 程序与技术</a></p></nav>
+<main><p class="crumb"><a href="../index.html">首页</a> / <a href="index.html">K 程序与技术</a> / #8</p><header class="hero"><div>
+<h1>K-8 调试模式</h1><p class="sub">原标题：<i>Debug Mode</i></p>
+<ul class="meta"><li>时长 2:43</li><li>原语言：日语（画面内嵌英文字幕）</li><li>K 程序与技术 #8/9</li></ul>
+<p style="margin:14px 0 0">▶ 原视频：<a href="https://youtu.be/AdBcCQtuATc" target="_blank" rel="noopener">https://youtu.be/AdBcCQtuATc</a></p></div><img src="img/AdBcCQtuATc/cover.jpg" alt="视频缩略图"></header><div class="pn"><a href="07-s5u7VqDl-1I.html"><small>← 上一集 #7</small>多人如何编辑同一批文件</a><a class="next" href="09-Ie5wG3LlBNs.html"><small>下一集 #9 →</small>透明化功能</a></div><section id="tldr" data-toc="速览"><h2>速览</h2><p>没法展示具体画面，说明可能稍弱。开发中有<b>调试模式</b>（或开发模式），有各种功能，是开发中做各种确认的模式；功能太多、分支太多，一言难尽，但用它能边做各种测试和分析边做游戏。《大乱斗》可以直接把所有人的体力（伤害）设为指定数值；没有这功能的从前，是把<b>狐狸的横强攻击力设为 100</b> 来试。没有调试功能就需要花心思和手间。训练模式里的<b>击飞轨迹显示</b>原本也是做成调试功能的——有点像揭底，但好懂所以导入了。<b>「今日一张」</b>也是用调试模式拍的：画面静止、斗士替换、镜头拉远改视角等都很自由；不过不能把斗士放到画面前后景，手里拿的东西会消失，限制也不少——毕竟是开发模式。调试模式常设定另一个手柄来操作，但他个人推荐<b>用平时那一个手柄就能完成的操作形式</b>（按组合键等）——事后翻找另一个手柄非常麻烦。现在大多数调试模式在做成品时会整个拔掉，但许多开发者几乎每天使用，即使不进成品，这部分的便利对<b>开发效率影响很大</b>。项目容易变臃肿，要一边整理维护一边让进展更便利。</p></section><section id="s1" data-toc="调试模式"><h2>1. 什么是调试模式 <a class="ts" href="https://youtu.be/AdBcCQtuATc?t=4" target="_blank" rel="noopener">0:04</a></h2>
+<div class="row"><div><p>没法展示具体画面，说明可能稍弱。开发中有「调试模式」或「开发模式」，拥有各种功能。</p></div><figure><img src="img/AdBcCQtuATc/f210.webp" alt="" loading="lazy"><figcaption>调试模式（开发模式）（0:21 左右）</figcaption></figure></div>
+<p>普通玩家可能也常听到「调试模式」这个叫法，它是游戏开发中做各种确认用的模式。功能太多、分支太多，一言难尽，但用它可以一边做各种测试和分析一边做游戏。</p>
+</section>
+<section id="s2" data-toc="例子"><h2>2. 没有调试功能时 <a class="ts" href="https://youtu.be/AdBcCQtuATc?t=40" target="_blank" rel="noopener">0:40</a></h2>
+<p>《大乱斗》里，把所有人的体力设为指定数值是很平常的事。但在没有这功能的从前，是把狐狸横强攻击力设为 100 来测试。</p>
+<div class="row"><figure><img src="img/AdBcCQtuATc/f490.webp" alt="" loading="lazy"><figcaption>把所有斗士设为指定伤害（0:49 左右）</figcaption></figure><figure><img src="img/AdBcCQtuATc/f560.webp" alt="" loading="lazy"><figcaption>《大乱斗 64》时代：狐狸横强设为 100% 伤害（0:56 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/AdBcCQtuATc/f700.webp" alt="" loading="lazy"><figcaption>训练模式的击飞轨迹（1:10 左右）</figcaption></figure><div><div class="key">没有调试功能，就需要花心思、费手间。</div><p>训练模式中的击飞轨迹显示，原本也是作为调试功能请人做的。有点像揭底而在意，但很好懂，所以导入了。</p></div></div>
+</section>
+<section id="s3" data-toc="今日一张"><h2>3. 「今日一张」也是它拍的 <a class="ts" href="https://youtu.be/AdBcCQtuATc?t=73" target="_blank" rel="noopener">1:13</a></h2>
+<p>「今日一张」也是用这个调试模式拍的：画面静止、替换斗士、镜头功能拉远或改视角等，都能自由自在。</p>
+<div class="row"><figure><img src="img/AdBcCQtuATc/f780.webp" alt="" loading="lazy"><figcaption>「今日一张」截图（1:18 左右）</figcaption></figure><figure><img src="img/AdBcCQtuATc/f900.webp" alt="" loading="lazy"><figcaption>想怎么拍都行（1:30 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/AdBcCQtuATc/f980.webp" alt="" loading="lazy"><figcaption>手持物会消失等限制（1:38 左右）</figcaption></figure><div><p>但不能把斗士放在画面深处或前方；手上拿的东西会消失之类，限制也不少——毕竟是开发模式。</p></div></div>
+</section>
+<section id="s4" data-toc="手柄"><h2>4. 建议：一个手柄完成 <a class="ts" href="https://youtu.be/AdBcCQtuATc?t=104" target="_blank" rel="noopener">1:44</a></h2>
+<div class="row"><div><p>调试模式常设定另一个手柄来操作，但个人推荐用平时手上那一个手柄就能完成的操作形式（如分配到按键组合）。</p></div><figure><img src="img/AdBcCQtuATc/f1120.webp" alt="" loading="lazy"><figcaption>游戏操作与调试操作（1:52 左右）</figcaption></figure></div>
+<div class="key">事后再去找另一个手柄，非常麻烦。</div>
+</section>
+<section id="s5" data-toc="效率"><h2>5. 成品中拔掉，但影响效率 <a class="ts" href="https://youtu.be/AdBcCQtuATc?t=130" target="_blank" rel="noopener">2:10</a></h2>
+<div class="row"><div><p>现在许多调试模式在做成品时会连功能一起拔掉，这应该是一般做法。</p><div class="key">许多开发者几乎每天都在用，即使不进成品，这部分的便利性也对开发效率有很大影响。项目容易变臃肿，要一边整理维护，一边让开发便利地推进。</div></div><figure><img src="img/AdBcCQtuATc/f1550.webp" alt="" loading="lazy"><figcaption>保持整理，让开发顺畅（2:35 左右）</figcaption></figure></div>
+</section>
+
+<section id="quiz" data-toc="自测题"><h2>自测题</h2><details><summary>1. 没有「设定所有人伤害」的功能时，以前是怎么测试的？</summary><p>把狐狸横强攻击力设为 100 来试。 <a class="ts" href="https://youtu.be/AdBcCQtuATc?t=50" target="_blank" rel="noopener">0:50</a></p></details><details><summary>2. 「今日一张」用调试模式拍有哪些限制？</summary><p>不能把斗士放到画面深处或前方，手持物会消失等。 <a class="ts" href="https://youtu.be/AdBcCQtuATc?t=98" target="_blank" rel="noopener">1:38</a></p></details><details><summary>3. 樱井对调试操作的手柄有什么建议？为什么？</summary><p>用平时的一个手柄（按键组合）就能完成；事后找另一个手柄很麻烦。 <a class="ts" href="https://youtu.be/AdBcCQtuATc?t=112" target="_blank" rel="noopener">1:52</a></p></details></section><div class="pn"><a href="07-s5u7VqDl-1I.html"><small>← 上一集 #7</small>多人如何编辑同一批文件</a><a class="next" href="09-Ie5wG3LlBNs.html"><small>下一集 #9 →</small>透明化功能</a></div></main></div>
+<footer class="foot"><p>我整理了这个游戏制作学习网站，方便回顾课程要点与自测。本站为非官方的个人学习总结。</p><p>维护者 <a href="https://github.com/jinxiaoye1987">jinxiaoye1987</a>。本站与仓库有 AI 辅助整理与脚手架编写。课程观点来自原视频，由维护者整理，不能替代原视频。</p><p>本站不是樱井政博、任天堂、HAL 研究所、YouTube 频道「<a href="https://www.youtube.com/@sora_sakurai_en" target="_blank" rel="noopener">Masahiro Sakurai on Creating Games</a>」或其相关权利人的官方网站，未经上述权利人授权、审核或背书。</p><p>内容依据公开视频整理，可能有偏差或遗漏。截图、字幕、游戏画面、作品名与角色形象等权利归各自权利人。学习这些笔记并不因此获得素材许可。</p><p><a href="../about.html">关于本站</a></p></footer>
+<div id="lightbox"><img alt=""></div>
+<script src="../assets/site.js"></script>
+</body></html>

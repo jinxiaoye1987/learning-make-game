@@ -1,0 +1,1966 @@
+{
+ "categories": [
+  {
+   "letter": "A",
+   "name": "A: Work Ethic",
+   "url": "https://www.youtube.com/playlist?list=PLgKCjZ2WsVLSHTbG4lQadRRtjzjARK69h",
+   "episode_count": 23,
+   "total_duration_s": 4025,
+   "episodes": [
+    {
+     "index": 1,
+     "id": "jlFkxfkICO8",
+     "title": "Game Development Isn't a Game",
+     "duration": 246,
+     "url": "https://youtu.be/jlFkxfkICO8"
+    },
+    {
+     "index": 2,
+     "id": "nkNSNGJvFXk",
+     "title": "Presentations Are All About Speed!",
+     "duration": 69,
+     "url": "https://youtu.be/nkNSNGJvFXk"
+    },
+    {
+     "index": 3,
+     "id": "Ik3deWOVCHI",
+     "title": "Try Telling That to the Player",
+     "duration": 144,
+     "url": "https://youtu.be/Ik3deWOVCHI"
+    },
+    {
+     "index": 4,
+     "id": "bzWibA7izF8",
+     "title": "Spec Changes",
+     "duration": 255,
+     "url": "https://youtu.be/bzWibA7izF8"
+    },
+    {
+     "index": 5,
+     "id": "2Iiu1k16Ukc",
+     "title": "Writing Game Proposals",
+     "duration": 163,
+     "url": "https://youtu.be/2Iiu1k16Ukc"
+    },
+    {
+     "index": 6,
+     "id": "1cFrEoiziDA",
+     "title": "Prep Your Proposals Hot and Fast",
+     "duration": 157,
+     "url": "https://youtu.be/1cFrEoiziDA"
+    },
+    {
+     "index": 7,
+     "id": "MPSFfqxpVJk",
+     "title": "You'll Forget the Hardship, But the Game Will Endure!",
+     "duration": 208,
+     "url": "https://youtu.be/MPSFfqxpVJk"
+    },
+    {
+     "index": 8,
+     "id": "WXBS7hk0B7k",
+     "title": "Directors Need to Be Unique",
+     "duration": 150,
+     "url": "https://youtu.be/WXBS7hk0B7k"
+    },
+    {
+     "index": 9,
+     "id": "IN-Uh2VfL8c",
+     "title": "Just Do It Already!",
+     "duration": 121,
+     "url": "https://youtu.be/IN-Uh2VfL8c"
+    },
+    {
+     "index": 10,
+     "id": "ff7HadWHTJo",
+     "title": "How I Stuck With My Column",
+     "duration": 262,
+     "url": "https://youtu.be/ff7HadWHTJo"
+    },
+    {
+     "index": 11,
+     "id": "QgkLrqGrwy4",
+     "title": "Don't Rely on a \"Plan B\"",
+     "duration": 124,
+     "url": "https://youtu.be/QgkLrqGrwy4"
+    },
+    {
+     "index": 12,
+     "id": "50Khnf80P7M",
+     "title": "Branching Tastes",
+     "duration": 247,
+     "url": "https://youtu.be/50Khnf80P7M"
+    },
+    {
+     "index": 13,
+     "id": "VGsxpvJ4IfM",
+     "title": "Broad Input, Broad Output",
+     "duration": 142,
+     "url": "https://youtu.be/VGsxpvJ4IfM"
+    },
+    {
+     "index": 14,
+     "id": "UVnLW47cpFk",
+     "title": "Keep Your Internal Pressure High",
+     "duration": 164,
+     "url": "https://youtu.be/UVnLW47cpFk"
+    },
+    {
+     "index": 15,
+     "id": "dP94K69NSVc",
+     "title": "The Majority Shouldn't Always Rule",
+     "duration": 161,
+     "url": "https://youtu.be/dP94K69NSVc"
+    },
+    {
+     "index": 16,
+     "id": "QI39AHhZNcY",
+     "title": "The Power of Suggestion",
+     "duration": 153,
+     "url": "https://youtu.be/QI39AHhZNcY"
+    },
+    {
+     "index": 17,
+     "id": "2LvPC7bIywM",
+     "title": "Staying True to Your Concept",
+     "duration": 178,
+     "url": "https://youtu.be/2LvPC7bIywM"
+    },
+    {
+     "index": 18,
+     "id": "fWWwELXIAEw",
+     "title": "Competition and Abundance",
+     "duration": 203,
+     "url": "https://youtu.be/fWWwELXIAEw"
+    },
+    {
+     "index": 19,
+     "id": "sbEFYooj0Y8",
+     "title": "Say It, and It Might Come True",
+     "duration": 167,
+     "url": "https://youtu.be/sbEFYooj0Y8"
+    },
+    {
+     "index": 20,
+     "id": "AuI0zoKIURY",
+     "title": "Echo Chambers",
+     "duration": 189,
+     "url": "https://youtu.be/AuI0zoKIURY"
+    },
+    {
+     "index": 21,
+     "id": "kh0DhZGfaIY",
+     "title": "When Ideas Won't Come",
+     "duration": 165,
+     "url": "https://youtu.be/kh0DhZGfaIY"
+    },
+    {
+     "index": 22,
+     "id": "8kgrvdeLBR8",
+     "title": "Never Get Into Fights",
+     "duration": 167,
+     "url": "https://youtu.be/8kgrvdeLBR8"
+    },
+    {
+     "index": 23,
+     "id": "r8ZZlnvNvBY",
+     "title": "Up is Down, and Down is Up",
+     "duration": 190,
+     "url": "https://youtu.be/r8ZZlnvNvBY"
+    }
+   ]
+  },
+  {
+   "letter": "B",
+   "name": "B: Game Essence",
+   "url": "https://www.youtube.com/playlist?list=PLgKCjZ2WsVLScUWJZ7ppkHGlCUIXEj5Io",
+   "episode_count": 29,
+   "total_duration_s": 6159,
+   "episodes": [
+    {
+     "index": 1,
+     "id": "FXqEykD5Ub4",
+     "title": "Risk and Reward",
+     "duration": 600,
+     "url": "https://youtu.be/FXqEykD5Ub4"
+    },
+    {
+     "index": 2,
+     "id": "TYh5SJb5gWk",
+     "title": "Squeeze and Release",
+     "duration": 160,
+     "url": "https://youtu.be/TYh5SJb5gWk"
+    },
+    {
+     "index": 3,
+     "id": "BFGkFHb2lBw",
+     "title": "Game Essence in Role-Playing Games",
+     "duration": 157,
+     "url": "https://youtu.be/BFGkFHb2lBw"
+    },
+    {
+     "index": 4,
+     "id": "Dq7X8-lB0is",
+     "title": "Fun Beyond Game Essence",
+     "duration": 409,
+     "url": "https://youtu.be/Dq7X8-lB0is"
+    },
+    {
+     "index": 5,
+     "id": "ai7pBxHAcvU",
+     "title": "The Fiend's Cauldron",
+     "duration": 291,
+     "url": "https://youtu.be/ai7pBxHAcvU"
+    },
+    {
+     "index": 6,
+     "id": "MVsVTgJKuzU",
+     "title": "Let Players Cheat the System",
+     "duration": 169,
+     "url": "https://youtu.be/MVsVTgJKuzU"
+    },
+    {
+     "index": 7,
+     "id": "j45EIuChfqs",
+     "title": "Falling Sells the Feeling of Flight",
+     "duration": 153,
+     "url": "https://youtu.be/j45EIuChfqs"
+    },
+    {
+     "index": 8,
+     "id": "atqS7SImuBc",
+     "title": "Do We Really Need Enemies?",
+     "duration": 198,
+     "url": "https://youtu.be/atqS7SImuBc"
+    },
+    {
+     "index": 9,
+     "id": "SpwQkNzNsXk",
+     "title": "Consider Rewards First",
+     "duration": 163,
+     "url": "https://youtu.be/SpwQkNzNsXk"
+    },
+    {
+     "index": 10,
+     "id": "1ggw9xXbzig",
+     "title": "Do Competitive Games Have to Be Complex?",
+     "duration": 242,
+     "url": "https://youtu.be/1ggw9xXbzig"
+    },
+    {
+     "index": 11,
+     "id": "QOkY6BULsgo",
+     "title": "Game Essence in Falling-Block Puzzle Games",
+     "duration": 168,
+     "url": "https://youtu.be/QOkY6BULsgo"
+    },
+    {
+     "index": 12,
+     "id": "vDEJ0sXw8Ks",
+     "title": "Dying Comes as a Relief?",
+     "duration": 148,
+     "url": "https://youtu.be/vDEJ0sXw8Ks"
+    },
+    {
+     "index": 13,
+     "id": "Be6km65CuuM",
+     "title": "Mountain Climbing Is More Than Just Climbing",
+     "duration": 159,
+     "url": "https://youtu.be/Be6km65CuuM"
+    },
+    {
+     "index": 14,
+     "id": "oSi0wEJHLuA",
+     "title": "Make Retries Quick",
+     "duration": 176,
+     "url": "https://youtu.be/oSi0wEJHLuA"
+    },
+    {
+     "index": 15,
+     "id": "atHnu2fKtZA",
+     "title": "Is Your Game Appealing Enough to Start Over?",
+     "duration": 261,
+     "url": "https://youtu.be/atHnu2fKtZA"
+    },
+    {
+     "index": 16,
+     "id": "iN3IyqPjLkc",
+     "title": "Game Essence in Shooting Games",
+     "duration": 162,
+     "url": "https://youtu.be/iN3IyqPjLkc"
+    },
+    {
+     "index": 17,
+     "id": "ML5wdEWpTuA",
+     "title": "More Game Essence Means Less Broad Appeal",
+     "duration": 242,
+     "url": "https://youtu.be/ML5wdEWpTuA"
+    },
+    {
+     "index": 18,
+     "id": "zswiCPS5CSM",
+     "title": "The Shoryuken Command",
+     "duration": 296,
+     "url": "https://youtu.be/zswiCPS5CSM"
+    },
+    {
+     "index": 19,
+     "id": "g7nC6NtTMIk",
+     "title": "The Pros and Cons of Leaderboards",
+     "duration": 195,
+     "url": "https://youtu.be/g7nC6NtTMIk"
+    },
+    {
+     "index": 20,
+     "id": "g5uooUqdXXs",
+     "title": "What is “Play”?",
+     "duration": 230,
+     "url": "https://youtu.be/g5uooUqdXXs"
+    },
+    {
+     "index": 21,
+     "id": "EgUvH3YMVCM",
+     "title": "Faithfulness Comes First in Licensed Games",
+     "duration": 229,
+     "url": "https://youtu.be/EgUvH3YMVCM"
+    },
+    {
+     "index": 22,
+     "id": "EzwCc2_8OzU",
+     "title": "Game Essence in Action Games",
+     "duration": 178,
+     "url": "https://youtu.be/EzwCc2_8OzU"
+    },
+    {
+     "index": 23,
+     "id": "4SFOO23m-bI",
+     "title": "Making \"Work\" Games Fun",
+     "duration": 216,
+     "url": "https://youtu.be/4SFOO23m-bI"
+    },
+    {
+     "index": 24,
+     "id": "G3eacnEqdV0",
+     "title": "Better Than Not Being Able to Beat the Game",
+     "duration": 167,
+     "url": "https://youtu.be/G3eacnEqdV0"
+    },
+    {
+     "index": 25,
+     "id": "U1b2OXdNcUY",
+     "title": "Mandatory Strategies and Strategic Balance",
+     "duration": 128,
+     "url": "https://youtu.be/U1b2OXdNcUY"
+    },
+    {
+     "index": 26,
+     "id": "3eG3expp5KM",
+     "title": "Game Essence in Strategy Games",
+     "duration": 175,
+     "url": "https://youtu.be/3eG3expp5KM"
+    },
+    {
+     "index": 27,
+     "id": "IGpEp0R1_xY",
+     "title": "How Good Were the Player’s Actions?",
+     "duration": 161,
+     "url": "https://youtu.be/IGpEp0R1_xY"
+    },
+    {
+     "index": 28,
+     "id": "fc-hOvTBTCc",
+     "title": "Amplify Both Strengths and Weaknesses",
+     "duration": 172,
+     "url": "https://youtu.be/fc-hOvTBTCc"
+    },
+    {
+     "index": 29,
+     "id": "2T86JqRAKjc",
+     "title": "Give Yourself a Handicap When Balancing Your Game",
+     "duration": 154,
+     "url": "https://youtu.be/2T86JqRAKjc"
+    }
+   ]
+  },
+  {
+   "letter": "C",
+   "name": "C: Planning & Game Design",
+   "url": "https://www.youtube.com/playlist?list=PLgKCjZ2WsVLSmJwGC258l2HhWgf-P877B",
+   "episode_count": 30,
+   "total_duration_s": 5883,
+   "episodes": [
+    {
+     "index": 1,
+     "id": "Rjdmi7628GM",
+     "title": "Frame Rates",
+     "duration": 240,
+     "url": "https://youtu.be/Rjdmi7628GM"
+    },
+    {
+     "index": 2,
+     "id": "PlbwQ_rntCM",
+     "title": "Just Let Them Play!",
+     "duration": 165,
+     "url": "https://youtu.be/PlbwQ_rntCM"
+    },
+    {
+     "index": 3,
+     "id": "KePsEzN-IAM",
+     "title": "Keeping Rewards in Sight",
+     "duration": 138,
+     "url": "https://youtu.be/KePsEzN-IAM"
+    },
+    {
+     "index": 4,
+     "id": "_-WyivvfibM",
+     "title": "Making a Living Making Games",
+     "duration": 234,
+     "url": "https://youtu.be/_-WyivvfibM"
+    },
+    {
+     "index": 5,
+     "id": "DGIJk0Uh8jU",
+     "title": "A Small Window Into the World",
+     "duration": 190,
+     "url": "https://youtu.be/DGIJk0Uh8jU"
+    },
+    {
+     "index": 6,
+     "id": "tafG03n89MY",
+     "title": "The Potential of One Button",
+     "duration": 144,
+     "url": "https://youtu.be/tafG03n89MY"
+    },
+    {
+     "index": 7,
+     "id": "7VD0K1Sr5u0",
+     "title": "Deconstruct, Analyze, and Rebuild",
+     "duration": 209,
+     "url": "https://youtu.be/7VD0K1Sr5u0"
+    },
+    {
+     "index": 8,
+     "id": "IM9P9NIKo10",
+     "title": "Good Errands and Bad Errands",
+     "duration": 214,
+     "url": "https://youtu.be/IM9P9NIKo10"
+    },
+    {
+     "index": 9,
+     "id": "JZ1Jd0u3b6U",
+     "title": "Learn to Count Frames!",
+     "duration": 229,
+     "url": "https://youtu.be/JZ1Jd0u3b6U"
+    },
+    {
+     "index": 10,
+     "id": "Xz53DEwuAcU",
+     "title": "Making Tutorials Feel Natural",
+     "duration": 178,
+     "url": "https://youtu.be/Xz53DEwuAcU"
+    },
+    {
+     "index": 11,
+     "id": "fryDyXROp8A",
+     "title": "Praise the Player!",
+     "duration": 155,
+     "url": "https://youtu.be/fryDyXROp8A"
+    },
+    {
+     "index": 12,
+     "id": "eia2IAmvtKI",
+     "title": "Don't Be Unresponsive",
+     "duration": 157,
+     "url": "https://youtu.be/eia2IAmvtKI"
+    },
+    {
+     "index": 13,
+     "id": "ssvIEm_2mYM",
+     "title": "Game Writing is Unique",
+     "duration": 220,
+     "url": "https://youtu.be/ssvIEm_2mYM"
+    },
+    {
+     "index": 14,
+     "id": "A_A4tgLIXO4",
+     "title": "The Fun in Picking Sides",
+     "duration": 151,
+     "url": "https://youtu.be/A_A4tgLIXO4"
+    },
+    {
+     "index": 15,
+     "id": "OS4CZkBBbW4",
+     "title": "Motion Sickness in 3D Games",
+     "duration": 207,
+     "url": "https://youtu.be/OS4CZkBBbW4"
+    },
+    {
+     "index": 16,
+     "id": "ZzCfzwe23kw",
+     "title": "Staying Organized with Hierarchical Outlines",
+     "duration": 145,
+     "url": "https://youtu.be/ZzCfzwe23kw"
+    },
+    {
+     "index": 17,
+     "id": "44ONFHla-sw",
+     "title": "Planning Your Game’s Rewards",
+     "duration": 310,
+     "url": "https://youtu.be/44ONFHla-sw"
+    },
+    {
+     "index": 18,
+     "id": "gYuvggptkDM",
+     "title": "Avoiding Comparison",
+     "duration": 185,
+     "url": "https://youtu.be/gYuvggptkDM"
+    },
+    {
+     "index": 19,
+     "id": "plPR6-Gqemc",
+     "title": "Making Sequels",
+     "duration": 241,
+     "url": "https://youtu.be/plPR6-Gqemc"
+    },
+    {
+     "index": 20,
+     "id": "ANerCiyfJjo",
+     "title": "It’s Easier If They Already Know",
+     "duration": 192,
+     "url": "https://youtu.be/ANerCiyfJjo"
+    },
+    {
+     "index": 21,
+     "id": "rwE-EEn3hYU",
+     "title": "Customization Lets Your Imagination Play",
+     "duration": 211,
+     "url": "https://youtu.be/rwE-EEn3hYU"
+    },
+    {
+     "index": 22,
+     "id": "BO_q72ug1eA",
+     "title": "Crafting “Similar” Games",
+     "duration": 129,
+     "url": "https://youtu.be/BO_q72ug1eA"
+    },
+    {
+     "index": 23,
+     "id": "FeekeBW26AI",
+     "title": "Presenting Scores",
+     "duration": 243,
+     "url": "https://youtu.be/FeekeBW26AI"
+    },
+    {
+     "index": 24,
+     "id": "zwiS1L6QVY0",
+     "title": "Using Parameters to Establish Characters",
+     "duration": 217,
+     "url": "https://youtu.be/zwiS1L6QVY0"
+    },
+    {
+     "index": 25,
+     "id": "obnjR8KJ9nk",
+     "title": "A World with Less Color",
+     "duration": 175,
+     "url": "https://youtu.be/obnjR8KJ9nk"
+    },
+    {
+     "index": 26,
+     "id": "uleauI0IwZM",
+     "title": "Computer-Controlled Players",
+     "duration": 306,
+     "url": "https://youtu.be/uleauI0IwZM"
+    },
+    {
+     "index": 27,
+     "id": "VZRh0P40RAM",
+     "title": "In-Game Cutscenes",
+     "duration": 181,
+     "url": "https://youtu.be/VZRh0P40RAM"
+    },
+    {
+     "index": 28,
+     "id": "eAd0pt-uv8g",
+     "title": "Start with the Climax",
+     "duration": 169,
+     "url": "https://youtu.be/eAd0pt-uv8g"
+    },
+    {
+     "index": 29,
+     "id": "R7rd4-ua2AI",
+     "title": "Being Kind to Beginners",
+     "duration": 179,
+     "url": "https://youtu.be/R7rd4-ua2AI"
+    },
+    {
+     "index": 30,
+     "id": "-49L25Q0YAU",
+     "title": "Be Mindful of the Time Players are Giving You",
+     "duration": 169,
+     "url": "https://youtu.be/-49L25Q0YAU"
+    }
+   ]
+  },
+  {
+   "letter": "D",
+   "name": "D: Design Specifics",
+   "url": "https://www.youtube.com/playlist?list=PLgKCjZ2WsVLQUWyKv2-ee6ds7uxtFiZeO",
+   "episode_count": 18,
+   "total_duration_s": 3628,
+   "episodes": [
+    {
+     "index": 1,
+     "id": "OdVkEOzdCPw",
+     "title": "Stop for Big Moments!",
+     "duration": 259,
+     "url": "https://youtu.be/OdVkEOzdCPw"
+    },
+    {
+     "index": 2,
+     "id": "9qzUwoKT9T8",
+     "title": "Giving \"Weight\" to Buttons",
+     "duration": 144,
+     "url": "https://youtu.be/9qzUwoKT9T8"
+    },
+    {
+     "index": 3,
+     "id": "noKsDZ-UPq8",
+     "title": "Jump Physics",
+     "duration": 293,
+     "url": "https://youtu.be/noKsDZ-UPq8"
+    },
+    {
+     "index": 4,
+     "id": "tycbMSjDDLg",
+     "title": "Eight Hit Stop Techniques",
+     "duration": 332,
+     "url": "https://youtu.be/tycbMSjDDLg"
+    },
+    {
+     "index": 5,
+     "id": "kLmd2F8LaLk",
+     "title": "Don't Anchor Your Center Point",
+     "duration": 171,
+     "url": "https://youtu.be/kLmd2F8LaLk"
+    },
+    {
+     "index": 6,
+     "id": "3qEKNxp_-Qs",
+     "title": "Say No to Slow!",
+     "duration": 187,
+     "url": "https://youtu.be/3qEKNxp_-Qs"
+    },
+    {
+     "index": 7,
+     "id": "_B0cpF8fQ4s",
+     "title": "Units of Speed",
+     "duration": 184,
+     "url": "https://youtu.be/_B0cpF8fQ4s"
+    },
+    {
+     "index": 8,
+     "id": "rcuihq0j7VM",
+     "title": "Behavior at Ledges",
+     "duration": 150,
+     "url": "https://youtu.be/rcuihq0j7VM"
+    },
+    {
+     "index": 9,
+     "id": "-Fhj07C1ou0",
+     "title": "Maps Are Game Screens, Too",
+     "duration": 147,
+     "url": "https://youtu.be/-Fhj07C1ou0"
+    },
+    {
+     "index": 10,
+     "id": "6P8zwwQ9OhU",
+     "title": "Unexpected Results",
+     "duration": 244,
+     "url": "https://youtu.be/6P8zwwQ9OhU"
+    },
+    {
+     "index": 11,
+     "id": "ChNceKFm2kI",
+     "title": "Flick Input",
+     "duration": 148,
+     "url": "https://youtu.be/ChNceKFm2kI"
+    },
+    {
+     "index": 12,
+     "id": "Icl-jMlz1iY",
+     "title": "Teaching Players How to Play",
+     "duration": 139,
+     "url": "https://youtu.be/Icl-jMlz1iY"
+    },
+    {
+     "index": 13,
+     "id": "e9v_FwUGOwY",
+     "title": "Randomness Spices Games Up",
+     "duration": 234,
+     "url": "https://youtu.be/e9v_FwUGOwY"
+    },
+    {
+     "index": 14,
+     "id": "-aA_mjpCPMg",
+     "title": "Handicap Systems",
+     "duration": 219,
+     "url": "https://youtu.be/-aA_mjpCPMg"
+    },
+    {
+     "index": 15,
+     "id": "KW4x-_Y8BmM",
+     "title": "Average and Mediocre Are the Same Thing",
+     "duration": 216,
+     "url": "https://youtu.be/KW4x-_Y8BmM"
+    },
+    {
+     "index": 16,
+     "id": "e89D_CG9P0g",
+     "title": "Online Updates",
+     "duration": 238,
+     "url": "https://youtu.be/e89D_CG9P0g"
+    },
+    {
+     "index": 17,
+     "id": "9ic7LEHtekM",
+     "title": "Speedy Screen Transitions",
+     "duration": 161,
+     "url": "https://youtu.be/9ic7LEHtekM"
+    },
+    {
+     "index": 18,
+     "id": "jeA-m-Bzs04",
+     "title": "What Happens When You Shift the Center of Gravity?",
+     "duration": 162,
+     "url": "https://youtu.be/jeA-m-Bzs04"
+    }
+   ]
+  },
+  {
+   "letter": "E",
+   "name": "E: Team Management",
+   "url": "https://www.youtube.com/playlist?list=PLgKCjZ2WsVLRwtBHwxMGSIDD1OB4PiMBg",
+   "episode_count": 15,
+   "total_duration_s": 3302,
+   "episodes": [
+    {
+     "index": 1,
+     "id": "40ryMOr36fw",
+     "title": "Sharing Info Within a Team",
+     "duration": 200,
+     "url": "https://youtu.be/40ryMOr36fw"
+    },
+    {
+     "index": 2,
+     "id": "Hk2npGxEQRo",
+     "title": "Jobs in Game Development",
+     "duration": 425,
+     "url": "https://youtu.be/Hk2npGxEQRo"
+    },
+    {
+     "index": 3,
+     "id": "f3UjN6cCBYY",
+     "title": "Don't Wait to Speak Your Mind",
+     "duration": 220,
+     "url": "https://youtu.be/f3UjN6cCBYY"
+    },
+    {
+     "index": 4,
+     "id": "1-iZFmenARA",
+     "title": "Ten People Can Produce Seven People's Work",
+     "duration": 167,
+     "url": "https://youtu.be/1-iZFmenARA"
+    },
+    {
+     "index": 5,
+     "id": "CafmzxRBo4Y",
+     "title": "Explain Ideas to Everyone at Once",
+     "duration": 217,
+     "url": "https://youtu.be/CafmzxRBo4Y"
+    },
+    {
+     "index": 6,
+     "id": "T6XgiBzYbzs",
+     "title": "Daily Report Suggestions",
+     "duration": 263,
+     "url": "https://youtu.be/T6XgiBzYbzs"
+    },
+    {
+     "index": 7,
+     "id": "yIXB0vGJBuw",
+     "title": "Bug Testing Never Ends",
+     "duration": 267,
+     "url": "https://youtu.be/yIXB0vGJBuw"
+    },
+    {
+     "index": 8,
+     "id": "fiCLKUQtKg0",
+     "title": "Making Games as Part of a Company",
+     "duration": 220,
+     "url": "https://youtu.be/fiCLKUQtKg0"
+    },
+    {
+     "index": 9,
+     "id": "j1qLM0yfOuY",
+     "title": "Finish Everything Within the Day",
+     "duration": 183,
+     "url": "https://youtu.be/j1qLM0yfOuY"
+    },
+    {
+     "index": 10,
+     "id": "NaWuNgpYDi4",
+     "title": "Don’t Put Decisions Off",
+     "duration": 151,
+     "url": "https://youtu.be/NaWuNgpYDi4"
+    },
+    {
+     "index": 11,
+     "id": "mQJEWMmZutA",
+     "title": "Bug Testing Systems",
+     "duration": 260,
+     "url": "https://youtu.be/mQJEWMmZutA"
+    },
+    {
+     "index": 12,
+     "id": "TayNJ4603Hc",
+     "title": "Play Testing Keeps Going",
+     "duration": 212,
+     "url": "https://youtu.be/TayNJ4603Hc"
+    },
+    {
+     "index": 13,
+     "id": "isEMP5_Eems",
+     "title": "Directors and Producers",
+     "duration": 244,
+     "url": "https://youtu.be/isEMP5_Eems"
+    },
+    {
+     "index": 14,
+     "id": "aACUZ769djE",
+     "title": "Elementary School Play Testers",
+     "duration": 130,
+     "url": "https://youtu.be/aACUZ769djE"
+    },
+    {
+     "index": 15,
+     "id": "MS2Tf3nXhZE",
+     "title": "A Director’s Job is to Trim",
+     "duration": 143,
+     "url": "https://youtu.be/MS2Tf3nXhZE"
+    }
+   ]
+  },
+  {
+   "letter": "F",
+   "name": "F: Graphics",
+   "url": "https://www.youtube.com/playlist?list=PLgKCjZ2WsVLSO4Zq-JuJzGvhTe1QqRSZ5",
+   "episode_count": 20,
+   "total_duration_s": 5462,
+   "episodes": [
+    {
+     "index": 1,
+     "id": "FuAtKjEuck8",
+     "title": "Draw the Light, Not the Asset",
+     "duration": 212,
+     "url": "https://youtu.be/FuAtKjEuck8"
+    },
+    {
+     "index": 2,
+     "id": "FfPN4ZGgBpo",
+     "title": "Emphasize Objects with Collision",
+     "duration": 150,
+     "url": "https://youtu.be/FfPN4ZGgBpo"
+    },
+    {
+     "index": 3,
+     "id": "NBXt-Uq7dHg",
+     "title": "Distinguishing Between Major and Minor Elements",
+     "duration": 166,
+     "url": "https://youtu.be/NBXt-Uq7dHg"
+    },
+    {
+     "index": 4,
+     "id": "A6Rbb5sK4nI",
+     "title": "Get the Sense of Scale Right",
+     "duration": 232,
+     "url": "https://youtu.be/A6Rbb5sK4nI"
+    },
+    {
+     "index": 5,
+     "id": "s08NT-TVCvU",
+     "title": "Supervising Art Through Retouches",
+     "duration": 197,
+     "url": "https://youtu.be/s08NT-TVCvU"
+    },
+    {
+     "index": 6,
+     "id": "lvYN7JciOdk",
+     "title": "An Up-Close Look at Smash Bros. Stages",
+     "duration": 1056,
+     "url": "https://youtu.be/lvYN7JciOdk"
+    },
+    {
+     "index": 7,
+     "id": "NDno0U5UxSI",
+     "title": "The Basics of Pixel Art",
+     "duration": 178,
+     "url": "https://youtu.be/NDno0U5UxSI"
+    },
+    {
+     "index": 8,
+     "id": "BLzEMMcwUKk",
+     "title": "Unifying Visual Style",
+     "duration": 165,
+     "url": "https://youtu.be/BLzEMMcwUKk"
+    },
+    {
+     "index": 9,
+     "id": "luB-5GqW55Q",
+     "title": "A Fight Between Live Action and Animation",
+     "duration": 271,
+     "url": "https://youtu.be/luB-5GqW55Q"
+    },
+    {
+     "index": 10,
+     "id": "VM-kH-j9_OQ",
+     "title": "Do Graphics Impact Fun?",
+     "duration": 170,
+     "url": "https://youtu.be/VM-kH-j9_OQ"
+    },
+    {
+     "index": 11,
+     "id": "wKQ2v9kno9I",
+     "title": "Odds and Ends of Supervising",
+     "duration": 713,
+     "url": "https://youtu.be/wKQ2v9kno9I"
+    },
+    {
+     "index": 12,
+     "id": "omeFOX21-wc",
+     "title": "Making Things Look Miniature",
+     "duration": 148,
+     "url": "https://youtu.be/omeFOX21-wc"
+    },
+    {
+     "index": 13,
+     "id": "240NQ--7xvU",
+     "title": "Dealing With Color Disparity",
+     "duration": 148,
+     "url": "https://youtu.be/240NQ--7xvU"
+    },
+    {
+     "index": 14,
+     "id": "xAgkRtpAUFI",
+     "title": "Motion Blur",
+     "duration": 150,
+     "url": "https://youtu.be/xAgkRtpAUFI"
+    },
+    {
+     "index": 15,
+     "id": "bVEPp5n-ysE",
+     "title": "Making the Imaginary Feel Real",
+     "duration": 151,
+     "url": "https://youtu.be/bVEPp5n-ysE"
+    },
+    {
+     "index": 16,
+     "id": "MGPwDINsVbU",
+     "title": "Final Output",
+     "duration": 150,
+     "url": "https://youtu.be/MGPwDINsVbU"
+    },
+    {
+     "index": 17,
+     "id": "rV1Vnt1dVlQ",
+     "title": "All to Destroy One Wall",
+     "duration": 265,
+     "url": "https://youtu.be/rV1Vnt1dVlQ"
+    },
+    {
+     "index": 18,
+     "id": "U9lQpn67Wos",
+     "title": "Manga-like Visuals",
+     "duration": 184,
+     "url": "https://youtu.be/U9lQpn67Wos"
+    },
+    {
+     "index": 19,
+     "id": "PDjdquhVHU4",
+     "title": "Establishing Characters Through Their Design",
+     "duration": 161,
+     "url": "https://youtu.be/PDjdquhVHU4"
+    },
+    {
+     "index": 20,
+     "id": "qqjXBzWX3_A",
+     "title": "Odds and Ends of Supervising: Sora Edition",
+     "duration": 595,
+     "url": "https://youtu.be/qqjXBzWX3_A"
+    }
+   ]
+  },
+  {
+   "letter": "G",
+   "name": "G: Animation",
+   "url": "https://www.youtube.com/playlist?list=PLgKCjZ2WsVLQ3AFFCkbSXKhsvH1Z7WFXn",
+   "episode_count": 18,
+   "total_duration_s": 3474,
+   "episodes": [
+    {
+     "index": 1,
+     "id": "fV8xIP480qk",
+     "title": "Assigning Animations",
+     "duration": 279,
+     "url": "https://youtu.be/fV8xIP480qk"
+    },
+    {
+     "index": 2,
+     "id": "zNBKzLzDKtM",
+     "title": "Too Much is Just Right",
+     "duration": 177,
+     "url": "https://youtu.be/zNBKzLzDKtM"
+    },
+    {
+     "index": 3,
+     "id": "LewXWM7HDd8",
+     "title": "Breaking Down Attack Animations",
+     "duration": 215,
+     "url": "https://youtu.be/LewXWM7HDd8"
+    },
+    {
+     "index": 4,
+     "id": "E8DKndKkHw8",
+     "title": "Making Lead-ins Instant and Impactful",
+     "duration": 147,
+     "url": "https://youtu.be/E8DKndKkHw8"
+    },
+    {
+     "index": 5,
+     "id": "99gdMDF7V2E",
+     "title": "Attack Poses",
+     "duration": 181,
+     "url": "https://youtu.be/99gdMDF7V2E"
+    },
+    {
+     "index": 6,
+     "id": "cIB0BUe6Ihk",
+     "title": "Follow-Throughs Make the Impact",
+     "duration": 258,
+     "url": "https://youtu.be/cIB0BUe6Ihk"
+    },
+    {
+     "index": 7,
+     "id": "Ivwt37x-2EU",
+     "title": "Exaggerate to Make Up for Information Loss",
+     "duration": 149,
+     "url": "https://youtu.be/Ivwt37x-2EU"
+    },
+    {
+     "index": 8,
+     "id": "LsSF_H-W-w8",
+     "title": "Posing Suggestions",
+     "duration": 189,
+     "url": "https://youtu.be/LsSF_H-W-w8"
+    },
+    {
+     "index": 9,
+     "id": "Sm0LAm4sJKc",
+     "title": "Squashing and Scaling",
+     "duration": 170,
+     "url": "https://youtu.be/Sm0LAm4sJKc"
+    },
+    {
+     "index": 10,
+     "id": "0xHE3ypX96U",
+     "title": "Damage Animations",
+     "duration": 251,
+     "url": "https://youtu.be/0xHE3ypX96U"
+    },
+    {
+     "index": 11,
+     "id": "oFwamE6Hy04",
+     "title": "The Perils of Interpolation",
+     "duration": 260,
+     "url": "https://youtu.be/oFwamE6Hy04"
+    },
+    {
+     "index": 12,
+     "id": "TUHL7Ex-RH8",
+     "title": "Facial Animations",
+     "duration": 142,
+     "url": "https://youtu.be/TUHL7Ex-RH8"
+    },
+    {
+     "index": 13,
+     "id": "TJDMDxnWU5g",
+     "title": "Flipped Animation",
+     "duration": 181,
+     "url": "https://youtu.be/TJDMDxnWU5g"
+    },
+    {
+     "index": 14,
+     "id": "HYHajZ0wBfU",
+     "title": "Animation Blending",
+     "duration": 184,
+     "url": "https://youtu.be/HYHajZ0wBfU"
+    },
+    {
+     "index": 15,
+     "id": "nCvdmQKrjf8",
+     "title": "Portraying Fingers",
+     "duration": 130,
+     "url": "https://youtu.be/nCvdmQKrjf8"
+    },
+    {
+     "index": 16,
+     "id": "rwwF_4blK-o",
+     "title": "Always Keep Attack Collision in Mind",
+     "duration": 162,
+     "url": "https://youtu.be/rwwF_4blK-o"
+    },
+    {
+     "index": 17,
+     "id": "q77TZaISg1Y",
+     "title": "The Limitations of Skeletons",
+     "duration": 192,
+     "url": "https://youtu.be/q77TZaISg1Y"
+    },
+    {
+     "index": 18,
+     "id": "Mh7nTn9_r40",
+     "title": "Rotation on Two Axes",
+     "duration": 207,
+     "url": "https://youtu.be/Mh7nTn9_r40"
+    }
+   ]
+  },
+  {
+   "letter": "H",
+   "name": "H: Effects",
+   "url": "https://www.youtube.com/playlist?list=PLgKCjZ2WsVLS_VcVMrFF6eeiI_ER7c6a2",
+   "episode_count": 11,
+   "total_duration_s": 2716,
+   "episodes": [
+    {
+     "index": 1,
+     "id": "kcYDrtRvuKg",
+     "title": "Make It \"Pop\"",
+     "duration": 152,
+     "url": "https://youtu.be/kcYDrtRvuKg"
+    },
+    {
+     "index": 2,
+     "id": "0ucvynuIe-o",
+     "title": "Let Your Characters Shine",
+     "duration": 131,
+     "url": "https://youtu.be/0ucvynuIe-o"
+    },
+    {
+     "index": 3,
+     "id": "ZDopYzDX-Jg",
+     "title": "Flash, Blast, and Smoke",
+     "duration": 206,
+     "url": "https://youtu.be/ZDopYzDX-Jg"
+    },
+    {
+     "index": 4,
+     "id": "353K_6kPqeE",
+     "title": "Visual Effects in Slow Motion",
+     "duration": 694,
+     "url": "https://youtu.be/353K_6kPqeE"
+    },
+    {
+     "index": 5,
+     "id": "2JXR7IASSog",
+     "title": "Screen Shake",
+     "duration": 220,
+     "url": "https://youtu.be/2JXR7IASSog"
+    },
+    {
+     "index": 6,
+     "id": "B-P4ysHSjCg",
+     "title": "Hit Marks",
+     "duration": 290,
+     "url": "https://youtu.be/B-P4ysHSjCg"
+    },
+    {
+     "index": 7,
+     "id": "_o29OOOarPY",
+     "title": "Billboards",
+     "duration": 128,
+     "url": "https://youtu.be/_o29OOOarPY"
+    },
+    {
+     "index": 8,
+     "id": "X0GdWg2Q7z8",
+     "title": "Blade Trails",
+     "duration": 239,
+     "url": "https://youtu.be/X0GdWg2Q7z8"
+    },
+    {
+     "index": 9,
+     "id": "rXwo0qcKJDk",
+     "title": "Making Effects the Right Size",
+     "duration": 124,
+     "url": "https://youtu.be/rXwo0qcKJDk"
+    },
+    {
+     "index": 10,
+     "id": "Mmw39T_dBLI",
+     "title": "Flashing Effects",
+     "duration": 252,
+     "url": "https://youtu.be/Mmw39T_dBLI"
+    },
+    {
+     "index": 11,
+     "id": "jAQv4PTQvQE",
+     "title": "The Limitations of Particle Effects",
+     "duration": 280,
+     "url": "https://youtu.be/jAQv4PTQvQE"
+    }
+   ]
+  },
+  {
+   "letter": "I",
+   "name": "I: Audio",
+   "url": "https://www.youtube.com/playlist?list=PLgKCjZ2WsVLR75Vl5-HdeHrrACZQydllk",
+   "episode_count": 14,
+   "total_duration_s": 3098,
+   "episodes": [
+    {
+     "index": 1,
+     "id": "hGp2Jw5dLH8",
+     "title": "Make the Tempo Match the Game",
+     "duration": 156,
+     "url": "https://youtu.be/hGp2Jw5dLH8"
+    },
+    {
+     "index": 2,
+     "id": "qKjD5qbLUeI",
+     "title": "Strike a Balance with Sound Effects",
+     "duration": 288,
+     "url": "https://youtu.be/qKjD5qbLUeI"
+    },
+    {
+     "index": 3,
+     "id": "WUy4lTUhj80",
+     "title": "Listen in Various Environments",
+     "duration": 163,
+     "url": "https://youtu.be/WUy4lTUhj80"
+    },
+    {
+     "index": 4,
+     "id": "t_tRnBj9tqc",
+     "title": "Game Music and Ambient Sounds",
+     "duration": 184,
+     "url": "https://youtu.be/t_tRnBj9tqc"
+    },
+    {
+     "index": 5,
+     "id": "6Ns03q8noEA",
+     "title": "Audio as Fiction and Non-Fiction",
+     "duration": 167,
+     "url": "https://youtu.be/6Ns03q8noEA"
+    },
+    {
+     "index": 6,
+     "id": "C3ANiCI1Em4",
+     "title": "Voice Recording",
+     "duration": 290,
+     "url": "https://youtu.be/C3ANiCI1Em4"
+    },
+    {
+     "index": 7,
+     "id": "qahwb7_67f0",
+     "title": "Arranging Music",
+     "duration": 264,
+     "url": "https://youtu.be/qahwb7_67f0"
+    },
+    {
+     "index": 8,
+     "id": "2iWqCSO98jU",
+     "title": "The Original Piece is Always Right",
+     "duration": 405,
+     "url": "https://youtu.be/2iWqCSO98jU"
+    },
+    {
+     "index": 9,
+     "id": "-nWjT49-cds",
+     "title": "Strong Attack, Light Reverb",
+     "duration": 180,
+     "url": "https://youtu.be/-nWjT49-cds"
+    },
+    {
+     "index": 10,
+     "id": "B9CokyQ2Tes",
+     "title": "Giving Feedback for Sound Effects",
+     "duration": 182,
+     "url": "https://youtu.be/B9CokyQ2Tes"
+    },
+    {
+     "index": 11,
+     "id": "jAgi6Uk1CU0",
+     "title": "Balancing Ambient Sounds",
+     "duration": 121,
+     "url": "https://youtu.be/jAgi6Uk1CU0"
+    },
+    {
+     "index": 12,
+     "id": "heFZ6qQXfDw",
+     "title": "Using Other Songs for Audio Reference",
+     "duration": 178,
+     "url": "https://youtu.be/heFZ6qQXfDw"
+    },
+    {
+     "index": 13,
+     "id": "eyQSb_tC0Fg",
+     "title": "Famicom and NES Audio",
+     "duration": 374,
+     "url": "https://youtu.be/eyQSb_tC0Fg"
+    },
+    {
+     "index": 14,
+     "id": "5fqTlWgfCL0",
+     "title": "No Masterpiece Has Bad Audio",
+     "duration": 146,
+     "url": "https://youtu.be/5fqTlWgfCL0"
+    }
+   ]
+  },
+  {
+   "letter": "J",
+   "name": "J: UI",
+   "url": "https://www.youtube.com/playlist?list=PLgKCjZ2WsVLTVcEHQFioJF263Ip_yoxen",
+   "episode_count": 15,
+   "total_duration_s": 2972,
+   "episodes": [
+    {
+     "index": 1,
+     "id": "UjW_TTNtXEM",
+     "title": "Clarity vs. Style",
+     "duration": 200,
+     "url": "https://youtu.be/UjW_TTNtXEM"
+    },
+    {
+     "index": 2,
+     "id": "W1ubngQNJpw",
+     "title": "Text Size",
+     "duration": 180,
+     "url": "https://youtu.be/W1ubngQNJpw"
+    },
+    {
+     "index": 3,
+     "id": "j2BX4yw8Z4Y",
+     "title": "Modern Quality of Life Features",
+     "duration": 681,
+     "url": "https://youtu.be/j2BX4yw8Z4Y"
+    },
+    {
+     "index": 4,
+     "id": "JKV-30FD6NY",
+     "title": "Loading Screens",
+     "duration": 147,
+     "url": "https://youtu.be/JKV-30FD6NY"
+    },
+    {
+     "index": 5,
+     "id": "bZSNYX5CVpw",
+     "title": "Emphasizing Text",
+     "duration": 159,
+     "url": "https://youtu.be/bZSNYX5CVpw"
+    },
+    {
+     "index": 6,
+     "id": "pivfg2DrFfY",
+     "title": "Menus Define Your World",
+     "duration": 121,
+     "url": "https://youtu.be/pivfg2DrFfY"
+    },
+    {
+     "index": 7,
+     "id": "CWvLMK4OKko",
+     "title": "Color-Coding Your Game",
+     "duration": 147,
+     "url": "https://youtu.be/CWvLMK4OKko"
+    },
+    {
+     "index": 8,
+     "id": "va8wt2yGviY",
+     "title": "Make Important Elements Bigger",
+     "duration": 137,
+     "url": "https://youtu.be/va8wt2yGviY"
+    },
+    {
+     "index": 9,
+     "id": "-_3ZnSiwlnc",
+     "title": "I Want to Choose Fast!",
+     "duration": 169,
+     "url": "https://youtu.be/-_3ZnSiwlnc"
+    },
+    {
+     "index": 10,
+     "id": "Y4-eS6Ezui8",
+     "title": "Let Them Skip, Let Them Pause",
+     "duration": 142,
+     "url": "https://youtu.be/Y4-eS6Ezui8"
+    },
+    {
+     "index": 11,
+     "id": "8nfMt4oG6hg",
+     "title": "Button Settings",
+     "duration": 200,
+     "url": "https://youtu.be/8nfMt4oG6hg"
+    },
+    {
+     "index": 12,
+     "id": "CkXSIUX5l_s",
+     "title": "Advancing Text",
+     "duration": 179,
+     "url": "https://youtu.be/CkXSIUX5l_s"
+    },
+    {
+     "index": 13,
+     "id": "mWIbb1l7Wlw",
+     "title": "Adding Help Text to Menus",
+     "duration": 152,
+     "url": "https://youtu.be/mWIbb1l7Wlw"
+    },
+    {
+     "index": 14,
+     "id": "psGx8fOlus0",
+     "title": "Making Things Clear, Even Without Words",
+     "duration": 154,
+     "url": "https://youtu.be/psGx8fOlus0"
+    },
+    {
+     "index": 15,
+     "id": "a_HB81ujHHE",
+     "title": "HUDs",
+     "duration": 204,
+     "url": "https://youtu.be/a_HB81ujHHE"
+    }
+   ]
+  },
+  {
+   "letter": "K",
+   "name": "K: Programming & Tech",
+   "url": "https://www.youtube.com/playlist?list=PLgKCjZ2WsVLSxoK7u0sYczpOCsKly1fLQ",
+   "episode_count": 9,
+   "total_duration_s": 2424,
+   "episodes": [
+    {
+     "index": 1,
+     "id": "XMzR5mJHPDg",
+     "title": "Name Files Logically",
+     "duration": 292,
+     "url": "https://youtu.be/XMzR5mJHPDg"
+    },
+    {
+     "index": 2,
+     "id": "nGaajB8m5Q0",
+     "title": "Making Your Game Easy to Tune",
+     "duration": 240,
+     "url": "https://youtu.be/nGaajB8m5Q0"
+    },
+    {
+     "index": 3,
+     "id": "v6ozfbqNa54",
+     "title": "Put Parameters in Brackets",
+     "duration": 303,
+     "url": "https://youtu.be/v6ozfbqNa54"
+    },
+    {
+     "index": 4,
+     "id": "7NpLxkkeh6Y",
+     "title": "Using Tickets to Manage Tasks",
+     "duration": 198,
+     "url": "https://youtu.be/7NpLxkkeh6Y"
+    },
+    {
+     "index": 5,
+     "id": "89_FhHQ5n-g",
+     "title": "Family BASIC",
+     "duration": 730,
+     "url": "https://youtu.be/89_FhHQ5n-g"
+    },
+    {
+     "index": 6,
+     "id": "HVktK4a9Yfo",
+     "title": "Knockback in Super Smash Bros.",
+     "duration": 199,
+     "url": "https://youtu.be/HVktK4a9Yfo"
+    },
+    {
+     "index": 7,
+     "id": "s5u7VqDl-1I",
+     "title": "How Multiple People Work on One File",
+     "duration": 160,
+     "url": "https://youtu.be/s5u7VqDl-1I"
+    },
+    {
+     "index": 8,
+     "id": "AdBcCQtuATc",
+     "title": "Debug Mode",
+     "duration": 163,
+     "url": "https://youtu.be/AdBcCQtuATc"
+    },
+    {
+     "index": 9,
+     "id": "Ie5wG3LlBNs",
+     "title": "Transparency Features",
+     "duration": 139,
+     "url": "https://youtu.be/Ie5wG3LlBNs"
+    }
+   ]
+  },
+  {
+   "letter": "L",
+   "name": "L: Marketing",
+   "url": "https://www.youtube.com/playlist?list=PLgKCjZ2WsVLTwxbJjYoPyXUOik_ZiTxIE",
+   "episode_count": 9,
+   "total_duration_s": 2254,
+   "episodes": [
+    {
+     "index": 1,
+     "id": "iwOgFiJNCoU",
+     "title": "Marketing is Multiplicative",
+     "duration": 207,
+     "url": "https://youtu.be/iwOgFiJNCoU"
+    },
+    {
+     "index": 2,
+     "id": "tb6GJUvJGpM",
+     "title": "Paint an Accurate Picture of Your Game",
+     "duration": 200,
+     "url": "https://youtu.be/tb6GJUvJGpM"
+    },
+    {
+     "index": 3,
+     "id": "PfNtg0tSGDY",
+     "title": "Game Demos",
+     "duration": 224,
+     "url": "https://youtu.be/PfNtg0tSGDY"
+    },
+    {
+     "index": 4,
+     "id": "ABow3YMNg1Q",
+     "title": "Official Websites",
+     "duration": 295,
+     "url": "https://youtu.be/ABow3YMNg1Q"
+    },
+    {
+     "index": 5,
+     "id": "K_z28RqWDU4",
+     "title": "Fighter Reveal Videos",
+     "duration": 398,
+     "url": "https://youtu.be/K_z28RqWDU4"
+    },
+    {
+     "index": 6,
+     "id": "-4oPgNbnJCI",
+     "title": "Show the Actual Game!",
+     "duration": 150,
+     "url": "https://youtu.be/-4oPgNbnJCI"
+    },
+    {
+     "index": 7,
+     "id": "j6pnwcuP78g",
+     "title": "Playing Games in Front of Other People",
+     "duration": 159,
+     "url": "https://youtu.be/j6pnwcuP78g"
+    },
+    {
+     "index": 8,
+     "id": "Y0sf-emY5oE",
+     "title": "Targeting and Market Research",
+     "duration": 263,
+     "url": "https://youtu.be/Y0sf-emY5oE"
+    },
+    {
+     "index": 9,
+     "id": "v4BG0wnc72s",
+     "title": "Smash Bros. DOJO!!",
+     "duration": 358,
+     "url": "https://youtu.be/v4BG0wnc72s"
+    }
+   ]
+  },
+  {
+   "letter": "M",
+   "name": "M: Grab Bag",
+   "url": "https://www.youtube.com/playlist?list=PLgKCjZ2WsVLS1xisCnw_DpTg52sy7upu_",
+   "episode_count": 31,
+   "total_duration_s": 9545,
+   "episodes": [
+    {
+     "index": 1,
+     "id": "gjoKKyskco4",
+     "title": "Down with Lag!",
+     "duration": 316,
+     "url": "https://youtu.be/gjoKKyskco4"
+    },
+    {
+     "index": 2,
+     "id": "re5JlUcYvxU",
+     "title": "Game Awards",
+     "duration": 207,
+     "url": "https://youtu.be/re5JlUcYvxU"
+    },
+    {
+     "index": 3,
+     "id": "ysaNUatLMn0",
+     "title": "Exercise While You Game!",
+     "duration": 177,
+     "url": "https://youtu.be/ysaNUatLMn0"
+    },
+    {
+     "index": 4,
+     "id": "i6jKMAU3aJ8",
+     "title": "The Price of Games",
+     "duration": 168,
+     "url": "https://youtu.be/i6jKMAU3aJ8"
+    },
+    {
+     "index": 5,
+     "id": "EbkshNLpMwo",
+     "title": "My Feline Friend, Fukurashi",
+     "duration": 148,
+     "url": "https://youtu.be/EbkshNLpMwo"
+    },
+    {
+     "index": 6,
+     "id": "CVQ4PuihnTk",
+     "title": "That Was Then, This Is Now",
+     "duration": 209,
+     "url": "https://youtu.be/CVQ4PuihnTk"
+    },
+    {
+     "index": 7,
+     "id": "VVhGCtCNGHg",
+     "title": "Sora Ltd.",
+     "duration": 203,
+     "url": "https://youtu.be/VVhGCtCNGHg"
+    },
+    {
+     "index": 8,
+     "id": "ynBcgPh8xV4",
+     "title": "Team Digital or Team Physical?",
+     "duration": 161,
+     "url": "https://youtu.be/ynBcgPh8xV4"
+    },
+    {
+     "index": 9,
+     "id": "YXudgEHF78M",
+     "title": "Sora's Work-From-Home Strategies",
+     "duration": 260,
+     "url": "https://youtu.be/YXudgEHF78M"
+    },
+    {
+     "index": 10,
+     "id": "EhcitspNMuI",
+     "title": "Competing with the Past",
+     "duration": 179,
+     "url": "https://youtu.be/EhcitspNMuI"
+    },
+    {
+     "index": 11,
+     "id": "0VaLAZeMJnE",
+     "title": "Games and Eye Strain",
+     "duration": 167,
+     "url": "https://youtu.be/0VaLAZeMJnE"
+    },
+    {
+     "index": 12,
+     "id": "y2Webks5iTs",
+     "title": "Mastering Up",
+     "duration": 154,
+     "url": "https://youtu.be/y2Webks5iTs"
+    },
+    {
+     "index": 13,
+     "id": "PHBKYrnIUmY",
+     "title": "The Family Computer (and the NES)",
+     "duration": 349,
+     "url": "https://youtu.be/PHBKYrnIUmY"
+    },
+    {
+     "index": 14,
+     "id": "ZUY2AtBD6Sk",
+     "title": "Development Secrets of the Original Kirby",
+     "duration": 1043,
+     "url": "https://youtu.be/ZUY2AtBD6Sk"
+    },
+    {
+     "index": 15,
+     "id": "5Ob9OA0peQY",
+     "title": "Canceled Games",
+     "duration": 195,
+     "url": "https://youtu.be/5Ob9OA0peQY"
+    },
+    {
+     "index": 16,
+     "id": "zJcPrrjFNFw",
+     "title": "♪ PRESS START",
+     "duration": 1122,
+     "url": "https://youtu.be/zJcPrrjFNFw"
+    },
+    {
+     "index": 17,
+     "id": "mDVaOyzO5pY",
+     "title": "Games During My Childhood",
+     "duration": 335,
+     "url": "https://youtu.be/mDVaOyzO5pY"
+    },
+    {
+     "index": 18,
+     "id": "MammcQ3XkpY",
+     "title": "The Team Behind Super Smash Bros. Brawl",
+     "duration": 396,
+     "url": "https://youtu.be/MammcQ3XkpY"
+    },
+    {
+     "index": 19,
+     "id": "HgvheCHsExA",
+     "title": "Guidelines",
+     "duration": 181,
+     "url": "https://youtu.be/HgvheCHsExA"
+    },
+    {
+     "index": 20,
+     "id": "Yk8WsbCQXGc",
+     "title": "Show and Tell: Some Rare Belongings",
+     "duration": 284,
+     "url": "https://youtu.be/Yk8WsbCQXGc"
+    },
+    {
+     "index": 21,
+     "id": "8JLA5YG16QM",
+     "title": "Game & Watch Designs",
+     "duration": 263,
+     "url": "https://youtu.be/8JLA5YG16QM"
+    },
+    {
+     "index": 22,
+     "id": "pb4MCvedyOg",
+     "title": "Creators Change, Too",
+     "duration": 148,
+     "url": "https://youtu.be/pb4MCvedyOg"
+    },
+    {
+     "index": 23,
+     "id": "5pJC1YLMbhk",
+     "title": "Long Ago, Numbers Were Used to Draw Pixel Art",
+     "duration": 250,
+     "url": "https://youtu.be/5pJC1YLMbhk"
+    },
+    {
+     "index": 24,
+     "id": "CB85OhWD9o8",
+     "title": "Turning Gift-Giving Into a Game",
+     "duration": 132,
+     "url": "https://youtu.be/CB85OhWD9o8"
+    },
+    {
+     "index": 25,
+     "id": "GJJT8Yoxu_U",
+     "title": "A World Without Footprints",
+     "duration": 164,
+     "url": "https://youtu.be/GJJT8Yoxu_U"
+    },
+    {
+     "index": 26,
+     "id": "l2yPIetSPDw",
+     "title": "1986: The Year of Legend",
+     "duration": 296,
+     "url": "https://youtu.be/l2yPIetSPDw"
+    },
+    {
+     "index": 27,
+     "id": "3tpttuaYiPI",
+     "title": "Storage Tips",
+     "duration": 576,
+     "url": "https://youtu.be/3tpttuaYiPI"
+    },
+    {
+     "index": 28,
+     "id": "_ofubdMhvBM",
+     "title": "Gameplay as Part of a Live Performance",
+     "duration": 434,
+     "url": "https://youtu.be/_ofubdMhvBM"
+    },
+    {
+     "index": 29,
+     "id": "B2z5xpvtcRw",
+     "title": "Turning Anything Into a Competitive Game",
+     "duration": 148,
+     "url": "https://youtu.be/B2z5xpvtcRw"
+    },
+    {
+     "index": 30,
+     "id": "9FDDPZtWvhM",
+     "title": "CRT Displays",
+     "duration": 301,
+     "url": "https://youtu.be/9FDDPZtWvhM"
+    },
+    {
+     "index": 31,
+     "id": "o2wYKkqhkG0",
+     "title": "Mr. Iwata",
+     "duration": 579,
+     "url": "https://youtu.be/o2wYKkqhkG0"
+    }
+   ]
+  },
+  {
+   "letter": "N",
+   "name": "N: Game Concepts",
+   "url": "https://www.youtube.com/playlist?list=PLgKCjZ2WsVLTbEJdN9Rs6FWnOjlIj4Tdt",
+   "episode_count": 13,
+   "total_duration_s": 8775,
+   "episodes": [
+    {
+     "index": 1,
+     "id": "PBRt2D2YN44",
+     "title": "Kirby's Dream Land",
+     "duration": 317,
+     "url": "https://youtu.be/PBRt2D2YN44"
+    },
+    {
+     "index": 2,
+     "id": "khJa2vIW0xY",
+     "title": "Kirby's Adventure",
+     "duration": 356,
+     "url": "https://youtu.be/khJa2vIW0xY"
+    },
+    {
+     "index": 3,
+     "id": "PkeETXCSn5M",
+     "title": "Kirby Super Star",
+     "duration": 459,
+     "url": "https://youtu.be/PkeETXCSn5M"
+    },
+    {
+     "index": 4,
+     "id": "i3IOWaVDbx0",
+     "title": "Super Smash Bros.",
+     "duration": 511,
+     "url": "https://youtu.be/i3IOWaVDbx0"
+    },
+    {
+     "index": 5,
+     "id": "vLRRNsAVl-8",
+     "title": "Super Smash Bros. Melee",
+     "duration": 258,
+     "url": "https://youtu.be/vLRRNsAVl-8"
+    },
+    {
+     "index": 6,
+     "id": "bRDAYgRns4E",
+     "title": "Kirby Air Ride",
+     "duration": 393,
+     "url": "https://youtu.be/bRDAYgRns4E"
+    },
+    {
+     "index": 7,
+     "id": "snHecpmPeJs",
+     "title": "Meteos",
+     "duration": 513,
+     "url": "https://youtu.be/snHecpmPeJs"
+    },
+    {
+     "index": 8,
+     "id": "b3Fd8pBK0EA",
+     "title": "Sodatete! Kouchuu Ouja Mushiking",
+     "duration": 558,
+     "url": "https://youtu.be/b3Fd8pBK0EA"
+    },
+    {
+     "index": 9,
+     "id": "dXpFTHtlmCo",
+     "title": "Super Smash Bros. Brawl",
+     "duration": 453,
+     "url": "https://youtu.be/dXpFTHtlmCo"
+    },
+    {
+     "index": 10,
+     "id": "p-uwRfckTs4",
+     "title": "Kid Icarus: Uprising",
+     "duration": 779,
+     "url": "https://youtu.be/p-uwRfckTs4"
+    },
+    {
+     "index": 11,
+     "id": "DeLrIXCOUw0",
+     "title": "Super Smash Bros. for 3DS / Wii U",
+     "duration": 660,
+     "url": "https://youtu.be/DeLrIXCOUw0"
+    },
+    {
+     "index": 12,
+     "id": "RDrNWAHaKfI",
+     "title": "Super Smash Bros. Ultimate",
+     "duration": 744,
+     "url": "https://youtu.be/RDrNWAHaKfI"
+    },
+    {
+     "index": 13,
+     "id": "_qPqBilhEtI",
+     "title": "Masahiro Sakurai on Creating Games: Finale Special",
+     "duration": 2774,
+     "url": "https://youtu.be/_qPqBilhEtI"
+    }
+   ]
+  },
+  {
+   "letter": "extra",
+   "name": "Extras: Specials & Channel Videos",
+   "url": "https://www.youtube.com/@sora_sakurai_en/videos",
+   "episode_count": 6,
+   "total_duration_s": 5478,
+   "episodes": [
+    {
+     "index": 1,
+     "id": "6QH1cQWmXlY",
+     "title": "Special Crossover! #1",
+     "duration": 1605,
+     "url": "https://youtu.be/6QH1cQWmXlY"
+    },
+    {
+     "index": 2,
+     "id": "ll01fYUI_iQ",
+     "title": "Special Crossover! #2",
+     "duration": 1636,
+     "url": "https://youtu.be/ll01fYUI_iQ"
+    },
+    {
+     "index": 3,
+     "id": "zfh0oq-_nJQ",
+     "title": "Special Crossover! #3",
+     "duration": 1618,
+     "url": "https://youtu.be/zfh0oq-_nJQ"
+    },
+    {
+     "index": 4,
+     "id": "7M-DnOIeasA",
+     "title": "About This Channel",
+     "duration": 430,
+     "url": "https://youtu.be/7M-DnOIeasA"
+    },
+    {
+     "index": 5,
+     "id": "frNXwWqZpkI",
+     "title": "Masahiro Sakurai's Creative Works",
+     "duration": 154,
+     "url": "https://youtu.be/frNXwWqZpkI"
+    },
+    {
+     "index": 6,
+     "id": "PUj0WzkmLf0",
+     "title": "Introduction Video",
+     "duration": 35,
+     "url": "https://youtu.be/PUj0WzkmLf0"
+    }
+   ]
+  }
+ ]
+}

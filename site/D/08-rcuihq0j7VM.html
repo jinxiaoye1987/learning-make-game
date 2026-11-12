@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>D-8 悬崖边的行为 · 樱井政博「Creating Games」中文图文课</title>
+<link rel="stylesheet" href="../assets/site.css">
+<script>(function(){var t=localStorage.getItem('cg-theme');if(t)document.documentElement.dataset.theme=t;})();</script>
+</head><body>
+<div class="topbar"><div class="in"><a class="brand" href="../index.html"><b>樱井政博</b> 做游戏 · 中文图文课</a><nav><a href="../index.html" class="">首页</a><a href="../index.html#cats" class="">全部分类</a><a href="../map.html" class="">知识地图</a><a href="../quiz.html" class="">随机测验</a><a href="../search.html" class="">搜索</a><a href="../about.html" class="">关于</a></nav><span class="sp"></span>
+<form action="../search.html" method="get"><input name="q" placeholder="搜索全部课程…" aria-label="搜索"></form><button id="themeBtn" type="button">☾ 深色</button></div></div>
+<div class="disclaimer">非官方个人学习总结，未经权利人授权或背书，不能替代原视频。截图等第三方素材不因学习而获得使用许可。<a href="../about.html">关于本站</a></div>
+<div class="layout"><nav class="toc"><h2>本集目录</h2><ol><li><a href="#tldr"><span class="num">★</span>速览</a></li><li><a href="#s1"><span class="num">1</span>无条件掉落</a></li><li><a href="#s2"><span class="num">2</span>动作不掉</a></li><li><a href="#s3"><span class="num">3</span>按动作区分</a></li><li><a href="#s4"><span class="num">4</span>3D</a></li><li><a href="#quiz"><span class="num">?</span>自测题</a></li></ol>
+<p class="note" style="margin:12px 8px 0"><a href="index.html">← 返回 D 设计细节</a></p></nav>
+<main><p class="crumb"><a href="../index.html">首页</a> / <a href="index.html">D 设计细节</a> / #8</p><header class="hero"><div>
+<h1>D-8 悬崖边的行为</h1><p class="sub">原标题：<i>Behavior at Ledges</i></p>
+<ul class="meta"><li>时长 2:30</li><li>原语言：日语（画面内嵌英文字幕）</li><li>D 设计细节 #8/18</li></ul>
+<p style="margin:14px 0 0">▶ 原视频：<a href="https://youtu.be/rcuihq0j7VM" target="_blank" rel="noopener">https://youtu.be/rcuihq0j7VM</a></p></div><img src="img/rcuihq0j7VM/cover.jpg" alt="视频缩略图"></header><div class="pn"><a href="07-_B0cpF8fQ4s.html"><small>← 上一集 #7</small>速度的单位</a><a class="next" href="09--Fhj07C1ou0.html"><small>下一集 #9 →</small>地图也是游戏画面</a></div><section id="tldr" data-toc="速览"><h2>速览</h2><p>在操作较多的游戏里，角色可以从悬崖掉下去，但规格多种多样，也有好坏之分。①<b>无条件从崖边掉落</b>：以前很多游戏是这样，但常常不太好，要判断这样是否真的可以。②<b>移动中会掉，动作中不掉</b>：动作带来的小幅前进如果每次都会掉下去，就像操作被取消了一样，多半不好；比如攻击时的踏步不让人掉下崖。③<b>动作中也区分会掉和不会掉的</b>：这相当正统，例如前方回避不掉、突进攻击会掉；还要注意速度继承，否则可能突然高速飞出去。《大乱斗》里，狐狸的 Fox Illusion 会停在崖边；Falcon Kick 会冲出崖外，但到最后阶段就不会掉；在崖边用很冒险的 Drill Rush，最后阶段能停住；耀西的「蛋滚滚」等会通过参数控制起跳时的速度。在 3D 游戏中，「用力推摇杆才会掉」、行进方向与崖边夹角很浅时补正方向以免掉落等规格也很有效。还有作品会在崖边自动跳跃。以为「掉下去理所当然」的崖边，光这些就能想出这么多。制作者不要放过试玩中的违和感，追求合适的规格。</p></section><section id="s1" data-toc="无条件掉落"><h2>1. 无条件掉落 <a class="ts" href="https://youtu.be/rcuihq0j7VM?t=3" target="_blank" rel="noopener">0:03</a></h2>
+<div class="row"><div><p>在操作较多的游戏里，角色能从悬崖掉下去，但规格各种各样，当然也有好有坏。</p><p>首先是最单纯的：<b>无论什么情况都会从崖边掉下去</b>。</p></div><figure><img src="img/rcuihq0j7VM/f200.webp" alt="" loading="lazy"><figcaption>Ledge Behavior: Fall Unconditionally（0:20 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/rcuihq0j7VM/f300.webp" alt="" loading="lazy"><figcaption>老游戏常见的无条件掉落（Mega Man 2）（0:30 左右）</figcaption></figure><div><p>以前的很多游戏都是这样，但往往不太好，所以最好认真判断这样做是否合适。</p></div></div>
+</section>
+<section id="s2" data-toc="动作不掉"><h2>2. 移动掉、动作不掉 <a class="ts" href="https://youtu.be/rcuihq0j7VM?t=34" target="_blank" rel="noopener">0:34</a></h2>
+<div class="row"><div><p>下一种：<b>移动中会掉，做动作时不会掉</b>。</p></div><figure><img src="img/rcuihq0j7VM/f380.webp" alt="" loading="lazy"><figcaption>Fall During Movement, Not During Actions（0:38 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/rcuihq0j7VM/f500.webp" alt="" loading="lazy"><figcaption>攻击踏步时不掉下崖（Tribes of Midgard）（0:50 左右）</figcaption></figure><div><p>如果动作带来的一点点前进都会让角色掉下崖，就好像动作被取消了一样，多数情况下不好。例如让攻击时的踏步不会从崖边掉下去。</p></div></div>
+</section>
+<section id="s3" data-toc="按动作区分"><h2>3. 按动作决定掉不掉 <a class="ts" href="https://youtu.be/rcuihq0j7VM?t=52" target="_blank" rel="noopener">0:52</a></h2>
+<div class="row"><div><p>再下一种：<b>动作中也规定哪些会掉、哪些不会掉</b>。樱井说这相当正统，例如前方回避不会掉，而突进攻击会掉。</p></div><figure><img src="img/rcuihq0j7VM/f560.webp" alt="" loading="lazy"><figcaption>Some Actions Fall, Others Don't（0:56 左右）</figcaption></figure></div>
+<div class="key">也要注意速度的继承，否则可能出现突然以高速冲出去的情况。</div><p>《大乱斗》里：狐狸的 Fox Illusion 会在崖边停住；Falcon Kick 会冲出崖外，但到招式最后阶段就不会掉下去；在崖边使用很冒险的 Drill Rush，最后阶段能停住；耀西的「蛋滚滚」等，则用参数设定起跳时的速度来控制。</p>
+<div class="row"><figure><img src="img/rcuihq0j7VM/f800.webp" alt="" loading="lazy"><figcaption>Fox Illusion 碰到崖边会停下（1:20 左右）</figcaption></figure><figure><img src="img/rcuihq0j7VM/f980.webp" alt="" loading="lazy"><figcaption>蛋滚滚：用参数控制冲出时的速度（1:38 左右）</figcaption></figure></div>
+</section>
+<section id="s4" data-toc="3D"><h2>4. 3D 游戏的崖边 <a class="ts" href="https://youtu.be/rcuihq0j7VM?t=104" target="_blank" rel="noopener">1:44</a></h2>
+<p>回到崖边行为：在 3D 游戏里，「用力推摇杆才会掉」，或者行进方向与崖边夹角很浅时进行补正、让角色不掉下去，这类规格也很有效。</p>
+<div class="row"><figure><img src="img/rcuihq0j7VM/f1100.webp" alt="" loading="lazy"><figcaption>推着崖边才会掉下（Atomic Heart）（1:50 左右）</figcaption></figure><figure><img src="img/rcuihq0j7VM/f1160.webp" alt="" loading="lazy"><figcaption>根据摇杆方向补正移动方向（Ghost of Tsushima）（1:56 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/rcuihq0j7VM/f1340.webp" alt="" loading="lazy"><figcaption>在崖边自动跳跃（时之笛）（2:14 左右）</figcaption></figure><div><p>还有作品会在崖边自动跳跃，比如《塞尔达传说 时之笛》。</p></div></div>
+<div class="key">以为「掉下去是理所当然」的崖边，光是这样就能想到这么多。制作者不要放过试玩中的违和感，以合适的规格为目标。</div>
+</section>
+
+<section id="quiz" data-toc="自测题"><h2>自测题</h2><details><summary>1. 为什么攻击时的小踏步最好不要让角色掉下崖？</summary><p>每次小前进都掉下去，会像动作被取消一样，体验不好。 <a class="ts" href="https://youtu.be/rcuihq0j7VM?t=34" target="_blank" rel="noopener">0:34</a></p></details><details><summary>2. 「按动作区分掉不掉」时还要注意什么？</summary><p>速度的继承，否则可能突然以高速冲出崖外。 <a class="ts" href="https://youtu.be/rcuihq0j7VM?t=64" target="_blank" rel="noopener">1:04</a></p></details><details><summary>3. 3D 游戏中有哪些有效的崖边规格？</summary><p>用力推摇杆才掉、方向夹角浅时补正不让掉、自动跳跃等。 <a class="ts" href="https://youtu.be/rcuihq0j7VM?t=104" target="_blank" rel="noopener">1:44</a></p></details></section><div class="pn"><a href="07-_B0cpF8fQ4s.html"><small>← 上一集 #7</small>速度的单位</a><a class="next" href="09--Fhj07C1ou0.html"><small>下一集 #9 →</small>地图也是游戏画面</a></div></main></div>
+<footer class="foot"><p>我整理了这个游戏制作学习网站，方便回顾课程要点与自测。本站为非官方的个人学习总结。</p><p>维护者 <a href="https://github.com/jinxiaoye1987">jinxiaoye1987</a>。本站与仓库有 AI 辅助整理与脚手架编写。课程观点来自原视频，由维护者整理，不能替代原视频。</p><p>本站不是樱井政博、任天堂、HAL 研究所、YouTube 频道「<a href="https://www.youtube.com/@sora_sakurai_en" target="_blank" rel="noopener">Masahiro Sakurai on Creating Games</a>」或其相关权利人的官方网站，未经上述权利人授权、审核或背书。</p><p>内容依据公开视频整理，可能有偏差或遗漏。截图、字幕、游戏画面、作品名与角色形象等权利归各自权利人。学习这些笔记并不因此获得素材许可。</p><p><a href="../about.html">关于本站</a></p></footer>
+<div id="lightbox"><img alt=""></div>
+<script src="../assets/site.js"></script>
+</body></html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>随机测验 · 樱井政博「Creating Games」中文图文课</title>
+<link rel="stylesheet" href="assets/site.css">
+<script>(function(){var t=localStorage.getItem('cg-theme');if(t)document.documentElement.dataset.theme=t;})();</script>
+</head><body>
+<div class="topbar"><div class="in"><a class="brand" href="index.html"><b>樱井政博</b> 做游戏 · 中文图文课</a><nav><a href="index.html" class="">首页</a><a href="index.html#cats" class="">全部分类</a><a href="map.html" class="">知识地图</a><a href="quiz.html" class="on">随机测验</a><a href="search.html" class="">搜索</a><a href="about.html" class="">关于</a></nav><span class="sp"></span>
+<form action="search.html" method="get"><input name="q" placeholder="搜索全部课程…" aria-label="搜索"></form><button id="themeBtn" type="button">☾ 深色</button></div></div>
+<div class="disclaimer">非官方个人学习总结，未经权利人授权或背书，不能替代原视频。截图等第三方素材不因学习而获得使用许可。<a href="about.html">关于本站</a></div>
+<div class="wrap"><div class="hero-home"><h1>随机测验</h1><p class="note">从已完成课程的自测题里随机抽题。先自己想答案，再点「看答案」，并标记会/不会（记录保存在本浏览器）。</p>
+<p><select id="cat" class="btn"><option value="">全部分类</option><option value="A">A 工作态度</option><option value="B">B 游戏本质</option><option value="C">C 企划与游戏设计</option><option value="D">D 设计细节</option><option value="E">E 团队管理</option><option value="F">F 图形美术</option><option value="G">G 动画</option><option value="H">H 特效</option><option value="I">I 音频</option><option value="J">J UI 界面</option><option value="K">K 程序与技术</option><option value="L">L 市场营销</option><option value="M">M 杂谈</option><option value="N">N 游戏概念</option><option value="extra">extra 特别篇</option></select> <span id="stat" class="note"></span></p></div>
+<div class="qcard" id="card"><div class="note" id="from"></div><div class="q" id="qq"></div>
+<div class="a" id="aa"></div><p><button class="btn pri" id="show">看答案</button><button class="btn" id="good">✓ 会了</button><button class="btn" id="bad">✗ 还不会</button><button class="btn" id="next">下一题 →</button></p></div></div>
+<script src="data/quiz.js"></script><script>
+(function(){var Q=window.CG_QUIZ,K='cg-quiz',st=JSON.parse(localStorage.getItem(K)||'{}'),cur=null,$=function(i){return document.getElementById(i);};
+function esc(s){return s.replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+function key(q){return q.u+'|'+q.q;}
+function pool(){var c=$('cat').value;return Q.filter(function(q){return !c||q.cat===c;});}
+function stat(){var p=pool(),g=p.filter(function(q){return st[key(q)]==='g';}).length;$('stat').textContent='题库 '+p.length+' 题 · 已掌握 '+g;}
+function next(){var p=pool();var w=p.filter(function(q){return st[key(q)]!=='g';});var src=w.length?w:p;cur=src[Math.floor(Math.random()*src.length)];
+ $('card').classList.remove('show');$('from').innerHTML='出自 <a href="'+cur.u+'">'+esc(cur.ep)+'</a>';$('qq').textContent=cur.q;
+ var t=cur.t,mm=Math.floor(t/60)+':'+String(t%60).padStart(2,'0');$('aa').innerHTML=esc(cur.a)+' <a class="ts" target="_blank" rel="noopener" href="https://youtu.be/'+cur.vid+'?t='+t+'">'+mm+'</a>';stat();}
+function mark(v){st[key(cur)]=v;localStorage.setItem(K,JSON.stringify(st));next();}
+$('show').onclick=function(){$('card').classList.add('show');};$('next').onclick=next;$('good').onclick=function(){mark('g');};$('bad').onclick=function(){mark('b');};$('cat').onchange=next;next();})();
+</script>
+<footer class="foot"><p>我整理了这个游戏制作学习网站，方便回顾课程要点与自测。本站为非官方的个人学习总结。</p><p>维护者 <a href="https://github.com/jinxiaoye1987">jinxiaoye1987</a>。本站与仓库有 AI 辅助整理与脚手架编写。课程观点来自原视频，由维护者整理，不能替代原视频。</p><p>本站不是樱井政博、任天堂、HAL 研究所、YouTube 频道「<a href="https://www.youtube.com/@sora_sakurai_en" target="_blank" rel="noopener">Masahiro Sakurai on Creating Games</a>」或其相关权利人的官方网站，未经上述权利人授权、审核或背书。</p><p>内容依据公开视频整理，可能有偏差或遗漏。截图、字幕、游戏画面、作品名与角色形象等权利归各自权利人。学习这些笔记并不因此获得素材许可。</p><p><a href="about.html">关于本站</a></p></footer>
+<div id="lightbox"><img alt=""></div>
+<script src="assets/site.js"></script>
+</body></html>

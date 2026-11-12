@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>E-7 调试永无止境 · 樱井政博「Creating Games」中文图文课</title>
+<link rel="stylesheet" href="../assets/site.css">
+<script>(function(){var t=localStorage.getItem('cg-theme');if(t)document.documentElement.dataset.theme=t;})();</script>
+</head><body>
+<div class="topbar"><div class="in"><a class="brand" href="../index.html"><b>樱井政博</b> 做游戏 · 中文图文课</a><nav><a href="../index.html" class="">首页</a><a href="../index.html#cats" class="">全部分类</a><a href="../map.html" class="">知识地图</a><a href="../quiz.html" class="">随机测验</a><a href="../search.html" class="">搜索</a><a href="../about.html" class="">关于</a></nav><span class="sp"></span>
+<form action="../search.html" method="get"><input name="q" placeholder="搜索全部课程…" aria-label="搜索"></form><button id="themeBtn" type="button">☾ 深色</button></div></div>
+<div class="disclaimer">非官方个人学习总结，未经权利人授权或背书，不能替代原视频。截图等第三方素材不因学习而获得使用许可。<a href="../about.html">关于本站</a></div>
+<div class="layout"><nav class="toc"><h2>本集目录</h2><ol><li><a href="#tldr"><span class="num">★</span>速览</a></li><li><a href="#s1"><span class="num">1</span>之后再修</a></li><li><a href="#s2"><span class="num">2</span>组合</a></li><li><a href="#s3"><span class="num">3</span>显眼</a></li><li><a href="#s4"><span class="num">4</span>易出 bug</a></li><li><a href="#s5"><span class="num">5</span>补丁</a></li><li><a href="#s6"><span class="num">6</span>事实</a></li><li><a href="#quiz"><span class="num">?</span>自测题</a></li></ol>
+<p class="note" style="margin:12px 8px 0"><a href="index.html">← 返回 E 团队管理</a></p></nav>
+<main><p class="crumb"><a href="../index.html">首页</a> / <a href="index.html">E 团队管理</a> / #7</p><header class="hero"><div>
+<h1>E-7 调试永无止境</h1><p class="sub">原标题：<i>Bug Testing Never Ends</i></p>
+<ul class="meta"><li>时长 4:27</li><li>原语言：日语（画面内嵌英文字幕）</li><li>E 团队管理 #7/15</li></ul>
+<p style="margin:14px 0 0">▶ 原视频：<a href="https://youtu.be/yIXB0vGJBuw" target="_blank" rel="noopener">https://youtu.be/yIXB0vGJBuw</a></p></div><img src="img/yIXB0vGJBuw/cover.jpg" alt="视频缩略图"></header><div class="pn"><a href="06-T6XgiBzYbzs.html"><small>← 上一集 #6</small>写日报的建议</a><a class="next" href="08-fiCLKUQtKg0.html"><small>下一集 #8 →</small>在公司里做游戏</a></div><section id="tldr" data-toc="速览"><h2>速览</h2><p>完成游戏，调试不可或缺。这里不谈监测，只谈纯粹消灭 bug 的调试。买的游戏 bug 多，可能被说「是不是想着之后在线修就好」，但绝非如此：<b>谁都想一开始就做到完美</b>。问题在于现在的游戏规模已大到<b>单纯调试消灭不尽</b>。比如《大乱斗》斗士对斗士，斗士有 89 种，光这样就约 8000 种组合；两人用不同招式攻击，组合数再乘以各自招式数；还有只在特定瞬间才出的 bug；再加上道具、第三者及其攻击（也可能 4 人以上），再加上特定地形场景、机关、命魂……组合就成了天文数字。实际上要在改变条件的同时把这些全部反复几次，才算严密调试——全部做，当然不可能。另一方面，一旦出现的 bug，知道复现方法就能无限重现，所以在网上很显眼。当然不只是穷举，也会瞄准可疑处调试，但仍有极限。以《大乱斗 SP》为例特别容易出 bug 的地方：①<b>抓和投</b>等强制控制他人的行为，容易造成处理矛盾，招式中被抓就可能出问题；终极必杀相关也接近，尤其有场景切换的，不仅是对手的拘束与解除，场景里也可能残留垃圾。②<b>地形</b>：场地制作可以做出乱来的地形，这时一定程度的穿地只能容忍，尤其 V 字形凹陷很难。③<b>命魂</b>相关：能做超出一般游戏规格的各种事，测试非常辛苦。大乱斗以外，有参数和养成要素、技能逐渐解锁的作品也很痛苦。很多游戏都为如今的体量烦恼：通关要几十小时的游戏，累计调试时间要几千、几万甚至几十万小时。即使有想用之后的补丁马上修的东西，也不能修完立刻发布：修了某处就可能引入新 bug，修一个又要重新做非常多的检查。他说这次并非想请大家原谅某些问题，只是平淡地说明适用于所有游戏的事实：如果「不完美除 bug 就不能原谅」的风气蔓延，事实上游戏可能就出不了了。银行、航空、通信基础设施等故障致命的系统当然要拼命，但他希望了解游戏制作的情况后，大家的看法能有所改变——当然他也明白，作为制作方的自己没资格这么说。</p></section><section id="s1" data-toc="之后再修"><h2>1. 不是「之后再修」 <a class="ts" href="https://youtu.be/yIXB0vGJBuw?t=2" target="_blank" rel="noopener">0:02</a></h2>
+<div class="row"><div><p>完成游戏，调试不可或缺。这里不谈监测，只谈纯粹消灭 bug 的调试。</p><p>买到的游戏 bug 多，可能被说「是不是想着之后在线修就好」，但绝非如此——谁都想一开始就做到完美。</p></div><figure><img src="img/yIXB0vGJBuw/f240.webp" alt="" loading="lazy"><figcaption>「反正他们想着之后再打补丁吧？」（0:24 左右）</figcaption></figure></div>
+<div class="key">问题在于，如今游戏的规模已经大到<b>单纯靠调试消灭不尽</b>的程度。</div>
+</section>
+<section id="s2" data-toc="组合"><h2>2. 天文数字的组合 <a class="ts" href="https://youtu.be/yIXB0vGJBuw?t=38" target="_blank" rel="noopener">0:38</a></h2>
+<div class="row"><div><p>比如《大乱斗》里斗士对斗士：斗士有 89 种，光这样就约有 8000 种组合。</p></div><figure><img src="img/yIXB0vGJBuw/f460.webp" alt="" loading="lazy"><figcaption>89 × 89（0:46 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/yIXB0vGJBuw/f580.webp" alt="" loading="lazy"><figcaption>89 × α × 89 × α（0:58 左右）</figcaption></figure><div><p>两人用不同招式攻击，组合数还要乘以各自的招式数；还有只在特定瞬间才会出现的 bug。</p></div></div>
+<div class="row"><div><p>再加上道具、第三者及其攻击（也可能 4 人以上），再加上特定的地形、场景、机关、命魂……组合就成了天文数字。</p></div><figure><img src="img/yIXB0vGJBuw/f780.webp" alt="" loading="lazy"><figcaption>全部相乘，组合数是天文数字（1:18 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/yIXB0vGJBuw/f900.webp" alt="" loading="lazy"><figcaption>无法说游戏已经被完全测试（1:30 左右）</figcaption></figure><div><p>实际上要改变条件把这些全部反复做几次，才算达成严密的调试。全部都做——当然不可能。</p></div></div>
+</section>
+<section id="s3" data-toc="显眼"><h2>3. 一旦被发现就很显眼 <a class="ts" href="https://youtu.be/yIXB0vGJBuw?t=96" target="_blank" rel="noopener">1:36</a></h2>
+<p>另一方面，一旦出现的 bug，只要知道复现方法就能无限重现，所以在网上会很显眼。</p><p>当然不只是穷举，调试也会瞄准可疑的地方，但仍有极限。</p>
+</section>
+<section id="s4" data-toc="易出 bug"><h2>4. 特别容易出 bug 的地方 <a class="ts" href="https://youtu.be/yIXB0vGJBuw?t=113" target="_blank" rel="noopener">1:53</a></h2>
+<div class="row"><div><p>以《大乱斗 SP》为例：首先是<b>抓、投</b>等强制控制他人的行为，容易造成处理矛盾——招式中被抓住就可能出问题。</p></div><figure><img src="img/yIXB0vGJBuw/f1240.webp" alt="" loading="lazy"><figcaption>Grabs and Throws（2:04 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/yIXB0vGJBuw/f1320.webp" alt="" loading="lazy"><figcaption>Final Smashes（2:12 左右）</figcaption></figure><div><p><b>终极必杀</b>相关也接近，尤其是有场景切换的，不只是对手的拘束与解除，场景里还可能残留垃圾。</p></div></div>
+<div class="row"><div><p>其次是<b>地形</b>：在场景制作里可以做出很乱来的地形，这种情况下一定程度的穿地只能容忍，特别是 V 字形凹陷很难处理。</p></div><figure><img src="img/yIXB0vGJBuw/f1540.webp" alt="" loading="lazy"><figcaption>Terrain and Hazards：V 字形地形尤其难（2:34 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/yIXB0vGJBuw/f1660.webp" alt="" loading="lazy"><figcaption>Spirits（2:46 左右）</figcaption></figure><div><p><b>命魂</b>相关也可能出各种问题：能做超出一般游戏规格的各种事，测试非常辛苦。大乱斗以外，有参数和养成要素、技能逐步解锁的作品也会很痛苦。</p></div></div>
+</section>
+<section id="s5" data-toc="补丁"><h2>5. 体量与补丁 <a class="ts" href="https://youtu.be/yIXB0vGJBuw?t=175" target="_blank" rel="noopener">2:55</a></h2>
+<div class="row"><div><p>很多游戏都在为如今的体量烦恼。通关要几十小时的游戏，累计调试时间会达到几千、几万甚至几十万小时。</p></div><figure><img src="img/yIXB0vGJBuw/f1960.webp" alt="" loading="lazy"><figcaption>测试时间 = 预计游戏时长 × 很大的倍数（3:16 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/yIXB0vGJBuw/f2000.webp" alt="" loading="lazy"><figcaption>修好一个 bug 可能引入别的 bug（3:20 左右）</figcaption></figure><div><p>即使有想用之后的补丁马上修的问题，也不能修完立刻发布：修了某处就可能引入新 bug，修一个就要重新做非常多的检查。</p></div></div>
+</section>
+<section id="s6" data-toc="事实"><h2>6. 平淡陈述事实 <a class="ts" href="https://youtu.be/yIXB0vGJBuw?t=211" target="_blank" rel="noopener">3:31</a></h2>
+<div class="row"><div><p>樱井说，这次并没有想请大家原谅某些问题的意图，只是平淡地说明适用于所有游戏的事实。</p></div><figure><img src="img/yIXB0vGJBuw/f2200.webp" alt="" loading="lazy"><figcaption>Every Game Has Bugs!（3:40 左右）</figcaption></figure></div>
+<div class="key">如果「不完美消灭 bug 就不能原谅」的风气蔓延，事实上游戏可能就出不了了。</div><p>银行、航空、通信基础设施等故障致命的系统当然要拼命；但他希望大家了解游戏制作的情况后，看法能有所改变——当然他也知道，作为制作方的自己没资格这么说。</p>
+</section>
+
+<section id="quiz" data-toc="自测题"><h2>自测题</h2><details><summary>1. 为什么现代游戏难以完全消灭 bug？</summary><p>规模太大，组合（斗士×招式×时机×道具×人数×场地×命魂…）是天文数字，不可能全部穷举。 <a class="ts" href="https://youtu.be/yIXB0vGJBuw?t=38" target="_blank" rel="noopener">0:38</a></p></details><details><summary>2. 《大乱斗 SP》中特别容易出 bug 的地方有哪些？</summary><p>抓投等强制控制、终极必杀（尤其有场景切换的）、地形（V 字凹陷）、命魂。 <a class="ts" href="https://youtu.be/yIXB0vGJBuw?t=113" target="_blank" rel="noopener">1:53</a></p></details><details><summary>3. 为什么补丁不能修完马上发布？</summary><p>修正可能引入新 bug，需要重新做大量检查。 <a class="ts" href="https://youtu.be/yIXB0vGJBuw?t=190" target="_blank" rel="noopener">3:10</a></p></details></section><div class="pn"><a href="06-T6XgiBzYbzs.html"><small>← 上一集 #6</small>写日报的建议</a><a class="next" href="08-fiCLKUQtKg0.html"><small>下一集 #8 →</small>在公司里做游戏</a></div></main></div>
+<footer class="foot"><p>我整理了这个游戏制作学习网站，方便回顾课程要点与自测。本站为非官方的个人学习总结。</p><p>维护者 <a href="https://github.com/jinxiaoye1987">jinxiaoye1987</a>。本站与仓库有 AI 辅助整理与脚手架编写。课程观点来自原视频，由维护者整理，不能替代原视频。</p><p>本站不是樱井政博、任天堂、HAL 研究所、YouTube 频道「<a href="https://www.youtube.com/@sora_sakurai_en" target="_blank" rel="noopener">Masahiro Sakurai on Creating Games</a>」或其相关权利人的官方网站，未经上述权利人授权、审核或背书。</p><p>内容依据公开视频整理，可能有偏差或遗漏。截图、字幕、游戏画面、作品名与角色形象等权利归各自权利人。学习这些笔记并不因此获得素材许可。</p><p><a href="../about.html">关于本站</a></p></footer>
+<div id="lightbox"><img alt=""></div>
+<script src="../assets/site.js"></script>
+</body></html>

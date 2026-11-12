@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>K-1 文件名要有逻辑 · 樱井政博「Creating Games」中文图文课</title>
+<link rel="stylesheet" href="../assets/site.css">
+<script>(function(){var t=localStorage.getItem('cg-theme');if(t)document.documentElement.dataset.theme=t;})();</script>
+</head><body>
+<div class="topbar"><div class="in"><a class="brand" href="../index.html"><b>樱井政博</b> 做游戏 · 中文图文课</a><nav><a href="../index.html" class="">首页</a><a href="../index.html#cats" class="">全部分类</a><a href="../map.html" class="">知识地图</a><a href="../quiz.html" class="">随机测验</a><a href="../search.html" class="">搜索</a><a href="../about.html" class="">关于</a></nav><span class="sp"></span>
+<form action="../search.html" method="get"><input name="q" placeholder="搜索全部课程…" aria-label="搜索"></form><button id="themeBtn" type="button">☾ 深色</button></div></div>
+<div class="disclaimer">非官方个人学习总结，未经权利人授权或背书，不能替代原视频。截图等第三方素材不因学习而获得使用许可。<a href="../about.html">关于本站</a></div>
+<div class="layout"><nav class="toc"><h2>本集目录</h2><ol><li><a href="#tldr"><span class="num">★</span>速览</a></li><li><a href="#s1"><span class="num">1</span>开发名称</a></li><li><a href="#s2"><span class="num">2</span>规则</a></li><li><a href="#s3"><span class="num">3</span>排序</a></li><li><a href="#s4"><span class="num">4</span>正式名</a></li><li><a href="#s5"><span class="num">5</span>建议</a></li><li><a href="#quiz"><span class="num">?</span>自测题</a></li></ol>
+<p class="note" style="margin:12px 8px 0"><a href="index.html">← 返回 K 程序与技术</a></p></nav>
+<main><p class="crumb"><a href="../index.html">首页</a> / <a href="index.html">K 程序与技术</a> / #1</p><header class="hero"><div>
+<h1>K-1 文件名要有逻辑</h1><p class="sub">原标题：<i>Name Files Logically</i></p>
+<ul class="meta"><li>时长 4:52</li><li>原语言：日语（画面内嵌英文字幕）</li><li>K 程序与技术 #1/9</li></ul>
+<p style="margin:14px 0 0">▶ 原视频：<a href="https://youtu.be/XMzR5mJHPDg" target="_blank" rel="noopener">https://youtu.be/XMzR5mJHPDg</a></p></div><img src="img/XMzR5mJHPDg/cover.jpg" alt="视频缩略图"></header><div class="pn"><span></span><a class="next" href="02-nGaajB8m5Q0.html"><small>下一集 #2 →</small>让游戏便于调整</a></div><section id="tldr" data-toc="速览"><h2>速览</h2><p>「程序与技术」分类讲直接面对电脑的技术话题，但这类话题容易触及机密，且因开发环境、团队规模、对象机种差异很大，所以集数较少，只在没问题的范围内讲概要。《大乱斗》的「上必殺技」（Up Special），樱井有时会反过来说成「必殺技上」，为什么？因为<b>开发名称就是「必殺技上」</b>，整个团队都这么叫，这有合理的理由。每个招式都有文件名（也可说是标签名），从初代《大乱斗》开发时定下并沿用至今：A 键的普通攻击叫 <b>Attack</b>（普通的拳、踢）；B 键的必杀技叫 <b>Special</b>（如火球、超级跳跃拳）。例如<b>弱攻击是 Attack1，Smash 攻击是 Attack4</b>；弱攻击的连击是 Attack11、12、13，数字递增。强攻击、Smash 攻击、必杀技等附上输入方向：中央 N（Neutral）、上 Hi、横 S、下 Lw；按这个规则，横 Smash 攻击写作 AttackS4；空中技加 Air，如 AttackAirN。最大的好处是谁看文件名都马上知道是什么招式，另一个很大的好处是<b>排序时排列得比较整齐</b>：Attack 按弱→强→Smash 按强度数字变大，必杀技带 Special 所以是另一类，容易区分。如果写成 SAttack、HiAttack 这种把方向放前面的写法，排序时就乱七八糟；强度用数字以外的方式也不好。SpecialHi 直接翻成日语就是「必殺技上」。那正式名为什么叫「上必殺技」？因为玩家的操作是从方向开始：一边按上一边按必杀键就是上必杀技，操作方法和名称一致。招式的开发名和正式名不同，他有时会说反，请见谅。开发用的文件名、标签名要<b>简洁易懂</b>，让第一次接触的人一眼看明白；太短打字轻松，但意思难懂，平衡到能看懂的程度为好。还有一件特别想说的：<b>日本开发者尽量别用罗马字文件名</b>，尤其大项目，海外的人难以理解，之后回看时海外的人会看不懂；他常提醒团队，但仍层出不穷——不是只有做的人懂就行。</p></section><section id="s1" data-toc="开发名称"><h2>1. 「必殺技上」？ <a class="ts" href="https://youtu.be/XMzR5mJHPDg?t=3" target="_blank" rel="noopener">0:03</a></h2>
+<div class="row"><div><p>「程序与技术」分类讲直接面对电脑的技术话题。不过这类话题容易触及机密，而且因开发环境、团队规模、对象机种不同差异很大，所以集数会较少，只在没问题的范围内讲讲概要。</p></div><figure><img src="img/XMzR5mJHPDg/f240.webp" alt="" loading="lazy"><figcaption>这个分类容易触及机密（0:24 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/XMzR5mJHPDg/f480.webp" alt="" loading="lazy"><figcaption>Up Special（0:48 左右）</figcaption></figure><div><p>《大乱斗》的「上必殺技」（Up Special），樱井有时会反过来说成「必殺技上」。为什么？</p></div></div>
+<div class="key">因为开发名称就是「必殺技上」（SpecialHi），整个团队都这么叫。这有合理的理由。</div>
+</section>
+<section id="s2" data-toc="规则"><h2>2. 文件名规则 <a class="ts" href="https://youtu.be/XMzR5mJHPDg?t=70" target="_blank" rel="noopener">1:10</a></h2>
+<div class="row"><div><p>每个招式都有文件名（也可以说是标签名），从初代《大乱斗》开发时定下，沿用至今。A 键的普通攻击叫 <b>Attack</b>（普通的拳、踢等）；B 键的必杀技叫 <b>Special</b>（如火球、超级跳跃拳）。</p></div><figure><img src="img/XMzR5mJHPDg/f980.webp" alt="" loading="lazy"><figcaption>File Name：Attack / Special（1:38 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/XMzR5mJHPDg/f1200.webp" alt="" loading="lazy"><figcaption>弱攻击连击：Attack11 / 12 / 13（2:00 左右）</figcaption></figure><div><p>数字表示强度：弱攻击是 Attack1，Smash 攻击是 Attack4；弱攻击连击是 Attack11、12、13，数字递增。</p></div></div>
+<div class="row"><div><p>强攻击、Smash 攻击、必杀技等再附上输入方向：中央 <b>N</b>（Neutral）、上 <b>Hi</b>、横 <b>S</b>、下 <b>Lw</b>。按这个规则，横 Smash 攻击写作 AttackS4；空中技加 <b>Air</b>。</p></div><figure><img src="img/XMzR5mJHPDg/f1320.webp" alt="" loading="lazy"><figcaption>方向：Hi / S / Lw（2:12 左右）</figcaption></figure></div>
+<pre><code>Attack11  Attack12  Attack13   # 弱攻击连击
+Attack3                        # 强攻击
+Attack4   AttackS4             # Smash 攻击
+AttackAirN  AttackAirHi  AttackAirLw   # 空中攻击
+SpecialN  SpecialHi  SpecialS  SpecialLw  # 必杀技</code></pre>
+</section>
+<section id="s3" data-toc="排序"><h2>3. 为什么这样排 <a class="ts" href="https://youtu.be/XMzR5mJHPDg?t=145" target="_blank" rel="noopener">2:25</a></h2>
+<div class="row"><div><p>最大的好处是：谁看文件名都马上知道是哪个招式。另一个很大的好处是，<b>排序时排列得比较整齐</b>。</p></div><figure><img src="img/XMzR5mJHPDg/f1580.webp" alt="" loading="lazy"><figcaption>一看文件名就知道是什么招式（2:38 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/XMzR5mJHPDg/f1700.webp" alt="" loading="lazy"><figcaption>按强度从弱到 Smash 排列（2:50 左右）</figcaption></figure><div><p>Attack 按弱 → 强 → Smash，强度数字变大，排序时就整齐；必杀技带 Special，自成一类，容易区分。</p></div></div>
+<div class="row"><div><div class="key">如果写成 SAttack、HiAttack 这种把方向放前面的写法，排序时就乱七八糟。强度用数字以外的方式表示也不好。</div></div><figure><img src="img/XMzR5mJHPDg/f1840.webp" alt="" loading="lazy"><figcaption>方向在前：排序会乱（3:04 左右）</figcaption></figure></div>
+</section>
+<section id="s4" data-toc="正式名"><h2>4. 开发名与正式名 <a class="ts" href="https://youtu.be/XMzR5mJHPDg?t=190" target="_blank" rel="noopener">3:10</a></h2>
+<div class="row"><div><p>SpecialHi 直接翻成日语就是「必殺技上」。那正式名称为什么叫「上必殺技」？因为玩家的操作是从方向开始：一边按上一边按必杀键，就是上必杀技——操作方法和名称一致。</p></div><figure><img src="img/XMzR5mJHPDg/f2160.webp" alt="" loading="lazy"><figcaption>名称与操作方式一致（3:36 左右）</figcaption></figure></div>
+<p>招式的开发名和正式名不同，有点复杂，他有时会不自觉说反，请见谅。</p>
+</section>
+<section id="s5" data-toc="建议"><h2>5. 命名建议 <a class="ts" href="https://youtu.be/XMzR5mJHPDg?t=234" target="_blank" rel="noopener">3:54</a></h2>
+<div class="row"><div><div class="key">开发用的文件名、标签名要简洁易懂，让第一次接触的人也能一眼看明白。太短打字轻松，但意思难懂，平衡到能看懂的程度为好。</div></div><figure><img src="img/XMzR5mJHPDg/f2420.webp" alt="" loading="lazy"><figcaption>第一次看的人也应该一眼看懂（4:02 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/XMzR5mJHPDg/f2660.webp" alt="" loading="lazy"><figcaption>会让不懂日语的人更难理解（4:26 左右）</figcaption></figure><div><p>还有一件特别想说的：日本开发者请尽量别用罗马字文件名。尤其是大项目，海外的人很难理解，之后回看时会看不懂。</p></div></div>
+<p>他常提醒团队，但仍层出不穷——不是只有做的人懂就行。</p>
+</section>
+
+<section id="quiz" data-toc="自测题"><h2>自测题</h2><details><summary>1. 《大乱斗》中 Attack 和 Special 分别对应什么？</summary><p>Attack：A 键普通攻击；Special：B 键必杀技。 <a class="ts" href="https://youtu.be/XMzR5mJHPDg?t=70" target="_blank" rel="noopener">1:10</a></p></details><details><summary>2. 为什么方向放在名称后面而不是前面？</summary><p>排序时能按 Attack/Special 及强度整齐排列；方向在前会排得乱七八糟。 <a class="ts" href="https://youtu.be/XMzR5mJHPDg?t=145" target="_blank" rel="noopener">2:25</a></p></details><details><summary>3. 樱井对日本开发者的命名提醒是什么？</summary><p>尽量别用罗马字文件名，海外成员难以理解。 <a class="ts" href="https://youtu.be/XMzR5mJHPDg?t=252" target="_blank" rel="noopener">4:12</a></p></details></section><div class="pn"><span></span><a class="next" href="02-nGaajB8m5Q0.html"><small>下一集 #2 →</small>让游戏便于调整</a></div></main></div>
+<footer class="foot"><p>我整理了这个游戏制作学习网站，方便回顾课程要点与自测。本站为非官方的个人学习总结。</p><p>维护者 <a href="https://github.com/jinxiaoye1987">jinxiaoye1987</a>。本站与仓库有 AI 辅助整理与脚手架编写。课程观点来自原视频，由维护者整理，不能替代原视频。</p><p>本站不是樱井政博、任天堂、HAL 研究所、YouTube 频道「<a href="https://www.youtube.com/@sora_sakurai_en" target="_blank" rel="noopener">Masahiro Sakurai on Creating Games</a>」或其相关权利人的官方网站，未经上述权利人授权、审核或背书。</p><p>内容依据公开视频整理，可能有偏差或遗漏。截图、字幕、游戏画面、作品名与角色形象等权利归各自权利人。学习这些笔记并不因此获得素材许可。</p><p><a href="../about.html">关于本站</a></p></footer>
+<div id="lightbox"><img alt=""></div>
+<script src="../assets/site.js"></script>
+</body></html>

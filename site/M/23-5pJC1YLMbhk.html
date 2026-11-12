@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M-23 很久以前，像素画是用数字画的 · 樱井政博「Creating Games」中文图文课</title>
+<link rel="stylesheet" href="../assets/site.css">
+<script>(function(){var t=localStorage.getItem('cg-theme');if(t)document.documentElement.dataset.theme=t;})();</script>
+</head><body>
+<div class="topbar"><div class="in"><a class="brand" href="../index.html"><b>樱井政博</b> 做游戏 · 中文图文课</a><nav><a href="../index.html" class="">首页</a><a href="../index.html#cats" class="">全部分类</a><a href="../map.html" class="">知识地图</a><a href="../quiz.html" class="">随机测验</a><a href="../search.html" class="">搜索</a><a href="../about.html" class="">关于</a></nav><span class="sp"></span>
+<form action="../search.html" method="get"><input name="q" placeholder="搜索全部课程…" aria-label="搜索"></form><button id="themeBtn" type="button">☾ 深色</button></div></div>
+<div class="disclaimer">非官方个人学习总结，未经权利人授权或背书，不能替代原视频。截图等第三方素材不因学习而获得使用许可。<a href="../about.html">关于本站</a></div>
+<div class="layout"><nav class="toc"><h2>本集目录</h2><ol><li><a href="#tldr"><span class="num">★</span>速览</a></li><li><a href="#s1"><span class="num">1</span>背景</a></li><li><a href="#s2"><span class="num">2</span>16 进制</a></li><li><a href="#s3"><span class="num">3</span>4 点</a></li><li><a href="#s4"><span class="num">4</span>8×8</a></li><li><a href="#s5"><span class="num">5</span>彩色</a></li><li><a href="#s6"><span class="num">6</span>结语</a></li><li><a href="#quiz"><span class="num">?</span>自测题</a></li></ol>
+<p class="note" style="margin:12px 8px 0"><a href="index.html">← 返回 M 杂谈</a></p></nav>
+<main><p class="crumb"><a href="../index.html">首页</a> / <a href="index.html">M 杂谈</a> / #23</p><header class="hero"><div>
+<h1>M-23 很久以前，像素画是用数字画的</h1><p class="sub">原标题：<i>Long Ago, Numbers Were Used to Draw Pixel Art</i></p>
+<ul class="meta"><li>时长 4:10</li><li>原语言：日语（画面内嵌英文字幕）</li><li>M 杂谈 #23/31</li></ul>
+<p style="margin:14px 0 0">▶ 原视频：<a href="https://youtu.be/5pJC1YLMbhk" target="_blank" rel="noopener">https://youtu.be/5pJC1YLMbhk</a></p></div><img src="img/5pJC1YLMbhk/cover.jpg" alt="视频缩略图"></header><div class="pn"><a href="22-pb4MCvedyOg.html"><small>← 上一集 #22</small>创作者也会改变</a><a class="next" href="24-CB85OhWD9o8.html"><small>下一集 #24 →</small>把送礼变成游戏</a></div><section id="tldr" data-toc="速览"><h2>速览</h2><p>很久以前，在被称为「<b>微电脑（My Com）</b>」的个人电脑上做游戏，就得自己打角色的点阵——大约 1980 年代前半；多数情况下<b>根本没有绘图工具</b>，大家都要用数据，也就是<b>数值</b>来打点。那怎么画画？作为古老的记录，樱井讲当年微电脑少年是怎样画点阵的。首先是 <b>16 进制</b>：平常用的 10 进制到 10 进位，16 进制在 9 以上用 <b>A～F</b>，F 之后才进位，A=10、B=11……一位 16 进制数能画 <b>4 个点</b>：1 是最右边填满；2 是左边一个填满、最右边空；3 = 1+2；4 再进一位……8+1=9，接着是 A=10、B、C、D、E，到 F 全部填满——这样能表现 4 点宽的图。所以<b>两位 16 进制能表现 8 点宽</b>，比如 4E 就是这样；8 行就构成一张 <b>8×8 单色图</b>，例如这张图就是 18 7E 5E FF FF 7E 7E 18（对吗？）。多半是在<b>方格纸</b>上画好、用眼睛数出来；他则是画十字线，按大致位置读取。他还在课堂上借朋友的<b>口袋电脑</b>，「噼噼噼」地改游戏内容和点阵——上课还是认真点好。要做彩色，若像 FC 那样由 3 色构成，<b>两张同尺寸的点阵数据</b>就够：叠起来看每个点「都没有 / 只有 1 / 只有 2 / 两者都有」4 种组合，就能表现<b>透明 + 3 色</b>。实际上还会做<b>压缩</b>：例如比起写 00000000，写「0x8」更短。和用数据打点比起来现在轻松多了，但轻松之余也用上了复杂得多的技术，无法相比。不过回看原点挺有意思吧？</p></section><section id="s1" data-toc="背景"><h2>1. 用数值打点的时代 <a class="ts" href="https://youtu.be/5pJC1YLMbhk?t=13" target="_blank" rel="noopener">0:13</a></h2>
+<div class="row"><div><p>1980 年代前半，在「微电脑」上做游戏，要自己打角色的点阵。多数情况下根本没有绘图工具，大家都用数据——也就是数值——来打点。</p></div><figure><img src="img/5pJC1YLMbhk/f300.webp" alt="" loading="lazy"><figcaption>每个像素都要输入数值（0:30 左右）</figcaption></figure></div>
+</section>
+<section id="s2" data-toc="16 进制"><h2>2. 16 进制 <a class="ts" href="https://youtu.be/5pJC1YLMbhk?t=50" target="_blank" rel="noopener">0:50</a></h2>
+<p>10 进制到 10 进位；16 进制在 9 之后用 A～F，F 之后才进位（A=10、B=11……F=15）。</p>
+<div class="row"><figure><img src="img/5pJC1YLMbhk/f600.webp" alt="" loading="lazy"><figcaption>10 进制与 16 进制（1:00 左右）</figcaption></figure><figure><img src="img/5pJC1YLMbhk/f800.webp" alt="" loading="lazy"><figcaption>A 就是 10（1:20 左右）</figcaption></figure></div>
+</section>
+<section id="s3" data-toc="4 点"><h2>3. 一位 = 4 个点 <a class="ts" href="https://youtu.be/5pJC1YLMbhk?t=80" target="_blank" rel="noopener">1:20</a></h2>
+<div class="row"><div><p>一位 16 进制数能画 4 个点，四个格子的权重从左到右是 8、4、2、1：</p><ul class="points"><li>1：最右一格填满。2：右数第二格。3 = 1+2。</li></ul></div><figure><img src="img/5pJC1YLMbhk/f1000.webp" alt="" loading="lazy"><figcaption>3 = 1 + 2（1:40 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/5pJC1YLMbhk/f1200.webp" alt="" loading="lazy"><figcaption>D（13）（2:00 左右）</figcaption></figure><div><ul class="points"><li>8：最左一格；9 = 8+1；A=10……到 F 全部填满。</li></ul></div></div>
+</section>
+<section id="s4" data-toc="8×8"><h2>4. 两位 = 一行 8 点 <a class="ts" href="https://youtu.be/5pJC1YLMbhk?t=125" target="_blank" rel="noopener">2:05</a></h2>
+<p>所以两位 16 进制能表现一行 8 个点，8 行就是一张 8×8 的单色图：</p>
+<div class="row"><figure><img src="img/5pJC1YLMbhk/f1400.webp" alt="" loading="lazy"><figcaption>8 行 = 8×8 的单色点阵（2:20 左右）</figcaption></figure><figure><img src="img/5pJC1YLMbhk/f1500.webp" alt="" loading="lazy"><figcaption>逐行读出 18、7E、5E、FF……（2:30 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/5pJC1YLMbhk/f1600.webp" alt="" loading="lazy"><figcaption>= 187E5EFFFF7E7E18（2:40 左右）</figcaption></figure><div><pre><code>行1: 18  → 00011000
+行2: 7E  → 01111110
+行3: 5E  → 01011110
+行4: FF  → 11111111
+行5: FF  → 11111111
+行6: 7E  → 01111110
+行7: 7E  → 01111110
+行8: 18  → 00011000
+合起来: 187E5EFFFF7E7E18</code></pre></div></div>
+<div class="row"><div><p>多半是在方格纸上画好、用眼睛数出来；樱井则是画十字线，按大致位置读取。</p></div><figure><img src="img/5pJC1YLMbhk/f1700.webp" alt="" loading="lazy"><figcaption>画十字线作为参照（2:50 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/5pJC1YLMbhk/f1800.webp" alt="" loading="lazy"><figcaption>口袋电脑（3:00 左右）</figcaption></figure><div><p>他还在课堂上借朋友的口袋电脑改游戏内容和点阵——上课还是认真点好。</p></div></div>
+</section>
+<section id="s5" data-toc="彩色"><h2>5. 彩色与压缩 <a class="ts" href="https://youtu.be/5pJC1YLMbhk?t=184" target="_blank" rel="noopener">3:04</a></h2>
+<div class="row"><div><div class="key">像 FC 那样 3 色构成时，两张同尺寸点阵数据就够：叠起来，每个点「都没有 / 只有 1 / 只有 2 / 两者都有」4 种组合，就能表现透明 + 3 色。</div></div><figure><img src="img/5pJC1YLMbhk/f2000.webp" alt="" loading="lazy"><figcaption>两张点阵叠加表现颜色（3:20 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/5pJC1YLMbhk/f2200.webp" alt="" loading="lazy"><figcaption>0x8 更短（3:40 左右）</figcaption></figure><div><p>实际还会压缩数据：比起写 00000000，写「0x8」更短。</p></div></div>
+</section>
+<section id="s6" data-toc="结语"><h2>6. 回看原点 <a class="ts" href="https://youtu.be/5pJC1YLMbhk?t=230" target="_blank" rel="noopener">3:50</a></h2>
+<div class="row"><div><p>与用数据打点相比，现在轻松多了；但轻松之余也用上了复杂得多的技术，无法相比。回看原点，挺有意思吧？</p></div><figure><img src="img/5pJC1YLMbhk/f2300.webp" alt="" loading="lazy"><figcaption>现代图形的复杂度（3:50 左右）</figcaption></figure></div>
+<div class="mermaid">
+flowchart LR
+  A[一位 16 进制] -->|4 点| B[两位 = 一行 8 点]
+  B -->|× 8 行| C[8×8 单色图]
+  C -->|两张叠加| D[透明 + 3 色]
+  D -->|压缩| E[如 0x8]
+</div>
+</section>
+
+<section id="quiz" data-toc="自测题"><h2>自测题</h2><details><summary>1. 一位 16 进制数能表示几个点？两位呢？</summary><p>一位 4 个点；两位 8 个点（一行）。 <a class="ts" href="https://youtu.be/5pJC1YLMbhk?t=85" target="_blank" rel="noopener">1:25</a></p></details><details><summary>2. 像 FC 那样的 3 色点阵怎样用数据表现？</summary><p>两张同尺寸点阵叠加，4 种组合 = 透明 + 3 色。 <a class="ts" href="https://youtu.be/5pJC1YLMbhk?t=200" target="_blank" rel="noopener">3:20</a></p></details><details><summary>3. 数据压缩的例子是什么？</summary><p>用「0x8」代替写 00000000。 <a class="ts" href="https://youtu.be/5pJC1YLMbhk?t=220" target="_blank" rel="noopener">3:40</a></p></details></section><div class="pn"><a href="22-pb4MCvedyOg.html"><small>← 上一集 #22</small>创作者也会改变</a><a class="next" href="24-CB85OhWD9o8.html"><small>下一集 #24 →</small>把送礼变成游戏</a></div></main></div>
+<footer class="foot"><p>我整理了这个游戏制作学习网站，方便回顾课程要点与自测。本站为非官方的个人学习总结。</p><p>维护者 <a href="https://github.com/jinxiaoye1987">jinxiaoye1987</a>。本站与仓库有 AI 辅助整理与脚手架编写。课程观点来自原视频，由维护者整理，不能替代原视频。</p><p>本站不是樱井政博、任天堂、HAL 研究所、YouTube 频道「<a href="https://www.youtube.com/@sora_sakurai_en" target="_blank" rel="noopener">Masahiro Sakurai on Creating Games</a>」或其相关权利人的官方网站，未经上述权利人授权、审核或背书。</p><p>内容依据公开视频整理，可能有偏差或遗漏。截图、字幕、游戏画面、作品名与角色形象等权利归各自权利人。学习这些笔记并不因此获得素材许可。</p><p><a href="../about.html">关于本站</a></p></footer>
+<div id="lightbox"><img alt=""></div>
+<script src="../assets/vendor/mermaid.min.js"></script><script src="../assets/site.js"></script>
+</body></html>

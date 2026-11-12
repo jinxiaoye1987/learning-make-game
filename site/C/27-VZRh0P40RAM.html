@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>C-27 游戏内过场动画 · 樱井政博「Creating Games」中文图文课</title>
+<link rel="stylesheet" href="../assets/site.css">
+<script>(function(){var t=localStorage.getItem('cg-theme');if(t)document.documentElement.dataset.theme=t;})();</script>
+</head><body>
+<div class="topbar"><div class="in"><a class="brand" href="../index.html"><b>樱井政博</b> 做游戏 · 中文图文课</a><nav><a href="../index.html" class="">首页</a><a href="../index.html#cats" class="">全部分类</a><a href="../map.html" class="">知识地图</a><a href="../quiz.html" class="">随机测验</a><a href="../search.html" class="">搜索</a><a href="../about.html" class="">关于</a></nav><span class="sp"></span>
+<form action="../search.html" method="get"><input name="q" placeholder="搜索全部课程…" aria-label="搜索"></form><button id="themeBtn" type="button">☾ 深色</button></div></div>
+<div class="disclaimer">非官方个人学习总结，未经权利人授权或背书，不能替代原视频。截图等第三方素材不因学习而获得使用许可。<a href="../about.html">关于本站</a></div>
+<div class="layout"><nav class="toc"><h2>本集目录</h2><ol><li><a href="#tldr"><span class="num">★</span>速览</a></li><li><a href="#s1"><span class="num">1</span>现状</a></li><li><a href="#s2"><span class="num">2</span>价值与代价</a></li><li><a href="#s3"><span class="num">3</span>更友好</a></li><li><a href="#s4"><span class="num">4</span>跳过与 QTE</a></li><li><a href="#quiz"><span class="num">?</span>自测题</a></li></ol>
+<p class="note" style="margin:12px 8px 0"><a href="index.html">← 返回 C 企划与游戏设计</a></p></nav>
+<main><p class="crumb"><a href="../index.html">首页</a> / <a href="index.html">C 企划与游戏设计</a> / #27</p><header class="hero"><div>
+<h1>C-27 游戏内过场动画</h1><p class="sub">原标题：<i>In-Game Cutscenes</i></p>
+<ul class="meta"><li>时长 3:01</li><li>原语言：日语（画面内嵌英文字幕）</li><li>C 企划与游戏设计 #27/30</li></ul>
+<p style="margin:14px 0 0">▶ 原视频：<a href="https://youtu.be/VZRh0P40RAM" target="_blank" rel="noopener">https://youtu.be/VZRh0P40RAM</a></p></div><img src="img/VZRh0P40RAM/cover.jpg" alt="视频缩略图"></header><div class="pn"><a href="26-uleauI0IwZM.html"><small>← 上一集 #26</small>电脑控制的玩家（CP）</a><a class="next" href="28-eAd0pt-uv8g.html"><small>下一集 #28 →</small>从高潮开始</a></div><section id="tldr" data-toc="速览"><h2>速览</h2><p>最近游戏表现真的很厉害：最尖端作品里，预渲染等影片反而可能比实机构成的影片画质低——分辨率、帧率会下降（例如实机 60fps、过场 30fps）。正题：与主线无关的影片部分特别长，你怎么看？视作品而定，樱井自己多半会着急，希望长篇表现稍微收一收。但影片长度无所谓好坏：深挖能让故事更清楚、促进代入感；从影片细微动作中感受意义，在游戏中很难发生。激烈的动作游戏中插入影片也有<b>让人喘口气</b>的一面——不过最激烈的动作游戏大概也会设计无敌区域，优先度未必高。也有看影片本身就是卖点、是奖励的，但在随便就被传上网的时代，很难成为奖励——以剧情为主的作品真是进入了艰难时代。实机构成的对话场景大多能<b>按台词单位跳过</b>；影片大多不行，所以若能跳到中途或快进，可能更友好。这是 YouTube、录像等影像服务都被稍微快进着享受的时代；呕心沥血做的影片希望被好好看，可以理解，但作为创作者，配合时代性也有商量余地。相关地：<b>影片一定要能一并跳过</b>，制作人员表也一样——即使是二周目数据，也不一定是第一次看过。另外所谓 <b>QTE</b>（影片中途需要按键输入）常被讨厌：想让玩家带着紧张感看影片可以理解，但要做就慎重。</p></section><section id="s1" data-toc="现状"><h2>1. 实机过场的现状 <a class="ts" href="https://youtu.be/VZRh0P40RAM?t=4" target="_blank" rel="noopener">0:04</a></h2>
+<p>最近的游戏表现真的很厉害。最尖端的作品里，预渲染之类的影片，甚至可能比实机构成的影片画质更低——分辨率和帧率会下降。</p>
+<div class="row"><figure><img src="img/VZRh0P40RAM/f160.webp" alt="" loading="lazy"><figcaption>实机游戏画面 60fps（0:16 左右）</figcaption></figure><figure><img src="img/VZRh0P40RAM/f240.webp" alt="" loading="lazy"><figcaption>过场影片 30fps：预渲染影片有时反而降一档（0:24 左右）</figcaption></figure></div>
+</section>
+<section id="s2" data-toc="价值与代价"><h2>2. 过场的价值与代价 <a class="ts" href="https://youtu.be/VZRh0P40RAM?t=30" target="_blank" rel="noopener">0:30</a></h2>
+<div class="row"><div><p>正题：与主线无关的影片部分特别长——你怎么看？视作品而定，樱井自己多半会着急，希望冗长的表现稍微收一收。</p><p>但影片的长度不能说好或坏：</p><ul class="points"><li>深入描写能让故事更清楚、促进代入感；</li><li>从影片里细微动作中感受到意义，这在游戏中很难发生；</li><li>激烈的动作游戏中插入影片，也有让人喘口气的作用（不过最激烈的动作游戏大概也会巧妙设置无敌区域，优先度未必高）。</li></ul></div><figure><img src="img/VZRh0P40RAM/f600.webp" alt="" loading="lazy"><figcaption>过场中细微而有意义的瞬间，在游戏中很难重现（1:00 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/VZRh0P40RAM/f900.webp" alt="" loading="lazy"><figcaption>剧情影片到处都能在网上看到，很难再算奖励（1:30 左右）</figcaption></figure><div><p>也有「看影片」本身就是卖点、是奖励的作品。但在随意就能被传上网的时代，影片很难成为奖励——以剧情为主的作品真是进入了艰难的时代。</p></div></div>
+</section>
+<section id="s3" data-toc="更友好"><h2>3. 让过场更友好 <a class="ts" href="https://youtu.be/VZRh0P40RAM?t=104" target="_blank" rel="noopener">1:44</a></h2>
+<div class="row"><div><p>实机构成的对话场景，大多做成能<b>按台词单位跳过</b>；影片则大多不行。所以如果能跳到中途，或者做出快进的表现，也许更友好。</p></div><figure><img src="img/VZRh0P40RAM/f1120.webp" alt="" loading="lazy"><figcaption>实机对话场景通常可逐句跳过（1:52 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/VZRh0P40RAM/f1280.webp" alt="" loading="lazy"><figcaption>如今人们习惯稍微加速观看视频（2:08 左右）</figcaption></figure><div><p>现在是 YouTube、录像等影像服务都被稍微快进着享受的时代。呕心沥血做的影片希望被好好看，可以理解；但作为创作者，配合时代性还有商量余地。</p></div></div>
+</section>
+<section id="s4" data-toc="跳过与 QTE"><h2>4. 必须可跳过；QTE 慎用 <a class="ts" href="https://youtu.be/VZRh0P40RAM?t=140" target="_blank" rel="noopener">2:20</a></h2>
+<div class="row"><div><div class="key">相关地：<b>影片一定要能一并跳过</b>，制作人员表也一样。即使是二周目的存档，也不一定是看过的人在玩。</div></div><figure><img src="img/VZRh0P40RAM/f1520.webp" alt="" loading="lazy"><figcaption>所有过场都要可跳过，包括制作人员表（2:32 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/VZRh0P40RAM/f1600.webp" alt="" loading="lazy"><figcaption>QTE：在过场中途要求按键（2:40 左右）</figcaption></figure><div><p>另外，所谓 <b>QTE</b>（影片中途要求按键输入）往往被讨厌。想让玩家带着紧张感看影片可以理解，但要做的话请慎重。</p></div></div>
+</section>
+
+<section id="quiz" data-toc="自测题"><h2>自测题</h2><details><summary>1. 为什么最尖端游戏中预渲染影片可能比实机画质低？</summary><p>预渲染影片的分辨率与帧率可能下降，而实机画面已经很高质量。 <a class="ts" href="https://youtu.be/VZRh0P40RAM?t=4" target="_blank" rel="noopener">0:04</a></p></details><details><summary>2. 过场动画的优点有哪些？</summary><p>让故事更清楚、促进代入；细微动作的意义；激烈动作中让人喘口气；也可作卖点或奖励。 <a class="ts" href="https://youtu.be/VZRh0P40RAM?t=44" target="_blank" rel="noopener">0:44</a></p></details><details><summary>3. 樱井对过场的跳过有什么主张？</summary><p>能逐句跳过或跳到中途、快进更友好；所有影片（含制作人员表）都必须能一并跳过，即使是二周目。 <a class="ts" href="https://youtu.be/VZRh0P40RAM?t=140" target="_blank" rel="noopener">2:20</a></p></details></section><div class="pn"><a href="26-uleauI0IwZM.html"><small>← 上一集 #26</small>电脑控制的玩家（CP）</a><a class="next" href="28-eAd0pt-uv8g.html"><small>下一集 #28 →</small>从高潮开始</a></div></main></div>
+<footer class="foot"><p>我整理了这个游戏制作学习网站，方便回顾课程要点与自测。本站为非官方的个人学习总结。</p><p>维护者 <a href="https://github.com/jinxiaoye1987">jinxiaoye1987</a>。本站与仓库有 AI 辅助整理与脚手架编写。课程观点来自原视频，由维护者整理，不能替代原视频。</p><p>本站不是樱井政博、任天堂、HAL 研究所、YouTube 频道「<a href="https://www.youtube.com/@sora_sakurai_en" target="_blank" rel="noopener">Masahiro Sakurai on Creating Games</a>」或其相关权利人的官方网站，未经上述权利人授权、审核或背书。</p><p>内容依据公开视频整理，可能有偏差或遗漏。截图、字幕、游戏画面、作品名与角色形象等权利归各自权利人。学习这些笔记并不因此获得素材许可。</p><p><a href="../about.html">关于本站</a></p></footer>
+<div id="lightbox"><img alt=""></div>
+<script src="../assets/site.js"></script>
+</body></html>

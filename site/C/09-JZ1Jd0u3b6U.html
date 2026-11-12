@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>C-9 学会数帧！ · 樱井政博「Creating Games」中文图文课</title>
+<link rel="stylesheet" href="../assets/site.css">
+<script>(function(){var t=localStorage.getItem('cg-theme');if(t)document.documentElement.dataset.theme=t;})();</script>
+</head><body>
+<div class="topbar"><div class="in"><a class="brand" href="../index.html"><b>樱井政博</b> 做游戏 · 中文图文课</a><nav><a href="../index.html" class="">首页</a><a href="../index.html#cats" class="">全部分类</a><a href="../map.html" class="">知识地图</a><a href="../quiz.html" class="">随机测验</a><a href="../search.html" class="">搜索</a><a href="../about.html" class="">关于</a></nav><span class="sp"></span>
+<form action="../search.html" method="get"><input name="q" placeholder="搜索全部课程…" aria-label="搜索"></form><button id="themeBtn" type="button">☾ 深色</button></div></div>
+<div class="disclaimer">非官方个人学习总结，未经权利人授权或背书，不能替代原视频。截图等第三方素材不因学习而获得使用许可。<a href="../about.html">关于本站</a></div>
+<div class="layout"><nav class="toc"><h2>本集目录</h2><ol><li><a href="#tldr"><span class="num">★</span>速览</a></li><li><a href="#s1"><span class="num">1</span>为什么</a></li><li><a href="#s2"><span class="num">2</span>数帧方法</a></li><li><a href="#s3"><span class="num">3</span>参照点</a></li><li><a href="#s4"><span class="num">4</span>体感</a></li><li><a href="#quiz"><span class="num">?</span>自测题</a></li></ol>
+<p class="note" style="margin:12px 8px 0"><a href="index.html">← 返回 C 企划与游戏设计</a></p></nav>
+<main><p class="crumb"><a href="../index.html">首页</a> / <a href="index.html">C 企划与游戏设计</a> / #9</p><header class="hero"><div>
+<h1>C-9 学会数帧！</h1><p class="sub">原标题：<i>Learn to Count Frames!</i></p>
+<ul class="meta"><li>时长 3:49</li><li>原语言：日语（画面内嵌英文字幕）</li><li>C 企划与游戏设计 #9/30</li></ul>
+<p style="margin:14px 0 0">▶ 原视频：<a href="https://youtu.be/JZ1Jd0u3b6U" target="_blank" rel="noopener">https://youtu.be/JZ1Jd0u3b6U</a></p></div><img src="img/JZ1Jd0u3b6U/cover.jpg" alt="视频缩略图"></header><div class="pn"><a href="08-IM9P9NIKo10.html"><small>← 上一集 #8</small>好的跑腿与坏的跑腿</a><a class="next" href="10-Xz53DEwuAcU.html"><small>下一集 #10 →</small>让教程显得自然</a></div><section id="tldr" data-toc="速览"><h2>速览</h2><p>帧是游戏的时间单位，没法凭感觉估出它的长短会很麻烦。比如 30 帧有多长？15 帧呢？知道时间就知道速度，也知道移动距离——<b>所有动作都以帧为基准</b>，所以知道它的长度是必需的。但没有能按帧计时的秒表。前提是每秒 60 帧：数 1 秒当然是 60 帧，但很难数准。所以不要「1、2、3」地数，而是在中间加一拍：<b>「1 和 2 和 3」</b>，这样每拍大约是 <b>30 帧</b>，其一半是 <b>15 帧</b>。15 帧在《大乱斗》里大约是一个重攻击从输入到发出的时间；《铁拳》里普通踢腿的出招时间；《街头霸王 II》重拳的出招大概还不到它的一半——当然因角色和招式而异。例如 20 帧比 15 帧多一点，就看它超出参照点多少来估。（赛车游戏的终点之所以不论多细都能算出精确时间，是用帧与帧之间的距离来测量。）总之先在数秒时加入「和」，剩下靠习惯。以前讲过导演会用手办摆姿势并写出各种帧数指定，向员工传达脑中的动作——自己不能大致数帧就写不出来。就算向电脑输入了帧数，程序或数据也可能出错，这时稍微锻炼人的体感是有效的。</p></section><section id="s1" data-toc="为什么"><h2>1. 为什么要会数帧 <a class="ts" href="https://youtu.be/JZ1Jd0u3b6U?t=3" target="_blank" rel="noopener">0:03</a></h2>
+<div class="row"><div><p>帧是游戏的时间单位。凭感觉估不出帧的长短，会处处碰壁。比如 30 帧大概有多长？15 帧呢？</p></div><figure><img src="img/JZ1Jd0u3b6U/f200.webp" alt="" loading="lazy"><figcaption>30 帧、15 帧到底有多长？（0:20 左右）</figcaption></figure></div>
+<p>知道了时间，就知道速度，也知道移动距离——<b>所有动作都以帧为基准</b>，所以了解它的长度非常重要，是必备技能。但世上并没有能按帧计时的秒表。</p>
+</section>
+<section id="s2" data-toc="数帧方法"><h2>2. 「1 和 2 和 3」 <a class="ts" href="https://youtu.be/JZ1Jd0u3b6U?t=70" target="_blank" rel="noopener">1:10</a></h2>
+<div class="row"><div><p>前提是每秒 60 帧。数 1 秒当然就是 60 帧，但这很难数准确。</p></div><figure><img src="img/JZ1Jd0u3b6U/f800.webp" alt="" loading="lazy"><figcaption>1 秒 = 60 帧（1:20 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/JZ1Jd0u3b6U/f1100.webp" alt="" loading="lazy"><figcaption>「1 和 2」——每拍约 30 帧（1:50 左右）</figcaption></figure><div><div class="key">不要「1、2、3」地数，而是在中间插一拍：<b>「1 和 2 和 3」</b>。这样每个拍子之间大约是 <b>30 帧</b>；其一半就是 <b>15 帧</b>（1 到 2 之间有两个 15 帧）。</div></div></div>
+</section>
+<section id="s3" data-toc="参照点"><h2>3. 用参照点估算 <a class="ts" href="https://youtu.be/JZ1Jd0u3b6U?t=118" target="_blank" rel="noopener">1:58</a></h2>
+<div class="row"><div><p>15 帧有多快？</p><ul class="points"><li>《大乱斗》：大约是一个重攻击从输入到攻击发出的时间；</li><li>《铁拳》：普通踢腿的出招时间；</li><li>《街头霸王 II》：重拳的出招大概还不到它的一半。</li></ul></div><figure><img src="img/JZ1Jd0u3b6U/f1300.webp" alt="" loading="lazy"><figcaption>《铁拳》中普通踢腿的出招时间（2:10 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/JZ1Jd0u3b6U/f1600.webp" alt="" loading="lazy"><figcaption>20 帧：比 15 帧的参照点稍长（2:40 左右）</figcaption></figure><div><p>当然因角色和招式而异，但大致是这种速度感。例如 20 帧比 15 帧多一点，大约是 30 帧中点再稍长一些——<b>看超出参照点多少</b>来估算。</p></div></div>
+<div class="row"><div><p>补充：赛车游戏的终点不论以多细的粒度测量都能出精确时间，就是用这种方法——用帧与帧之间的距离来测。</p></div><figure><img src="img/JZ1Jd0u3b6U/f1700.webp" alt="" loading="lazy"><figcaption>以帧间距离推算精确的终点时间（2:50 左右）</figcaption></figure></div>
+</section>
+<section id="s4" data-toc="体感"><h2>4. 为什么开发者要有体感 <a class="ts" href="https://youtu.be/JZ1Jd0u3b6U?t=172" target="_blank" rel="noopener">2:52</a></h2>
+<div class="row"><div><p>总之先在数秒时加上「和」，剩下的就是习惯。</p><p>以前讲过，导演为了把脑中设想的动作传达给员工，会用手办摆姿势并写出各种帧数指定——自己不能大致测帧，当然写不出来。</p></div><figure><img src="img/JZ1Jd0u3b6U/f1900.webp" alt="" loading="lazy"><figcaption>导演用手办摆姿势、指定帧数（3:10 左右）</figcaption></figure></div>
+<div class="key">即使把帧数输入了电脑，程序或数据也可能出错。这时，稍微锻炼人的实际体感是有效的。</div>
+</section>
+
+<section id="quiz" data-toc="自测题"><h2>自测题</h2><details><summary>1. 樱井推荐用什么方法大致数帧？</summary><p>数秒时在中间加一拍「1 和 2 和 3」，每拍约 30 帧，半拍约 15 帧。 <a class="ts" href="https://youtu.be/JZ1Jd0u3b6U?t=94" target="_blank" rel="noopener">1:34</a></p></details><details><summary>2. 如何估计 20 帧？</summary><p>以 15 帧、30 帧为参照点，看超出多少：20 帧比 15 帧稍多，约在 30 帧的中点再长一点。 <a class="ts" href="https://youtu.be/JZ1Jd0u3b6U?t=142" target="_blank" rel="noopener">2:22</a></p></details><details><summary>3. 为什么开发者本人需要能数帧？</summary><p>指定动作帧数时需要自己能测；即使输入了数值，程序或数据也可能出错，靠体感能发现问题。 <a class="ts" href="https://youtu.be/JZ1Jd0u3b6U?t=189" target="_blank" rel="noopener">3:09</a></p></details></section><div class="pn"><a href="08-IM9P9NIKo10.html"><small>← 上一集 #8</small>好的跑腿与坏的跑腿</a><a class="next" href="10-Xz53DEwuAcU.html"><small>下一集 #10 →</small>让教程显得自然</a></div></main></div>
+<footer class="foot"><p>我整理了这个游戏制作学习网站，方便回顾课程要点与自测。本站为非官方的个人学习总结。</p><p>维护者 <a href="https://github.com/jinxiaoye1987">jinxiaoye1987</a>。本站与仓库有 AI 辅助整理与脚手架编写。课程观点来自原视频，由维护者整理，不能替代原视频。</p><p>本站不是樱井政博、任天堂、HAL 研究所、YouTube 频道「<a href="https://www.youtube.com/@sora_sakurai_en" target="_blank" rel="noopener">Masahiro Sakurai on Creating Games</a>」或其相关权利人的官方网站，未经上述权利人授权、审核或背书。</p><p>内容依据公开视频整理，可能有偏差或遗漏。截图、字幕、游戏画面、作品名与角色形象等权利归各自权利人。学习这些笔记并不因此获得素材许可。</p><p><a href="../about.html">关于本站</a></p></footer>
+<div id="lightbox"><img alt=""></div>
+<script src="../assets/site.js"></script>
+</body></html>

@@ -1,0 +1,29 @@
+<section id="s1" data-toc="开发名称"><h2>1. 「必殺技上」？ <a class="ts" href="https://youtu.be/XMzR5mJHPDg?t=3" target="_blank" rel="noopener">0:03</a></h2>
+<div class="row"><div><p>「程序与技术」分类讲直接面对电脑的技术话题。不过这类话题容易触及机密，而且因开发环境、团队规模、对象机种不同差异很大，所以集数会较少，只在没问题的范围内讲讲概要。</p></div><figure><img src="img/f240.webp" alt="" loading="lazy"><figcaption>这个分类容易触及机密（0:24 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/f480.webp" alt="" loading="lazy"><figcaption>Up Special（0:48 左右）</figcaption></figure><div><p>《大乱斗》的「上必殺技」（Up Special），樱井有时会反过来说成「必殺技上」。为什么？</p></div></div>
+<div class="key">因为开发名称就是「必殺技上」（SpecialHi），整个团队都这么叫。这有合理的理由。</div>
+</section>
+<section id="s2" data-toc="规则"><h2>2. 文件名规则 <a class="ts" href="https://youtu.be/XMzR5mJHPDg?t=70" target="_blank" rel="noopener">1:10</a></h2>
+<div class="row"><div><p>每个招式都有文件名（也可以说是标签名），从初代《大乱斗》开发时定下，沿用至今。A 键的普通攻击叫 <b>Attack</b>（普通的拳、踢等）；B 键的必杀技叫 <b>Special</b>（如火球、超级跳跃拳）。</p></div><figure><img src="img/f980.webp" alt="" loading="lazy"><figcaption>File Name：Attack / Special（1:38 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/f1200.webp" alt="" loading="lazy"><figcaption>弱攻击连击：Attack11 / 12 / 13（2:00 左右）</figcaption></figure><div><p>数字表示强度：弱攻击是 Attack1，Smash 攻击是 Attack4；弱攻击连击是 Attack11、12、13，数字递增。</p></div></div>
+<div class="row"><div><p>强攻击、Smash 攻击、必杀技等再附上输入方向：中央 <b>N</b>（Neutral）、上 <b>Hi</b>、横 <b>S</b>、下 <b>Lw</b>。按这个规则，横 Smash 攻击写作 AttackS4；空中技加 <b>Air</b>。</p></div><figure><img src="img/f1320.webp" alt="" loading="lazy"><figcaption>方向：Hi / S / Lw（2:12 左右）</figcaption></figure></div>
+<pre><code>Attack11  Attack12  Attack13   # 弱攻击连击
+Attack3                        # 强攻击
+Attack4   AttackS4             # Smash 攻击
+AttackAirN  AttackAirHi  AttackAirLw   # 空中攻击
+SpecialN  SpecialHi  SpecialS  SpecialLw  # 必杀技</code></pre>
+</section>
+<section id="s3" data-toc="排序"><h2>3. 为什么这样排 <a class="ts" href="https://youtu.be/XMzR5mJHPDg?t=145" target="_blank" rel="noopener">2:25</a></h2>
+<div class="row"><div><p>最大的好处是：谁看文件名都马上知道是哪个招式。另一个很大的好处是，<b>排序时排列得比较整齐</b>。</p></div><figure><img src="img/f1580.webp" alt="" loading="lazy"><figcaption>一看文件名就知道是什么招式（2:38 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/f1700.webp" alt="" loading="lazy"><figcaption>按强度从弱到 Smash 排列（2:50 左右）</figcaption></figure><div><p>Attack 按弱 → 强 → Smash，强度数字变大，排序时就整齐；必杀技带 Special，自成一类，容易区分。</p></div></div>
+<div class="row"><div><div class="key">如果写成 SAttack、HiAttack 这种把方向放前面的写法，排序时就乱七八糟。强度用数字以外的方式表示也不好。</div></div><figure><img src="img/f1840.webp" alt="" loading="lazy"><figcaption>方向在前：排序会乱（3:04 左右）</figcaption></figure></div>
+</section>
+<section id="s4" data-toc="正式名"><h2>4. 开发名与正式名 <a class="ts" href="https://youtu.be/XMzR5mJHPDg?t=190" target="_blank" rel="noopener">3:10</a></h2>
+<div class="row"><div><p>SpecialHi 直接翻成日语就是「必殺技上」。那正式名称为什么叫「上必殺技」？因为玩家的操作是从方向开始：一边按上一边按必杀键，就是上必杀技——操作方法和名称一致。</p></div><figure><img src="img/f2160.webp" alt="" loading="lazy"><figcaption>名称与操作方式一致（3:36 左右）</figcaption></figure></div>
+<p>招式的开发名和正式名不同，有点复杂，他有时会不自觉说反，请见谅。</p>
+</section>
+<section id="s5" data-toc="建议"><h2>5. 命名建议 <a class="ts" href="https://youtu.be/XMzR5mJHPDg?t=234" target="_blank" rel="noopener">3:54</a></h2>
+<div class="row"><div><div class="key">开发用的文件名、标签名要简洁易懂，让第一次接触的人也能一眼看明白。太短打字轻松，但意思难懂，平衡到能看懂的程度为好。</div></div><figure><img src="img/f2420.webp" alt="" loading="lazy"><figcaption>第一次看的人也应该一眼看懂（4:02 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/f2660.webp" alt="" loading="lazy"><figcaption>会让不懂日语的人更难理解（4:26 左右）</figcaption></figure><div><p>还有一件特别想说的：日本开发者请尽量别用罗马字文件名。尤其是大项目，海外的人很难理解，之后回看时会看不懂。</p></div></div>
+<p>他常提醒团队，但仍层出不穷——不是只有做的人懂就行。</p>
+</section>

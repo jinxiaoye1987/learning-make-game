@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>I-13 红白机与 NES 的音源 · 樱井政博「Creating Games」中文图文课</title>
+<link rel="stylesheet" href="../assets/site.css">
+<script>(function(){var t=localStorage.getItem('cg-theme');if(t)document.documentElement.dataset.theme=t;})();</script>
+</head><body>
+<div class="topbar"><div class="in"><a class="brand" href="../index.html"><b>樱井政博</b> 做游戏 · 中文图文课</a><nav><a href="../index.html" class="">首页</a><a href="../index.html#cats" class="">全部分类</a><a href="../map.html" class="">知识地图</a><a href="../quiz.html" class="">随机测验</a><a href="../search.html" class="">搜索</a><a href="../about.html" class="">关于</a></nav><span class="sp"></span>
+<form action="../search.html" method="get"><input name="q" placeholder="搜索全部课程…" aria-label="搜索"></form><button id="themeBtn" type="button">☾ 深色</button></div></div>
+<div class="disclaimer">非官方个人学习总结，未经权利人授权或背书，不能替代原视频。截图等第三方素材不因学习而获得使用许可。<a href="../about.html">关于本站</a></div>
+<div class="layout"><nav class="toc"><h2>本集目录</h2><ol><li><a href="#tldr"><span class="num">★</span>速览</a></li><li><a href="#s1"><span class="num">1</span>开篇</a></li><li><a href="#s2"><span class="num">2</span>方波</a></li><li><a href="#s3"><span class="num">3</span>三角波</a></li><li><a href="#s4"><span class="num">4</span>DPCM</a></li><li><a href="#s5"><span class="num">5</span>扩展</a></li><li><a href="#s6"><span class="num">6</span>推荐</a></li><li><a href="#quiz"><span class="num">?</span>自测题</a></li></ol>
+<p class="note" style="margin:12px 8px 0"><a href="index.html">← 返回 I 音频</a></p></nav>
+<main><p class="crumb"><a href="../index.html">首页</a> / <a href="index.html">I 音频</a> / #13</p><header class="hero"><div>
+<h1>I-13 红白机与 NES 的音源</h1><p class="sub">原标题：<i>Famicom and NES Audio</i></p>
+<ul class="meta"><li>时长 6:14</li><li>原语言：日语（画面内嵌英文字幕）</li><li>I 音频 #13/14</li></ul>
+<p style="margin:14px 0 0">▶ 原视频：<a href="https://youtu.be/eyQSb_tC0Fg" target="_blank" rel="noopener">https://youtu.be/eyQSb_tC0Fg</a></p></div><img src="img/eyQSb_tC0Fg/cover.jpg" alt="视频缩略图"></header><div class="pn"><a href="12-heFZ6qQXfDw.html"><small>← 上一集 #12</small>用其他曲子作参考</a><a class="next" href="14-5fqTlWgfCL0.html"><small>下一集 #14 →</small>没有哪部名作的声音是差的</a></div><section id="tldr" data-toc="速览"><h2>速览</h2><p>这次闲聊红白机音源。<b>一台硬件进化到如此程度</b>的例子，他觉得空前绝后。红白机音源构成是：<b>方波 2 个、三角波 1 个、噪声 1 个、DPCM 1 个</b>。大多数人可能不懂意思，说明一下：<b>音的波长长发出低音，短发出高音</b>。波形像城堡的垛口一样数字地凹凸，作为音会发出「哔」那样没有起伏的音，和「哔波」一样吧——这叫<b>方波</b>，红白机主要靠它做音乐；可以从几种之中改变时间比例来改变音色，叫<b>占空比（Duty）</b>。然后是<b>三角波</b>：比方波柔和、或者说闷的音，多用作<b>贝斯</b>等；红白机准确说是伪三角波。然后是<b>噪声</b>：比起音乐，多用于<b>命中音、爆炸音、欢呼声、海浪声</b>等。理所当然，这 5 个音源<b>要兼顾音乐和效果音</b>：效果音响时消掉部分音乐来应对也是常事。剩下的 <b>DPCM 竟然是采样音源</b>，即能把音录下来直接用——当然不能像现在一样干净地采样；有名的是《<b>超级马力欧兄弟 3</b>》的定音鼓吧。一开始就作为功能内置，但因为<b>吃容量</b>，红白机初中期的软件很少用；正因如此，容量提升、技术磨练的后期作品取得了惊人进化。而且<b>磁碟机</b>又增加了一个音源，叫<b>波形存储音源</b>，有黏性的音质。再者，红白机 ROM 中出现了很多<b>追加扩展音源</b>的：即每盘卡带里装一块 IC 来发出更好的音。但首先磁碟机没有在海外发售；同样 NES（任天堂娱乐系统）即海外版红白机<b>删除了卡带内置音源用的针脚</b>，也就是 ROM 不能搭载扩展音源。因此有几款<b>日本与海外音乐风味不同</b>：如《塞尔达传说》《恶魔城 II》。这些在后期作品中能分给 DPCM 的容量增加，差距逐渐填平。推荐 NES 的《<b>银色冲浪手</b>》，还有 Sunsoft <b>小高直树</b>的曲子也非常好：《<b>Journey to Silius</b>》《<b>Super Spy Hunter</b>》等——不知道？是吗……当时制作者在受限的功能中精打细算，所以着眼于技术会觉得真的很有趣。</p></section><section id="s1" data-toc="开篇"><h2>1. 一台硬件的巨大进化 <a class="ts" href="https://youtu.be/eyQSb_tC0Fg?t=3" target="_blank" rel="noopener">0:03</a></h2>
+<div class="row"><div><p>这次闲聊红白机音源。一台硬件进化到如此程度的例子，他觉得空前绝后。</p></div><figure><img src="img/eyQSb_tC0Fg/f80.webp" alt="" loading="lazy"><figcaption>红白机与 NES（0:08 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/eyQSb_tC0Fg/f240.webp" alt="" loading="lazy"><figcaption>方波 ×2、三角波、噪声、DPCM（0:24 左右）</figcaption></figure><div><p>红白机音源构成是：方波 2 个、三角波 1 个、噪声 1 个、DPCM 1 个。</p></div></div>
+<table><tr><th>声道</th><th>音色</th><th>常见用途</th></tr><tr><td>方波 ×2</td><td>「哔」的清脆音，可变占空比</td><td>主旋律等</td></tr><tr><td>三角波 ×1</td><td>柔和、闷（伪三角波）</td><td>贝斯</td></tr><tr><td>噪声 ×1</td><td>沙沙声</td><td>命中、爆炸、欢呼、海浪</td></tr><tr><td>DPCM ×1</td><td>采样（录音）</td><td>定音鼓等</td></tr><tr><td>磁碟机：波形存储</td><td>有黏性的音质</td><td>追加音源</td></tr></table>
+</section>
+<section id="s2" data-toc="方波"><h2>2. 方波与占空比 <a class="ts" href="https://youtu.be/eyQSb_tC0Fg?t=30" target="_blank" rel="noopener">0:30</a></h2>
+<div class="row"><div><p>音的波长长发出低音，短发出高音。</p></div><figure><img src="img/eyQSb_tC0Fg/f320.webp" alt="" loading="lazy"><figcaption>波长长 → 低音；波长短 → 高音（0:32 左右）</figcaption></figure></div>
+<p>波形像城堡的垛口一样数字地凹凸，作为音会发出「哔」那样没有起伏的音——这叫方波，红白机主要靠它做音乐。</p>
+<div class="row"><figure><img src="img/eyQSb_tC0Fg/f400.webp" alt="" loading="lazy"><figcaption>方波：像城墙垛口（0:40 左右）</figcaption></figure><figure><img src="img/eyQSb_tC0Fg/f560.webp" alt="" loading="lazy"><figcaption>红白机音乐主要靠它（0:56 左右）</figcaption></figure></div>
+<div class="row"><div><div class="key">可以从几种之中改变时间比例来改变音色，叫占空比（Duty）。</div></div><figure><img src="img/eyQSb_tC0Fg/f720.webp" alt="" loading="lazy"><figcaption>占空比：12.5%、25%、50%、75%（1:12 左右）</figcaption></figure></div>
+</section>
+<section id="s3" data-toc="三角波"><h2>3. 三角波与噪声 <a class="ts" href="https://youtu.be/eyQSb_tC0Fg?t=73" target="_blank" rel="noopener">1:13</a></h2>
+<p>三角波比方波柔和，或者说闷，多用作贝斯等。红白机准确说是伪三角波。</p>
+<div class="row"><figure><img src="img/eyQSb_tC0Fg/f800.webp" alt="" loading="lazy"><figcaption>三角波（1:20 左右）</figcaption></figure><figure><img src="img/eyQSb_tC0Fg/f880.webp" alt="" loading="lazy"><figcaption>《星之卡比 梦之泉物语》（1:28 左右）</figcaption></figure></div>
+<p>噪声比起音乐，多用于命中音、爆炸音、欢呼声、海浪声等。</p>
+<div class="row"><figure><img src="img/eyQSb_tC0Fg/f960.webp" alt="" loading="lazy"><figcaption>噪声（1:36 左右）</figcaption></figure><figure><img src="img/eyQSb_tC0Fg/f1040.webp" alt="" loading="lazy"><figcaption>噪声的例子（1:44 左右）</figcaption></figure></div>
+<div class="row"><div><div class="key">理所当然，这 5 个音源要兼顾音乐和效果音：效果音响时消掉部分音乐来应对也是常事。</div></div><figure><img src="img/eyQSb_tC0Fg/f1200.webp" alt="" loading="lazy"><figcaption>音乐与效果音共用 5 个声道（2:00 左右）</figcaption></figure></div>
+</section>
+<section id="s4" data-toc="DPCM"><h2>4. DPCM <a class="ts" href="https://youtu.be/eyQSb_tC0Fg?t=125" target="_blank" rel="noopener">2:05</a></h2>
+<p>剩下的 DPCM 竟然是采样音源：能把音录下来直接用。当然不能像现在一样干净地采样。</p>
+<div class="row"><figure><img src="img/eyQSb_tC0Fg/f1360.webp" alt="" loading="lazy"><figcaption>录下声音直接用（2:16 左右）</figcaption></figure><figure><img src="img/eyQSb_tC0Fg/f1440.webp" alt="" loading="lazy"><figcaption>采样不像现在那么干净（2:24 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/eyQSb_tC0Fg/f1520.webp" alt="" loading="lazy"><figcaption>《马力欧 3》的定音鼓（2:32 左右）</figcaption></figure><div><p>有名的是《超级马力欧兄弟 3》的定音鼓吧。</p></div></div>
+<div class="row"><div><div class="key">一开始就作为功能内置，但因为吃容量，初中期的软件很少用；正因如此，容量提升、技术磨练的后期作品取得了惊人进化。</div></div><figure><img src="img/eyQSb_tC0Fg/f1760.webp" alt="" loading="lazy"><figcaption>《魂斗罗 Super C》过关音（2:56 左右）</figcaption></figure></div>
+</section>
+<section id="s5" data-toc="扩展"><h2>5. 磁碟机与扩展音源 <a class="ts" href="https://youtu.be/eyQSb_tC0Fg?t=182" target="_blank" rel="noopener">3:02</a></h2>
+<div class="row"><div><p>磁碟机又增加了一个音源，叫波形存储音源，有黏性的音质。</p></div><figure><img src="img/eyQSb_tC0Fg/f1920.webp" alt="" loading="lazy"><figcaption>波形存储音源（3:12 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/eyQSb_tC0Fg/f2080.webp" alt="" loading="lazy"><figcaption>卡带内置扩展音源芯片（3:28 左右）</figcaption></figure><div><p>红白机 ROM 中出现了很多追加扩展音源的：每盘卡带里装一块 IC 来发出更好的音。</p></div></div>
+<div class="key">但磁碟机没有在海外发售；NES 也删除了卡带内置音源用的针脚。因此有几款日本与海外音乐风味不同。</div>
+<div class="figs"><figure><img src="img/eyQSb_tC0Fg/f2320.webp" alt="" loading="lazy"><figcaption>卡带音源用的针脚被删掉了（3:52 左右）</figcaption></figure><figure><img src="img/eyQSb_tC0Fg/f2560.webp" alt="" loading="lazy"><figcaption>《塞尔达传说》日版 / 海外版（4:16 左右）</figcaption></figure><figure><img src="img/eyQSb_tC0Fg/f2880.webp" alt="" loading="lazy"><figcaption>《恶魔城》日版 / 海外版（4:48 左右）</figcaption></figure></div>
+</section>
+<section id="s6" data-toc="推荐"><h2>6. 推荐曲 <a class="ts" href="https://youtu.be/eyQSb_tC0Fg?t=296" target="_blank" rel="noopener">4:56</a></h2>
+<div class="row"><div><p>这些在后期作品中能分给 DPCM 的容量增加，差距逐渐填平。</p></div><figure><img src="img/eyQSb_tC0Fg/f3120.webp" alt="" loading="lazy"><figcaption>《银色冲浪手》（5:12 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/eyQSb_tC0Fg/f3360.webp" alt="" loading="lazy"><figcaption>《Journey to Silius》（5:36 左右）</figcaption></figure><div><p>推荐 NES 的《银色冲浪手》，还有 Sunsoft 小高直树的曲子也非常好：《Journey to Silius》《Super Spy Hunter》等——不知道？是吗……</p></div></div>
+<div class="key">当时制作者在受限的功能中精打细算，所以着眼于技术会觉得真的很有趣。</div>
+</section>
+
+<section id="quiz" data-toc="自测题"><h2>自测题</h2><details><summary>1. 红白机内置哪 5 个声道？</summary><p>方波 ×2、三角波 ×1、噪声 ×1、DPCM ×1。 <a class="ts" href="https://youtu.be/eyQSb_tC0Fg?t=25" target="_blank" rel="noopener">0:25</a></p></details><details><summary>2. 为什么 DPCM 在初中期很少用？</summary><p>采样吃容量；后期容量提升才大幅进化。 <a class="ts" href="https://youtu.be/eyQSb_tC0Fg?t=165" target="_blank" rel="noopener">2:45</a></p></details><details><summary>3. 为什么一些游戏日美音乐不同？</summary><p>海外没有磁碟机，NES 删除了卡带扩展音源的针脚，不能用扩展音源芯片。 <a class="ts" href="https://youtu.be/eyQSb_tC0Fg?t=230" target="_blank" rel="noopener">3:50</a></p></details></section><div class="pn"><a href="12-heFZ6qQXfDw.html"><small>← 上一集 #12</small>用其他曲子作参考</a><a class="next" href="14-5fqTlWgfCL0.html"><small>下一集 #14 →</small>没有哪部名作的声音是差的</a></div></main></div>
+<footer class="foot"><p>我整理了这个游戏制作学习网站，方便回顾课程要点与自测。本站为非官方的个人学习总结。</p><p>维护者 <a href="https://github.com/jinxiaoye1987">jinxiaoye1987</a>。本站与仓库有 AI 辅助整理与脚手架编写。课程观点来自原视频，由维护者整理，不能替代原视频。</p><p>本站不是樱井政博、任天堂、HAL 研究所、YouTube 频道「<a href="https://www.youtube.com/@sora_sakurai_en" target="_blank" rel="noopener">Masahiro Sakurai on Creating Games</a>」或其相关权利人的官方网站，未经上述权利人授权、审核或背书。</p><p>内容依据公开视频整理，可能有偏差或遗漏。截图、字幕、游戏画面、作品名与角色形象等权利归各自权利人。学习这些笔记并不因此获得素材许可。</p><p><a href="../about.html">关于本站</a></p></footer>
+<div id="lightbox"><img alt=""></div>
+<script src="../assets/site.js"></script>
+</body></html>

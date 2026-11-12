@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>搜索 · 樱井政博「Creating Games」中文图文课</title>
+<link rel="stylesheet" href="assets/site.css">
+<script>(function(){var t=localStorage.getItem('cg-theme');if(t)document.documentElement.dataset.theme=t;})();</script>
+</head><body>
+<div class="topbar"><div class="in"><a class="brand" href="index.html"><b>樱井政博</b> 做游戏 · 中文图文课</a><nav><a href="index.html" class="">首页</a><a href="index.html#cats" class="">全部分类</a><a href="map.html" class="">知识地图</a><a href="quiz.html" class="">随机测验</a><a href="search.html" class="on">搜索</a><a href="about.html" class="">关于</a></nav><span class="sp"></span>
+<form action="search.html" method="get"><input name="q" placeholder="搜索全部课程…" aria-label="搜索"></form><button id="themeBtn" type="button">☾ 深色</button></div></div>
+<div class="disclaimer">非官方个人学习总结，未经权利人授权或背书，不能替代原视频。截图等第三方素材不因学习而获得使用许可。<a href="about.html">关于本站</a></div>
+<div class="wrap"><div class="hero-home"><h1>搜索</h1><p class="note">在全部已完成课程的正文、标题和要点中搜索（中文/英文均可，空格分隔多个关键词）。</p>
+<div class="sbox"><input id="q" placeholder="例如：企划书、Plan B、玩家、规格" autofocus></div><div id="cnt" class="note"></div></div><ul class="res" id="res"></ul></div>
+<script src="data/search-index.js"></script><script>
+(function(){var I=window.CG_INDEX,q=document.getElementById('q'),res=document.getElementById('res'),cnt=document.getElementById('cnt');
+function esc(s){return s.replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+function run(){var v=q.value.trim().toLowerCase(),terms=v.split(/\s+/).filter(Boolean);history.replaceState(null,'',v?'?q='+encodeURIComponent(q.value.trim()):location.pathname);
+ if(!terms.length){res.innerHTML='';cnt.textContent='共 '+I.length+' 个可搜索段落';return;}
+ var out=[];I.forEach(function(d){var hay=(d.ep+' '+d.en+' '+d.s+' '+d.x).toLowerCase(),sc=0,ok=true;
+  terms.forEach(function(t){var c=hay.split(t).length-1;if(!c)ok=false;sc+=c+((d.ep+d.s).toLowerCase().indexOf(t)>=0?5:0);});if(ok)out.push([sc,d]);});
+ out.sort(function(a,b){return b[0]-a[0];});cnt.textContent='找到 '+out.length+' 条结果';
+ res.innerHTML=out.slice(0,60).map(function(p){var d=p[1],x=d.x,lx=x.toLowerCase(),i=lx.indexOf(terms[0]),st=Math.max(0,i-40),sn=(st>0?'…':'')+x.slice(st,st+150)+'…';
+  var h=esc(sn);terms.forEach(function(t){h=h.replace(new RegExp(t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'),'gi'),function(m){return '<mark>'+m+'</mark>';});});
+  return '<li><a href="'+d.u+'"><div class="t">'+esc(d.ep)+' · '+esc(d.s)+'</div><div class="s">'+h+'</div></a></li>';}).join('');}
+q.addEventListener('input',run);var p=new URLSearchParams(location.search).get('q');if(p)q.value=p;run();})();
+</script>
+<footer class="foot"><p>我整理了这个游戏制作学习网站，方便回顾课程要点与自测。本站为非官方的个人学习总结。</p><p>维护者 <a href="https://github.com/jinxiaoye1987">jinxiaoye1987</a>。本站与仓库有 AI 辅助整理与脚手架编写。课程观点来自原视频，由维护者整理，不能替代原视频。</p><p>本站不是樱井政博、任天堂、HAL 研究所、YouTube 频道「<a href="https://www.youtube.com/@sora_sakurai_en" target="_blank" rel="noopener">Masahiro Sakurai on Creating Games</a>」或其相关权利人的官方网站，未经上述权利人授权、审核或背书。</p><p>内容依据公开视频整理，可能有偏差或遗漏。截图、字幕、游戏画面、作品名与角色形象等权利归各自权利人。学习这些笔记并不因此获得素材许可。</p><p><a href="about.html">关于本站</a></p></footer>
+<div id="lightbox"><img alt=""></div>
+<script src="assets/site.js"></script>
+</body></html>

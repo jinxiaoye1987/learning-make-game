@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M-14 初代《星之卡比》开发秘话 · 樱井政博「Creating Games」中文图文课</title>
+<link rel="stylesheet" href="../assets/site.css">
+<script>(function(){var t=localStorage.getItem('cg-theme');if(t)document.documentElement.dataset.theme=t;})();</script>
+</head><body>
+<div class="topbar"><div class="in"><a class="brand" href="../index.html"><b>樱井政博</b> 做游戏 · 中文图文课</a><nav><a href="../index.html" class="">首页</a><a href="../index.html#cats" class="">全部分类</a><a href="../map.html" class="">知识地图</a><a href="../quiz.html" class="">随机测验</a><a href="../search.html" class="">搜索</a><a href="../about.html" class="">关于</a></nav><span class="sp"></span>
+<form action="../search.html" method="get"><input name="q" placeholder="搜索全部课程…" aria-label="搜索"></form><button id="themeBtn" type="button">☾ 深色</button></div></div>
+<div class="disclaimer">非官方个人学习总结，未经权利人授权或背书，不能替代原视频。截图等第三方素材不因学习而获得使用许可。<a href="../about.html">关于本站</a></div>
+<div class="layout"><nav class="toc"><h2>本集目录</h2><ol><li><a href="#tldr"><span class="num">★</span>速览</a></li><li><a href="#s1"><span class="num">1</span>缘起</a></li><li><a href="#s2"><span class="num">2</span>概况</a></li><li><a href="#s3"><span class="num">3</span>开发工具</a></li><li><a href="#s4"><span class="num">4</span>ROM 容量</a></li><li><a href="#s5"><span class="num">5</span>角色设计</a></li><li><a href="#s6"><span class="num">6</span>图块</a></li><li><a href="#s7"><span class="num">7</span>地形判定</a></li><li><a href="#s8"><span class="num">8</span>大乱斗规则</a></li><li><a href="#s9"><span class="num">9</span>不可思议</a></li><li><a href="#s10"><span class="num">10</span>魅塔骑士</a></li><li><a href="#s11"><span class="num">11</span>试作</a></li><li><a href="#quiz"><span class="num">?</span>自测题</a></li></ol>
+<p class="note" style="margin:12px 8px 0"><a href="index.html">← 返回 M 杂谈</a></p></nav>
+<main><p class="crumb"><a href="../index.html">首页</a> / <a href="index.html">M 杂谈</a> / #14</p><header class="hero"><div>
+<h1>M-14 初代《星之卡比》开发秘话</h1><p class="sub">原标题：<i>Development Secrets of the Original Kirby</i></p>
+<ul class="meta"><li>时长 17:23</li><li>原语言：日语（画面内嵌英文字幕）</li><li>M 杂谈 #14/31</li></ul>
+<p style="margin:14px 0 0">▶ 原视频：<a href="https://youtu.be/ZUY2AtBD6Sk" target="_blank" rel="noopener">https://youtu.be/ZUY2AtBD6Sk</a></p></div><img src="img/ZUY2AtBD6Sk/cover.jpg" alt="视频缩略图"></header><div class="pn"><a href="13-PHBKYrnIUmY.html"><small>← 上一集 #13</small>Famicom（与 NES）</a><a class="next" href="15-5Ob9OA0peQY.html"><small>下一集 #15 →</small>开发中止的游戏</a></div><section id="tldr" data-toc="速览"><h2>速览</h2><p>2017 年举办了<b>《星之卡比》25 周年交响音乐会</b>，樱井在台上做了「初代星之卡比开发秘话」的演讲；本集特别重现，还附带只在大阪公演加入的魅塔骑士话题。卡比 <b>1992 年在 GB 初登场</b>，那时复制能力（《梦之泉》才想出来）还没有。企划是 <b>1990 年 5 月</b>左右、樱井 <b>19 岁</b>时提出的，目的是向初学者传达游戏的乐趣；开发期不到 1 年，熟手 20 分钟就能通关，但销量全球 <b>500 万本以上</b>，长期蝉联 GB 软件销量第一。开发工具非常高性能：<b>Twin Famicom 加 HAL 研究所制的轨迹球</b>，用磁碟读入开发工具直接当开发机——在 FC 上就能画点阵、组角色、自由做动作，背景和标题也能做，企划时就用它做出实际的游戏形象，当时卡比的点阵已相当于成品。ROM 当时以 <b>512Kbit（=64KB=0.064MB）</b>来设计（最终 2Mbit），比这次演示用的任何图片都小。因此角色设计充满省容量的必然性：<b>瓦豆鲁迪和瓦豆</b>（有眼睛的那个）这么像，是因为想<b>用 1.5 只的容量做 2 只</b>——背面共用同一张图；戈尔多只有一张图，上下左右翻转就像在动；波比兄弟 Sr. 脚只有 3 种、头 2 种；Boss 想做大，又因是初学者向、攻击稍偏也要能打中，于是画一块图上下翻转、排 3 个贴到背景上，就是<b>威斯匹伍兹</b>；克拉科也是翻转拼成，眼睛还转用到克拉科 Jr.。初代卡比用 <b>8×16 点</b>这个不上不下的单位，空隙不能利用，是低容量下的巨大障碍：第 1 关「绿色绿地」的全部角色就这一张，卡比全部动作也只在这一块里；可用面积约是一般 FC 游戏的一半，还不能左右翻转。这些点阵大多是樱井亲手直接画的。敌人移动的秘密：<b>敌人不做地形判定</b>——像寄居蟹柯纳沿地面爬、下崖，瓦豆鲁迪像下楼梯一样移动，其实都是<b>预先做好这种动作、再配合背景摆放</b>；在 FC 工具上用光标「噗噗」地输入 16 进制数值。如今看来低效，但<b>处理很轻</b>，对当时的 GB 是无可替代的优点。还有惊人的事实：初代卡比企划书里写着「主角被敌人攻击吹飞时卷轴停止……飞出画面外即失误」，体力影响吹飞程度——<b>完全就是《大乱斗》的规则</b>，1990 年就想出来了，他自己完全忘了。最后，初代卡比和噗噗之国本来是<b>不可思议的存在</b>：通关时为什么变 3 个、卡比型的谁来开路、最后自己变巨大连城堡一起搬走——「别想，去感受」。安可：<b>魅塔骑士面具</b>的三种缝隙都是正确的（Wii/动画版、《大乱斗》版加入反弧以增酷感、《梦之泉》点阵版），配合各作的角色与时代调整设计很重要；以及 FC 工具上做的<b>《超级豪华版》试作角色</b>——光束、溜溜球、格斗、切割能力的招式在初期就和成品一致：他希望从初期就尽量把形象做完整，让员工不迷路地前进。</p></section><section id="s1" data-toc="缘起"><h2>1. 演讲缘起 <a class="ts" href="https://youtu.be/ZUY2AtBD6Sk?t=4" target="_blank" rel="noopener">0:04</a></h2>
+<div class="row"><div><p>2017 年《星之卡比》25 周年交响音乐会上，樱井做了「初代星之卡比开发秘话」的台上演讲，本集特别重现，并附上只在大阪公演加入的魅塔骑士话题。</p></div><figure><img src="img/ZUY2AtBD6Sk/f420.webp" alt="" loading="lazy"><figcaption>初代《星之卡比》（0:42 左右）</figcaption></figure></div>
+</section>
+<section id="s2" data-toc="概况"><h2>2. 初代卡比概况 <a class="ts" href="https://youtu.be/ZUY2AtBD6Sk?t=60" target="_blank" rel="noopener">1:00</a></h2>
+<div class="row"><div><ul class="points"><li>1992 年在 GB 初登场；复制能力要到《梦之泉》才想出，那时还没有。</li><li>企划于 1990 年 5 月左右，樱井 19 岁，目的是向初学者传达游戏乐趣。</li></ul></div><figure><img src="img/ZUY2AtBD6Sk/f840.webp" alt="" loading="lazy"><figcaption>19 岁时的企划（1:24 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/ZUY2AtBD6Sk/f1050.webp" alt="" loading="lazy"><figcaption>全球销量 500 万本以上（1:45 左右）</figcaption></figure><div><ul class="points"><li>开发期不到 1 年；熟手 20 分钟就能通关。</li><li>全球销量 500 万本以上，长期蝉联 GB 软件第一。</li></ul></div></div>
+</section>
+<section id="s3" data-toc="开发工具"><h2>3. 开发工具：Twin Famicom <a class="ts" href="https://youtu.be/ZUY2AtBD6Sk?t=98" target="_blank" rel="noopener">1:38</a></h2>
+<div class="row"><div><p>开发工具非常高性能：Twin Famicom 接上 HAL 研究所制的轨迹球，用磁碟读入开发工具，直接当开发机。</p></div><figure><img src="img/ZUY2AtBD6Sk/f1260.webp" alt="" loading="lazy"><figcaption>Twin Famicom + 轨迹球（2:06 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/ZUY2AtBD6Sk/f1680.webp" alt="" loading="lazy"><figcaption>在工具上测试动作（2:48 左右）</figcaption></figure><div><p>在 FC 上就能画点阵、组合成角色、自由制作动作，背景和标题画面也能做。</p></div></div>
+<div class="row"><div><div class="key">企划时就用这个工具做出实际的游戏形象并让它动起来——那时卡比的点阵已相当于成品。</div></div><figure><img src="img/ZUY2AtBD6Sk/f1890.webp" alt="" loading="lazy"><figcaption>用开发工具让游戏可视化（3:09 左右）</figcaption></figure></div>
+</section>
+<section id="s4" data-toc="ROM 容量"><h2>4. 512Kbit 的容量预算 <a class="ts" href="https://youtu.be/ZUY2AtBD6Sk?t=191" target="_blank" rel="noopener">3:11</a></h2>
+<p>当时目标 ROM 容量是 512Kbit（最终发售为 2Mbit），也就是 64KB、0.064MB——比这次演讲用的任何图片都小。</p>
+<div class="row"><figure><img src="img/ZUY2AtBD6Sk/f2100.webp" alt="" loading="lazy"><figcaption>ROM 容量：512Kbit（3:30 左右）</figcaption></figure><figure><img src="img/ZUY2AtBD6Sk/f2310.webp" alt="" loading="lazy"><figcaption>512Kbit = 64KB = 0.064MB（3:51 左右）</figcaption></figure></div>
+</section>
+<section id="s5" data-toc="角色设计"><h2>5. 为省容量而生的角色 <a class="ts" href="https://youtu.be/ZUY2AtBD6Sk?t=253" target="_blank" rel="noopener">4:13</a></h2>
+<p>瓦豆鲁迪和瓦豆为什么这么像？答案很现实：想用 1.5 只的容量做出 2 只——背面共用同一张图。</p>
+<div class="row"><figure><img src="img/ZUY2AtBD6Sk/f2520.webp" alt="" loading="lazy"><figcaption>瓦豆鲁迪与瓦豆（4:12 左右）</figcaption></figure><figure><img src="img/ZUY2AtBD6Sk/f2940.webp" alt="" loading="lazy"><figcaption>共用背面省容量（4:54 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/ZUY2AtBD6Sk/f3150.webp" alt="" loading="lazy"><figcaption>波比兄弟 Sr.（5:15 左右）</figcaption></figure><div><ul class="points"><li>戈尔多只有一张图，上下左右翻转就像在动。</li><li>波比兄弟 Sr. 脚只有 3 种、头 2 种。</li></ul></div></div>
+<div class="row"><div><p>Boss 想做大；而且初学者向，攻击稍偏也要能打中——于是画一块图、上下翻转、排 3 个贴到背景上，就是威斯匹伍兹。</p></div><figure><img src="img/ZUY2AtBD6Sk/f3360.webp" alt="" loading="lazy"><figcaption>我画的是这个（5:36 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/ZUY2AtBD6Sk/f3570.webp" alt="" loading="lazy"><figcaption>克拉科（5:57 左右）</figcaption></figure><div><p>克拉科也由上下左右翻转拼成，眼睛只有一种，还转用到克拉科 Jr.。</p></div></div>
+</section>
+<section id="s6" data-toc="图块"><h2>6. 8×16 点与第 1 关 <a class="ts" href="https://youtu.be/ZUY2AtBD6Sk?t=363" target="_blank" rel="noopener">6:03</a></h2>
+<div class="row"><div><p>角色由零散的点阵组合而成。FC 常用的 8×8 单位能利用空隙，但初代卡比是 8×16 这种不上不下的单位，空隙必须空着——低容量下的巨大障碍。</p></div><figure><img src="img/ZUY2AtBD6Sk/f3990.webp" alt="" loading="lazy"><figcaption>8×16 点单位（6:39 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/ZUY2AtBD6Sk/f4200.webp" alt="" loading="lazy"><figcaption>包含卡比全部动作的常驻区（7:00 左右）</figcaption></figure><div><p>第 1 关「绿色绿地」的全部角色就这一张；卡比的全部动作只在这一块里，是常驻区域。</p></div></div>
+<p>背景可用区域约是一般 FC 游戏的一半，还不能左右翻转。这些点阵大多由樱井亲手直接画。</p>
+<div class="row"><figure><img src="img/ZUY2AtBD6Sk/f4450.webp" alt="" loading="lazy"><figcaption>你觉得如何？（7:25 左右）</figcaption></figure><figure><img src="img/ZUY2AtBD6Sk/f5040.webp" alt="" loading="lazy"><figcaption>第 1 关画面（8:24 左右）</figcaption></figure></div>
+</section>
+<section id="s7" data-toc="地形判定"><h2>7. 敌人不做地形判定 <a class="ts" href="https://youtu.be/ZUY2AtBD6Sk?t=495" target="_blank" rel="noopener">8:15</a></h2>
+<div class="row"><div><div class="key">初代卡比的敌人<b>不做地形判定</b>：寄居蟹柯纳沿地面爬、下崖，瓦豆鲁迪像下楼梯一样移动——其实都是预先做好这种动作，再配合背景摆放。</div></div><figure><img src="img/ZUY2AtBD6Sk/f5250.webp" alt="" loading="lazy"><figcaption>敌人没有地形碰撞（8:45 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/ZUY2AtBD6Sk/f5670.webp" alt="" loading="lazy"><figcaption>在工具上输入数值（9:27 左右）</figcaption></figure><div><p>姿势和动作也在 FC 工具上输入：没有键盘，只能用轨迹球移动光标，「噗噗」地打 16 进制数值。</p></div></div>
+<div class="row"><div><p>现在看来低效得惊人，但当时是新人，觉得就该这样，做得很开心。</p><div class="key">这种方式的优点是<b>处理很轻</b>，对当时的 GB 是无可替代的好处——卡皮能那样轻快地动，也多亏于此。</div></div><figure><img src="img/ZUY2AtBD6Sk/f6090.webp" alt="" loading="lazy"><figcaption>同样不检查地形（10:09 左右）</figcaption></figure></div>
+</section>
+<section id="s8" data-toc="大乱斗规则"><h2>8. 企划书里的《大乱斗》 <a class="ts" href="https://youtu.be/ZUY2AtBD6Sk?t=610" target="_blank" rel="noopener">10:10</a></h2>
+<p>初代卡比企划书中写着：「卷轴基本以主角为中心；但主角被敌人攻击吹飞时卷轴停止……主角飞出画面外即一次失误」，还写了体力高低会改变吹飞程度。</p>
+<div class="row"><figure><img src="img/ZUY2AtBD6Sk/f6300.webp" alt="" loading="lazy"><figcaption>初代卡比企划书（10:30 左右）</figcaption></figure><figure><img src="img/ZUY2AtBD6Sk/f6510.webp" alt="" loading="lazy"><figcaption>「被打中就会被吹飞」（10:51 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/ZUY2AtBD6Sk/f6720.webp" alt="" loading="lazy"><figcaption>和《大乱斗》一样的规则（11:12 左右）</figcaption></figure><div><div class="key">这完全就是《大乱斗》的规则——1990 年、在初代卡比里就想出来了。为什么后来放进《大乱斗》？老实说，他完全忘了。</div></div></div>
+</section>
+<section id="s9" data-toc="不可思议"><h2>9. 不可思议的卡比世界 <a class="ts" href="https://youtu.be/ZUY2AtBD6Sk?t=718" target="_blank" rel="noopener">11:58</a></h2>
+<p>初代卡比里，卡比和噗噗之国本来就很不可思议：通关时为什么变成 3 个？被叫作「波旁」的卡比型的谁、搬运卡比的鲸鱼、开路的谜之卡比……</p>
+<div class="row"><figure><img src="img/ZUY2AtBD6Sk/f7350.webp" alt="" loading="lazy"><figcaption>被称作「波旁」的它们（12:15 左右）</figcaption></figure><figure><img src="img/ZUY2AtBD6Sk/f7770.webp" alt="" loading="lazy"><figcaption>那里就是卡比的本质（12:57 左右）</figcaption></figure></div>
+<div class="key">最后国王偷走全国食物，卡比自己变巨大、连城堡一起搬走——理屈说不清的不可思议世界里的不可思议生物，这才是卡比本来的样子。</div>
+</section>
+<section id="s10" data-toc="魅塔骑士"><h2>10. 安可①：魅塔骑士的面具 <a class="ts" href="https://youtu.be/ZUY2AtBD6Sk?t=818" target="_blank" rel="noopener">13:38</a></h2>
+<div class="row"><div><p>魅塔骑士面具的三种缝隙，哪个正确？答案：都正确。</p></div><figure><img src="img/ZUY2AtBD6Sk/f8400.webp" alt="" loading="lazy"><figcaption>三种面具缝隙（14:00 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/ZUY2AtBD6Sk/f8610.webp" alt="" loading="lazy"><figcaption>《大乱斗》版加入反弧（14:21 左右）</figcaption></figure><div><ul class="points"><li>左：Wii 系列与动画版，像铁面具切出 V 字，角较方。</li><li>右：《大乱斗》版，加入反弧以增酷感、更有威严；为和写实角色对战不违和而调整，肩上的 M 标记等也被后来的系列吸收。</li></ul></div></div>
+<div class="row"><div><ul class="points"><li>中：初出《梦之泉》的点阵风设计。</li></ul></div><figure><img src="img/ZUY2AtBD6Sk/f9030.webp" alt="" loading="lazy"><figcaption>点阵版魅塔骑士（15:03 左右）</figcaption></figure></div>
+<div class="key">在各作中重新审视角色定位、配合时代调整表现和设计，也很重要。</div>
+</section>
+<section id="s11" data-toc="试作"><h2>11. 安可②：《超级豪华版》试作 <a class="ts" href="https://youtu.be/ZUY2AtBD6Sk?t=935" target="_blank" rel="noopener">15:35</a></h2>
+<p>FC 工具上的这个是什么？是 SFC《星之卡比 超级豪华版》的试作角色：在 SFC 工具就绪前，按企划书的图和设想尺寸先做出来。</p>
+<div class="row"><figure><img src="img/ZUY2AtBD6Sk/f9450.webp" alt="" loading="lazy"><figcaption>这是什么？（15:45 左右）</figcaption></figure><figure><img src="img/ZUY2AtBD6Sk/f9660.webp" alt="" loading="lazy"><figcaption>光束能力：姿势与成品一致（16:06 左右）</figcaption></figure></div>
+<p>格斗能力所有招式的图案都在其中，切割能力的连段也与成品一致——从开发初期就是成品的设计。</p>
+<div class="row"><figure><img src="img/ZUY2AtBD6Sk/f9870.webp" alt="" loading="lazy"><figcaption>格斗能力（16:27 左右）</figcaption></figure><figure><img src="img/ZUY2AtBD6Sk/f10080.webp" alt="" loading="lazy"><figcaption>切割能力（16:48 左右）</figcaption></figure></div>
+<div class="key">他从初期就尽量把形象做完整：把企划具体化，让员工不迷路地往前走。</div>
+<div class="mermaid">
+mindmap
+  root((初代卡比开发秘话))
+    工具
+      Twin Famicom
+      轨迹球输入16进制
+    容量 512Kbit
+      瓦豆鲁迪 1.5只做2只
+      翻转拼图
+      8x16点单位
+    敌人不做地形判定
+      处理轻
+    企划书
+      大乱斗式吹飞
+    不可思议的世界
+</div>
+</section>
+
+<section id="quiz" data-toc="自测题"><h2>自测题</h2><details><summary>1. 瓦豆鲁迪和瓦豆为什么长得这么像？</summary><p>为了用 1.5 只的容量做 2 只角色，背面共用同一张图。 <a class="ts" href="https://youtu.be/ZUY2AtBD6Sk?t=294" target="_blank" rel="noopener">4:54</a></p></details><details><summary>2. 初代卡比的敌人为什么不做地形判定？这样做有什么好处？</summary><p>预先做好动作再配合背景摆放；处理很轻，对当时的 GB 非常重要。 <a class="ts" href="https://youtu.be/ZUY2AtBD6Sk?t=525" target="_blank" rel="noopener">8:45</a></p></details><details><summary>3. 初代卡比企划书中藏着什么惊人内容？</summary><p>被攻击吹飞、飞出画面即失误、体力影响吹飞——就是《大乱斗》的规则。 <a class="ts" href="https://youtu.be/ZUY2AtBD6Sk?t=651" target="_blank" rel="noopener">10:51</a></p></details></section><div class="pn"><a href="13-PHBKYrnIUmY.html"><small>← 上一集 #13</small>Famicom（与 NES）</a><a class="next" href="15-5Ob9OA0peQY.html"><small>下一集 #15 →</small>开发中止的游戏</a></div></main></div>
+<footer class="foot"><p>我整理了这个游戏制作学习网站，方便回顾课程要点与自测。本站为非官方的个人学习总结。</p><p>维护者 <a href="https://github.com/jinxiaoye1987">jinxiaoye1987</a>。本站与仓库有 AI 辅助整理与脚手架编写。课程观点来自原视频，由维护者整理，不能替代原视频。</p><p>本站不是樱井政博、任天堂、HAL 研究所、YouTube 频道「<a href="https://www.youtube.com/@sora_sakurai_en" target="_blank" rel="noopener">Masahiro Sakurai on Creating Games</a>」或其相关权利人的官方网站，未经上述权利人授权、审核或背书。</p><p>内容依据公开视频整理，可能有偏差或遗漏。截图、字幕、游戏画面、作品名与角色形象等权利归各自权利人。学习这些笔记并不因此获得素材许可。</p><p><a href="../about.html">关于本站</a></p></footer>
+<div id="lightbox"><img alt=""></div>
+<script src="../assets/vendor/mermaid.min.js"></script><script src="../assets/site.js"></script>
+</body></html>

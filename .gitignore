@@ -1,0 +1,27 @@
+# 本机缓存、原始字幕、视频、日志和凭证。
+# 这里排除的是不该入库的文件，不是要求删除 HTML 里的图片引用。
+
+eps/
+deliver/
+survey_raw/
+.wrangler/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+*.mp4
+*.vtt
+*.log
+*.part
+creating-games-zh*.zip
+
+.env
+.env*
+!.env.example
+
+ja.txt
+en_ocr.txt
+
+.DS_Store
+node_modules/

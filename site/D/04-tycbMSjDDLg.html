@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>D-4 八种命中停顿技巧 · 樱井政博「Creating Games」中文图文课</title>
+<link rel="stylesheet" href="../assets/site.css">
+<script>(function(){var t=localStorage.getItem('cg-theme');if(t)document.documentElement.dataset.theme=t;})();</script>
+</head><body>
+<div class="topbar"><div class="in"><a class="brand" href="../index.html"><b>樱井政博</b> 做游戏 · 中文图文课</a><nav><a href="../index.html" class="">首页</a><a href="../index.html#cats" class="">全部分类</a><a href="../map.html" class="">知识地图</a><a href="../quiz.html" class="">随机测验</a><a href="../search.html" class="">搜索</a><a href="../about.html" class="">关于</a></nav><span class="sp"></span>
+<form action="../search.html" method="get"><input name="q" placeholder="搜索全部课程…" aria-label="搜索"></form><button id="themeBtn" type="button">☾ 深色</button></div></div>
+<div class="disclaimer">非官方个人学习总结，未经权利人授权或背书，不能替代原视频。截图等第三方素材不因学习而获得使用许可。<a href="../about.html">关于本站</a></div>
+<div class="layout"><nav class="toc"><h2>本集目录</h2><ol><li><a href="#tldr"><span class="num">★</span>速览</a></li><li><a href="#s1"><span class="num">1</span>Final Fight</a></li><li><a href="#s2"><span class="num">2</span>①～④</a></li><li><a href="#s3"><span class="num">3</span>⑤ 停顿量</a></li><li><a href="#s4"><span class="num">4</span>⑥⑦</a></li><li><a href="#s5"><span class="num">5</span>⑧ 镜头距离</a></li><li><a href="#quiz"><span class="num">?</span>自测题</a></li></ol>
+<p class="note" style="margin:12px 8px 0"><a href="index.html">← 返回 D 设计细节</a></p></nav>
+<main><p class="crumb"><a href="../index.html">首页</a> / <a href="index.html">D 设计细节</a> / #4</p><header class="hero"><div>
+<h1>D-4 八种命中停顿技巧</h1><p class="sub">原标题：<i>Eight Hit Stop Techniques</i></p>
+<ul class="meta"><li>时长 5:32</li><li>原语言：日语（画面内嵌英文字幕）</li><li>D 设计细节 #4/18</li></ul>
+<p style="margin:14px 0 0">▶ 原视频：<a href="https://youtu.be/tycbMSjDDLg" target="_blank" rel="noopener">https://youtu.be/tycbMSjDDLg</a></p></div><img src="img/tycbMSjDDLg/cover.jpg" alt="视频缩略图"></header><div class="pn"><a href="03-noKsDZ-UPq8.html"><small>← 上一集 #3</small>跳跃物理</a><a class="next" href="05-kLmd2F8LaLk.html"><small>下一集 #5 →</small>别把注视点黏死</a></div><section id="tldr" data-toc="速览"><h2>速览</h2><p>命中停顿：攻击命中时，自己和对手瞬间停住。历史很长，明确加入且令人印象深刻的，大概是<b>《Final Fight》</b>——有没有它天差地别。《大乱斗》里命中停顿也很重要，还织入了很多其他游戏没有或罕见的特殊规格（「这可是企业机密啊」）。大前提：大乱斗的命中停顿不只是停住，还会<b>微振动</b>。<b>① 受击方抖得更大</b>：两者都停，但受伤方大幅抖、攻击方小幅抖；别的游戏常见攻击方不抖或两者都不抖。<b>② 受击判定不抖</b>：直接抖动斗士会让判定位置偏移、该中的攻击打不中；大乱斗只抖外观，实际位置不变。<b>③ 地面横抖、空中全向</b>：地面斗士只横向抖，空中斗士也会纵向抖；从横向对峙看纵向也抖更好，但地面纵抖脚会陷进地里——2D 游戏原本不用担心。<b>④ 振幅逐渐收敛</b>：先大后小，预先算好停顿时间来分割，适当收敛。<b>⑤ 控制停顿量</b>：攻击力越高停顿越大，还能乘系数：例如马尔斯的 Smash，攻击力低的剑根没手感，剑尖手感极佳——不只是攻击力差，还乘了系数；同攻击力下隆的停顿大、一八的小，是为了贴合原作感。<b>⑥ 插值到受击姿势</b>：一般停顿中受击方画面不动，大乱斗则从受伤瞬间起约 4 帧平滑混合到受击姿势，兼顾手感与流畅。<b>⑦ 停顿中攻击方极微动</b>：特殊规格中的极致——持剑斗士强力挥砍时，仔细看剑尖在「滋滋」地移动；停顿中以不足 1 帧的微量速度推进攻击方动作，解除后若无其事地继续；可开关，不是所有攻击都有，为了做出剑砍进去般的手感，有时没有更合适。（雷击时停顿更长、考虑多人战减少停顿等就略过。）<b>⑧ 振幅随镜头距离改变</b>：镜头拉远时相对振动更大，远看近看都能得到命中感。樱井会讲这些，是因为这些规格是他自己想的；知道必要性、也知道效果——每一项都快得看不见，但这些积累让游戏更好。</p></section><section id="s1" data-toc="Final Fight"><h2>1. 命中停顿与《Final Fight》 <a class="ts" href="https://youtu.be/tycbMSjDDLg?t=4" target="_blank" rel="noopener">0:04</a></h2>
+<div class="row"><div><p>命中停顿：攻击命中时，自己和对手瞬间停住。它的历史很深，而明确加入、令人印象深刻的，大概要数<b>《Final Fight》</b>——有没有它天差地别。</p></div><figure><img src="img/tycbMSjDDLg/f140.webp" alt="" loading="lazy"><figcaption>《Final Fight》让命中停顿令人印象深刻（0:14 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/tycbMSjDDLg/f560.webp" alt="" loading="lazy"><figcaption>不只是停住，还更讲究一些（0:56 左右）</figcaption></figure><div><p>《大乱斗》里命中停顿也很重要，而且织入了好几项其他游戏没有或罕见的特殊规格。这次就讲《大乱斗 特别版》命中停顿里藏的种种特殊规格——「这可是企业机密啊」。</p><div class="key">大前提：大乱斗的命中停顿<b>不只是命中后停住，还会微振动</b>。只停住也能成立，但它做得更讲究。</div></div></div>
+</section>
+<section id="s2" data-toc="①～④"><h2>2. ①～④：怎么抖 <a class="ts" href="https://youtu.be/tycbMSjDDLg?t=58" target="_blank" rel="noopener">0:58</a></h2>
+<div class="row"><div><p><b>① 让受击方抖得更大</b>：命中停顿让两者都停，但受伤一方抖得大、施加伤害一方抖得小。其他游戏常见攻击方不抖，或两方都不抖。</p></div><figure><img src="img/tycbMSjDDLg/f700.webp" alt="" loading="lazy"><figcaption>攻击方抖得少，受击方抖得多（1:10 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/tycbMSjDDLg/f980.webp" alt="" loading="lazy"><figcaption>只有角色模型在动，判定框留在原地（1:38 左右）</figcaption></figure><div><p><b>② 受击判定不抖</b>：如果直接让斗士振动，受击判定位置会偏移，本该命中的攻击打不中。大乱斗只让外观偏移，实际位置不变。</p></div></div>
+<div class="row"><div><p><b>③ 地面横向、空中全方向</b>：地面上的斗士命中停顿时只横向抖；空中的斗士也会纵向抖。考虑到双方横向对峙，纵向也抖更好；但在地面纵向抖，脚会陷进地面——这在 2D 游戏里原本不用担心。</p></div><figure><img src="img/tycbMSjDDLg/f1070.webp" alt="" loading="lazy"><figcaption>地面横抖 vs 空中全向抖（1:47 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/tycbMSjDDLg/f1400.webp" alt="" loading="lazy"><figcaption>振幅先大后小（2:20 左右）</figcaption></figure><div><p><b>④ 振幅逐渐收敛</b>：不是固定振幅，而是一开始大、最后小。预先算好命中停顿时间，再分割，进行适当的收敛。</p></div></div>
+</section>
+<section id="s3" data-toc="⑤ 停顿量"><h2>3. ⑤ 控制停顿量 <a class="ts" href="https://youtu.be/tycbMSjDDLg?t=147" target="_blank" rel="noopener">2:27</a></h2>
+<div class="row"><div><p><b>⑤ 控制命中停顿的大小</b>：大乱斗攻击力越高命中停顿越大，而且还能乘上系数。</p><p>例如马尔斯的 Smash 攻击：攻击力低的剑根没什么手感；攻击力高的剑尖手感极佳、「咚」地打进心里。这不只是攻击力的差，还乘了系数，让命中手感比攻击力差更强。</p></div><figure><img src="img/tycbMSjDDLg/f1680.webp" alt="" loading="lazy"><figcaption>马尔斯 Smash：剑根 vs 剑尖（2:48 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/tycbMSjDDLg/f1820.webp" alt="" loading="lazy"><figcaption>同等威力的招式，也按原作调整停顿量（3:02 左右）</figcaption></figure><div><p>另外，同样的攻击力，隆的命中停顿大、一八的命中停顿小——这是为了贴合原作感而控制的。</p></div></div>
+</section>
+<section id="s4" data-toc="⑥⑦"><h2>4. ⑥⑦ 插值与微动 <a class="ts" href="https://youtu.be/tycbMSjDDLg?t=196" target="_blank" rel="noopener">3:16</a></h2>
+<div class="row"><div><p><b>⑥ 插值到受击姿势</b>：命中停顿中受击方的画面一般不动，「啪」地停住。但大乱斗从受伤瞬间起，花数帧插值到受击姿势：既不一直停着，也不瞬间切换，而是用约 4 帧平滑地做动作混合，兼顾手感与流畅。</p></div><figure><img src="img/tycbMSjDDLg/f2170.webp" alt="" loading="lazy"><figcaption>用约 4 帧平滑混合到受击姿势（3:37 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/tycbMSjDDLg/f2450.webp" alt="" loading="lazy"><figcaption>停顿中，攻击方动画以极慢速度继续推进（4:05 左右）</figcaption></figure><div><p><b>⑦ 命中停顿中攻击方极轻微地移动</b>：这是特殊规格中的极致。例如持剑斗士强力砍下时，仔细看命中停顿中的剑尖，会「滋滋滋」地移动。</p></div></div>
+<p>停顿中，以不足 1 帧的微量速度推进攻击方的动作；停顿解除后若无其事地继续。可设开关，并不是所有攻击都有——是为了让剑砍进去的手感更逼真，有时没有反而更合适。</p><p>还有雷击时延长命中停顿、考虑多人战而减少命中停顿等，这里略过。</p>
+</section>
+<section id="s5" data-toc="⑧ 镜头距离"><h2>5. ⑧ 随镜头距离调整振幅 <a class="ts" href="https://youtu.be/tycbMSjDDLg?t=280" target="_blank" rel="noopener">4:40</a></h2>
+<div class="row"><div><p><b>⑧ 振幅随镜头距离变化</b>：镜头拉远时，相对振动会更大。这样无论近看还是远看，都能得到命中感。</p></div><figure><img src="img/tycbMSjDDLg/f3010.webp" alt="" loading="lazy"><figcaption>远景与近景都能感受到冲击（5:01 左右）</figcaption></figure></div>
+<div class="key">樱井能讲这些，是因为这些规格是他自己想出来的：知道必要性，也知道效果。每一项都快得看不见，但<b>这些积累会让游戏变得更好</b>。</div>
+</section>
+
+<section id="quiz" data-toc="自测题"><h2>自测题</h2><details><summary>1. 大乱斗的命中停顿与「只停住」有何不同？</summary><p>停顿同时还会微振动，并含多项特殊规格。 <a class="ts" href="https://youtu.be/tycbMSjDDLg?t=46" target="_blank" rel="noopener">0:46</a></p></details><details><summary>2. 为什么受击判定不跟着抖？</summary><p>斗士直接振动会让判定位置偏移，本应命中的攻击打不中；所以只抖外观。 <a class="ts" href="https://youtu.be/tycbMSjDDLg?t=87" target="_blank" rel="noopener">1:27</a></p></details><details><summary>3. 为什么地面上只横向抖？</summary><p>地面纵向抖会让脚陷进地面；空中则全方向抖。 <a class="ts" href="https://youtu.be/tycbMSjDDLg?t=98" target="_blank" rel="noopener">1:38</a></p></details><details><summary>4. 马尔斯剑尖与剑根的手感差如何实现？</summary><p>不只是攻击力差，还给命中停顿量乘了系数。 <a class="ts" href="https://youtu.be/tycbMSjDDLg?t=147" target="_blank" rel="noopener">2:27</a></p></details><details><summary>5. 第 7 项「攻击方微动」是什么？</summary><p>停顿中以不足 1 帧的微量速度推进攻击方动画（如剑尖缓缓前进），解除后照常继续；可开关。 <a class="ts" href="https://youtu.be/tycbMSjDDLg?t=230" target="_blank" rel="noopener">3:50</a></p></details></section><div class="pn"><a href="03-noKsDZ-UPq8.html"><small>← 上一集 #3</small>跳跃物理</a><a class="next" href="05-kLmd2F8LaLk.html"><small>下一集 #5 →</small>别把注视点黏死</a></div></main></div>
+<footer class="foot"><p>我整理了这个游戏制作学习网站，方便回顾课程要点与自测。本站为非官方的个人学习总结。</p><p>维护者 <a href="https://github.com/jinxiaoye1987">jinxiaoye1987</a>。本站与仓库有 AI 辅助整理与脚手架编写。课程观点来自原视频，由维护者整理，不能替代原视频。</p><p>本站不是樱井政博、任天堂、HAL 研究所、YouTube 频道「<a href="https://www.youtube.com/@sora_sakurai_en" target="_blank" rel="noopener">Masahiro Sakurai on Creating Games</a>」或其相关权利人的官方网站，未经上述权利人授权、审核或背书。</p><p>内容依据公开视频整理，可能有偏差或遗漏。截图、字幕、游戏画面、作品名与角色形象等权利归各自权利人。学习这些笔记并不因此获得素材许可。</p><p><a href="../about.html">关于本站</a></p></footer>
+<div id="lightbox"><img alt=""></div>
+<script src="../assets/site.js"></script>
+</body></html>

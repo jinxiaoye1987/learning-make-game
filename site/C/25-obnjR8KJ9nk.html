@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>C-25 色彩更少的世界 · 樱井政博「Creating Games」中文图文课</title>
+<link rel="stylesheet" href="../assets/site.css">
+<script>(function(){var t=localStorage.getItem('cg-theme');if(t)document.documentElement.dataset.theme=t;})();</script>
+</head><body>
+<div class="topbar"><div class="in"><a class="brand" href="../index.html"><b>樱井政博</b> 做游戏 · 中文图文课</a><nav><a href="../index.html" class="">首页</a><a href="../index.html#cats" class="">全部分类</a><a href="../map.html" class="">知识地图</a><a href="../quiz.html" class="">随机测验</a><a href="../search.html" class="">搜索</a><a href="../about.html" class="">关于</a></nav><span class="sp"></span>
+<form action="../search.html" method="get"><input name="q" placeholder="搜索全部课程…" aria-label="搜索"></form><button id="themeBtn" type="button">☾ 深色</button></div></div>
+<div class="disclaimer">非官方个人学习总结，未经权利人授权或背书，不能替代原视频。截图等第三方素材不因学习而获得使用许可。<a href="../about.html">关于本站</a></div>
+<div class="layout"><nav class="toc"><h2>本集目录</h2><ol><li><a href="#tldr"><span class="num">★</span>速览</a></li><li><a href="#s1"><span class="num">1</span>色弱支持</a></li><li><a href="#s2"><span class="num">2</span>色弱滤镜</a></li><li><a href="#s3"><span class="num">3</span>不只解谜</a></li><li><a href="#s4"><span class="num">4</span>转黑白</a></li><li><a href="#quiz"><span class="num">?</span>自测题</a></li></ol>
+<p class="note" style="margin:12px 8px 0"><a href="index.html">← 返回 C 企划与游戏设计</a></p></nav>
+<main><p class="crumb"><a href="../index.html">首页</a> / <a href="index.html">C 企划与游戏设计</a> / #25</p><header class="hero"><div>
+<h1>C-25 色彩更少的世界</h1><p class="sub">原标题：<i>A World with Less Color</i></p>
+<ul class="meta"><li>时长 2:55</li><li>原语言：日语（画面内嵌英文字幕）</li><li>C 企划与游戏设计 #25/30</li></ul>
+<p style="margin:14px 0 0">▶ 原视频：<a href="https://youtu.be/obnjR8KJ9nk" target="_blank" rel="noopener">https://youtu.be/obnjR8KJ9nk</a></p></div><img src="img/obnjR8KJ9nk/cover.jpg" alt="视频缩略图"></header><div class="pn"><a href="24-zwiS1L6QVY0.html"><small>← 上一集 #24</small>用参数让角色立起来</a><a class="next" href="26-uleauI0IwZM.html"><small>下一集 #26 →</small>电脑控制的玩家（CP）</a></div><section id="tldr" data-toc="速览"><h2>速览</h2><p>樱井做过的游戏中，<b>必须考虑颜色区分的只有《流星方块》（Meteos）</b>。要完成这款游戏，有一件不可或缺的事：<b>对色弱玩家的支持</b>。游戏规格部分若靠颜色区分构成，只依赖颜色的话色弱玩家就无法游玩；而且流星（方块）的画法因星球种类而异，不是只想着色相就行。有一种叫<b>色弱滤镜</b>的色彩插件，现在已是 Photoshop 的标准功能（视图 → 校样设置）。先用它检查游戏画面——把流星排在一起看，这是 P 型（第 1 型）色觉的一例。色弱的方向性可能各异，但有些颜色看起来相近，樱井特别对这些颜色<b>拉开更大的明度差</b>；但太黑会混进背景色、看不见流星，也需要靠流星的图案补足——至少要多花一层心思。看似理所当然却必须认真做：不只是解谜，<b>道具强化的区别、关卡机关</b>等也可能分辨不出。做游戏时若忘了，请考虑兼顾多样性的调整。另一个与颜色有关的开发技巧：<b>故意把影像或画面转成黑白来检查</b>，对背景特别有效——只剩明暗，就能清楚看出哪里醒目、哪里不醒目；例如背景不能比前景更醒目，有时能防患于未然。这和把画左右翻转来找出走样的技巧有点像。</p></section><section id="s1" data-toc="色弱支持"><h2>1. 只靠颜色会让人玩不了 <a class="ts" href="https://youtu.be/obnjR8KJ9nk?t=4" target="_blank" rel="noopener">0:04</a></h2>
+<div class="row"><div><p>樱井做过的游戏中，<b>必须考虑颜色区分的只有《流星方块》（Meteos）</b>。要完成这款游戏，有一件不可或缺的事：对色弱玩家的支持。</p></div><figure><img src="img/obnjR8KJ9nk/f280.webp" alt="" loading="lazy"><figcaption>只靠颜色区分，色弱玩家就无法游玩（0:28 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/obnjR8KJ9nk/f380.webp" alt="" loading="lazy"><figcaption>流星的画法随星球变化，不能只看颜色（0:38 左右）</figcaption></figure><div><p>若游戏规格部分是靠颜色区分构成的，只依赖颜色的话，色弱玩家就玩不了。而且《流星方块》里流星（方块）的画法会随星球种类而不同，不是只考虑色相就行。</p></div></div>
+</section>
+<section id="s2" data-toc="色弱滤镜"><h2>2. 用色弱滤镜检查 <a class="ts" href="https://youtu.be/obnjR8KJ9nk?t=43" target="_blank" rel="noopener">0:43</a></h2>
+<p>有一种叫<b>色弱滤镜</b>的色彩插件，如今已是 Photoshop 的标准功能（视图里的校样设置/校样颜色）。先用它检查游戏画面。</p>
+<div class="row"><figure><img src="img/obnjR8KJ9nk/f500.webp" alt="" loading="lazy"><figcaption>Photoshop：视图 → 校样设置 / 校样颜色（0:50 左右）</figcaption></figure><figure><img src="img/obnjR8KJ9nk/f620.webp" alt="" loading="lazy"><figcaption>套上滤镜后的《流星方块》画面（1:02 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/obnjR8KJ9nk/f720.webp" alt="" loading="lazy"><figcaption>P 型（第 1 型）色觉看到的流星（1:12 左右）</figcaption></figure><div><p>把流星排在一起看——这是 P 型（第 1 型）色觉的一种见法示例。色弱的方向性可能各不相同，但会有一些颜色看起来很接近。</p></div></div>
+<div class="row"><div><div class="key">樱井特别注意让<b>看起来相近的颜色之间有更大的明度差</b>。但太黑会混入背景、看不见流星，也需要靠流星图案来补足——至少要多花一层心思。</div></div><figure><img src="img/obnjR8KJ9nk/f980.webp" alt="" loading="lazy"><figcaption>太暗会融入背景，至少要多花一层心思（1:38 左右）</figcaption></figure></div>
+</section>
+<section id="s3" data-toc="不只解谜"><h2>3. 不只是解谜 <a class="ts" href="https://youtu.be/obnjR8KJ9nk?t=96" target="_blank" rel="noopener">1:36</a></h2>
+<p>这看似理所当然，却是必须认真去做的地方。不只是解谜游戏，<b>道具强化的区别、关卡机关</b>等也可能无法分辨。做游戏时若忘了这件事，请考虑兼顾多样性的调整。</p>
+</section>
+<section id="s4" data-toc="转黑白"><h2>4. 技巧：转成黑白检查 <a class="ts" href="https://youtu.be/obnjR8KJ9nk?t=130" target="_blank" rel="noopener">2:10</a></h2>
+<div class="row"><div><p>再分享一个与颜色有关的开发技巧：<b>故意把影像或画面转成黑白来检查</b>，对背景尤其有效。</p></div><figure><img src="img/obnjR8KJ9nk/f1400.webp" alt="" loading="lazy"><figcaption>转成黑白检查，对背景特别有效（《大乱斗 特别版》）（2:20 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/obnjR8KJ9nk/f1540.webp" alt="" loading="lazy"><figcaption>背景不应比前景更醒目（2:34 左右）</figcaption></figure><div><p>只剩明亮和暗的部分，就能清楚看出哪里醒目、哪里不醒目。例如背景不该比前景更醒目——有时能防患于未然。</p></div></div>
+<p>这有点像把画左右翻转来找出走样的技巧。</p>
+</section>
+
+<section id="quiz" data-toc="自测题"><h2>自测题</h2><details><summary>1. 樱井为《流星方块》做了哪些色弱支持？</summary><p>用色弱滤镜检查画面，对看起来相近的颜色拉开明度差，并用方块图案补足。 <a class="ts" href="https://youtu.be/obnjR8KJ9nk?t=43" target="_blank" rel="noopener">0:43</a></p></details><details><summary>2. 除了解谜，哪些地方也可能因色弱无法分辨？</summary><p>道具强化的区别、关卡机关等。 <a class="ts" href="https://youtu.be/obnjR8KJ9nk?t=96" target="_blank" rel="noopener">1:36</a></p></details><details><summary>3. 把画面转成黑白检查有什么用？</summary><p>只剩明暗，能清楚看出哪里醒目，例如防止背景比前景更醒目。 <a class="ts" href="https://youtu.be/obnjR8KJ9nk?t=130" target="_blank" rel="noopener">2:10</a></p></details></section><div class="pn"><a href="24-zwiS1L6QVY0.html"><small>← 上一集 #24</small>用参数让角色立起来</a><a class="next" href="26-uleauI0IwZM.html"><small>下一集 #26 →</small>电脑控制的玩家（CP）</a></div></main></div>
+<footer class="foot"><p>我整理了这个游戏制作学习网站，方便回顾课程要点与自测。本站为非官方的个人学习总结。</p><p>维护者 <a href="https://github.com/jinxiaoye1987">jinxiaoye1987</a>。本站与仓库有 AI 辅助整理与脚手架编写。课程观点来自原视频，由维护者整理，不能替代原视频。</p><p>本站不是樱井政博、任天堂、HAL 研究所、YouTube 频道「<a href="https://www.youtube.com/@sora_sakurai_en" target="_blank" rel="noopener">Masahiro Sakurai on Creating Games</a>」或其相关权利人的官方网站，未经上述权利人授权、审核或背书。</p><p>内容依据公开视频整理，可能有偏差或遗漏。截图、字幕、游戏画面、作品名与角色形象等权利归各自权利人。学习这些笔记并不因此获得素材许可。</p><p><a href="../about.html">关于本站</a></p></footer>
+<div id="lightbox"><img alt=""></div>
+<script src="../assets/site.js"></script>
+</body></html>
