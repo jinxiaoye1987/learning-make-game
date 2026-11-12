@@ -1,0 +1,27 @@
+<section id="s1" data-toc="疑问"><h2>1. 几百人做一个游戏 <a class="ts" href="https://youtu.be/s5u7VqDl-1I?t=4" target="_blank" rel="noopener">0:04</a></h2>
+<div class="row"><div><p>团队规模大时，几百名制作者持续做同一款游戏。某人改的文件，也可能有别人在编辑——为什么不会撞车呢？至少以前的樱井这么想过。所以简单讲讲概要。</p></div><figure><img src="img/f140.webp" alt="" loading="lazy"><figcaption>别人也在改同一个文件？（0:14 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/f420.webp" alt="" loading="lazy"><figcaption>无数的文件（0:42 左右）</figcaption></figure><div><p>游戏的制作物分成无数文件：几万、几十万还是几百万不得而知，与游戏的制作规模成正比地增加。</p></div></div>
+</section>
+<section id="s2" data-toc="上锁"><h2>2. 上锁与解锁 <a class="ts" href="https://youtu.be/s5u7VqDl-1I?t=49" target="_blank" rel="noopener">0:49</a></h2>
+<div class="row"><div><p>有好几种方法，但大多数情况下文件由某种管理工具监视，全部放在服务器上。</p></div><figure><img src="img/f560.webp" alt="" loading="lazy"><figcaption>所有文件放在服务器上（0:56 左右）</figcaption></figure></div>
+<div class="mermaid">
+flowchart LR
+  A[服务器上的文件] --> B[编辑者上锁]
+  B --> C[编辑]
+  C --> D[上传服务器]
+  D --> E[解锁]
+  E --> A
+</div>
+<div class="row"><figure><img src="img/f630.webp" alt="" loading="lazy"><figcaption>编辑时上锁（1:03 左右）</figcaption></figure><figure><img src="img/f700.webp" alt="" loading="lazy"><figcaption>上传后解锁（1:10 左右）</figcaption></figure></div>
+<p>基本就是重复这个过程。但改大文件时只能一个人编辑，效率有点差。</p>
+</section>
+<section id="s3" data-toc="合并"><h2>3. 撞车与合并 <a class="ts" href="https://youtu.be/s5u7VqDl-1I?t=80" target="_blank" rel="noopener">1:20</a></h2>
+<p>不知为何也会被重复编辑，两人以上的编辑撞车。这时管理工具会尝试「合并」：比对各自编辑的地方，缝合在一起。</p>
+<div class="row"><figure><img src="img/f910.webp" alt="" loading="lazy"><figcaption>两人同时上传 → 出错（1:31 左右）</figcaption></figure><figure><img src="img/f980.webp" alt="" loading="lazy"><figcaption>比对编辑处，缝合成一个（1:38 左右）</figcaption></figure></div>
+<p>这样有时能解决，但仍有矛盾时就必须手工编辑。</p>
+</section>
+<section id="s4" data-toc="回退"><h2>4. 不可思议的「回退」 <a class="ts" href="https://youtu.be/s5u7VqDl-1I?t=110" target="_blank" rel="noopener">1:50</a></h2>
+<div class="row"><div><p>照理说这样应该能顺利进行，但不知为何会发生「回退」：某人编辑的内容完全消失，回到编辑前的状态。而且不知为何很常见。</p></div><figure><img src="img/f1260.webp" alt="" loading="lazy"><figcaption>回退：文件回到更早的状态（2:06 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/f1330.webp" alt="" loading="lazy"><figcaption>每次编辑都有备份（2:13 左右）</figcaption></figure><div><div class="key">管理工具在每次编辑时都会备份，运气好的话回到上一个版本就能复活。</div></div></div>
+<p>理论上没问题，实际用起来却不知为何频繁出问题——今天许多项目依然依赖这种不可思议的管理工具在运转。</p>
+</section>

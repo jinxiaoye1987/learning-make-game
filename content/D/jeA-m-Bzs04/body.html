@@ -1,0 +1,26 @@
+<section id="s1" data-toc="晃晃弹"><h2>1. 「晃晃弹」 <a class="ts" href="https://youtu.be/jeA-m-Bzs04?t=4" target="_blank" rel="noopener">0:04</a></h2>
+<p>这期分类姑且放在「规格」，但也和动作、特效有关。</p><p>卡比系列中登场的大炮敌人，发射的炮弹很有感觉：射出后会晃动着飞过来。开发中称之为<b>「晃晃弹」</b>。</p>
+<div class="row"><figure><img src="img/f210.webp" alt="" loading="lazy"><figcaption>卡比系列（GB）的大炮敌人（0:21 左右）</figcaption></figure><figure><img src="img/f280.webp" alt="" loading="lazy"><figcaption>炮弹晃动着向前飞（0:28 左右）</figcaption></figure></div>
+<p>只单纯地飞一个炮弹，表现上不太有趣。于是试着偏移精灵（sprite）的显示位置。</p>
+</section>
+<section id="s2" data-toc="6 帧"><h2>2. 6 帧绕一圈 <a class="ts" href="https://youtu.be/jeA-m-Bzs04?t=38" target="_blank" rel="noopener">0:38</a></h2>
+<div class="key">以 <b>6 帧绕一圈</b>的方式循环：上 → 右上 → 右下 → 下 → 左下 → 左上。</div>
+<div class="mermaid">
+flowchart LR
+  A[上] --> B[右上] --> C[右下] --> D[下] --> E[左下] --> F[左上] --> A
+</div>
+<div class="figs"><figure><img src="img/f420.webp" alt="" loading="lazy"><figcaption>精灵位置逐帧偏移（0:42 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/f560.webp" alt="" loading="lazy"><figcaption>Wobbly Cannonball vs Straight Cannonball（0:56 左右）</figcaption></figure><div><p>飞出来的存在感完全不同。这和 GB 会留下残影的屏幕也很合拍。</p></div></div>
+</section>
+<section id="s3" data-toc="感情"><h2>3. 给机械运动加「感情」 <a class="ts" href="https://youtu.be/jeA-m-Bzs04?t=62" target="_blank" rel="noopener">1:02</a></h2>
+<div class="row"><div><p>面对机械式的直线移动、绕中心旋转等，下一点工夫赋予「感情」，很重要。</p><p>例如《大乱斗 特别版》里投掷炸弹时会旋转，旋转轴稍稍偏离炸弹中心，带出一点不稳定感。</p></div><figure><img src="img/f780.webp" alt="" loading="lazy"><figcaption>炸弹的旋转轴略偏离中心（1:18 左右）</figcaption></figure></div>
+<div class="key">如果把旋转轴固定在中心，看起来会更无机质。</div>
+</section>
+<section id="s4" data-toc="Blazing End"><h2>4. 焰的 Blazing End <a class="ts" href="https://youtu.be/jeA-m-Bzs04?t=93" target="_blank" rel="noopener">1:33</a></h2>
+<p>焰的横必杀技 Blazing End：这是开发中樱井监修时画的修改指示图。起初剑的握把位置是旋转轴——一般想来确实如此——但把旋转轴稍微挪开了。</p>
+<div class="figs"><figure><img src="img/f990.webp" alt="" loading="lazy"><figcaption>开发中监修用的示意图（1:39 左右）</figcaption></figure><figure><img src="img/f1060.webp" alt="" loading="lazy"><figcaption>Requested Fix：把旋转轴挪开（1:46 左右）</figcaption></figure><figure><img src="img/f1200.webp" alt="" loading="lazy"><figcaption>Grip Rotation vs Shifted Rotation（2:00 左右）</figcaption></figure></div>
+<p>修改后只有产品版，做不了对比视频，但表现上确实会有差异。</p>
+</section>
+<section id="s5" data-toc="动作与规格"><h2>5. 动作 vs 规格 <a class="ts" href="https://youtu.be/jeA-m-Bzs04?t=115" target="_blank" rel="noopener">1:55</a></h2>
+<p>如果是作为动作（motion）来做，这比较理所当然就能表现——「动画」这个词的本义，就是给不动的东西注入灵魂。</p><p>但若是作为规格（程序）来做，只是直进、或匀速圆周运动般旋转，常常就成了理所当然。</p><div class="key">最终感觉好就行；但要避免因机器的常识而变得乏味，下点功夫。</div>
+</section>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>K-7 多人如何编辑同一批文件 · 樱井政博「Creating Games」中文图文课</title>
+<link rel="stylesheet" href="../assets/site.css">
+<script>(function(){var t=localStorage.getItem('cg-theme');if(t)document.documentElement.dataset.theme=t;})();</script>
+</head><body>
+<div class="topbar"><div class="in"><a class="brand" href="../index.html"><b>樱井政博</b> 做游戏 · 中文图文课</a><nav><a href="../index.html" class="">首页</a><a href="../index.html#cats" class="">全部分类</a><a href="../map.html" class="">知识地图</a><a href="../quiz.html" class="">随机测验</a><a href="../search.html" class="">搜索</a><a href="../about.html" class="">关于</a></nav><span class="sp"></span>
+<form action="../search.html" method="get"><input name="q" placeholder="搜索全部课程…" aria-label="搜索"></form><button id="themeBtn" type="button">☾ 深色</button></div></div>
+<div class="disclaimer">非官方个人学习总结，未经权利人授权或背书，不能替代原视频。截图等第三方素材不因学习而获得使用许可。<a href="../about.html">关于本站</a></div>
+<div class="layout"><nav class="toc"><h2>本集目录</h2><ol><li><a href="#tldr"><span class="num">★</span>速览</a></li><li><a href="#s1"><span class="num">1</span>疑问</a></li><li><a href="#s2"><span class="num">2</span>上锁</a></li><li><a href="#s3"><span class="num">3</span>合并</a></li><li><a href="#s4"><span class="num">4</span>回退</a></li><li><a href="#quiz"><span class="num">?</span>自测题</a></li></ol>
+<p class="note" style="margin:12px 8px 0"><a href="index.html">← 返回 K 程序与技术</a></p></nav>
+<main><p class="crumb"><a href="../index.html">首页</a> / <a href="index.html">K 程序与技术</a> / #7</p><header class="hero"><div>
+<h1>K-7 多人如何编辑同一批文件</h1><p class="sub">原标题：<i>How Multiple People Work on One File</i></p>
+<ul class="meta"><li>时长 2:40</li><li>原语言：日语（画面内嵌英文字幕）</li><li>K 程序与技术 #7/9</li></ul>
+<p style="margin:14px 0 0">▶ 原视频：<a href="https://youtu.be/s5u7VqDl-1I" target="_blank" rel="noopener">https://youtu.be/s5u7VqDl-1I</a></p></div><img src="img/s5u7VqDl-1I/cover.jpg" alt="视频缩略图"></header><div class="pn"><a href="06-HVktK4a9Yfo.html"><small>← 上一集 #6</small>《大乱斗》的击飞</a><a class="next" href="08-AdBcCQtuATc.html"><small>下一集 #8 →</small>调试模式</a></div><section id="tldr" data-toc="速览"><h2>速览</h2><p>团队规模大时，几百人持续做同一款游戏，某人改的文件也可能有别人在编辑，却不会撞车——这是怎么做到的？至少以前的樱井这么想过，所以讲讲概要，很简单。游戏的制作物分成<b>无数文件</b>，几万、几十万甚至几百万，随制作规模增加。方法有好几种，但大多数情况下文件由某种<b>管理工具</b>监视，全部放在<b>服务器</b>上。有人要改文件时，给它<b>上锁</b>，编辑后上传服务器再<b>解锁</b>，基本就是重复这些。但改大文件时只能一个人编辑，效率有点差；而且不知为何还会出现两人以上重复编辑撞车的情况，这时管理工具会尝试<b>合并</b>——比对编辑处缝合起来，有时能解决，但仍有矛盾时就要手工编辑。理论上应能顺利进行，却不知为何会发生<b>「回退（先祖返り）」</b>：某人的编辑完全消失，回到编辑前的状态，而且挺常见。管理工具每次编辑都会备份，运气好的话回到上一个版本就能复活。理论上没问题、实际用却频繁出问题——今天许多项目依然依赖这种不可思议的管理工具在运转。</p></section><section id="s1" data-toc="疑问"><h2>1. 几百人做一个游戏 <a class="ts" href="https://youtu.be/s5u7VqDl-1I?t=4" target="_blank" rel="noopener">0:04</a></h2>
+<div class="row"><div><p>团队规模大时，几百名制作者持续做同一款游戏。某人改的文件，也可能有别人在编辑——为什么不会撞车呢？至少以前的樱井这么想过。所以简单讲讲概要。</p></div><figure><img src="img/s5u7VqDl-1I/f140.webp" alt="" loading="lazy"><figcaption>别人也在改同一个文件？（0:14 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/s5u7VqDl-1I/f420.webp" alt="" loading="lazy"><figcaption>无数的文件（0:42 左右）</figcaption></figure><div><p>游戏的制作物分成无数文件：几万、几十万还是几百万不得而知，与游戏的制作规模成正比地增加。</p></div></div>
+</section>
+<section id="s2" data-toc="上锁"><h2>2. 上锁与解锁 <a class="ts" href="https://youtu.be/s5u7VqDl-1I?t=49" target="_blank" rel="noopener">0:49</a></h2>
+<div class="row"><div><p>有好几种方法，但大多数情况下文件由某种管理工具监视，全部放在服务器上。</p></div><figure><img src="img/s5u7VqDl-1I/f560.webp" alt="" loading="lazy"><figcaption>所有文件放在服务器上（0:56 左右）</figcaption></figure></div>
+<div class="mermaid">
+flowchart LR
+  A[服务器上的文件] --> B[编辑者上锁]
+  B --> C[编辑]
+  C --> D[上传服务器]
+  D --> E[解锁]
+  E --> A
+</div>
+<div class="row"><figure><img src="img/s5u7VqDl-1I/f630.webp" alt="" loading="lazy"><figcaption>编辑时上锁（1:03 左右）</figcaption></figure><figure><img src="img/s5u7VqDl-1I/f700.webp" alt="" loading="lazy"><figcaption>上传后解锁（1:10 左右）</figcaption></figure></div>
+<p>基本就是重复这个过程。但改大文件时只能一个人编辑，效率有点差。</p>
+</section>
+<section id="s3" data-toc="合并"><h2>3. 撞车与合并 <a class="ts" href="https://youtu.be/s5u7VqDl-1I?t=80" target="_blank" rel="noopener">1:20</a></h2>
+<p>不知为何也会被重复编辑，两人以上的编辑撞车。这时管理工具会尝试「合并」：比对各自编辑的地方，缝合在一起。</p>
+<div class="row"><figure><img src="img/s5u7VqDl-1I/f910.webp" alt="" loading="lazy"><figcaption>两人同时上传 → 出错（1:31 左右）</figcaption></figure><figure><img src="img/s5u7VqDl-1I/f980.webp" alt="" loading="lazy"><figcaption>比对编辑处，缝合成一个（1:38 左右）</figcaption></figure></div>
+<p>这样有时能解决，但仍有矛盾时就必须手工编辑。</p>
+</section>
+<section id="s4" data-toc="回退"><h2>4. 不可思议的「回退」 <a class="ts" href="https://youtu.be/s5u7VqDl-1I?t=110" target="_blank" rel="noopener">1:50</a></h2>
+<div class="row"><div><p>照理说这样应该能顺利进行，但不知为何会发生「回退」：某人编辑的内容完全消失，回到编辑前的状态。而且不知为何很常见。</p></div><figure><img src="img/s5u7VqDl-1I/f1260.webp" alt="" loading="lazy"><figcaption>回退：文件回到更早的状态（2:06 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/s5u7VqDl-1I/f1330.webp" alt="" loading="lazy"><figcaption>每次编辑都有备份（2:13 左右）</figcaption></figure><div><div class="key">管理工具在每次编辑时都会备份，运气好的话回到上一个版本就能复活。</div></div></div>
+<p>理论上没问题，实际用起来却不知为何频繁出问题——今天许多项目依然依赖这种不可思议的管理工具在运转。</p>
+</section>
+
+<section id="quiz" data-toc="自测题"><h2>自测题</h2><details><summary>1. 多人编辑时，管理工具的基本流程是什么？</summary><p>文件都在服务器上；编辑前上锁、编辑后上传服务器、再解锁。 <a class="ts" href="https://youtu.be/s5u7VqDl-1I?t=56" target="_blank" rel="noopener">0:56</a></p></details><details><summary>2. 两人编辑撞车时工具会怎么做？</summary><p>尝试合并——比对编辑处缝合；仍有矛盾时需要手工编辑。 <a class="ts" href="https://youtu.be/s5u7VqDl-1I?t=91" target="_blank" rel="noopener">1:31</a></p></details><details><summary>3. 什么是「回退」？如何补救？</summary><p>某人的编辑消失、文件回到编辑前；管理工具每次编辑有备份，运气好退回上一版即可恢复。 <a class="ts" href="https://youtu.be/s5u7VqDl-1I?t=116" target="_blank" rel="noopener">1:56</a></p></details></section><div class="pn"><a href="06-HVktK4a9Yfo.html"><small>← 上一集 #6</small>《大乱斗》的击飞</a><a class="next" href="08-AdBcCQtuATc.html"><small>下一集 #8 →</small>调试模式</a></div></main></div>
+<footer class="foot"><p>我整理了这个游戏制作学习网站，方便回顾课程要点与自测。本站为非官方的个人学习总结。</p><p>维护者 <a href="https://github.com/jinxiaoye1987">jinxiaoye1987</a>。本站与仓库有 AI 辅助整理与脚手架编写。课程观点来自原视频，由维护者整理，不能替代原视频。</p><p>本站不是樱井政博、任天堂、HAL 研究所、YouTube 频道「<a href="https://www.youtube.com/@sora_sakurai_en" target="_blank" rel="noopener">Masahiro Sakurai on Creating Games</a>」或其相关权利人的官方网站，未经上述权利人授权、审核或背书。</p><p>内容依据公开视频整理，可能有偏差或遗漏。截图、字幕、游戏画面、作品名与角色形象等权利归各自权利人。学习这些笔记并不因此获得素材许可。</p><p><a href="../about.html">关于本站</a></p></footer>
+<div id="lightbox"><img alt=""></div>
+<script src="../assets/vendor/mermaid.min.js"></script><script src="../assets/site.js"></script>
+</body></html>

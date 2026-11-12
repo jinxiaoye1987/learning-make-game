@@ -1,0 +1,32 @@
+<section id="s1" data-toc="FK"><h2>1. 骨骼与 FK <a class="ts" href="https://youtu.be/q77TZaISg1Y?t=3" target="_blank" rel="noopener">0:03</a></h2>
+<div class="row"><div><p>用 CG 动角色时，装上骨骼就能相当方便地动。</p></div><figure><img src="img/f80.webp" alt="" loading="lazy"><figcaption>给角色装骨骼（0:08 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/f240.webp" alt="" loading="lazy"><figcaption>手腕位置由肩、肘依次决定（0:24 左右）</figcaption></figure><div><p>现实中普通运动物，基本上是根部动带动末端：例如手腕的位置由肩到肘、肘到手腕的运动决定。</p></div></div>
+<div class="row"><div><div class="key">CG 世界称之为 FK（正向运动学）。</div></div><figure><img src="img/f320.webp" alt="" loading="lazy"><figcaption>FK：按层级自上而下控制骨骼（0:32 左右）</figcaption></figure></div>
+</section>
+<section id="s2" data-toc="IK"><h2>2. IK <a class="ts" href="https://youtu.be/q77TZaISg1Y?t=37" target="_blank" rel="noopener">0:37</a></h2>
+<div class="row"><div><p>反之，抓住手的位置移动，从而决定肩和肘角度的机制叫 IK（反向运动学）。</p></div><figure><img src="img/f400.webp" alt="" loading="lazy"><figcaption>IK：拖动手，肩肘角度随之决定（0:40 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/f640.webp" alt="" loading="lazy"><figcaption>结构单元：骨骼与关节（1:04 左右）</figcaption></figure><div><p>编辑方便，也容易表现与地面的接触。他开始学 CG 时就有，历史相当长，是很基本的东西。结构单元本身叫骨骼（Bone）或关节（Joint）。</p></div></div>
+<div class="mermaid">
+flowchart LR
+  subgraph FK[FK 正向]
+    A1[肩] --> A2[肘] --> A3[手腕位置]
+  end
+  subgraph IK[IK 反向]
+    B1[拖动手的位置] --> B2[算出肘与肩的角度]
+  end
+</div>
+</section>
+<section id="s3" data-toc="极限"><h2>3. 180° 的极限 <a class="ts" href="https://youtu.be/q77TZaISg1Y?t=76" target="_blank" rel="noopener">1:16</a></h2>
+<div class="row"><div><p>关于骨骼他想说的：也许很多地方已实现，但可能对谁是启发。</p><div class="key">关节的可动极限当然是 180°——能不能让它弯得更过？</div></div><figure><img src="img/f880.webp" alt="" loading="lazy"><figcaption>可动范围 180°（1:28 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/f1040.webp" alt="" loading="lazy"><figcaption>想让手臂弯过笔直（1:44 左右）</figcaption></figure><div><p>即左边只能这样的，想表现成右边那样：为了让动画更有活力，超过笔直再弯。</p></div></div>
+<div class="row"><div><p>单纯能反向弯的骨骼，恐怕会增加日常使用的困难，比如 IK 关节开始往预想的反方向弯。</p></div><figure><img src="img/f1120.webp" alt="" loading="lazy"><figcaption>反向弯曲的关节通常更难用（1:52 左右）</figcaption></figure></div>
+</section>
+<section id="s4" data-toc="课题"><h2>4. 为何未实现 <a class="ts" href="https://youtu.be/q77TZaISg1Y?t=122" target="_blank" rel="noopener">2:02</a></h2>
+<div class="row"><div><p>但正因为是 CG，也有想超出道理去夸张的时候。做成多关节或增加结构能做很多事。</p></div><figure><img src="img/f1280.webp" alt="" loading="lazy"><figcaption>增加关节或扩展骨骼结构（2:08 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/f1360.webp" alt="" loading="lazy"><figcaption>负荷与卡通感的门槛（2:16 左右）</figcaption></figure><div><p>但有处理负荷，动作设计师还需要卡通动画式的感觉，所以《大乱斗》等没能做到。开发初期提过，是未实现的课题之一。</p></div></div>
+</section>
+<section id="s5" data-toc="框架"><h2>5. 别被框住 <a class="ts" href="https://youtu.be/q77TZaISg1Y?t=144" target="_blank" rel="noopener">2:24</a></h2>
+<div class="row"><div><div class="key">无论如何，动画的好处在超越常识之处，想不被框架束缚。</div></div><figure><img src="img/f1520.webp" alt="" loading="lazy"><figcaption>别被「常规」限制（2:32 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/f1680.webp" alt="" loading="lazy"><figcaption>太依赖便利的系统就难以跳出（2:48 左右）</figcaption></figure><div><p>这次以骨骼为例，类似的事应该还有很多：陷进既有的便利系统虽方便，却难以做出超出它的东西，不知不觉在脑中画下极限线。</p></div></div>
+<p>创作是自由的，想用各种点子突破极限。</p>
+</section>

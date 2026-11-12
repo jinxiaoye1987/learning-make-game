@@ -1,0 +1,24 @@
+<section id="s1" data-toc="风切"><h2>1. 什么是风切 <a class="ts" href="https://youtu.be/X0GdWg2Q7z8?t=3" target="_blank" rel="noopener">0:03</a></h2>
+<div class="row"><div><p>挥剑等时留下的轨迹叫风切。以前一直这么叫，但也许没有广泛使用的名称，这里就叫风切。</p></div><figure><img src="img/f100.webp" alt="" loading="lazy"><figcaption>至少他一直这么叫（0:10 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/f400.webp" alt="" loading="lazy"><figcaption>拳 / 脚也有类似效果（0:40 左右）</figcaption></figure><div><p>挥剑出现的残像在 2D 游戏中也被大量使用，但 2D 和 3D 做法差别很大。《大乱斗》中拳脚等攻击也作为模糊的延伸加入了类似风切的东西。</p></div></div>
+</section>
+<section id="s2" data-toc="轨迹"><h2>2. 做法一：沿轨迹生成 <a class="ts" href="https://youtu.be/X0GdWg2Q7z8?t=44" target="_blank" rel="noopener">0:44</a></h2>
+<div class="row"><div><p>剑的风切做法大分两种。一种是沿剑经过的轨迹生成多边形，大多是这种。</p></div><figure><img src="img/f500.webp" alt="" loading="lazy"><figcaption>用多边形构建剑经过的路径（0:50 左右）</figcaption></figure></div>
+<p>想象一把扇子就好懂：剑的位置是扇骨边缘，落后的位置画出多边形。尾端多半做成半透明，表现倏地消失。</p>
+<div class="row"><figure><img src="img/f600.webp" alt="" loading="lazy"><figcaption>剑是扇子的前缘（1:00 左右）</figcaption></figure><figure><img src="img/f700.webp" alt="" loading="lazy"><figcaption>尾部半透明，像在消失（1:10 左右）</figcaption></figure></div>
+</section>
+<section id="s3" data-toc="侧面"><h2>3. 侧面看不见 <a class="ts" href="https://youtu.be/X0GdWg2Q7z8?t=72" target="_blank" rel="noopener">1:12</a></h2>
+<div class="row"><div><p>剑速快，单纯追轨迹容易变粗糙；从侧面看的画面中还可能几乎看不见。</p></div><figure><img src="img/f800.webp" alt="" loading="lazy"><figcaption>侧面看可能几乎察觉不到（1:20 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/f900.webp" alt="" loading="lazy"><figcaption>被遮挡 / 看得见（1:30 左右）</figcaption></figure><div><div class="key">所以为了更好地表现风切，也经常修改动作。大多数情况，单纯水平斩并不好。</div></div></div>
+</section>
+<section id="s4" data-toc="板多边形"><h2>4. 做法二：板多边形 <a class="ts" href="https://youtu.be/X0GdWg2Q7z8?t=96" target="_blank" rel="noopener">1:36</a></h2>
+<div class="row"><div><p>另一种是放置板多边形，数量较少，可用于更高速、1 帧就挥完的剑。</p></div><figure><img src="img/f1100.webp" alt="" loading="lazy"><figcaption>剑瞬间挥完，风切只显示一瞬（1:50 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/f1200.webp" alt="" loading="lazy"><figcaption>命中时的顿帧让它被看见（2:00 左右）</figcaption></figure><div><div class="key">挥完的瞬间剑已挥出，风切只显示一瞬，是一枚板多边形。虽然只显示一瞬，但命中会有顿帧，所以能看到。</div></div></div>
+</section>
+<section id="s5" data-toc="个性"><h2>5. 各角色的风切 <a class="ts" href="https://youtu.be/X0GdWg2Q7z8?t=124" target="_blank" rel="noopener">2:04</a></h2>
+<table><tr><th>角色</th><th>风切特点</th></tr><tr><td>露琪娜</td><td>比较标准的蓝色风切</td></tr><tr><td>马尔斯</td><td>剑尖强 → 强调刃边</td></tr><tr><td>艾克</td><td>表现豪剑，粗犷</td></tr><tr><td>儿童林克</td><td>粗糙，偏「打」而非锋利</td></tr><tr><td>彼特</td><td>刀身两色，配色据此</td></tr><tr><td>修尔克</td><td>有点像电子刀</td></tr><tr><td>贝优妮塔</td><td>相当有风切笔触</td></tr><tr><td>焰</td><td>带火焰残像，表现燃烧</td></tr><tr><td>Mii 剑术型</td><td>按武器每次重做</td></tr><tr><td>特拉维斯</td><td>光束刀：去掉消散感，强调发光体</td></tr></table>
+<div class="figs"><figure><img src="img/f1400.webp" alt="" loading="lazy"><figcaption>露琪娜：标准蓝色（2:20 左右）</figcaption></figure><figure><img src="img/f1500.webp" alt="" loading="lazy"><figcaption>马尔斯：强调刃尖（2:30 左右）</figcaption></figure><figure><img src="img/f1600.webp" alt="" loading="lazy"><figcaption>艾克：豪剑（2:40 左右）</figcaption></figure><figure><img src="img/f1700.webp" alt="" loading="lazy"><figcaption>彼特：两色刀身（2:50 左右）</figcaption></figure><figure><img src="img/f1900.webp" alt="" loading="lazy"><figcaption>焰：燃烧的剑（3:10 左右）</figcaption></figure><figure><img src="img/f2000.webp" alt="" loading="lazy"><figcaption>Mii 剑术型：按武器定制（3:20 左右）</figcaption></figure></div>
+</section>
+<section id="s6" data-toc="重要"><h2>6. 风切很重要 <a class="ts" href="https://youtu.be/X0GdWg2Q7z8?t=210" target="_blank" rel="noopener">3:30</a></h2>
+<div class="row"><div><p>实际做过就知道难处，尤其 3D 包括调整动作都很费工。</p><div class="key">但风切确实重要：没有的话手感完全不同，做好时效果也大。</div></div><figure><img src="img/f2220.webp" alt="" loading="lazy"><figcaption>风切依然是关键元素（3:42 左右）</figcaption></figure></div>
+</section>

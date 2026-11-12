@@ -1,0 +1,36 @@
+@ M 8JLA5YG16QM
+title: Game & Watch 的液晶图案
+summary: Game & Watch 是任天堂 1980 年起发售的 LSI 掌机系列。开发《大乱斗》时，樱井拿到了珍贵的液晶图案资料；本集经任天堂特别许可，展示《Fire》《Ball》《Flagman》《Manhole》《Helmet》《Chef》《Oil Panic》《Donkey Kong》《Green House》《Lifeboat》《Pinball》等的液晶分段图案。
+group: 游戏史
+kp: Game & Watch：任天堂 1980 年起的 LSI 掌机 | 《大乱斗》开发时获得液晶图案资料 | 用于「平面世界」等场景与 Mr. Game & Watch | 经任天堂特别许可公开 | 液晶每个图案固定位置，点亮/熄灭来表现动作 | 角色所有姿势同时画在一块液晶上 | 互不重叠地排布，是当时的智慧 | 看着就有趣，能感受那个时代的风格
+tldr: <b>Game & Watch</b> 是任天堂 <b>1980 年</b>起发售的 LSI 游戏系列。开发《大乱斗》时，樱井拿到了宝贵的<b>液晶图案资料</b>（如《特别版》的平面世界 X 等就参考了它）。这次经任天堂<b>特别许可</b>，展示其中一些图案。G&W 的液晶上每个图案都在固定位置，通过<b>点亮/熄灭</b>来表现动作，所以角色所有姿势、所有位置的图会同时印在一块液晶上，还要<b>互不重叠</b>地巧妙排布。依次展示：《Fire》(1980)、《Ball》(1980)、《Flagman》(1980)、《Manhole》(1981)、《Helmet》(1981)、《Chef》(1981)、《Oil Panic》(1982)、《Donkey Kong》(1982)、《Green House》(1982)、《Manhole（新宽屏）》、《Lifeboat》(1983)、《Pinball》(1983)、《Mario's Cement Factory》(1983)、《Mario's Bombs Away》(1983) 等。光是看着就很有趣，能感受到<b>那个时代特有的匠心与风格</b>。
+# Game & Watch 与《大乱斗》 | 背景 | 6
+p: Game & Watch 是任天堂 1980 年起发售的 LSI 游戏系列。开发《大乱斗》时，樱井拿到了宝贵的液晶图案资料。
+fig: 11 | Game & Watch
+fig: 22 | 《特别版》的平面世界 X
+p: 这次经任天堂特别许可，展示其中一些图案。
+# 液晶图案的原理 | 原理 | 33
+!: G&W 的每个图案都在液晶上的固定位置，靠点亮/熄灭来表现动作。所以角色所有姿势、所有位置的图都同时印在一块液晶上，并要互不重叠地排布。
+fig: 44 | 《Fire》（1980）全图案
+fig: 55 | 《Ball》（1980）
+# 1980～1981 | 早期作品 | 60
+fig: 66 | 《Flagman》（1980）
+fig: 77 | 《Flagman》全图案
+fig: 88 | 《Manhole》（1981）
+fig: 99 | 《Helmet》（1981）的工具
+fig: 110 | 《Chef》（1981）
+fig: 121 | 《Chef》全图案
+# 1982～1983 | 后期作品 | 130
+fig: 132 | 《Oil Panic》（1982）
+fig: 154 | 《Donkey Kong》（1982）
+fig: 165 | 《Green House》（1982）
+fig: 187 | 《Manhole》（新宽屏）
+fig: 198 | 《Lifeboat》（1983）
+fig: 220 | 《Pinball》（1983）
+fig: 231 | 《Mario's Cement Factory》（1983）
+fig: 242 | 《Mario's Bombs Away》（1983）
+# 时代的匠心 | 结语 | 248
+p: 光是看着就很有趣，能感受到那个时代特有的匠心与风格。
+q: Game & Watch 的液晶如何表现动作？ | 每个图案在固定位置，靠点亮/熄灭来表现；所有姿势同时印在液晶上。 | 44
+q: 樱井为什么会有这些液晶图案资料？ | 开发《大乱斗》时作为参考资料获得（用于 Mr. Game & Watch、平面世界等）。 | 11
+q: G&W 液晶图案排布需要满足什么条件？ | 所有姿势、所有位置的图案要互不重叠地排在同一块液晶上。 | 77

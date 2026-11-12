@@ -1,0 +1,34 @@
+<section id="s1" data-toc="前提"><h2>1. 击飞是游戏核心 <a class="ts" href="https://youtu.be/HVktK4a9Yfo?t=2" target="_blank" rel="noopener">0:02</a></h2>
+<div class="row"><div><p>《大乱斗》的攻击，不是给对方伤害、把攻击力从体力中减掉那么简单。因为「击飞」这种游戏性，可以做些独特的设定。这次解说攻击参数中与击飞相关的部分。</p></div><figure><img src="img/f80.webp" alt="" loading="lazy"><figcaption>不只是从体力扣掉攻击力（0:08 左右）</figcaption></figure></div>
+<div class="key">前提：攻击方的攻击力越高、被打方累积的伤害越高，就会被击飞得越远。</div>
+<div class="row"><figure><img src="img/f330.webp" alt="" loading="lazy"><figcaption>攻击力越高，飞得越远（0:33 左右）</figcaption></figure><figure><img src="img/f410.webp" alt="" loading="lazy"><figcaption>对方累积伤害越高，飞得越远（0:41 左右）</figcaption></figure></div>
+</section>
+<section id="s2" data-toc="矢量"><h2>2. 矢量 <a class="ts" href="https://youtu.be/HVktK4a9Yfo?t=46" target="_blank" rel="noopener">0:46</a></h2>
+<div class="row"><div><p>设定把对手击飞的方向。其他格斗游戏有时也有，但只限几个方向；《大乱斗》可以全方位细致地个别设定。</p></div><figure><img src="img/f560.webp" alt="" loading="lazy"><figcaption>矢量：全方位设定击飞方向（0:56 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/f720.webp" alt="" loading="lazy"><figcaption>方向 + 向下修正（1:12 左右）</figcaption></figure><div><p>还可以用一些特殊设定，让方向稍微沿着攻击方的移动去修正。这样空中连段等会把角度抬高、减少「脱手」。</p></div></div>
+<div class="row"><div><p>另外，同样条件下，击飞后的实际轨迹也会因被打方斗士的下落加速度和重量而改变。</p></div><figure><img src="img/f800.webp" alt="" loading="lazy"><figcaption>轨迹因下落加速度与重量而异（1:20 左右）</figcaption></figure></div>
+</section>
+<section id="s3" data-toc="影响值"><h2>3. 反应影响值 <a class="ts" href="https://youtu.be/HVktK4a9Yfo?t=84" target="_blank" rel="noopener">1:24</a></h2>
+<div class="row"><div><p>命中时给击飞大小乘一个倍率。可以设定「攻击力高但不太飞」或相反，从而更精细地控制击飞。</p></div><figure><img src="img/f980.webp" alt="" loading="lazy"><figcaption>同为强攻击，击飞大小可以不同（1:38 左右）</figcaption></figure></div>
+</section>
+<section id="s4" data-toc="加算值"><h2>4. 反应加算值 <a class="ts" href="https://youtu.be/HVktK4a9Yfo?t=100" target="_blank" rel="noopener">1:40</a></h2>
+<div class="row"><div><p>无条件加到反应上的击飞力。例如对方体力还低时，上挑攻击也不会飞很高；完全没反应会很麻烦，所以要担保一定程度以上的击飞力。</p></div><figure><img src="img/f1150.webp" alt="" loading="lazy"><figcaption>伤害低的对手也能被打出一定反应（1:55 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/f1280.webp" alt="" loading="lazy"><figcaption>加算值抬高起点，影响值压住斜率（2:08 左右）</figcaption></figure><div><div class="key">单纯加算会让击飞力太大，所以常与反应影响值并用，一边压着一边用。</div></div></div>
+</section>
+<section id="s5" data-toc="固定值"><h2>5. 反应固定值 <a class="ts" href="https://youtu.be/HVktK4a9Yfo?t=136" target="_blank" rel="noopener">2:16</a></h2>
+<div class="row"><div><p>与以上都无关，把反应完全固定：不论受了多少伤害，都得到完全相同的反应。</p></div><figure><img src="img/f1460.webp" alt="" loading="lazy"><figcaption>无论 100% 还是 0%，反应相同（2:26 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/f1620.webp" alt="" loading="lazy"><figcaption>连续命中（固定）→ 最后一发（击飞）（2:42 左右）</figcaption></figure><div><p>例如马力欧的超级跳跃拳：连续命中时用固定反应，只有最后一发是普通击飞。否则对方伤害太低或太高时就会打不中后续。</p></div></div>
+<div class="mermaid">
+flowchart LR
+  A[攻击力 & 对方累积伤害] --> B[基础击飞]
+  B --> C[× 反应影响值]
+  C --> D[+ 反应加算值]
+  D --> E[按矢量方向飞出]
+  F[反应固定值] -. 无视以上 .-> E
+  E --> G[轨迹受重量/下落加速度影响]
+</div>
+</section>
+<section id="s6" data-toc="初代"><h2>6. 从初代就开始 <a class="ts" href="https://youtu.be/HVktK4a9Yfo?t=170" target="_blank" rel="noopener">2:50</a></h2>
+<div class="row"><div><p>这些参数构成从初代《大乱斗》就有了。毕竟它拥有和普通游戏不同的异质规则，要把它做成好玩的游戏需要下一番功夫。</p></div><figure><img src="img/f1760.webp" alt="" loading="lazy"><figcaption>初代《大乱斗》（2:56 左右）</figcaption></figure></div>
+<p>攻击参数其实还有更多要素，这次只挑重点说明。</p>
+</section>

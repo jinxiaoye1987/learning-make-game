@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>D-3 跳跃物理 · 樱井政博「Creating Games」中文图文课</title>
+<link rel="stylesheet" href="../assets/site.css">
+<script>(function(){var t=localStorage.getItem('cg-theme');if(t)document.documentElement.dataset.theme=t;})();</script>
+</head><body>
+<div class="topbar"><div class="in"><a class="brand" href="../index.html"><b>樱井政博</b> 做游戏 · 中文图文课</a><nav><a href="../index.html" class="">首页</a><a href="../index.html#cats" class="">全部分类</a><a href="../map.html" class="">知识地图</a><a href="../quiz.html" class="">随机测验</a><a href="../search.html" class="">搜索</a><a href="../about.html" class="">关于</a></nav><span class="sp"></span>
+<form action="../search.html" method="get"><input name="q" placeholder="搜索全部课程…" aria-label="搜索"></form><button id="themeBtn" type="button">☾ 深色</button></div></div>
+<div class="disclaimer">非官方个人学习总结，未经权利人授权或背书，不能替代原视频。截图等第三方素材不因学习而获得使用许可。<a href="../about.html">关于本站</a></div>
+<div class="layout"><nav class="toc"><h2>本集目录</h2><ol><li><a href="#tldr"><span class="num">★</span>速览</a></li><li><a href="#s1"><span class="num">1</span>一般写法</a></li><li><a href="#s2"><span class="num">2</span>各作比较</a></li><li><a href="#s3"><span class="num">3</span>起跳蓄力</a></li><li><a href="#s4"><span class="num">4</span>隐藏味道</a></li><li><a href="#quiz"><span class="num">?</span>自测题</a></li></ol>
+<p class="note" style="margin:12px 8px 0"><a href="index.html">← 返回 D 设计细节</a></p></nav>
+<main><p class="crumb"><a href="../index.html">首页</a> / <a href="index.html">D 设计细节</a> / #3</p><header class="hero"><div>
+<h1>D-3 跳跃物理</h1><p class="sub">原标题：<i>Jump Physics</i></p>
+<ul class="meta"><li>时长 4:53</li><li>原语言：日语（画面内嵌英文字幕）</li><li>D 设计细节 #3/18</li></ul>
+<p style="margin:14px 0 0">▶ 原视频：<a href="https://youtu.be/noKsDZ-UPq8" target="_blank" rel="noopener">https://youtu.be/noKsDZ-UPq8</a></p></div><img src="img/noKsDZ-UPq8/cover.jpg" alt="视频缩略图"></header><div class="pn"><a href="02-9qzUwoKT9T8.html"><small>← 上一集 #2</small>赋予按钮「重量」</a><a class="next" href="04-tycbMSjDDLg.html"><small>下一集 #4 →</small>八种命中停顿技巧</a></div><section id="tldr" data-toc="速览"><h2>速览</h2><p>角色跳跃是非常单纯的动作，但也有很多要考虑。程序上，一般是角色在空中时<b>持续给予固定的下落加速度</b>：先给向上速度（假设 5），空中每帧给 1 的下落加速度，于是速度 5→4→3→2…降到 0 后仍继续加速下落，1、2、3、4…平地上大约在速度回到起跳速度时落地。这是 Y 轴；X 轴（横向）多半保持当时速度或略微减速（实际也会设最高速度、惯性等）。这个跳跃规格应<b>依游戏目的而变</b>：《超级马里奥兄弟》上升较慢（下落加速度极低），但在顶点会急减速，下落比上升快得多，配合「按键时间改变高度」的规格很好操作。《银河战士》上升很慢、下落也偏慢，整体轻飘飘——也许是因为射击高度很重要，方便调整。《魔界村》跳得较低，<b>空中几乎不能横移</b>，起跳瞬间落点就确定：不自由，但产生了需要认真思考跳跃的游戏性，也能边退边打。《街头霸王 II》桑吉尔夫的螺旋打桩机，Turbo 以后下落比上升快，<b>强化了猛砸对手的印象</b>——轨迹完全相同，也能用速度改变手感。《大乱斗》跳跃前有<b>起跳蓄力</b>：以前不同斗士差别很大、张弛有度，现在几乎统一为较短时间；但若去掉，玩家来不及输入上 Smash 就会跳起来，所以不能为零。每次做《大乱斗》都会重新考虑是否需要跳跃，结论是需要，但规格每次略有不同。特别版久违地采用了《星之卡比 超级豪华版》也有的革新跳法：起跳时给<b>极强的上升速度</b>，并在数帧内也给极强的下落加速度，急减速后再恢复普通下落——为了让玩家反应稍慢也能应对。参数增多、规格变复杂、可能混入 bug，但张弛分明、容易使用。这种隐藏味道很难被察觉——一个跳跃也很深奥。</p></section><section id="s1" data-toc="一般写法"><h2>1. 跳跃的一般写法 <a class="ts" href="https://youtu.be/noKsDZ-UPq8?t=4" target="_blank" rel="noopener">0:04</a></h2>
+<div class="row"><div><p>角色跳跃是非常单纯的动作，但也有很多要考虑的事。程序上，一般是在角色处于空中时，<b>持续给予固定的下落加速度</b>。</p></div><figure><img src="img/noKsDZ-UPq8/f240.webp" alt="" loading="lazy"><figcaption>角色在空中时持续施加下落速度（0:24 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/noKsDZ-UPq8/f720.webp" alt="" loading="lazy"><figcaption>速度 5→4→…→0→…→5：平地上回到起跳速度时着地（1:12 左右）</figcaption></figure><div><p>先给一个向上的速度，假设是 5（单位随意）；空中每帧给 1 的下落加速度。于是以 5 上升的角色，下一帧速度变成 4，再下一帧 3、2，逐渐减慢；降到 0 后仍继续加下落加速度，于是一边加速一边下落：1、2、3、4……在平地上，大约在速度回到起跳速度时落地。</p></div></div>
+<div class="mermaid">
+flowchart LR
+  A["起跳：向上速度 5"] --> B["每帧 −1<br/>4→3→2→1→0"] --> C["继续加速下落<br/>1→2→3→4→5"] --> D["着地"]
+</div>
+<p>以上是 Y 轴（纵向）。X 轴（横向）移动多半保持当时的速度，或稍微减速。实际上还会设定最高速度、惯性等，这里只是粗略说明。</p>
+</section>
+<section id="s2" data-toc="各作比较"><h2>2. 依游戏目的改变跳跃 <a class="ts" href="https://youtu.be/noKsDZ-UPq8?t=99" target="_blank" rel="noopener">1:39</a></h2>
+<table><tr><th>作品</th><th>跳跃特点</th><th>效果</th></tr><tr><td>《超级马里奥兄弟》</td><td>上升较慢；顶点急减速，下落远快于上升</td><td>配合「按键时长改变高度」，很好操作</td></tr><tr><td>《银河战士》</td><td>上升很慢、下落也偏慢，整体轻飘飘</td><td>射击高度很重要，也许为了方便调整</td></tr><tr><td>《魔界村》</td><td>较低；空中几乎不能横移，起跳时落点就确定</td><td>不自由，却产生需认真考虑跳跃的游戏性；可边退边打</td></tr><tr><td>《街头霸王 II》桑吉尔夫 螺旋打桩机</td><td>Turbo 以后下落快于上升</td><td>更有力地把对手砸下去</td></tr></table>
+<div class="figs"><figure><img src="img/noKsDZ-UPq8/f1200.webp" alt="" loading="lazy"><figcaption>《超级马里奥兄弟》：上升 vs 下落（2:00 左右）</figcaption></figure><figure><img src="img/noKsDZ-UPq8/f1320.webp" alt="" loading="lazy"><figcaption>《银河战士》：萨姆斯上升得更慢（2:12 左右）</figcaption></figure><figure><img src="img/noKsDZ-UPq8/f1560.webp" alt="" loading="lazy"><figcaption>《魔界村》：操作更受限（2:36 左右）</figcaption></figure><figure><img src="img/noKsDZ-UPq8/f1800.webp" alt="" loading="lazy"><figcaption>螺旋打桩机：SFII 与 SFII Turbo（3:00 左右）</figcaption></figure></div>
+<div class="key">即使<b>轨迹完全相同</b>，也能用速度改变手感。</div>
+</section>
+<section id="s3" data-toc="起跳蓄力"><h2>3. 大乱斗的起跳蓄力 <a class="ts" href="https://youtu.be/noKsDZ-UPq8?t=188" target="_blank" rel="noopener">3:08</a></h2>
+<div class="row"><div><p>《大乱斗》的跳跃在起跳前有<b>蓄力</b>。以前不同斗士差别很大、张弛分明，现在几乎统一成比较短的时间。但若把它去掉，玩家来不及输入上 Smash 就会先跳起来，所以不能设为零。</p></div><figure><img src="img/noKsDZ-UPq8/f1920.webp" alt="" loading="lazy"><figcaption>大乱斗起跳前的蓄力（Windup）（3:12 左右）</figcaption></figure></div>
+<p>每次做《大乱斗》时都会重新思考「真的需要跳跃吗」，结论是需要所以放进去，但规格每次都略有不同。</p>
+</section>
+<section id="s4" data-toc="隐藏味道"><h2>4. 隐藏的味道 <a class="ts" href="https://youtu.be/noKsDZ-UPq8?t=216" target="_blank" rel="noopener">3:36</a></h2>
+<div class="row"><div><p>《大乱斗 特别版》久违地采用了《星之卡比 超级豪华版》里也有的革新跳法。猜猜是什么？</p></div><figure><img src="img/noKsDZ-UPq8/f2280.webp" alt="" loading="lazy"><figcaption>《星之卡比 超级豪华版》里的创新跳跃设计（3:48 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/noKsDZ-UPq8/f2520.webp" alt="" loading="lazy"><figcaption>强上升 → 快速衰减 → 恢复正常下落（4:12 左右）</figcaption></figure><div><div class="key">起跳时先给<b>极强的上升速度</b>，并在最初数帧给予极强的下落加速度；急减速之后，再把下落加速度恢复正常。这是为了<b>让玩家反应稍慢一些也能应对</b>。</div></div></div>
+<p>参数增多、规格变复杂、还可能混入 bug，但张弛分明、容易使用。这种隐藏味道一般很难察觉——一个跳跃也很深奥，请多下功夫。</p>
+</section>
+
+<section id="quiz" data-toc="自测题"><h2>自测题</h2><details><summary>1. 一般的跳跃是怎么程序化的？</summary><p>先给向上速度，空中每帧加固定下落加速度；平地上大约回到起跳速度时着地；X 轴大致保持速度。 <a class="ts" href="https://youtu.be/noKsDZ-UPq8?t=21" target="_blank" rel="noopener">0:21</a></p></details><details><summary>2. 《魔界村》跳跃的特点及其带来的游戏性？</summary><p>跳得低、空中几乎不能横移、起跳就确定落点；需要认真思考跳跃，也能边退边打。 <a class="ts" href="https://youtu.be/noKsDZ-UPq8?t=144" target="_blank" rel="noopener">2:24</a></p></details><details><summary>3. 《大乱斗》的起跳蓄力为什么不能为零？</summary><p>去掉的话玩家来不及输入上 Smash 就会先跳起来。 <a class="ts" href="https://youtu.be/noKsDZ-UPq8?t=201" target="_blank" rel="noopener">3:21</a></p></details><details><summary>4. 特别版采用的「隐藏味道」跳跃是什么？目的？</summary><p>开头给极强上升速度并在数帧内强烈减速，再恢复普通下落；让反应稍慢的玩家也能应对。 <a class="ts" href="https://youtu.be/noKsDZ-UPq8?t=236" target="_blank" rel="noopener">3:56</a></p></details></section><div class="pn"><a href="02-9qzUwoKT9T8.html"><small>← 上一集 #2</small>赋予按钮「重量」</a><a class="next" href="04-tycbMSjDDLg.html"><small>下一集 #4 →</small>八种命中停顿技巧</a></div></main></div>
+<footer class="foot"><p>我整理了这个游戏制作学习网站，方便回顾课程要点与自测。本站为非官方的个人学习总结。</p><p>维护者 <a href="https://github.com/jinxiaoye1987">jinxiaoye1987</a>。本站与仓库有 AI 辅助整理与脚手架编写。课程观点来自原视频，由维护者整理，不能替代原视频。</p><p>本站不是樱井政博、任天堂、HAL 研究所、YouTube 频道「<a href="https://www.youtube.com/@sora_sakurai_en" target="_blank" rel="noopener">Masahiro Sakurai on Creating Games</a>」或其相关权利人的官方网站，未经上述权利人授权、审核或背书。</p><p>内容依据公开视频整理，可能有偏差或遗漏。截图、字幕、游戏画面、作品名与角色形象等权利归各自权利人。学习这些笔记并不因此获得素材许可。</p><p><a href="../about.html">关于本站</a></p></footer>
+<div id="lightbox"><img alt=""></div>
+<script src="../assets/vendor/mermaid.min.js"></script><script src="../assets/site.js"></script>
+</body></html>

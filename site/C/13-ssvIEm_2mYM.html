@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>C-13 游戏剧本很特别 · 樱井政博「Creating Games」中文图文课</title>
+<link rel="stylesheet" href="../assets/site.css">
+<script>(function(){var t=localStorage.getItem('cg-theme');if(t)document.documentElement.dataset.theme=t;})();</script>
+</head><body>
+<div class="topbar"><div class="in"><a class="brand" href="../index.html"><b>樱井政博</b> 做游戏 · 中文图文课</a><nav><a href="../index.html" class="">首页</a><a href="../index.html#cats" class="">全部分类</a><a href="../map.html" class="">知识地图</a><a href="../quiz.html" class="">随机测验</a><a href="../search.html" class="">搜索</a><a href="../about.html" class="">关于</a></nav><span class="sp"></span>
+<form action="../search.html" method="get"><input name="q" placeholder="搜索全部课程…" aria-label="搜索"></form><button id="themeBtn" type="button">☾ 深色</button></div></div>
+<div class="disclaimer">非官方个人学习总结，未经权利人授权或背书，不能替代原视频。截图等第三方素材不因学习而获得使用许可。<a href="../about.html">关于本站</a></div>
+<div class="layout"><nav class="toc"><h2>本集目录</h2><ol><li><a href="#tldr"><span class="num">★</span>速览</a></li><li><a href="#s1"><span class="num">1</span>四个不同点</a></li><li><a href="#s2"><span class="num">2</span>剧情碍事</a></li><li><a href="#s3"><span class="num">3</span>主角视角</a></li><li><a href="#s4"><span class="num">4</span>一直赢</a></li><li><a href="#s5"><span class="num">5</span>同伴离队</a></li><li><a href="#s6"><span class="num">6</span>先玩再说</a></li><li><a href="#quiz"><span class="num">?</span>自测题</a></li></ol>
+<p class="note" style="margin:12px 8px 0"><a href="index.html">← 返回 C 企划与游戏设计</a></p></nav>
+<main><p class="crumb"><a href="../index.html">首页</a> / <a href="index.html">C 企划与游戏设计</a> / #13</p><header class="hero"><div>
+<h1>C-13 游戏剧本很特别</h1><p class="sub">原标题：<i>Game Writing is Unique</i></p>
+<ul class="meta"><li>时长 3:40</li><li>原语言：日语（画面内嵌英文字幕）</li><li>C 企划与游戏设计 #13/30</li></ul>
+<p style="margin:14px 0 0">▶ 原视频：<a href="https://youtu.be/ssvIEm_2mYM" target="_blank" rel="noopener">https://youtu.be/ssvIEm_2mYM</a></p></div><img src="img/ssvIEm_2mYM/cover.jpg" alt="视频缩略图"></header><div class="pn"><a href="12-eia2IAmvtKI.html"><small>← 上一集 #12</small>别没有反应</a><a class="next" href="14-A_A4tgLIXO4.html"><small>下一集 #14 →</small>选边站的乐趣</a></div><section id="tldr" data-toc="速览"><h2>速览</h2><p>游戏的剧本创作与一般媒体有很大不同——正因不同，也可以反过来做出新颖呈现。先讲四个不同点。<b>① 对想玩游戏的人，剧情可能碍事</b>：想看故事的人还好，但过场一直持续、迟迟不让玩，动作游戏尤其烦躁；跳过又怕看不懂剧情，最好做成能跳过。<b>② 基本是主角视角</b>：同伴或敌方 Boss 走到这一步的背景插叙，在漫画中已是王道，但不太适合游戏。<b>③ 与敌人/敌军作战的剧本里，主角基本要一路上升、一直获胜</b>：明明打赢却被强制判输，你感受过那种不讲理吗？因剧情需要白费成果会带来压力。<b>④ 同伴不能在剧情中死亡或被迫离队</b>：在其他媒体中有效，但在游戏里会牵涉队伍构成变化、道具无法继承等难题。这四点是游戏剧本的问题点，但也可以无视定论、刻意去做：会让玩家不舒服，但包括这种感受在内，也可能成为印象深刻的剧本。作为当代作品，樱井想强调一点：<b>一开始不是讲故事，而是让玩家开始玩</b>——不要先长篇说明序章，而是迅速投入游戏，细节剧情之后再说。《新·光神话 帕尔提娜之镜》一开始关卡，皮特就穿过门开始游戏；这类游戏通常有任务简报，但新帕尔提娜直接把你扔进关卡，边玩边听任务说明。「游戏时间越长越好」是过去的事。新帕尔提娜的剧本是樱井写的，在正式开发前就备齐了剧本，做出了发挥游戏优点的剧本与演出（详见「作品构想」分类）。</p></section><section id="s1" data-toc="四个不同点"><h2>1. 游戏剧本的四个不同点 <a class="ts" href="https://youtu.be/ssvIEm_2mYM?t=2" target="_blank" rel="noopener">0:02</a></h2>
+<p>游戏的剧本与一般媒体的剧本创作有很大不同。正因为不同，也许能反过来做出新颖的呈现。先解说四个不同之处。</p>
+<div class="mermaid">
+flowchart TB
+  G["游戏剧本的特点"] --> A["① 剧情可能妨碍游玩"]
+  G --> B["② 基本是主角视角"]
+  G --> C["③ 主角必须一直赢"]
+  G --> D["④ 同伴难以死亡/离队"]
+</div>
+</section>
+<section id="s2" data-toc="剧情碍事"><h2>2. ① 剧情可能碍事 <a class="ts" href="https://youtu.be/ssvIEm_2mYM?t=17" target="_blank" rel="noopener">0:17</a></h2>
+<div class="row"><div><p>对想看故事的人来说没问题，但过场动画一直持续、迟迟不让人玩，特别是动作游戏，会让人烦躁。跳过的话，又担心看不懂剧情。最好做成可以跳过。</p></div><figure><img src="img/ssvIEm_2mYM/f360.webp" alt="" loading="lazy"><figcaption>序章过后还是序章，迟迟不让人玩（0:36 左右）</figcaption></figure></div>
+</section>
+<section id="s3" data-toc="主角视角"><h2>3. ② 主角视角 <a class="ts" href="https://youtu.be/ssvIEm_2mYM?t=48" target="_blank" rel="noopener">0:48</a></h2>
+<div class="row"><div><p>同伴或敌方 Boss 如何走到这一步的背景，被长篇插叙进来——这在漫画等媒体里已是王道展开，但不太适合游戏。</p></div><figure><img src="img/ssvIEm_2mYM/f540.webp" alt="" loading="lazy"><figcaption>在漫画等媒体中，常插叙敌人一方的背景（0:54 左右）</figcaption></figure></div>
+</section>
+<section id="s4" data-toc="一直赢"><h2>4. ③ 主角必须一直赢 <a class="ts" href="https://youtu.be/ssvIEm_2mYM?t=70" target="_blank" rel="noopener">1:10</a></h2>
+<div class="row"><div><p>在与敌人或敌军作战的剧本中，主角基本上要一路成长、<b>永远获胜</b>。你有没有过明明打赢了战斗，却被剧情强制判为失败的不讲理感受？因剧情需要而让玩家的成果白费，会造成压力。</p></div><figure><img src="img/ssvIEm_2mYM/f810.webp" alt="" loading="lazy"><figcaption>明明 YOU WIN，过场却变成输了（1:21 左右）</figcaption></figure></div>
+</section>
+<section id="s5" data-toc="同伴离队"><h2>5. ④ 同伴不能死或离队 <a class="ts" href="https://youtu.be/ssvIEm_2mYM?t=89" target="_blank" rel="noopener">1:29</a></h2>
+<div class="row"><div><p>同伴在剧情中死亡或被迫离队，在其他媒体里是有效的呈现手法；但在游戏中，会牵涉到队伍构成改变、道具无法继承等难题。</p></div><figure><img src="img/ssvIEm_2mYM/f990.webp" alt="" loading="lazy"><figcaption>在其他媒体有效的手法，放到游戏里会有难题（1:39 左右）</figcaption></figure></div>
+<p>以上四点是游戏剧本的问题点，但也可以<b>无视这些定论，刻意去做</b>。玩家会不舒服，但连同这种感受在内，也可能成为令人印象深刻的剧本。</p>
+</section>
+<section id="s6" data-toc="先玩再说"><h2>6. 先玩游戏，剧情随后 <a class="ts" href="https://youtu.be/ssvIEm_2mYM?t=130" target="_blank" rel="noopener">2:10</a></h2>
+<div class="key">作为当代作品，樱井最想强调的一点：<b>一开始不是讲故事，而是让玩家开始游戏</b>。别先长篇大论地说明序章，迅速把玩家扔进游戏里，细节剧情之后再讲。</div><p>《新·光神话 帕尔提娜之镜》一开始关卡，皮特就穿过一道门，游戏马上开始。这类游戏本来通常会有任务简报、说明任务目的等；但新帕尔提娜直接把你扔进关卡，<b>边玩边听任务说明</b>。</p>
+<div class="row"><figure><img src="img/ssvIEm_2mYM/f1530.webp" alt="" loading="lazy"><figcaption>《新·光神话 帕尔提娜之镜》：穿门即开打（2:33 左右）</figcaption></figure><figure><img src="img/ssvIEm_2mYM/f1710.webp" alt="" loading="lazy"><figcaption>不做任务简报，边玩边听说明（2:51 左右）</figcaption></figure></div>
+<p>「游戏时间越长越好」已经是过去的事，这样快节奏地推进也挺好。新帕尔提娜的剧本由樱井亲自撰写，在正式开发前就备齐了剧本，做出了发挥游戏优势的剧本和演出。（详见「作品构想」分类中新帕尔提娜的那一期。）</p>
+</section>
+
+<section id="quiz" data-toc="自测题"><h2>自测题</h2><details><summary>1. 游戏剧本与一般媒体的四个不同点是什么？</summary><p>① 剧情可能妨碍游玩 ② 基本是主角视角 ③ 主角必须一直赢 ④ 同伴难以在剧情中死亡或离队。 <a class="ts" href="https://youtu.be/ssvIEm_2mYM?t=17" target="_blank" rel="noopener">0:17</a></p></details><details><summary>2. 为什么「打赢却被剧情判输」会有问题？</summary><p>因剧情需要白费玩家的成果，会带来不讲理感和压力。 <a class="ts" href="https://youtu.be/ssvIEm_2mYM?t=70" target="_blank" rel="noopener">1:10</a></p></details><details><summary>3. 《新·光神话 帕尔提娜之镜》如何开场？</summary><p>不做任务简报，关卡一开始就穿门开打，边玩边听任务说明。 <a class="ts" href="https://youtu.be/ssvIEm_2mYM?t=148" target="_blank" rel="noopener">2:28</a></p></details></section><div class="pn"><a href="12-eia2IAmvtKI.html"><small>← 上一集 #12</small>别没有反应</a><a class="next" href="14-A_A4tgLIXO4.html"><small>下一集 #14 →</small>选边站的乐趣</a></div></main></div>
+<footer class="foot"><p>我整理了这个游戏制作学习网站，方便回顾课程要点与自测。本站为非官方的个人学习总结。</p><p>维护者 <a href="https://github.com/jinxiaoye1987">jinxiaoye1987</a>。本站与仓库有 AI 辅助整理与脚手架编写。课程观点来自原视频，由维护者整理，不能替代原视频。</p><p>本站不是樱井政博、任天堂、HAL 研究所、YouTube 频道「<a href="https://www.youtube.com/@sora_sakurai_en" target="_blank" rel="noopener">Masahiro Sakurai on Creating Games</a>」或其相关权利人的官方网站，未经上述权利人授权、审核或背书。</p><p>内容依据公开视频整理，可能有偏差或遗漏。截图、字幕、游戏画面、作品名与角色形象等权利归各自权利人。学习这些笔记并不因此获得素材许可。</p><p><a href="../about.html">关于本站</a></p></footer>
+<div id="lightbox"><img alt=""></div>
+<script src="../assets/vendor/mermaid.min.js"></script><script src="../assets/site.js"></script>
+</body></html>

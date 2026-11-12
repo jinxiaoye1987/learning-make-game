@@ -1,0 +1,23 @@
+<section id="s1" data-toc="一般写法"><h2>1. 跳跃的一般写法 <a class="ts" href="https://youtu.be/noKsDZ-UPq8?t=4" target="_blank" rel="noopener">0:04</a></h2>
+<div class="row"><div><p>角色跳跃是非常单纯的动作，但也有很多要考虑的事。程序上，一般是在角色处于空中时，<b>持续给予固定的下落加速度</b>。</p></div><figure><img src="img/f240.webp" alt="" loading="lazy"><figcaption>角色在空中时持续施加下落速度（0:24 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/f720.webp" alt="" loading="lazy"><figcaption>速度 5→4→…→0→…→5：平地上回到起跳速度时着地（1:12 左右）</figcaption></figure><div><p>先给一个向上的速度，假设是 5（单位随意）；空中每帧给 1 的下落加速度。于是以 5 上升的角色，下一帧速度变成 4，再下一帧 3、2，逐渐减慢；降到 0 后仍继续加下落加速度，于是一边加速一边下落：1、2、3、4……在平地上，大约在速度回到起跳速度时落地。</p></div></div>
+<div class="mermaid">
+flowchart LR
+  A["起跳：向上速度 5"] --> B["每帧 −1<br/>4→3→2→1→0"] --> C["继续加速下落<br/>1→2→3→4→5"] --> D["着地"]
+</div>
+<p>以上是 Y 轴（纵向）。X 轴（横向）移动多半保持当时的速度，或稍微减速。实际上还会设定最高速度、惯性等，这里只是粗略说明。</p>
+</section>
+<section id="s2" data-toc="各作比较"><h2>2. 依游戏目的改变跳跃 <a class="ts" href="https://youtu.be/noKsDZ-UPq8?t=99" target="_blank" rel="noopener">1:39</a></h2>
+<table><tr><th>作品</th><th>跳跃特点</th><th>效果</th></tr><tr><td>《超级马里奥兄弟》</td><td>上升较慢；顶点急减速，下落远快于上升</td><td>配合「按键时长改变高度」，很好操作</td></tr><tr><td>《银河战士》</td><td>上升很慢、下落也偏慢，整体轻飘飘</td><td>射击高度很重要，也许为了方便调整</td></tr><tr><td>《魔界村》</td><td>较低；空中几乎不能横移，起跳时落点就确定</td><td>不自由，却产生需认真考虑跳跃的游戏性；可边退边打</td></tr><tr><td>《街头霸王 II》桑吉尔夫 螺旋打桩机</td><td>Turbo 以后下落快于上升</td><td>更有力地把对手砸下去</td></tr></table>
+<div class="figs"><figure><img src="img/f1200.webp" alt="" loading="lazy"><figcaption>《超级马里奥兄弟》：上升 vs 下落（2:00 左右）</figcaption></figure><figure><img src="img/f1320.webp" alt="" loading="lazy"><figcaption>《银河战士》：萨姆斯上升得更慢（2:12 左右）</figcaption></figure><figure><img src="img/f1560.webp" alt="" loading="lazy"><figcaption>《魔界村》：操作更受限（2:36 左右）</figcaption></figure><figure><img src="img/f1800.webp" alt="" loading="lazy"><figcaption>螺旋打桩机：SFII 与 SFII Turbo（3:00 左右）</figcaption></figure></div>
+<div class="key">即使<b>轨迹完全相同</b>，也能用速度改变手感。</div>
+</section>
+<section id="s3" data-toc="起跳蓄力"><h2>3. 大乱斗的起跳蓄力 <a class="ts" href="https://youtu.be/noKsDZ-UPq8?t=188" target="_blank" rel="noopener">3:08</a></h2>
+<div class="row"><div><p>《大乱斗》的跳跃在起跳前有<b>蓄力</b>。以前不同斗士差别很大、张弛分明，现在几乎统一成比较短的时间。但若把它去掉，玩家来不及输入上 Smash 就会先跳起来，所以不能设为零。</p></div><figure><img src="img/f1920.webp" alt="" loading="lazy"><figcaption>大乱斗起跳前的蓄力（Windup）（3:12 左右）</figcaption></figure></div>
+<p>每次做《大乱斗》时都会重新思考「真的需要跳跃吗」，结论是需要所以放进去，但规格每次都略有不同。</p>
+</section>
+<section id="s4" data-toc="隐藏味道"><h2>4. 隐藏的味道 <a class="ts" href="https://youtu.be/noKsDZ-UPq8?t=216" target="_blank" rel="noopener">3:36</a></h2>
+<div class="row"><div><p>《大乱斗 特别版》久违地采用了《星之卡比 超级豪华版》里也有的革新跳法。猜猜是什么？</p></div><figure><img src="img/f2280.webp" alt="" loading="lazy"><figcaption>《星之卡比 超级豪华版》里的创新跳跃设计（3:48 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/f2520.webp" alt="" loading="lazy"><figcaption>强上升 → 快速衰减 → 恢复正常下落（4:12 左右）</figcaption></figure><div><div class="key">起跳时先给<b>极强的上升速度</b>，并在最初数帧给予极强的下落加速度；急减速之后，再把下落加速度恢复正常。这是为了<b>让玩家反应稍慢一些也能应对</b>。</div></div></div>
+<p>参数增多、规格变复杂、还可能混入 bug，但张弛分明、容易使用。这种隐藏味道一般很难察觉——一个跳跃也很深奥，请多下功夫。</p>
+</section>

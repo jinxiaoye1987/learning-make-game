@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>G-10 受伤动作 · 樱井政博「Creating Games」中文图文课</title>
+<link rel="stylesheet" href="../assets/site.css">
+<script>(function(){var t=localStorage.getItem('cg-theme');if(t)document.documentElement.dataset.theme=t;})();</script>
+</head><body>
+<div class="topbar"><div class="in"><a class="brand" href="../index.html"><b>樱井政博</b> 做游戏 · 中文图文课</a><nav><a href="../index.html" class="">首页</a><a href="../index.html#cats" class="">全部分类</a><a href="../map.html" class="">知识地图</a><a href="../quiz.html" class="">随机测验</a><a href="../search.html" class="">搜索</a><a href="../about.html" class="">关于</a></nav><span class="sp"></span>
+<form action="../search.html" method="get"><input name="q" placeholder="搜索全部课程…" aria-label="搜索"></form><button id="themeBtn" type="button">☾ 深色</button></div></div>
+<div class="disclaimer">非官方个人学习总结，未经权利人授权或背书，不能替代原视频。截图等第三方素材不因学习而获得使用许可。<a href="../about.html">关于本站</a></div>
+<div class="layout"><nav class="toc"><h2>本集目录</h2><ol><li><a href="#tldr"><span class="num">★</span>速览</a></li><li><a href="#s1"><span class="num">1</span>瞬间</a></li><li><a href="#s2"><span class="num">2</span>补间</a></li><li><a href="#s3"><span class="num">3</span>问题</a></li><li><a href="#s4"><span class="num">4</span>种类</a></li><li><a href="#s5"><span class="num">5</span>体型</a></li><li><a href="#s6"><span class="num">6</span>剪影</a></li><li><a href="#s7"><span class="num">7</span>卡比</a></li><li><a href="#quiz"><span class="num">?</span>自测题</a></li></ol>
+<p class="note" style="margin:12px 8px 0"><a href="index.html">← 返回 G 动画</a></p></nav>
+<main><p class="crumb"><a href="../index.html">首页</a> / <a href="index.html">G 动画</a> / #10</p><header class="hero"><div>
+<h1>G-10 受伤动作</h1><p class="sub">原标题：<i>Damage Animations</i></p>
+<ul class="meta"><li>时长 4:11</li><li>原语言：日语（画面内嵌英文字幕）</li><li>G 动画 #10/18</li></ul>
+<p style="margin:14px 0 0">▶ 原视频：<a href="https://youtu.be/0xHE3ypX96U" target="_blank" rel="noopener">https://youtu.be/0xHE3ypX96U</a></p></div><img src="img/0xHE3ypX96U/cover.jpg" alt="视频缩略图"></header><div class="pn"><a href="09-Sm0LAm4sJKc.html"><small>← 上一集 #9</small>挤压与缩放</a><a class="next" href="11-oFwamE6Hy04.html"><small>下一集 #11 →</small>补间的陷阱</a></div><section id="tldr" data-toc="速览"><h2>速览</h2><p>讲讲受伤时的动作。《大乱斗》设想<b>受伤瞬间立即换成看起来很痛的姿势</b>。受伤动作的<b>第 1 帧因为有顿帧而看得很清楚</b>，所以让它看起来痛很重要。有的作品被打姿势和待机姿势很接近，但《大乱斗》让角色取<b>与待机姿势截然不同的极端姿势</b>，远看也能清楚知道受了伤。不过并非瞬间切换到受伤动作：通过<b>动作补间</b>，从被攻击时的姿势过渡到受伤动作第 1 帧，有一点连接（设计细节「顿帧」一集略有说明）。任何情况下被击中都必定成为受伤姿势，所以对手被打判定很长时，会在相当远处取受伤姿势；保持被打判定伸长而顿帧也有优点，但更重视「被打中的感觉」。也出过这样的问题：对斗士弱攻击时，对手的姿势使其离开，之后的连段打不中——那是被攻击方顶节点位置的问题，改变姿势就免不了这类问题。《大乱斗》的受伤反应分<b>上中下</b>，取与命中位置较接近的反应；地面反应强度又分<b>小中大</b>，合计 <b>9 种</b>；吹飞另有各种变化。和几乎全是人形的其他格斗游戏比，《大乱斗》<b>体型过于独特</b>；即使人形也有持剑、持盾、持武器等变化。若都是标准人形就能复用动作，但并非如此，所以很辛苦，增加一个斗士也是大事。每个受伤动作都<b>避免对称、重视剪影清晰</b>：例如吹飞时扭身让手脚剪影清楚，单纯侧身吹飞就不会这样。为了表现打击感和被打感，受伤动作也做得毫无破绽。题外话：他在《星之卡比 超级豪华版》企划书中这样画了卡比的受伤图案（凭回忆重画）——<b>一瞬间的话这么极端也行</b>，想演出得更激烈更强。</p></section><section id="s1" data-toc="瞬间"><h2>1. 命中瞬间换成痛的姿势 <a class="ts" href="https://youtu.be/0xHE3ypX96U?t=3" target="_blank" rel="noopener">0:03</a></h2>
+<div class="row"><div><p>《大乱斗》设想受伤瞬间立即换成看起来很痛的姿势。</p></div><figure><img src="img/0xHE3ypX96U/f100.webp" alt="" loading="lazy"><figcaption>命中瞬间摆出姿势（0:10 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/0xHE3ypX96U/f200.webp" alt="" loading="lazy"><figcaption>受伤瞬间迅速换成痛的姿势（0:20 左右）</figcaption></figure><div><div class="key">受伤动作的第 1 帧因为有顿帧而看得很清楚，所以让它看起来痛很重要。</div></div></div>
+<div class="row"><div><p>有的作品被打姿势和待机姿势很接近，但《大乱斗》让角色取与待机截然不同的极端姿势，远看也能明白受了伤。</p></div><figure><img src="img/0xHE3ypX96U/f400.webp" alt="" loading="lazy"><figcaption>与待机完全不同的受伤姿势（0:40 左右）</figcaption></figure></div>
+</section>
+<section id="s2" data-toc="补间"><h2>2. 并非瞬间切换 <a class="ts" href="https://youtu.be/0xHE3ypX96U?t=45" target="_blank" rel="noopener">0:45</a></h2>
+<p>但并非瞬间切换：通过动作补间，从被攻击时的姿势过渡到受伤动作第 1 帧，有一点连接。</p>
+<div class="row"><figure><img src="img/0xHE3ypX96U/f600.webp" alt="" loading="lazy"><figcaption>第 2 帧（1:00 左右）</figcaption></figure><figure><img src="img/0xHE3ypX96U/f700.webp" alt="" loading="lazy"><figcaption>设计细节「顿帧」一集略有说明（1:10 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/0xHE3ypX96U/f800.webp" alt="" loading="lazy"><figcaption>判定拉长时，在远处进入受伤姿势（1:20 左右）</figcaption></figure><div><p>任何情况下被击中都必定成为受伤姿势，所以对手被打判定很长时，会在相当远处取受伤姿势。保持判定伸长而顿帧也有优点，但更重视「被打中的感觉」。</p></div></div>
+</section>
+<section id="s3" data-toc="问题"><h2>3. 连段问题 <a class="ts" href="https://youtu.be/0xHE3ypX96U?t=98" target="_blank" rel="noopener">1:38</a></h2>
+<div class="row"><div><p>也出过这样的问题：对斗士弱攻击时，对手姿势导致其离开，之后的连段打不中。</p></div><figure><img src="img/0xHE3ypX96U/f1100.webp" alt="" loading="lazy"><figcaption>原因在于被攻击方的顶节点位置（1:50 左右）</figcaption></figure></div>
+<div class="key">那是被攻击方顶节点位置的问题——既然改变姿势，就免不了这类问题。</div>
+</section>
+<section id="s4" data-toc="种类"><h2>4. 9 种反应 <a class="ts" href="https://youtu.be/0xHE3ypX96U?t=120" target="_blank" rel="noopener">2:00</a></h2>
+<p>受伤反应分上中下，取与命中位置较接近的反应；地面反应强度又分小中大。</p>
+<div class="row"><figure><img src="img/0xHE3ypX96U/f1300.webp" alt="" loading="lazy"><figcaption>上 / 中 / 下（2:10 左右）</figcaption></figure><figure><img src="img/0xHE3ypX96U/f1400.webp" alt="" loading="lazy"><figcaption>小中大 × 上中下 = 9 种（2:20 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/0xHE3ypX96U/f1500.webp" alt="" loading="lazy"><figcaption>中吹飞（2:30 左右）</figcaption></figure><div><p>小中大 × 上中下，合计 9 种；吹飞时另有各种变化。</p></div></div>
+<table><tr><th>位置 \ 强度</th><th>小</th><th>中</th><th>大</th></tr><tr><td>上</td><td>上·小</td><td>上·中</td><td>上·大</td></tr><tr><td>中</td><td>中·小</td><td>中·中</td><td>中·大</td></tr><tr><td>下</td><td>下·小</td><td>下·中</td><td>下·大</td></tr></table>
+</section>
+<section id="s5" data-toc="体型"><h2>5. 体型的难题 <a class="ts" href="https://youtu.be/0xHE3ypX96U?t=158" target="_blank" rel="noopener">2:38</a></h2>
+<p>和几乎全是人形的其他格斗游戏比，《大乱斗》的体型过于独特；即使人形也有持剑、持盾、持武器等变化。</p>
+<div class="row"><figure><img src="img/0xHE3ypX96U/f1600.webp" alt="" loading="lazy"><figcaption>体型各异的斗士（2:40 左右）</figcaption></figure><figure><img src="img/0xHE3ypX96U/f1700.webp" alt="" loading="lazy"><figcaption>剑、盾、武器持有者（2:50 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/0xHE3ypX96U/f1800.webp" alt="" loading="lazy"><figcaption>都是标准人形的话就能复用（3:00 左右）</figcaption></figure><div><p>若都是标准人形就能复用动作，但并非如此，所以很辛苦——增加一个斗士也是大事。</p></div></div>
+</section>
+<section id="s6" data-toc="剪影"><h2>6. 避免对称，重视剪影 <a class="ts" href="https://youtu.be/0xHE3ypX96U?t=189" target="_blank" rel="noopener">3:09</a></h2>
+<div class="row"><div><div class="key">每个受伤动作都避免对称、重视剪影清晰。</div></div><figure><img src="img/0xHE3ypX96U/f1900.webp" alt="" loading="lazy"><figcaption>让它易于识读（3:10 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/0xHE3ypX96U/f2100.webp" alt="" loading="lazy"><figcaption>强吹飞：扭身让手脚剪影清楚（3:30 左右）</figcaption></figure><div><p>例如吹飞时扭身，手脚的剪影清楚；单纯侧身吹飞就不会这样。</p></div></div>
+<p>为了表现打击感和被打感，受伤动作也做得毫无破绽。</p>
+</section>
+<section id="s7" data-toc="卡比"><h2>7. 题外话：卡比 SDX <a class="ts" href="https://youtu.be/0xHE3ypX96U?t=223" target="_blank" rel="noopener">3:43</a></h2>
+<div class="row"><div><p>他在《星之卡比 超级豪华版》企划书中这样画了卡比的受伤图案（凭回忆重画）。</p></div><figure><img src="img/0xHE3ypX96U/f2300.webp" alt="" loading="lazy"><figcaption>卡比的受伤图（3:50 左右）</figcaption></figure></div>
+<div class="key">一瞬间的话，这么极端也行。想演出得更激烈、更强。</div>
+</section>
+
+<section id="quiz" data-toc="自测题"><h2>自测题</h2><details><summary>1. 为什么受伤动作的第 1 帧特别重要？</summary><p>有顿帧，看得清楚；要做成与待机截然不同的极端痛苦姿势。 <a class="ts" href="https://youtu.be/0xHE3ypX96U?t=25" target="_blank" rel="noopener">0:25</a></p></details><details><summary>2. 《大乱斗》的地面受伤反应有几种？如何组合？</summary><p>9 种：上中下（位置）× 小中大（强度）。 <a class="ts" href="https://youtu.be/0xHE3ypX96U?t=140" target="_blank" rel="noopener">2:20</a></p></details><details><summary>3. 为什么《大乱斗》难以复用受伤动作？</summary><p>体型过于独特，人形也有持剑、盾、武器等变化。 <a class="ts" href="https://youtu.be/0xHE3ypX96U?t=165" target="_blank" rel="noopener">2:45</a></p></details></section><div class="pn"><a href="09-Sm0LAm4sJKc.html"><small>← 上一集 #9</small>挤压与缩放</a><a class="next" href="11-oFwamE6Hy04.html"><small>下一集 #11 →</small>补间的陷阱</a></div></main></div>
+<footer class="foot"><p>我整理了这个游戏制作学习网站，方便回顾课程要点与自测。本站为非官方的个人学习总结。</p><p>维护者 <a href="https://github.com/jinxiaoye1987">jinxiaoye1987</a>。本站与仓库有 AI 辅助整理与脚手架编写。课程观点来自原视频，由维护者整理，不能替代原视频。</p><p>本站不是樱井政博、任天堂、HAL 研究所、YouTube 频道「<a href="https://www.youtube.com/@sora_sakurai_en" target="_blank" rel="noopener">Masahiro Sakurai on Creating Games</a>」或其相关权利人的官方网站，未经上述权利人授权、审核或背书。</p><p>内容依据公开视频整理，可能有偏差或遗漏。截图、字幕、游戏画面、作品名与角色形象等权利归各自权利人。学习这些笔记并不因此获得素材许可。</p><p><a href="../about.html">关于本站</a></p></footer>
+<div id="lightbox"><img alt=""></div>
+<script src="../assets/site.js"></script>
+</body></html>

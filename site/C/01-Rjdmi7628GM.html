@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>C-1 帧率 · 樱井政博「Creating Games」中文图文课</title>
+<link rel="stylesheet" href="../assets/site.css">
+<script>(function(){var t=localStorage.getItem('cg-theme');if(t)document.documentElement.dataset.theme=t;})();</script>
+</head><body>
+<div class="topbar"><div class="in"><a class="brand" href="../index.html"><b>樱井政博</b> 做游戏 · 中文图文课</a><nav><a href="../index.html" class="">首页</a><a href="../index.html#cats" class="">全部分类</a><a href="../map.html" class="">知识地图</a><a href="../quiz.html" class="">随机测验</a><a href="../search.html" class="">搜索</a><a href="../about.html" class="">关于</a></nav><span class="sp"></span>
+<form action="../search.html" method="get"><input name="q" placeholder="搜索全部课程…" aria-label="搜索"></form><button id="themeBtn" type="button">☾ 深色</button></div></div>
+<div class="disclaimer">非官方个人学习总结，未经权利人授权或背书，不能替代原视频。截图等第三方素材不因学习而获得使用许可。<a href="../about.html">关于本站</a></div>
+<div class="layout"><nav class="toc"><h2>本集目录</h2><ol><li><a href="#tldr"><span class="num">★</span>速览</a></li><li><a href="#s1"><span class="num">1</span>帧的定义</a></li><li><a href="#s2"><span class="num">2</span>60 vs 30</a></li><li><a href="#s3"><span class="num">3</span>NTSC / PAL</a></li><li><a href="#quiz"><span class="num">?</span>自测题</a></li></ol>
+<p class="note" style="margin:12px 8px 0"><a href="index.html">← 返回 C 企划与游戏设计</a></p></nav>
+<main><p class="crumb"><a href="../index.html">首页</a> / <a href="index.html">C 企划与游戏设计</a> / #1</p><header class="hero"><div>
+<h1>C-1 帧率</h1><p class="sub">原标题：<i>Frame Rates</i></p>
+<ul class="meta"><li>时长 4:00</li><li>原语言：日语（画面内嵌英文字幕）</li><li>C 企划与游戏设计 #1/30</li></ul>
+<p style="margin:14px 0 0">▶ 原视频：<a href="https://youtu.be/Rjdmi7628GM" target="_blank" rel="noopener">https://youtu.be/Rjdmi7628GM</a></p></div><img src="img/Rjdmi7628GM/cover.jpg" alt="视频缩略图"></header><div class="pn"><span></span><a class="next" href="02-PlbwQ_rntCM.html"><small>下一集 #2 →</small>先让玩家玩起来！</a></div><section id="tldr" data-toc="速览"><h2>速览</h2><p>本分类整理构思游戏点子与机制时需要知道的事（企画书格式另讲）。游戏业界的<b>帧</b>，大多指<b>画面刷新的单位</b>，像放映机胶片的一格；一般电视每秒刷新 60 次，即<b>每秒 60 帧</b>，也常被当作游戏的单位时间。距离 = 时间 × 速度，所以帧的推进速度非常重要。60fps 与 30fps 的流畅度差异很大；游戏最好用 60 帧做，但也有以 30 帧为标准的（性能至少要降到一半才行），30 帧也完全能玩。帧数因机种与处理而异；也有处理重时才减少画面帧数的<b>可变帧率</b>，与所谓「处理落帧」不同——游戏速度不变，只降画面。PC 与高端机有 120、甚至 200 以上的帧率，但显示器不支持就没意义。往事：FC～N64 时代电视有 <b>NTSC</b>（日本、北美，靠隔行扫描可做 60 帧）与 <b>PAL</b>（欧洲、澳洲，只有 50 帧）；樱井当年以画面中断次数作为时间单位，所以 PAL 版速度降到 <b>5/6</b>。N64 之后用多边形处理，就容易做到只降画面、处理不变。总结：帧率关乎时间、张数与分辨率，通常为每秒 60 帧，今后会常出现，请记住。</p></section><section id="s1" data-toc="帧的定义"><h2>1. 帧是什么 <a class="ts" href="https://youtu.be/Rjdmi7628GM?t=4" target="_blank" rel="noopener">0:04</a></h2>
+<div class="row"><div><p>这个「游戏设计」分类里，樱井想整理构思游戏点子和机制时需要知道的事；企画书怎么写之类的格式会另外讲。</p><p>先讲大前提：游戏业界说的<b>帧</b>（frame），大多指<b>画面刷新的单位</b>，就像放映机胶片的一格。一般电视每秒刷新 60 次画面，也就是<b>每秒 60 帧</b>，这也常被当作游戏的单位时间。</p></div><figure><img src="img/Rjdmi7628GM/f500.webp" alt="" loading="lazy"><figcaption>游戏里常把帧当作时间单位：每秒 60 帧（0:50 左右）</figcaption></figure></div>
+<p>距离 = 时间 × 速度。物体移动时，时间单位对速度和距离的计算影响很大，所以帧的推进速度非常重要。</p>
+</section>
+<section id="s2" data-toc="60 vs 30"><h2>2. 60fps 与 30fps <a class="ts" href="https://youtu.be/Rjdmi7628GM?t=67" target="_blank" rel="noopener">1:07</a></h2>
+<div class="row"><div><p>每秒 60 帧和 30 帧，看起来和操作的流畅度差别相当大（YouTube 上不一定看得出来）。</p></div><figure><img src="img/Rjdmi7628GM/f700.webp" alt="" loading="lazy"><figcaption>30fps 与 60fps 的对比演示（1:10 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/Rjdmi7628GM/f1100.webp" alt="" loading="lazy"><figcaption>帧率在游戏中并不总是恒定，处理跟不上时会降低帧数（1:50 左右）</figcaption></figure><div><ul class="points"><li>游戏最好用 60 帧做，但也有以 30 帧为标准的：至少要把性能降到 60 帧的一半才行。</li><li>30 帧也在完全能玩的范围内，实际上不少作品以 30 帧为标准。</li><li>帧数不是每款游戏统一，而是因机种和处理而异。</li><li><b>可变帧率</b>：只在处理重时减少画面张数——这和所谓「处理落帧」不同：游戏速度不变，只是画面张数下降。</li></ul></div></div>
+<p>PC 游戏和高端机有每秒 120、甚至超过 200 帧的描画；但机器支持而显示器不支持就没有意义，最好配齐——丝滑最棒。</p>
+</section>
+<section id="s3" data-toc="NTSC / PAL"><h2>3. 往事：NTSC 与 PAL <a class="ts" href="https://youtu.be/Rjdmi7628GM?t=145" target="_blank" rel="noopener">2:25</a></h2>
+<div class="row"><div><p>FC、SFC、N64 时代，显像管电视有 <b>NTSC</b> 和 <b>PAL</b> 两种规格。日本、北美是 NTSC：每秒 30 帧构成，借助隔行扫描，游戏能做到 60 帧。欧洲、澳洲是 PAL：每秒 25 帧，游戏就变成 50 帧。</p></div><figure><img src="img/Rjdmi7628GM/f1750.webp" alt="" loading="lazy"><figcaption>NTSC 30 → 60；PAL 25 → 50（2:55 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/Rjdmi7628GM/f2000.webp" alt="" loading="lazy"><figcaption>以中断次数为时间单位，PAL 版运行速度只有 5/6（3:20 左右）</figcaption></figure><div><p>至少樱井经手的 FC、SFC 时代游戏，是直接把画面中断次数当作时间单位，所以 PAL 版速度会降到 <b>5/6</b>，成品动作稍慢。</p></div></div>
+<p>但 N64 之后改用多边形处理，就容易做到只放慢画面、处理照常，攻防手感就没有那么违和了。</p><div class="key">总结：帧率关乎时间、张数和分辨率，通常是每秒 60 帧。今后也会经常出现，请记住。</div>
+</section>
+
+<section id="quiz" data-toc="自测题"><h2>自测题</h2><details><summary>1. 游戏业界说的「帧」通常指什么？标准是多少？</summary><p>画面刷新的单位（像胶片的一格），通常每秒 60 帧，也常被当作游戏的单位时间。 <a class="ts" href="https://youtu.be/Rjdmi7628GM?t=30" target="_blank" rel="noopener">0:30</a></p></details><details><summary>2. 可变帧率与「处理落帧」有何不同？</summary><p>可变帧率只在处理重时减少画面张数，游戏速度不变；处理落帧则是游戏本身变慢。 <a class="ts" href="https://youtu.be/Rjdmi7628GM?t=103" target="_blank" rel="noopener">1:43</a></p></details><details><summary>3. 为什么樱井早期游戏的 PAL 版会变慢？变成多少？</summary><p>PAL 只有 50 帧，而游戏以画面中断次数为时间单位，所以速度变为 5/6。 <a class="ts" href="https://youtu.be/Rjdmi7628GM?t=191" target="_blank" rel="noopener">3:11</a></p></details></section><div class="pn"><span></span><a class="next" href="02-PlbwQ_rntCM.html"><small>下一集 #2 →</small>先让玩家玩起来！</a></div></main></div>
+<footer class="foot"><p>我整理了这个游戏制作学习网站，方便回顾课程要点与自测。本站为非官方的个人学习总结。</p><p>维护者 <a href="https://github.com/jinxiaoye1987">jinxiaoye1987</a>。本站与仓库有 AI 辅助整理与脚手架编写。课程观点来自原视频，由维护者整理，不能替代原视频。</p><p>本站不是樱井政博、任天堂、HAL 研究所、YouTube 频道「<a href="https://www.youtube.com/@sora_sakurai_en" target="_blank" rel="noopener">Masahiro Sakurai on Creating Games</a>」或其相关权利人的官方网站，未经上述权利人授权、审核或背书。</p><p>内容依据公开视频整理，可能有偏差或遗漏。截图、字幕、游戏画面、作品名与角色形象等权利归各自权利人。学习这些笔记并不因此获得素材许可。</p><p><a href="../about.html">关于本站</a></p></footer>
+<div id="lightbox"><img alt=""></div>
+<script src="../assets/site.js"></script>
+</body></html>

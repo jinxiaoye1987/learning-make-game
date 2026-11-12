@@ -1,0 +1,63 @@
+@ F lvYN7JciOdk
+title: 近看《大乱斗》的舞台
+summary: 《大乱斗 特别版》光基础舞台就约 115 个，要在 Switch 上以 8 人同屏、60 帧运行，几乎没有余裕。樱井简短开场后，整集以无旁白的近距离镜头巡览约 70 个舞台，作为看舞台组心血、给美术志愿者参考的资料。
+group: 资源与性能
+note: 本集没有字幕轨，开场与结尾旁白据画面内英文字幕整理；中段约 16 分钟是无旁白的舞台巡览，下文按画面左下角的舞台名标出时间。
+kp: 《特别版》基础舞台约 115 个 | Switch 上 8 人同屏、60 帧：几乎没有余裕 | 重现众多游戏世界，单一作品却有惊人的广度 | 近距离看舞台组的努力 | 对美术志愿者是很好的参考 | 市面上很少有作品有这么多样性 | 做全部舞台很难，但俯瞰众多游戏也是乐趣
+tldr: 《大乱斗》有各种各样的舞台，光《大乱斗 特别版》基础舞台就有大约 <b>115 个</b>。要让它们在 Nintendo Switch 上以 <b>8 名斗士同屏、每秒 60 帧</b>运行，真的几乎没有余裕。不过，通过重现这么多不同游戏的世界，《特别版》作为单一作品拥有惊人的广度。本集就近距离看看其中一些舞台：能好好看到舞台组的辛劳，对有志于游戏美术的人也会是很好的参考。随后约 16 分钟没有旁白，镜头依次巡览战场、彩虹巡航、刚果瀑布……直到空洞堡垒与终点。结尾：这么多东西都塞进一个游戏里，你信吗？市面上很少有这么多样的作品。全部做出来相当有挑战，但能俯瞰这么多游戏也是乐趣的一部分——所以可以保证，大家都全力以赴，也做得很开心。
+# 开场：115 个舞台 | 开场 | 0
+p: 《大乱斗》有各种各样的舞台。光《大乱斗 特别版》，基础舞台就有大约 115 个吧？
+!: 要让它们在 Nintendo Switch 上以 8 名斗士同屏、每秒 60 帧运行，真的几乎没有余裕。
+fig: 15 | 开场
+p: 不过，通过重现这么多不同游戏的世界，《特别版》作为一部作品拥有惊人的广度。
+p: 本集近距离看看其中一些舞台：能好好看到舞台组的辛劳，对有志于游戏美术的人也会是很好的参考。
+fig: 47 | 第一个舞台：战场
+# 巡览（一）：0:45～4:10 | 巡览一 | 45
+tbl: 时间 | 舞台 ;; 0:45 | 战场 Battlefield ;; 1:00 | 彩虹巡航 Rainbow Cruise ;; 1:21 | 刚果瀑布 Kongo Falls ;; 1:35 | 丛林小径 Jungle Japes ;; 1:44 | 大海湾 Great Bay ;; 2:06 | 耀西的故事 Yoshi's Story ;; 2:17 | 梦之泉 Fountain of Dreams ;; 2:34 | 科内利亚 Corneria ;; 2:56 | 欧奈特 Onett ;; 3:05 | 弗赛德 Fourside ;; 3:14 | 大蓝 Big Blue ;; 3:25 | 德尔菲诺广场 Delfino Plaza ;; 3:45 | 莱拉特巡航 Lylat Cruise
+fig: 66 | 彩虹巡航
+fig: 90 | 刚果瀑布
+fig: 110 | 大海湾
+fig: 130 | 耀西的故事
+fig: 176 | 欧奈特
+fig: 220 | 德尔菲诺广场
+# 巡览（二）：4:10～8:30 | 巡览二 | 250
+tbl: 时间 | 舞台 ;; 4:11 | 艾尔丁之桥 Bridge of Eldin ;; 4:27 | 天空界 Skyworld ;; 4:37 | 攻城战 Castle Siege ;; 4:59 | 瓦力欧制造 WarioWare, Inc. ;; 5:09 | 哈尔伯德 Halberd ;; 5:25 | 影子摩西岛 Shadow Moses Island ;; 5:39 | 新波克市 New Pork City ;; 5:48 | 诺法 Norfair ;; 6:02 | 8 字赛道 Figure-8 Circuit ;; 6:07 | 港口镇高速冲刺 Port Town Aero Dive ;; 6:18 | 路易吉洋楼 Luigi's Mansion ;; 6:32 | 格鲁德溪谷 Gerudo Valley ;; 6:45 | 合众宝可梦联盟 Unova Pokémon League ;; 7:09 | 灵魂列车 Spirit Train ;; 7:27 | 棱镜塔 Prism Tower ;; 7:39 | 重置炸弹森林 Reset Bomb Forest ;; 8:02 | 拳击场 Boxing Ring ;; 8:13 | 高尔平原 Gaur Plain
+fig: 264 | 艾尔丁之桥
+fig: 286 | 攻城战
+fig: 308 | 哈尔伯德
+fig: 330 | 影子摩西岛
+fig: 352 | 诺法
+fig: 396 | 格鲁德溪谷
+fig: 440 | 灵魂列车
+fig: 506 | 高尔平原
+# 巡览（三）：8:30～12:50 | 巡览三 | 510
+tbl: 时间 | 舞台 ;; 8:30 | 客厅 Living Room ;; 8:47 | 朋友收集 Tomodachi Life ;; 9:10 | 画图聊天 2 PictoChat 2 ;; 9:30 | 威利城堡 Wily Castle ;; 9:51 | 魔法天堂 Magicant ;; 10:04 | 未来赛车（SFC）Mute City SNES ;; 10:16 | 马力欧银河 Mario Galaxy ;; 10:28 | 马力欧赛车场 Mario Circuit ;; 10:54 | 卡洛斯宝可梦联盟 Kalos Pokémon League ;; 11:13 | 斗技场 Coliseum ;; 11:26 | 游戏迷 Gamer ;; 11:33 | 希望花园 Garden of Hope ;; 11:44 | 城镇与城市 Town and City ;; 12:10 | 拆屋工 Wrecking Crew ;; 12:18 | 飞行俱乐部 Pilotwings ;; 12:31 | 风之丘 Windy Hill Zone ;; 12:47 | 打鸭子 Duck Hunt
+fig: 530 | 朋友收集
+fig: 555 | 画图聊天 2
+fig: 575 | 威利城堡
+fig: 596 | 魔法天堂
+fig: 620 | 马力欧银河
+fig: 662 | 卡洛斯宝可梦联盟
+fig: 685 | 斗技场
+fig: 728 | 城镇与城市
+fig: 748 | 飞行俱乐部
+fig: 772 | 打鸭子
+# 巡览（四）：12:55～结尾 | 巡览四 | 775
+tbl: 时间 | 舞台 ;; 12:55 | 朱雀城 Suzaku Castle ;; 13:10 | 米德加 Midgar ;; 13:28 | 安布拉钟楼 Umbra Clock Tower ;; 13:48 | 海鳗塔 Moray Towers ;; 14:01 | 德古拉城 Dracula's Castle ;; 14:26 | 初始台地之塔 Great Plateau Tower ;; 14:36 | 新顿克市政厅 New Donk City Hall ;; 14:43 | 殿堂 Mementos ;; 14:58 | 世界树祭坛 Yggdrasil's Altar ;; 15:12 | KOF 体育场 King of Fighters Stadium ;; 15:21 | 加尔格·马可大修道院 Garreg Mach Monastery ;; 15:33 | 弹簧体育场 Spring Stadium ;; 15:49 | Minecraft 世界 Minecraft World ;; 16:10 | 阿尔斯特云海 Cloud Sea of Alrest ;; 16:32 | 三岛道场 Mishima Dojo ;; 16:45 | 空洞堡垒 Hollow Bastion ;; 17:14 | 终点 Final Destination
+fig: 793 | 米德加
+fig: 814 | 安布拉钟楼
+fig: 850 | 德古拉城
+fig: 880 | 新顿克市政厅
+fig: 902 | 世界树祭坛
+fig: 925 | 加尔格·马可大修道院
+fig: 956 | Minecraft 世界
+fig: 978 | 阿尔斯特云海
+fig: 1000 | 三岛道场
+fig: 1012 | 空洞堡垒
+# 结尾：多样性也是乐趣 | 结尾 | 1018
+p: 这么多东西都塞进了一个游戏里，你能相信吗？市面上很少有这么多样的作品。
+fig: 1036 | 终点
+!: 全部做出来相当有挑战，但能俯瞰这么多游戏也是乐趣的一部分——所以可以保证，大家都全力以赴，而且做得很开心。
+q: 《特别版》的基础舞台大约有多少个？运行条件是什么？ | 约 115 个；要在 Switch 上 8 人同屏、60 帧运行，几乎没有余裕。 | 5
+q: 樱井认为这一集对谁特别有参考价值？ | 有志于游戏美术的人——可以近看舞台组的成果。 | 35
+q: 樱井如何形容制作这么多舞台？ | 很有挑战，但俯瞰众多游戏也是乐趣，大家都全力以赴也很开心。 | 1025

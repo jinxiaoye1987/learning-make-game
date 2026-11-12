@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>B-11 落块解谜的游戏性 · 樱井政博「Creating Games」中文图文课</title>
+<link rel="stylesheet" href="../assets/site.css">
+<script>(function(){var t=localStorage.getItem('cg-theme');if(t)document.documentElement.dataset.theme=t;})();</script>
+</head><body>
+<div class="topbar"><div class="in"><a class="brand" href="../index.html"><b>樱井政博</b> 做游戏 · 中文图文课</a><nav><a href="../index.html" class="">首页</a><a href="../index.html#cats" class="">全部分类</a><a href="../map.html" class="">知识地图</a><a href="../quiz.html" class="">随机测验</a><a href="../search.html" class="">搜索</a><a href="../about.html" class="">关于</a></nav><span class="sp"></span>
+<form action="../search.html" method="get"><input name="q" placeholder="搜索全部课程…" aria-label="搜索"></form><button id="themeBtn" type="button">☾ 深色</button></div></div>
+<div class="disclaimer">非官方个人学习总结，未经权利人授权或背书，不能替代原视频。截图等第三方素材不因学习而获得使用许可。<a href="../about.html">关于本站</a></div>
+<div class="layout"><nav class="toc"><h2>本集目录</h2><ol><li><a href="#tldr"><span class="num">★</span>速览</a></li><li><a href="#s1"><span class="num">1</span>拼图 vs 俄罗斯方块</a></li><li><a href="#s2"><span class="num">2</span>风险与回报</a></li><li><a href="#s3"><span class="num">3</span>先懂原理</a></li><li><a href="#quiz"><span class="num">?</span>自测题</a></li></ol>
+<p class="note" style="margin:12px 8px 0"><a href="index.html">← 返回 B 游戏本质</a></p></nav>
+<main><p class="crumb"><a href="../index.html">首页</a> / <a href="index.html">B 游戏本质</a> / #11</p><header class="hero"><div>
+<h1>B-11 落块解谜的游戏性</h1><p class="sub">原标题：<i>Game Essence in Falling-Block Puzzle Games</i></p>
+<ul class="meta"><li>时长 2:48</li><li>原语言：日语（画面内嵌英文字幕）</li><li>B 游戏本质 #11/29</li></ul>
+<p style="margin:14px 0 0">▶ 原视频：<a href="https://youtu.be/QOkY6BULsgo" target="_blank" rel="noopener">https://youtu.be/QOkY6BULsgo</a></p></div><img src="img/QOkY6BULsgo/cover.jpg" alt="视频缩略图"></header><div class="pn"><a href="10-1ggw9xXbzig.html"><small>← 上一集 #10</small>对战游戏一定要复杂吗？</a><a class="next" href="12-vDEJ0sXw8Ks.html"><small>下一集 #12 →</small>被打倒反而松了一口气？</a></div><section id="tldr" data-toc="速览"><h2>速览</h2><p>解谜游戏有很多种。拼图这类<b>没有博弈</b>，乐趣更多来自拼出来的成就感。著名的《俄罗斯方块》是以「五格骨牌（Pentomino）」为原型发想的——把 12 种形状的拼块整齐放进矩形，但它和拼图一样没有游戏性；而《俄罗斯方块》有，区别就在于<b>风险与回报</b>。落块解谜的风险就是<b>堆积本身</b>：越堆越高，思考时间越短；整齐地凑满一行消掉，风险下降；一次消多行，因为事先承担了更高风险，所以更爽。下落速度逐渐加快也和风险上升的刺激有关；后来移植作中加入的「落地后还能旋转、滑动」，让人能在风险边缘坚持，也很重要。五格骨牌如果做成对战、加入一定规则，也能产生游戏性。落块解谜是能非常简单、直觉地理解游戏性的类型：不要从「方块会消失」开始企划，而要想清楚<b>「消除为什么有趣」</b>。樱井构思《Meteos》时，想到「把陨石发射上去」这个基础点子只花了 5 分钟——他不擅长落块解谜却能做到，是因为事先理解了这个类型的游戏性如何产生。</p></section><section id="s1" data-toc="拼图 vs 俄罗斯方块"><h2>1. 拼图没有博弈 <a class="ts" href="https://youtu.be/QOkY6BULsgo?t=3" target="_blank" rel="noopener">0:03</a></h2>
+<p>解谜游戏也有很多种。拼图这类<b>没有博弈</b>，乐趣更多来自一点点拼起来的成就感。</p><p>著名的《俄罗斯方块》以「五格骨牌（Pentomino）」为原型发想：把 12 种形状的拼块整齐地放进矩形。但五格骨牌和拼图一样没有游戏性，《俄罗斯方块》却有——区别在于<b>有没有风险与回报</b>。</p>
+<div class="row"><figure><img src="img/QOkY6BULsgo/f280.webp" alt="" loading="lazy"><figcaption>《俄罗斯方块》的概念源自五格骨牌（0:28 左右）</figcaption></figure><figure><img src="img/QOkY6BULsgo/f490.webp" alt="" loading="lazy"><figcaption>五格骨牌没有游戏性，而《俄罗斯方块》有（0:49 左右）</figcaption></figure></div>
+</section>
+<section id="s2" data-toc="风险与回报"><h2>2. 落块解谜的风险与回报 <a class="ts" href="https://youtu.be/QOkY6BULsgo?t=52" target="_blank" rel="noopener">0:52</a></h2>
+<ul class="points"><li>风险就是<b>堆积</b>本身：堆得越高，能思考的时间越短。</li><li>漂亮地凑齐一行消掉，<b>风险下降</b>；一次消多行，因事先承担了更高风险，所以更爽。</li><li>下落速度不断加快的规格，也与风险上升带来的刺激有关。</li><li>后来移植作中加入的：方块落地后还能旋转、滑动，让人在风险边缘坚持——从「吸引风险」的意义上很重要。</li></ul>
+<div class="figs"><figure><img src="img/QOkY6BULsgo/f560.webp" alt="" loading="lazy"><figcaption>风险：不断堆积起来的方块（0:56 左右）</figcaption></figure><figure><img src="img/QOkY6BULsgo/f770.webp" alt="" loading="lazy"><figcaption>随着等级提高下落加快，进一步提升风险（1:17 左右）</figcaption></figure><figure><img src="img/QOkY6BULsgo/f910.webp" alt="" loading="lazy"><figcaption>落地后还能旋转和滑动，能在边缘坚持更久（1:31 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/QOkY6BULsgo/f1050.webp" alt="" loading="lazy"><figcaption>桌游《Copenhagen》《Blokus》：加入规则就有了博弈（1:45 左右）</figcaption></figure><div><p>顺带一提，五格骨牌如果做成对战、设一定规则，也会产生游戏性；不过因为拼块的配置需要反复尝试，可能也需要把这种试错规则化。</p></div></div>
+</section>
+<section id="s3" data-toc="先懂原理"><h2>3. 先想「为什么消除有趣」 <a class="ts" href="https://youtu.be/QOkY6BULsgo?t=115" target="_blank" rel="noopener">1:55</a></h2>
+<div class="row"><div><p>落块解谜是能非常简单、直觉地理解游戏性的类型。不要从「方块会消失」开始企划，而要好好想想<b>为什么消除会有趣</b>。</p><p>樱井企划《Meteos》时，想到「把陨石发射上去」这个基础点子只花了 <b>5 分钟</b>。他不擅长落块解谜却能做到，是因为先理解了这个类型的游戏性是如何产生的。</p></div><figure><img src="img/QOkY6BULsgo/f1330.webp" alt="" loading="lazy"><figcaption>《Meteos》：想出「发射方块」的核心点子只花了 5 分钟（2:13 左右）</figcaption></figure></div>
+<div class="key">理解了游戏性的原理，即使是不擅长的类型，也能迅速地思考。</div>
+</section>
+
+<section id="quiz" data-toc="自测题"><h2>自测题</h2><details><summary>1. 五格骨牌和《俄罗斯方块》的根本区别是什么？</summary><p>五格骨牌像拼图一样没有游戏性；《俄罗斯方块》有风险与回报（堆积是风险，消行降低风险）。 <a class="ts" href="https://youtu.be/QOkY6BULsgo?t=49" target="_blank" rel="noopener">0:49</a></p></details><details><summary>2. 落块解谜中，为什么一次消多行更爽？</summary><p>因为为了一次消多行，事先承担了更高的风险（堆得更高），风险越高、释放时越爽。 <a class="ts" href="https://youtu.be/QOkY6BULsgo?t=66" target="_blank" rel="noopener">1:06</a></p></details><details><summary>3. 樱井为什么能在 5 分钟内想出《Meteos》的核心点子？</summary><p>尽管不擅长落块解谜，他事先理解了这个类型的游戏性是如何产生的（风险与回报的原理）。 <a class="ts" href="https://youtu.be/QOkY6BULsgo?t=122" target="_blank" rel="noopener">2:02</a></p></details></section><div class="pn"><a href="10-1ggw9xXbzig.html"><small>← 上一集 #10</small>对战游戏一定要复杂吗？</a><a class="next" href="12-vDEJ0sXw8Ks.html"><small>下一集 #12 →</small>被打倒反而松了一口气？</a></div></main></div>
+<footer class="foot"><p>我整理了这个游戏制作学习网站，方便回顾课程要点与自测。本站为非官方的个人学习总结。</p><p>维护者 <a href="https://github.com/jinxiaoye1987">jinxiaoye1987</a>。本站与仓库有 AI 辅助整理与脚手架编写。课程观点来自原视频，由维护者整理，不能替代原视频。</p><p>本站不是樱井政博、任天堂、HAL 研究所、YouTube 频道「<a href="https://www.youtube.com/@sora_sakurai_en" target="_blank" rel="noopener">Masahiro Sakurai on Creating Games</a>」或其相关权利人的官方网站，未经上述权利人授权、审核或背书。</p><p>内容依据公开视频整理，可能有偏差或遗漏。截图、字幕、游戏画面、作品名与角色形象等权利归各自权利人。学习这些笔记并不因此获得素材许可。</p><p><a href="../about.html">关于本站</a></p></footer>
+<div id="lightbox"><img alt=""></div>
+<script src="../assets/site.js"></script>
+</body></html>

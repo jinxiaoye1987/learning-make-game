@@ -1,0 +1,35 @@
+<section id="s1" data-toc="价值"><h2>1. 画面震动的价值 <a class="ts" href="https://youtu.be/2JXR7IASSog?t=3" target="_blank" rel="noopener">0:03</a></h2>
+<div class="row"><div><p>画面震动非常适合表现巨大冲击，应该积极加入。樱井从《梦之泉物语》起就支持并重视它。</p></div><figure><img src="img/f180.webp" alt="" loading="lazy"><figcaption>《星之卡比 梦之泉物语》（0:18 左右）</figcaption></figure></div>
+<div class="key">但它可能让画面难以看清，要注意别过度。</div>
+</section>
+<section id="s2" data-toc="方法"><h2>2. 两种方法 <a class="ts" href="https://youtu.be/2JXR7IASSog?t=27" target="_blank" rel="noopener">0:27</a></h2>
+<div class="row"><div><ul class="points"><li>移动摄像机：在 3D 空间里移动摄像机，远处的画面可能几乎不动。</li></ul></div><figure><img src="img/f360.webp" alt="" loading="lazy"><figcaption>移动摄像机（0:36 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/f540.webp" alt="" loading="lazy"><figcaption>画面边缘露出空白（0:54 左右）</figcaption></figure><div><ul class="points"><li>移动绘制后的画面：全画面（含 UI）都确实地晃，但边缘可能露出黑边。</li></ul></div></div>
+<div class="row"><div><p>常用的是前者，但纵深大的画面中可能几乎不晃，所以要考虑注视点怎么动。</p></div><figure><img src="img/f720.webp" alt="" loading="lazy"><figcaption>注视点：摄像机看着的点（1:12 左右）</figcaption></figure></div>
+<div class="row"><figure><img src="img/f810.webp" alt="" loading="lazy"><figcaption>摄像机与画面（1:21 左右）</figcaption></figure><div><div class="key">注视点可以与摄像机同步震动，甚至比摄像机动得更大——远处的注视点稍微动一下，看起来并不怎么动。</div></div></div>
+</section>
+<section id="s3" data-toc="模式"><h2>3. 《大乱斗》的震动模式 <a class="ts" href="https://youtu.be/2JXR7IASSog?t=90" target="_blank" rel="noopener">1:30</a></h2>
+<div class="row"><div><p>一直以来可设定大、中、小、极小以及持续等模式。大中小不只是缩放，震动模式本身也不同。</p></div><figure><img src="img/f990.webp" alt="" loading="lazy"><figcaption>大 / 中 / 小 / 极小（1:39 左右）</figcaption></figure></div>
+<ul class="points"><li>小：只有纵向震动。中：加入横向。大：更强。</li></ul>
+<div class="row"><figure><img src="img/f1080.webp" alt="" loading="lazy"><figcaption>小：只有纵向（1:48 左右）</figcaption></figure><figure><img src="img/f1170.webp" alt="" loading="lazy"><figcaption>大（1:57 左右）</figcaption></figure></div>
+<div class="row"><div><ul class="points"><li>持续性震动：传达地形震动等的纵向震动——地震之类最好不要纵横乱晃。</li></ul></div><figure><img src="img/f1260.webp" alt="" loading="lazy"><figcaption>纵向震动传达地形运动（2:06 左右）</figcaption></figure></div>
+</section>
+<section id="s4" data-toc="实现"><h2>4. 实现上的功夫 <a class="ts" href="https://youtu.be/2JXR7IASSog?t=135" target="_blank" rel="noopener">2:15</a></h2>
+<div class="row"><div><p>按镜头远近改变震动大小；为了没有违和感也会影响画角，调整到哪里都恰到好处。</p></div><figure><img src="img/f1440.webp" alt="" loading="lazy"><figcaption>镜头远近影响画角（2:24 左右）</figcaption></figure></div>
+<p>平面世界等画角很窄的舞台，直接用震动会过大，所以要调整。</p>
+<div class="row"><figure><img src="img/f1530.webp" alt="" loading="lazy"><figcaption>平面世界（2:33 左右）</figcaption></figure><figure><img src="img/f1620.webp" alt="" loading="lazy"><figcaption>画角窄时调小震动（2:42 左右）</figcaption></figure></div>
+<div class="row"><div><div class="key">震动一开始强、逐渐收敛；不是单纯的漩涡形，而带有舒适程度的随机性。以前还曾用鼠标乱晃、以那个动作为基础来做。</div></div><figure><img src="img/f1710.webp" alt="" loading="lazy"><figcaption>不是规则的漩涡形（2:51 左右）</figcaption></figure></div>
+</section>
+<section id="s5" data-toc="结语"><h2>5. 没有震动就乏味 <a class="ts" href="https://youtu.be/2JXR7IASSog?t=178" target="_blank" rel="noopener">2:58</a></h2>
+<div class="row"><div><p>没有画面震动的游戏相当乏味——连攻击时的小震动都会造成这么大的印象差。</p></div><figure><img src="img/f1890.webp" alt="" loading="lazy"><figcaption>无震动 vs 有震动（3:09 左右）</figcaption></figure></div>
+<div class="key">画面震动常出现、效果也高。多边形表现中要得到合适的震动有点难，但手感会大增，下功夫很重要。</div>
+<div class="mermaid">
+flowchart TD
+  A[画面震动] --> B[移动摄像机]
+  A --> C[移动绘制后画面]
+  B --> D[远景不动 → 让注视点也动]
+  C --> E[含 UI 全晃 → 边缘黑边]
+  A --> F[模式: 大/中/小/极小/持续]
+  F --> G[按镜头远近调幅 · 先强后收敛 · 适度随机]
+</div>
+</section>
