@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """公开仓库的静态检查。
 
-核对课时、题目、相对链接和声明是否还在。
-第三方图片未纳入本仓库时只报告缺失，不视为失败，也不会改动 HTML。
+核对课时、题目、相对链接、声明和图片文件是否还在。
+图片引用找不到文件时失败。不要靠删除 img 来让检查通过。
 """
 import json, os, re, sys
 
@@ -133,17 +133,28 @@ def check_links_and_images():
                     missing_images.append((rel, url))
                 else:
                     fail(f"缺少站内文件 {rel} -> {url}")
-    if img_src < MIN_IMG_SRC:
-        fail(f"带 src 的 img 只有 {img_src} 个，少于 {MIN_IMG_SRC}。不要删除图片引用。")
+    if img_src != MIN_IMG_SRC:
+        fail(f"带 src 的 img 有 {img_src} 个，期望 {MIN_IMG_SRC}。不要删除或改写图片引用。")
+    unique = {url for _rel, url in missing_images}
+    if missing_images:
+        fail(f"图片引用缺失 {len(missing_images)} 处、唯一路径 {len(unique)} 个。不要删掉 img。")
+        for rel, url in missing_images[:20]:
+            print("MISSING IMAGE", rel, url)
+    referenced = set()
+    for dirpath, _, names in os.walk(SITE):
+        for fn in names:
+            if not fn.endswith(".html"):
+                continue
+            text = open(os.path.join(dirpath, fn), encoding="utf-8", errors="ignore").read()
+            for raw in re.findall(r'<img\b[^>]*\bsrc="([^"]+)"', text):
+                referenced.add(os.path.normpath(os.path.join(dirpath, raw.split("#", 1)[0].split("?", 1)[0])))
+    present = [p for p in referenced if os.path.isfile(p)]
+    if len(present) != 3262:
+        fail(f"可解析的唯一图片文件 {len(present)} 个，期望 3262")
     print(f"relative links checked: {checked}")
     print(f"img src attributes: {img_src}")
-    print(
-        "optional third-party images missing: "
-        f"{len(missing_images)} references "
-        "(expected in this snapshot; not a failure; references were kept)"
-    )
-    if missing_images:
-        print("production note: do not deploy this image-free snapshot")
+    print(f"unique image files resolved: {len(present)}")
+    print(f"missing image references: {len(missing_images)}")
 
 
 def check_secrets_and_forbidden():
